@@ -104,6 +104,8 @@
       ],
       "settings": {
         "mod_class": "",
+        "image": "shopify:\/\/shop_images\/decor-1.png",
+        "image_2": "shopify:\/\/shop_images\/decor-2.png",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "adapt_height_first_image": false,
