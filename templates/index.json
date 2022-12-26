@@ -88,7 +88,7 @@
         "template--17016615010579__b7d4689b-aa5d-4fbd-93cf-446d84d85100-16691955563a648ee6-2": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "VIEW ALL PRODUCTS",
+            "button_label_1": "Shop all products",
             "button_link_1": "shopify:\/\/collections\/all",
             "button_style_secondary_1": true,
             "button_label_2": "",
