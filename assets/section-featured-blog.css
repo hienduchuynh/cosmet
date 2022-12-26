@@ -1,0 +1,214 @@
+.blog-placeholder {
+  margin: 0 1.5rem;
+  background: rgb(var(--color-background));
+}
+
+@media screen and (min-width: 750px) {
+  .blog-placeholder {
+    text-align: center;
+    width: 50%;
+    margin: 0;
+  }
+}
+
+.blog-placeholder__content {
+  padding: 3rem;
+  background: rgba(var(--color-foreground), 0.04);
+}
+
+.blog-placeholder .placeholder {
+  position: relative;
+}
+
+.blog-placeholder h2 {
+  margin: 0;
+}
+
+.blog-placeholder .rte-width {
+  margin-top: 1.2rem;
+  color: rgba(var(--color-foreground), 0.75);
+}
+
+@media screen and (min-width: 990px) {
+  .grid--1-col-desktop .article-card .card__content {
+    text-align: center;
+  }
+
+  .blogs__title.title-wrapper--self-padded-tablet-down.title-wrapper-01 {
+    padding: 0 5rem;
+  }
+}
+
+.blogs__title.title-wrapper-01 .inner {
+  border-top: 2px solid rgba(var(--color-base-accent-1));
+  border-bottom: 1px solid rgba(var(--color-foreground),var(--text-boxes-border-opacity));
+  padding: 1.6rem 0;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.blogs__title.title-wrapper-01 .inner .blog__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.blogs__title.title-wrapper-01 .inner .h4 {
+  font-size: calc(var(--font-heading-scale) * 1.8rem);
+}
+
+.title-wrapper-01 .blog__title {
+  margin: 0;
+}
+
+.blog__posts.articles-wrapper {
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 990px) {
+  .blog__posts.articles-wrapper {
+    margin-bottom: 0;
+  }
+}
+
+.blog__posts.articles-wrapper .article {
+  scroll-snap-align: start;
+}
+
+@media screen and (max-width: 749px) {
+  .blog__posts:not(.grid--2-col-tablet) .blog__post.article {
+    width: calc(100% - 3rem);
+  }
+}
+
+.background-secondary .blog-placeholder__content {
+  background-color: rgb(var(--color-background));
+}
+
+.blog__post {
+  align-items: baseline;
+}
+
+.blog__posts .card-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.article-card__image {
+  border-radius: var(--card-corner-radius);
+  border: var(--card-border-width) solid rgba(var(--color-foreground), var(--card-border-opacity));
+}
+
+.blog__button {
+  margin-top: 3rem;
+}
+
+@media screen and (min-width: 750px) {
+  .blog__button {
+    margin-top: 5rem;
+  }
+}
+
+/* check for flexbox gap in older Safari versions */
+@supports not (inset: 10px) {
+  @media screen and (min-width: 750px) {
+    .blog__posts .article + .article {
+      margin-left: var(--grid-desktop-horizontal-spacing);
+    }
+  }
+}
+
+.blog .title-wrapper-with-link.title-wrapper-01 .inner .blog__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.blog .title-wrapper-with-link.title-wrapper-01 .inner .h2 {
+  font-size: calc(var(--font-heading-scale) * 1.8rem);
+}
+
+.blog .title-wrapper-with-link.title-wrapper-01 .inner {
+  border-top: 2px solid rgba(var(--color-base-accent-1));
+  border-bottom: 1px solid rgba(var(--color-foreground),var(--text-boxes-border-opacity));
+  padding: 1.6rem 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.blog .title-wrapper-with-link.title-wrapper-01 .inner:not(:only-child) {
+  margin-bottom: 1rem;
+}
+
+.blog .title-wrapper-with-link.title-wrapper-01 .inner .link {
+  text-decoration: none;
+}
+
+.blog .title-wrapper-01 .blog__view-all a {
+  margin-top: 0;
+}
+
+.blog__view-all a span:first-child{
+  float: left;
+}
+
+.blog__view-all a {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 2.4rem;
+}
+
+@media screen and (min-width: 750px) {
+  .blog__view-all a {
+    margin-top: 4.8rem;
+  }
+}
+
+.blog__view-all a span.icon-wrap {
+  margin-left: .8rem
+}
+
+.blog__view-all a:hover span.icon-wrap svg {
+  width: 1.6rem;
+}
+
+/* Title Style 02 */
+.title-wrapper-02 {
+  text-align: center;
+  margin-bottom: 6.4rem;
+}
+
+.title-wrapper-02 .title {
+  margin-top: 0;
+  margin-bottom: 1.6rem;
+}
+
+.title-wrapper-02 .blogs__description  {
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 749px) {
+  .title-wrapper-02 .blogs__description {
+    width: 90%;
+  }
+}

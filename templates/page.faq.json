@@ -1,0 +1,132 @@
+{
+  "sections": {
+    "292fd3d9-f618-4284-9370-955d059efefe": {
+      "type": "breadcrumb",
+      "disabled": true,
+      "settings": {
+        "alignment_breadcrumb": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "b196a01e-f1bc-4e66-a068-4a8605559b96": {
+      "type": "rich-text",
+      "blocks": {
+        "template--14995343081545__b196a01e-f1bc-4e66-a068-4a8605559b96-166496376312dfa138-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Frequently Asked Questions<\/p>",
+            "heading_size": "h1"
+          }
+        },
+        "template--14995343081545__b196a01e-f1bc-4e66-a068-4a8605559b96-166496376312dfa138-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--14995343081545__b196a01e-f1bc-4e66-a068-4a8605559b96-166496376312dfa138-0",
+        "template--14995343081545__b196a01e-f1bc-4e66-a068-4a8605559b96-166496376312dfa138-1"
+      ],
+      "settings": {
+        "class_suffix": "faqs-page",
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 48,
+        "padding_bottom": 0
+      }
+    },
+    "be0b4efd-08c2-4c02-9b11-ec5c9ab55e4d": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--14995343081545__be0b4efd-08c2-4c02-9b11-ec5c9ab55e4d-16649640701c64a35d-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I add a new product?",
+            "icon": "none",
+            "row_content": "<p>1. From your Shopify admin, go to <strong>Products<\/strong>.<\/p><p>2. Click <strong>Add product<\/strong>.<\/p><p>3. Enter a title for your product, along with additional details.<\/p><p>4. Click <strong>Save<\/strong>.<\/p><p><a href=\"https:\/\/help.shopify.com\/en\/manual\/products\/add-update-products\" target=\"_blank\">Learn more about adding products<\/a><\/p><p><a href=\"https:\/\/www.youtube.com\/watch?v=Qks-MlwP6c4\" target=\"_blank\"><span style=\"text-decoration:underline\">Watch \"How to add a product\"<\/span><br\/><br\/><\/a><\/p>",
+            "page": ""
+          }
+        },
+        "template--14995343081545__be0b4efd-08c2-4c02-9b11-ec5c9ab55e4d-16649640701c64a35d-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How can I change the product page layout?",
+            "icon": "none",
+            "row_content": "<p>You can create an alternate template to change the layout of content on your online store, and then apply the template to specific products, collections, blogs, or pages. This tutorial involves editing the code for your theme.<\/p><p><a href=\"https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/theme-structure\/templates\" target=\"_blank\">Learn more about creating alternate templates<\/a><\/p><p><\/p>",
+            "page": ""
+          }
+        },
+        "template--14995343081545__be0b4efd-08c2-4c02-9b11-ec5c9ab55e4d-16649640701c64a35d-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I add collections?",
+            "icon": "none",
+            "row_content": "<p>You can create two types of collections: automated collections and manual collections.<\/p><p>An <a href=\"https:\/\/help.shopify.com\/manual\/products\/collections\/automated-collections\/index\" target=\"_blank\">automated collection<\/a> uses selection conditions to automatically include matching products. You can define as many selection conditions as you want. You can also specify whether products need to meet all of the conditions or any of the conditions to be included in the collection. When you add a new product that matches the selection conditions for a collection, the product is automatically added to the collection.<\/p><p>A <a href=\"https:\/\/help.shopify.com\/manual\/products\/collections\/manual-shopify-collection\" target=\"_blank\">manual collection<\/a> includes only the products that you choose individually. Because of this, the collection always contains the same products unless you specifically add or remove products.<\/p><p><a href=\"https:\/\/help.shopify.com\/en\/manual\/products\/collections\" target=\"_blank\">Learn more about collections<\/a><a href=\"https:\/\/www.youtube.com\/watch?v=HigPf0MCMLA\" target=\"_blank\"><span style=\"text-decoration:underline\">Watch \"What is a Shopify Collection\"<\/span><br\/><br\/><\/a><\/p>",
+            "page": ""
+          }
+        },
+        "template--14995343081545__be0b4efd-08c2-4c02-9b11-ec5c9ab55e4d-16649640701c64a35d-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What size should my product images be?",
+            "icon": "none",
+            "row_content": "<p>Your product images can be any size up to 5760 x 5760 px, or 20 megapixels. Product images need to have a file size smaller than 20 MB to be added to Shopify.<\/p><p><a href=\"https:\/\/help.shopify.com\/en\/manual\/products\/product-variant-images#image-sizes\" target=\"_blank\">Learn more about product image sizes<\/a><\/p>",
+            "page": ""
+          }
+        },
+        "09bec6e0-7d17-4fc2-b8b0-b01d9994cd45": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I add a blog to my online store?",
+            "icon": "none",
+            "row_content": "<p>1. From your Shopify admin, click <strong>Settings<\/strong> &gt; <strong>Apps and sales channels<\/strong>.<\/p><p>2. From the <strong>Apps and sales channels<\/strong> page, click <strong>Online store<\/strong>.<\/p><p>3. Click <strong>Open sales channel<\/strong>.<\/p><p>4. Click <strong>Blog Posts<\/strong>.<\/p><p>5. Click <strong>Manage blogs<\/strong>.<\/p><p>6. Click <strong>Add blog<\/strong>.<\/p><p>7. Give your blog a title, and then select how you want to manage comments.<\/p><p>8. Click <strong>Save blog<\/strong>.<\/p><p><a href=\"https:\/\/help.shopify.com\/en\/manual\/sell-online\/online-store\/blogs\/adding-a-blog\" target=\"_blank\">Learn more about adding a new blog to your online store.<\/a><\/p>",
+            "page": ""
+          }
+        },
+        "13a23c0e-bedb-4cc4-b602-3967da33e59d": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I manage comments on blog posts?",
+            "icon": "none",
+            "row_content": "<p>You can allow customers to comment on your blog posts, disable comments, or allow comments pending moderation.<\/p><p><a href=\"https:\/\/help.shopify.com\/en\/manual\/sell-online\/online-store\/blogs\/managing-comments\" target=\"_blank\">Learn about managing comments on blog posts<\/a><\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14995343081545__be0b4efd-08c2-4c02-9b11-ec5c9ab55e4d-16649640701c64a35d-0",
+        "template--14995343081545__be0b4efd-08c2-4c02-9b11-ec5c9ab55e4d-16649640701c64a35d-1",
+        "template--14995343081545__be0b4efd-08c2-4c02-9b11-ec5c9ab55e4d-16649640701c64a35d-2",
+        "template--14995343081545__be0b4efd-08c2-4c02-9b11-ec5c9ab55e4d-16649640701c64a35d-3",
+        "09bec6e0-7d17-4fc2-b8b0-b01d9994cd45",
+        "13a23c0e-bedb-4cc4-b602-3967da33e59d"
+      ],
+      "settings": {
+        "class_suffix": "faqs-page",
+        "caption": "",
+        "heading": "",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "content_alignment": "left",
+        "layout": "row",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-1",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 24,
+        "padding_bottom": 48
+      }
+    }
+  },
+  "order": [
+    "292fd3d9-f618-4284-9370-955d059efefe",
+    "b196a01e-f1bc-4e66-a068-4a8605559b96",
+    "be0b4efd-08c2-4c02-9b11-ec5c9ab55e4d"
+  ]
+}

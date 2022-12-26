@@ -1,0 +1,263 @@
+.quick-view {
+    position: absolute;
+    z-index: 2;
+    left: auto;
+    right: 1.6rem;
+    top: 1.6rem;
+    transform: translate3d(10px,0,0);
+}
+
+.quick-view button {
+    display: block;
+    color: rgba(var(--color-foreground));
+    background: rgba(var(--color-base-background-1));
+    text-align: center;
+    position: relative;
+    width: 36px;
+    height: 36px;
+    padding: 9px;
+    line-height: 1;
+    border-radius: 50%;
+    font-size: 0;
+    letter-spacing: 0;
+    cursor: pointer;
+    border: 0;
+}
+
+.quick-view button .icon {
+    width: 100%;
+    height: 100%;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    vertical-align: top;
+    position: relative;
+    z-index: 2;
+    background-color: transparent;
+}
+
+.quick-view button span {
+    display: none;
+    color: rgba(var(--color-foreground));
+    background: rgba(var(--color-base-background-1));
+    white-space: nowrap;
+    font-size: 1.4rem;
+    font-weight: var(--font-body-weight);
+    line-height: calc(1 + 0.6 / var(--font-body-scale));
+    width: 0;
+    opacity: 0;
+    overflow: hidden;
+    visibility: hidden;
+    right: calc(100% - 30px);
+    height: 36px;
+    line-height: 36px;
+    position: absolute;
+    top: 50%;
+    padding: 0 30px 0 15px;
+    border-radius: 36px;
+    transform: translateY(-50%);
+    transition: all ease 0.3s;
+    transition-duration: var(--duration-default);
+    pointer-events: none;
+}
+
+.quick-view button:hover span {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    display: inline-block;
+    width: auto;
+    left: auto;
+    right: calc(100% - 30px);
+}
+
+.quick-view .quick-view__submit.loading .icon {
+    display: none;
+}
+
+.quick-view-modal {
+    box-sizing: border-box;
+    opacity: 0;
+    position: fixed;
+    visibility: hidden;
+    z-index: -1;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(var(--color-foreground), 0.2);
+    height: 100%;
+}
+
+.quick-view-modal[open] {
+    opacity: 1;
+    visibility: visible;
+    z-index: 101;
+}
+
+.quick-view-modal__content {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 3.2rem auto 0;
+    width: 100%;
+    background-color: rgb(var(--color-background));
+    overflow: hidden;
+    max-width: var(--page-width);
+    width: calc(100% - 3rem);
+}
+
+.quick-view-modal__content .product__page__accordions {
+    display: none;
+}
+
+@media screen and (min-width: 750px) {
+    .quick-view-modal__content {
+        margin-top: 10rem;
+        width: 80%;
+        max-height: calc(100% - 20rem);
+        overflow-y: auto;
+    }
+    quick-view-modal .quick-view-modal__toggle {
+        top: 2rem;
+        right: 2rem;
+    }
+}
+
+@media screen and (min-width: 990px) {
+    .quick-view-modal__content {
+        width: 70%;
+    }
+}
+
+.quick-view-modal__content img {
+    max-width: 100%;
+}
+
+.quick-view-modal__content-info {
+    padding-right: 4.4rem;
+    display: block;
+    overflow-y: auto;
+    padding: 2.5rem;
+    height: 100%;
+}
+
+.quick-view-modal__content-info>* {
+    height: auto;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width: 749px) {
+    quick-view-modal .slider .product__media-item.grid__item {
+        margin-left: 0 !important;
+        margin-right: 0;
+    }
+    .quick-view-modal__content {
+        bottom: 3.2rem;
+    }
+    .quick-view-modal__content-info>* {
+        max-height: 100%;
+    }
+    .quick-view-modal__content-info .product__media-wrapper slider-component.slider-mobile-gutter {
+        margin: 0;
+    }
+}
+
+.quick-view-modal__toggle {
+    background-color: rgb(var(--color-background));
+    border: 0.1rem solid rgba(var(--color-foreground), 0.1);
+    border-radius: 50%;
+    color: rgba(var(--color-foreground), 0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 1.2rem;
+    z-index: 5;
+    width: 4rem;
+    position: fixed;
+    top: 1.5rem;
+    right: 1.5rem;
+}
+
+.quick-view-modal__toggle:hover {
+    color: rgba(var(--color-foreground), 0.75);
+}
+
+.quick-view-modal__toggle .icon {
+    height: auto;
+    margin: 0;
+    width: 2.2rem;
+}
+
+quick-view-modal .product:not(.featured-product) .product__view-details {
+    display: block;
+}
+
+quick-view-modal .quick-view-hidden,
+quick-view-modal .product__modal-opener:not(.product__modal-opener--image),
+quick-view-modal .product__media-item:not(:first-child) {
+    display: none !important;
+}
+
+quick-view-modal .slider.slider--mobile {
+    overflow: visible;
+}
+
+quick-view-modal .product__media-list {
+    margin-bottom: 0;
+}
+
+quick-view-modal .product__media-list .deferred-media {
+    display: block;
+    width: 100%;
+}
+
+quick-view-modal .product--thumbnail .product__media-gallery,
+quick-view-modal .product--thumbnail_slider .product__media-gallery,
+quick-view-modal .product--stacked .product__info-container--sticky {
+    top: 0;
+    position: relative;
+}
+
+@media screen and (min-width: 750px) {
+    quick-view-modal .product:not(.product--no-media) .product__media-wrapper {
+        max-width: 45%;
+        width: calc(45% - var(--grid-desktop-horizontal-spacing) / 2);
+    }
+    quick-view-modal .product:not(.product--no-media) .product__info-wrapper {
+        padding-left: 4rem;
+        max-width: 54%;
+        width: calc(54% - var(--grid-desktop-horizontal-spacing) / 2)
+    }
+    quick-view-modal .thumbnail-slider .thumbnail-list.slider--tablet-up {
+        display: none;
+    }
+}
+
+quick-view-modal .page-width {
+    padding: 0;
+}
+
+quick-view-modal .product__title>h1 {
+    display: none;
+}
+
+quick-view-modal .product__title>a {
+    display: block;
+    text-decoration: none;
+}
+
+quick-view-modal .product__title>a:hover {
+    color: rgb(var(--color-foreground));
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
+    text-decoration-thickness: 0.3rem;
+}
+
+quick-view-modal .product-form__buttons {
+    max-width: initial;
+}

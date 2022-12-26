@@ -1,0 +1,117 @@
+{{ 'component-article-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'section-main-blog.css' | asset_url | stylesheet_tag }}
+{{ 'component-main-sidebar.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+{%- liquid
+  assign page_title = section.settings.page_title
+  assign alignment_title = section.settings.alignment_title
+  assign show_sidebar = section.settings.show_sidebar
+  if show_sidebar
+      assign show_collapse = section.settings.show_collapse
+      assign sidebar_position = section.settings.sidebar_position
+      assign sidebar_collapse_default = section.settings.sidebar_collapse_default
+      assign enable_sticky = section.settings.enable_sticky
+  endif
+
+  assign layout_article = section.settings.layout
+  assign number_article_per_page = section.settings.number_article
+  assign show_image = section.settings.show_image
+  assign show_author = section.settings.show_author
+  assign show_date = section.settings.show_date
+  assign show_excerpt = section.settings.show_excerpt
+  assign alignment_content = section.settings.alignment_content
+  assign alignment__vertical = section.settings.alignment__vertical
+-%}
+
+<div data-section-id="{{ section.id }}" data-section-type="blog-layout-full-width" id="BlogSection-{{ section.id }}" data-section="{{ section.id }}" class="main-blog-block page-width {% if layout_article == "collage"  %} blog-layout-full-width{% endif %} section-{{ section.id }}-padding {% if show_sidebar %} has-sidebar {% endif %}">
+
+  <div class="header-page">
+    <div class="wrap-title {% if alignment_title != blank %}{{ alignment_title }}{% endif %}">
+    <h1 class="page--title">
+      {% if page_title != blank %}
+        {{ page_title }}  
+      {% else %}
+        {{ blog.title | escape }}
+      {% endif %} 
+    </h1>
+
+    {% if section.settings.description != "" %}
+      <p class="description {% if alignment_title == "center" %} center {% endif %} {% if alignment_title == "right" %} right {% endif %}">{{ section.settings.description | escape }}</p>
+    {% endif %}
+    </div>
+  </div>
+
+  {%- paginate blog.articles by number_article_per_page -%}
+  <div class="main-blog">
+    <div class="wrap-inner {% if show_sidebar %}{% if sidebar_position == "right" %}sidebar-right{% endif %} {% if sidebar_position == "left" %}sidebar-left{% endif %}{% endif %} {% if layout_article == "collapse" %}layout-collapse{% endif %}">
+      {%- if blog.articles_count > 0 -%}
+        <div class="list-blogs">
+          <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}{% if section.settings.layout == 'grid' %}blog-articles--grid{% endif %}">
+            {%- for article in blog.articles -%}
+              <div class="blog-articles__article article">
+                {%- render 'article-card',
+                  article: article,
+                  media_height: section.settings.image_height,
+                  media_aspect_ratio: article.image.aspect_ratio,
+                  show_image: show_image,
+                  show_date: show_date,
+                  show_author: show_author,
+                  show_excerpt: show_excerpt,
+                  alignment_content: alignment_content,
+                  alignment__vertical: alignment__vertical,
+                  heading_size: section.settings.heading_size
+                -%}
+              </div>
+            {%- endfor -%}
+          </div>
+        </div>
+      {% else %}
+        <div class="item-placeholder">
+          <div class="placeholder media media--landscape">
+            {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+          </div>
+          <div class="blog-placeholder__content">
+            <h2>
+              {{ 'sections.featured_blog.onboarding_title' | t }}
+            </h2>
+            <p class="rte-width">
+              {{ 'sections.featured_blog.onboarding_content' | t }}
+            </p>
+          </div>
+        </div>
+      {% endif %}
+      
+      {%- if show_sidebar -%}
+        <div class="sidebar" >
+          <div class="sidebar-wrapper {% if enable_sticky %}scroll-sidebar{% endif %}">
+            {% render 'main-sidebar',
+              section: section,
+              show_collapse: show_collapse,
+              sidebar_collapse: sidebar_collapse_default
+            %}
+          </div>
+        </div>
+      {%- endif -%}
+
+    {%- if paginate.pages > 1 -%}
+      {%- render 'pagination', paginate: paginate -%}
+    {%- endif -%}
+  </div>
+  {%- endpaginate -%}
+  </div>
+</div>

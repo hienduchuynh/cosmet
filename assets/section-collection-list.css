@@ -1,0 +1,102 @@
+.main-list-collections {
+	border: 2px solid rgba(0, 0, 0, 100);
+	border-top: 0;
+}
+.collection-hero__title {
+	margin: 0;
+	text-transform: uppercase;
+	padding-top: 64px;
+	padding-bottom: 64px;
+}
+.collection-hero__title span {
+	background: #000;
+	color: #fff;
+	padding: 0 10px;
+}
+
+.main-list-collections > .section {
+	margin-top: 0;
+}
+.collection-list {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.collection-list__item .card__information {
+	padding: 0;
+}
+
+.collection-list__item .card__heading a:hover {
+	-webkit-box-shadow: -0.4rem 0 0 rgba(var(--color-base-accent-3)), 0.4rem 0 0 rgba(var(--color-base-accent-3));
+	background: rgba(var(--color-base-accent-3));
+	box-shadow: -0.4rem 0 0 rgba(var(--color-base-accent-3)), 0.4rem 0 0 rgba(var(--color-base-accent-3));
+}
+.collection-list__item .card__information .count {
+	color: #999999;
+	display: block;
+	margin: calc(var(--grid-desktop-vertical-spacing) / 2) 0;
+}
+.collection-list__item .card__information .button {
+	margin-top: var(--grid-desktop-vertical-spacing);
+}
+
+/*Style for page > collections*/
+
+.collection-list.grid {
+	margin-bottom: var(--grid-desktop-vertical-spacing);
+}
+
+.collection-list-title {
+	margin: 0;
+}
+
+@media screen and (max-width: 749px) {
+	.collection-list:not(.slider) {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.section-collection-list .page-width {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.section-collection-list .collection-list:not(.slider) {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
+}
+
+.collection-list__item:only-child {
+	max-width: 100%;
+	width: 100%;
+}
+
+@media screen and (max-width: 749px) {
+	.slider.collection-list--1-items {
+		padding-bottom: 0;
+	}
+}
+
+@media screen and (min-width: 750px) and (max-width: 989px) {
+	.slider.collection-list--1-items,
+	.slider.collection-list--2-items,
+	.slider.collection-list--3-items,
+	.slider.collection-list--4-items {
+		padding-bottom: 0;
+	}
+}
+
+@media screen and (min-width: 750px) {
+	.collection-list__item a:hover {
+		box-shadow: none;
+	}
+}
+
+@media screen and (max-width: 989px) {
+	.collection-list.slider .collection-list__item {
+		max-width: 100%;
+	}
+}
+
+.collection-list-view-all {
+	margin-top: 2rem;
+}

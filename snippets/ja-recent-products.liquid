@@ -1,0 +1,131 @@
+{{ 'ja-recently-products.css' | asset_url | stylesheet_tag }}
+
+<div class="recently-viewed-inner">
+    <div class="active-facets">
+      <h2 class="product-recommendations__heading facets__heading facets__heading--vertical caption-large text-body">Recently Products</h2>
+    </div>
+    <ul class="recently-viewed" role="list">
+    <!-- Recently viewed products will appear here -->
+    </ul>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    function setRecentlyViewedProducts() {
+      const card_product = document.querySelectorAll('div.card-wrapper');
+      card_product.forEach(function (el, idx, arr) {
+        // return when caught example products
+        if (el.querySelector('div.card--text')) {
+          return;
+        }
+        el.addEventListener('click', function (event) {
+          var img = el.querySelector('div.media > img');
+          var product_link = el.querySelector('a');
+          var product_title = product_link.text.trim();
+          var product_url = product_link.href.trim();
+          var product_img = img.src.trim();
+          var product_img_width = img.width;
+          var product_img_height = img.height;
+          var product_img_alt = img.alt.trim();
+          
+          // handle price regular
+          var price_regular_in_sale = el.querySelector('span > s.price-item--regular');
+          var product_price_regular = typeof price_regular_in_sale !== undefined
+          && price_regular_in_sale.innerText.trim().length === 0
+            ? el.querySelector('span.price-item--regular').innerText.trim()
+            : price_regular_in_sale.innerText.trim();
+          
+          var product_price_sale = el.querySelector('span.price-item--sale').innerHTML.length > 0
+          && product_price_regular !== el.querySelector('span.price-item--sale').innerText.trim()
+            ? el.querySelector('span.price-item--sale').innerText.trim() : null;
+          
+          var html_price = el.querySelector('div.card-information').innerHTML;
+          
+          const productData = {
+            productTitle: product_title,
+            productImg: product_img,
+            imgWidth: product_img_width,
+            imgHeight: product_img_height,
+            productPriceRegular: product_price_regular,
+            productPriceOnSale: product_price_sale,
+            price_obj: html_price,
+            productUrl: product_url,
+            productImageAltText: product_img_alt
+          };
+          const productList = [];
+          let jsonResp, jsonRespArr, jsonRespArrStr;
+          const numberOfProducts = 4;
+          productList.push(productData);
+          const currProductPageTitle = productData.productTitle;
+          const productDataString = JSON.stringify(productList);
+          const localData = localStorage.getItem("recentlyViewedProduct");
+          if (localData === null) {
+            localStorage.setItem("recentlyViewedProduct", productDataString);
+          } else if (localData) {
+            const oldProductData = localStorage.getItem("recentlyViewedProduct");
+            const countProductData = (oldProductData.match(/productTitle/g) || []).length;
+            const sameProduct = oldProductData.includes(currProductPageTitle);
+            if (countProductData < numberOfProducts && sameProduct == false) {
+              jsonResp = JSON.parse(oldProductData);
+              jsonRespArr = jsonResp.concat(productList);
+              jsonRespArrStr = JSON.stringify(jsonRespArr);
+              localStorage.setItem("recentlyViewedProduct", jsonRespArrStr);
+            } else if (countProductData >= numberOfProducts && sameProduct == false) {
+              jsonResp = JSON.parse(oldProductData);
+              jsonResp.shift();
+              jsonRespArr = jsonResp.concat(productList);
+              jsonRespArr = JSON.stringify(jsonRespArr);
+              localStorage.setItem("recentlyViewedProduct", jsonRespArr);
+            }
+          }
+        })
+      })
+    }
+    function getRecentlyViewedProducts() {
+      const productData = JSON.parse(localStorage.getItem("recentlyViewedProduct"));
+      if (productData != null) {
+        const recentlyViewedHtml = [];
+        productData.map(item => {
+          recentlyViewedHtml.unshift(`
+          <li class="recently__item">
+           <div class="card-wrapper underline-links-hover">
+            <div class="card card--standard card--media " style="--ratio-percent: 75.0909090909091%;">
+              <div class="card__inner color-background-2 gradient ratio" style="--ratio-percent: 75.0909090909091%;">
+               <div class="card__media">
+               <div class="media media--transparent media--hover-effect">
+                <img class="motion-reduce" src="${item.productImg}" width="${item.imgWidth}" height="${item.imgHeight}"  loading="lazy" alt="${item.productImageAltText}"/>
+               </div>
+               </div>
+             </div>
+             <div class="card__content">
+             <div class="card__information">
+             <h3 class="card__heading h5">
+             <a class="full-unstyled-link" href="${item.productUrl}">${item.productTitle}</a></h3>
+               <div class="card-information">
+                 <div class="price ">
+                   <div class="price__container">
+                     <div class="price-item price-item--regular">
+                         ${item.price_obj}
+                     </div>
+                   </div>
+                 </div>
+               </div>
+           </div>
+        </li>
+       `);
+        });
+        const newProductData = `${recentlyViewedHtml.join("")}`;
+        const fullContent = document.querySelector('div.recently-viewed-inner').querySelector("ul.recently-viewed");
+        fullContent.innerHTML = newProductData;
+      }
+    }
+    setRecentlyViewedProducts();
+    getRecentlyViewedProducts();
+    const localViewed = localStorage.recentlyViewedProduct;
+    
+    if (localViewed === undefined || localViewed.length === 0){
+      document.querySelector('div.recently-viewed-inner').style.display = 'none';
+    }
+  });
+
+</script>

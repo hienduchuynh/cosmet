@@ -1,0 +1,494 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }    
+  }
+  @media screen and (min-width: 1200px) {
+    .section-{{ section.id }}{
+      width: {{ section.settings.box_width }}%;
+      max-width: {{ section.settings.box_width }}%;
+      margin: auto;
+    }
+  }
+{%- endstyle -%}
+<section class="page-width section-{{ section.id }} section-{{ section.id }}-padding">
+  {%- if section.settings.collapsible_type == "tabs" -%}
+    {{ 'component-tabs.css' | asset_url | stylesheet_tag }}
+    <div class="product___tabs product_tabs_positions_{{ section.settings.collapsible_tab_header_position }} tab quick-add-hidden" id="TabDetails-{{ section.id }}" {{ block.shopify_attributes }}>
+      <div id="tabsheader" class="tab-header">
+        <ul class="nav nav-tabs">
+          {%- for block in section.blocks -%}
+            {%- case block.type -%}
+              {%- when '@app' -%}
+                {% render block %}
+              {%- when 'collapsible_tab' -%}
+                {%- if block.settings.content != blank or block.settings.page.content != blank or block.settings.description == true -%}
+                  <li id="tabHeader-{{ forloop.index }}">
+                    <div class="summary__title">
+                      {% render 'icon-accordion', icon: block.settings.icon %}
+                      <h2 class="h5 tab__title">
+                        {{ block.settings.heading | default: block.settings.page.title }}
+                      </h2>
+                    </div>
+                  </li>
+                {%- endif -%}
+            {%- endcase -%}
+          {%- endfor -%}
+        </ul>
+      </div>
+      <div id="tabscontent" class="tab-content">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when '@app' -%}
+              {% render block %}
+            {%- when 'collapsible_tab' -%}
+              {%- if block.settings.content != blank or block.settings.page.content != blank or block.settings.description == true -%}
+                <div id="TabContent-{{ forloop.index }}" class="tab__content fade rte" {% if forloop.first == true %}style="display:block;"{%- endif -%}>
+                  {% if block.settings.description == true %}
+                    {{ product.description }}
+                  {% else %}
+                    {{ block.settings.content }}
+                  {%- endif -%}
+                  {%- if block.settings.image != blank -%}
+                    <div class="media media--{{ block.settings.image_ratio }} media--transparent {% if block.settings.image == blank %} placeholder{% endif %}">
+                      {%-liquid
+                          assign image_height = block.settings.image.width | divided_by: block.settings.image.aspect_ratio
+                          assign image_class = ""
+                          assign sizes = "100%"
+                        -%}
+                      {{ block.settings.image | image_url: width: 1500 | image_tag:
+                       loading: 'lazy'
+                       , width: block.settings.image.width
+                       , height: image_height
+                       , class: image_class
+                       , sizes: sizes
+                       , widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+                       , alt: block.settings.image.alt | escape
+                       }}
+                    </div>
+                  {%- endif -%}
+                  {{ block.settings.page.content }}
+                </div>
+              {%- endif -%}
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
+    </div>
+    <script>
+      window.addEventListener("load", function() {
+        var container = document.getElementById("TabDetails-{{ section.id }}");
+        var tabcon = document.getElementById("tabscontent");
+        var navitem = document.getElementById("tabHeader-1");
+        var ident = navitem.id.split("-")[1];
+        navitem.parentNode.setAttribute("data-current", ident);
+        navitem.setAttribute("class", "active");
+        var pages = tabcon.getElementsByTagName("div");
+        for (var i = 1; i < pages.length; i++) {
+          pages.item(i).style.display = "none";
+        };
+        var tabs = container.getElementsByTagName("li");
+        for (var i = 0; i < tabs.length; i++) {
+          tabs[i].onclick = displayPage;
+        }
+        function displayPage() {
+          var current = this.parentNode.getAttribute("data-current");
+          document.getElementById("tabHeader-" + current).removeAttribute("class");
+          document.getElementById("TabContent-" + current).style.display = "none";
+          var ident = this.id.split("-")[1];
+          this.setAttribute("class", "active");
+          document.getElementById("TabContent-" + ident).style.display = "block";
+          this.parentNode.setAttribute("data-current", ident);
+        }
+      });
+    </script>
+  {%- else if section.settings.collapsible_type == "accordion" -%}
+    {{ 'component-accordion.css' | asset_url | stylesheet_tag }}
+    {%- for block in section.blocks -%}
+      {%- case block.type -%}
+        {%- when '@app' -%}
+          {% render block %}
+        {%- when 'collapsible_tab' -%}
+          {%- if block.settings.content != blank or block.settings.page.content != blank  or block.settings.description == true -%}
+            <div class="product___accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
+              <details id="Details-{{ block.id }}-{{ section.id }}">
+                <summary>
+                  <div class="summary__title">
+                    {% render 'icon-accordion', icon: block.settings.icon %}
+                    <h2 class="h5 accordion__title">
+                      {{ block.settings.heading | default: block.settings.page.title }}
+                    </h2>
+                  </div>
+                  {% render 'icon-caret' %}
+                </summary>
+                <div class="accordion__content rte" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
+                  {% if block.settings.description == true %}
+                    {{ product.description }}
+                  {% else %}
+                    {{ block.settings.content }}
+                  {%- endif -%}
+                  {%- if block.settings.image != blank -%}
+                    <div class="media media--{{ block.settings.image_ratio }} media--transparent {% if block.settings.image == blank %} placeholder{% endif %}">
+                      {%-liquid
+                          assign image_height = block.settings.image.width | divided_by: block.settings.image.aspect_ratio
+                          assign image_class = ""
+                          assign sizes = "100%"
+                        -%}
+                      {{ block.settings.image | image_url: width: 1500 | image_tag:
+                       loading: 'lazy'
+                       , width: block.settings.image.width
+                       , height: image_height
+                       , class: image_class
+                       , sizes: sizes
+                       , widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+                       , alt: block.settings.image.alt | escape
+                       }}
+                    </div>
+                  {%- endif -%}
+                  {{ block.settings.page.content }}
+                </div>
+              </details>
+            </div>
+          {%- endif -%}
+      {%- endcase -%}
+    {%- endfor -%}
+  {%- else -%}
+    {{ 'component-colabsible-list.css' | asset_url | stylesheet_tag }}
+    {%- for block in section.blocks -%}
+      {%- case block.type -%}
+        {%- when '@app' -%}
+          {% render block %}
+        {%- when 'collapsible_tab' -%}
+          {%- if block.settings.content != blank or block.settings.page.content != blank  or block.settings.description -%}
+            <div class="product___colabsible-list colabsible-list quick-add-hidden" {{ block.shopify_attributes }}>
+              <details id="Details-{{ block.id }}-{{ section.id }}">
+                <summary>
+                  <div class="summary__title">
+                    {% render 'icon-accordion', icon: block.settings.icon %}
+                    <h2 class="h5 accordion__title">
+                      {{ block.settings.heading | default: block.settings.page.title }}
+                    </h2>
+                  </div>
+                  {% render 'icon-caret' %}
+                </summary>
+                <div class="colabsible-list__content rte" id="ProductColabsibleList-{{ block.id }}-{{ section.id }}">
+                  {% if block.settings.description == true %}
+                    {{ product.description }}
+                  {% else %}
+                    {{ block.settings.content }}
+                  {%- endif -%}
+                  {%- if block.settings.image != blank -%}
+                    <div class="media media--{{ block.settings.image_ratio }} media--transparent {% if block.settings.image == blank %} placeholder{% endif %}">
+                      {%-liquid
+                          assign image_height = block.settings.image.width | divided_by: block.settings.image.aspect_ratio
+                          assign image_class = ""
+                          assign sizes = "100%"
+                        -%}
+                      {{ block.settings.image | image_url: width: 1500 | image_tag:
+                       loading: 'lazy'
+                       , width: block.settings.image.width
+                       , height: image_height
+                       , class: image_class
+                       , sizes: sizes
+                       , widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+                       , alt: block.settings.image.alt | escape
+                       }}
+                    </div>
+                  {%- endif -%}
+                  {{ block.settings.page.content }}
+                </div>
+              </details>
+            </div>
+          {%- endif -%}
+      {%- endcase -%}
+    {%- endfor -%}
+  {%- endif -%}
+</section>
+{% schema %}
+  {
+    "name": "t:sections.collapsible_info_product.name",
+    "tag": "section",
+    "class": "section",
+    "blocks": [
+      {
+        "type": "@app"
+      }, {
+        "type": "collapsible_tab",
+        "name": "t:sections.collapsible_info_product.blocks.collapsible_tab.name",
+        "settings": [
+          {
+            "type": "text",
+            "id": "heading",
+            "default": "Collapsible item",
+            "info": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.heading.info",
+            "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.heading.label"
+          },
+          {
+            "type": "select",
+            "id": "icon",
+            "options": [
+              {
+                "value": "none",
+                "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.icon.options__1.label"
+              },
+              {
+                "value": "apple",
+                "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.icon.options__2.label"
+              },
+              {
+                "value": "banana",
+                "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.icon.options__3.label"
+              },
+              {
+                "value": "bottle",
+                "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.icon.options__4.label"
+              }, {
+                "value": "box",
+                "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.icon.options__5.label"
+              }, {
+                "value": "carrot",
+                "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.icon.options__6.label"
+              }, {
+                "value": "chat_bubble",
+                "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.icon.options__7.label"
+              }, {
+                "value": "check_mark",
+                "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.icon.options__8.label"
+              }, {
+                "value": "clipboard",
+                "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.icon.options__9.label"
+              }, {
+                "value": "dairy",
+                "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.icon.options__10.label"
+              }, {
+                "value": "dairy_free",
+                "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.icon.options__11.label"
+              }, {
+                "value": "dryer",
+                "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.icon.options__12.label"
+              }, {
+                "value": "eye",
+                "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.icon.options__13.label"
+              }, {
+                "value": "fire",
+                "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.icon.options__14.label"
+              }, {
+                "value": "gluten_free",
+                "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.icon.options__15.label"
+              }, {
+                "value": "heart",
+                "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.icon.options__16.label"
+              }, {
+                "value": "iron",
+                "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.icon.options__17.label"
+              }, {
+                "value": "leaf",
+                "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.icon.options__18.label"
+              }, {
+                "value": "leather",
+                "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.icon.options__19.label"
+              }, {
+                "value": "lightning_bolt",
+                "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.icon.options__20.label"
+              }, {
+                "value": "lipstick",
+                "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.icon.options__21.label"
+              }, {
+                "value": "lock",
+                "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.icon.options__22.label"
+              }, {
+                "value": "map_pin",
+                "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.icon.options__23.label"
+              }, {
+                "value": "nut_free",
+                "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.icon.options__24.label"
+              }, {
+                "value": "pants",
+                "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.icon.options__25.label"
+              }, {
+                "value": "paw_print",
+                "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.icon.options__26.label"
+              }, {
+                "value": "pepper",
+                "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.icon.options__27.label"
+              }, {
+                "value": "perfume",
+                "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.icon.options__28.label"
+              }, {
+                "value": "plane",
+                "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.icon.options__29.label"
+              }, {
+                "value": "plant",
+                "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.icon.options__30.label"
+              }, {
+                "value": "price_tag",
+                "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.icon.options__31.label"
+              }, {
+                "value": "question_mark",
+                "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.icon.options__32.label"
+              }, {
+                "value": "recycle",
+                "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.icon.options__33.label"
+              }, {
+                "value": "return",
+                "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.icon.options__34.label"
+              }, {
+                "value": "ruler",
+                "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.icon.options__35.label"
+              }, {
+                "value": "serving_dish",
+                "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.icon.options__36.label"
+              }, {
+                "value": "shirt",
+                "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.icon.options__37.label"
+              }, {
+                "value": "shoe",
+                "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.icon.options__38.label"
+              }, {
+                "value": "silhouette",
+                "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.icon.options__39.label"
+              }, {
+                "value": "snowflake",
+                "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.icon.options__40.label"
+              }, {
+                "value": "star",
+                "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.icon.options__41.label"
+              }, {
+                "value": "stopwatch",
+                "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.icon.options__42.label"
+              }, {
+                "value": "truck",
+                "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.icon.options__43.label"
+              }, {
+                "value": "washing",
+                "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.icon.options__44.label"
+              }
+            ],
+            "default": "check_mark",
+            "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.icon.label"
+          },
+          {
+            "type": "richtext",
+            "id": "content",
+            "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.content.label"
+          },
+          {
+            "type": "checkbox",
+            "id": "description",
+            "default": false,
+            "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.description.label"
+          }, {
+            "type": "image_picker",
+            "id": "image",
+            "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.image.label"
+          }, {
+            "type": "select",
+            "id": "image_ratio",
+            "options": [
+              {
+                "value": "portrait",
+                "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.image_ratio.options__2.label"
+              }, {
+                "value": "square",
+                "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.image_ratio.options__3.label"
+              }, {
+                "value": "34",
+                "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.image_ratio.options__4.label"
+              }, {
+                "value": "43",
+                "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.image_ratio.options__1.label"
+              }
+            ],
+            "default": "43",
+            "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.image_ratio.options__4.label"
+          }, {
+            "type": "page",
+            "id": "page",
+            "label": "t:sections.collapsible_info_product.blocks.collapsible_tab.settings.page.label"
+          }
+        ]
+      }
+    ],
+    "settings": [
+      {
+        "type": "header",
+        "content": "t:sections.collapsible_info_product.settings.header.content"
+      },
+      {
+        "type": "select",
+        "id": "collapsible_type",
+        "options": [
+          {
+            "value": "accordion",
+            "label": "t:sections.collapsible_info_product.settings.collapsible_type.options__1.label"
+          }, {
+            "value": "tabs",
+            "label": "t:sections.collapsible_info_product.settings.collapsible_type.options__2.label"
+          }, {
+            "value": "none",
+            "label": "t:sections.collapsible_info_product.settings.collapsible_type.options__3.label"
+          }
+        ],
+        "default": "accordion",
+        "label": "t:sections.collapsible_info_product.settings.collapsible_type.label"
+      },
+      {
+        "type": "range",
+        "id": "box_width",
+        "min": 40,
+        "max": 100,
+        "step": 1,
+        "unit": "%",
+        "label": "t:sections.collapsible_info_product.settings.box_width.label",
+        "default": 50
+      },
+      {
+        "type": "select",
+        "id": "collapsible_tab_header_position",
+        "options": [
+          {
+            "value": "top",
+            "label": "t:sections.collapsible_info_product.settings.collapsible_tab_header_position.options__1.label"
+          }, {
+            "value": "right",
+            "label": "t:sections.collapsible_info_product.settings.collapsible_tab_header_position.options__2.label"
+          }, {
+            "value": "left",
+            "label": "t:sections.collapsible_info_product.settings.collapsible_tab_header_position.options__3.label"
+          }
+        ],
+        "default": "top",
+        "label": "t:sections.collapsible_info_product.settings.collapsible_tab_header_position.label"
+      }, {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 36
+      }, {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 36
+      }
+    ],
+    "presets": [
+      {
+        "name": "t:sections.collapsible_info_product.presets.name"
+      }
+    ]
+  }
+{% endschema %}

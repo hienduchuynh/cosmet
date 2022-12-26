@@ -1,0 +1,343 @@
+{% render 'blog-full-width' %}
+
+{% schema %}
+{
+  "name": "t:sections.main-blog.name",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:sections.main-blog.settings.header__1.content"
+    },
+    {
+      "type": "text",
+      "id": "page_title",
+      "label": "Page Title"
+    },
+    {
+      "type": "text",
+      "id": "description",
+      "label": "Description Masthead",
+      "info": "Add description below Masthead"
+    },
+    {
+      "type": "select",
+      "id": "alignment_title",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:sections.general.settings.alignment_title.options__1.label"
+        },
+        {
+          "value": "center",
+          "label": "t:sections.general.settings.alignment_title.options__2.label"
+        },
+        {
+          "value": "right",
+          "label": "t:sections.general.settings.alignment_title.options__3.label"
+        }
+      ],
+      "default": "left",
+      "label": "t:sections.general.settings.alignment_title.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.main-blog.settings.header__2.content"
+    },
+    {
+      "type": "select",
+      "id": "layout",
+      "options": [
+        {
+          "value": "collage",
+          "label": "t:sections.main-blog.settings.layout.options__2.label"
+        }
+      ],
+      "default": "collage",
+      "label": "t:sections.main-blog.settings.layout.label",
+      "info": "t:sections.main-blog.settings.layout.info"
+    },
+    {
+    "type": "range",
+    "id": "number_article",
+    "label": "t:sections.main-blog.settings.number_article.label",
+    "min": 1,
+    "max": 10,
+    "step": 1,
+    "default": 3
+    },
+    {
+      "type": "checkbox",
+      "id": "show_image",
+      "default": true,
+      "label": "t:sections.main-blog.settings.show_image.label"
+    },
+    {
+      "type": "select",
+      "id": "image_height",
+      "options": [
+        {
+          "value": "adapt",
+          "label": "t:sections.main-blog.settings.image_height.options__1.label"
+        },
+        {
+          "value": "small",
+          "label": "t:sections.main-blog.settings.image_height.options__2.label"
+        },
+        {
+          "value": "medium",
+          "label": "t:sections.main-blog.settings.image_height.options__3.label"
+        },
+        {
+          "value": "large",
+          "label": "t:sections.main-blog.settings.image_height.options__4.label"
+        }
+      ],
+      "default": "medium",
+      "label": "t:sections.main-blog.settings.image_height.label",
+      "info": "t:sections.main-blog.settings.image_height.info"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "t:sections.main-blog.settings.heading_size.options__2.label"
+        },
+        {
+          "value": "h3",
+          "label": "t:sections.main-blog.settings.heading_size.options__3.label"
+        },
+        {
+          "value": "h4",
+          "label": "t:sections.main-blog.settings.heading_size.options__4.label"
+        },
+        {
+          "value": "h5",
+          "label": "t:sections.main-blog.settings.heading_size.options__5.label"
+        }
+      ],
+      "default": "h5",
+      "label": "t:sections.main-blog.settings.heading_size.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_date",
+      "default": true,
+      "label": "t:sections.main-blog.settings.show_date.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_author",
+      "default": false,
+      "label": "t:sections.main-blog.settings.show_author.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_excerpt",
+      "default": false,
+      "label": "t:sections.main-blog.settings.show_excerpt.label"
+    },
+    {
+      "type": "select",
+      "id": "alignment_content",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:sections.main-blog.settings.alignment.options__1.label"
+        },
+        {
+          "value": "center",
+          "label": "t:sections.main-blog.settings.alignment.options__2.label"
+        },
+        {
+          "value": "right",
+          "label": "t:sections.main-blog.settings.alignment.options__3.label"
+        }
+      ],
+      "default": "left",
+      "label": "t:sections.main-blog.settings.alignment.label"
+    },
+    {
+      "type": "select",
+      "id": "alignment__vertical",
+      "options": [
+        {
+          "value": "start",
+          "label": "t:sections.main-blog.settings.alignment__vertical.options__1.label"
+        },
+        {
+          "value": "center",
+          "label": "t:sections.main-blog.settings.alignment__vertical.options__2.label"
+        },
+        {
+          "value": "end",
+          "label": "t:sections.main-blog.settings.alignment__vertical.options__3.label"
+        }
+      ],
+      "default": "start",
+      "label": "t:sections.main-blog.settings.alignment__vertical.label"
+    },
+    {
+      "type":"header",
+      "content":"t:sections.main-sidebar.settings.header__1.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_sidebar",
+      "label": "t:sections.main-sidebar.settings.general.label__1",
+      "default": true
+    },
+    {
+        "type": "checkbox",
+        "id": "show_collapse",
+        "label": "t:sections.main-sidebar.settings.general.label__2",
+        "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_sticky",
+      "label": "t:sections.main-sidebar.settings.general.label__5",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "sidebar_position",
+      "label": "Choose Position Sidebar",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "paragraph",
+      "content": "t:sections.main-blog.settings.paragraph.content"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "recent_post",
+      "name": "t:sections.main-sidebar.blocks.recent-post.name",
+      "settings": [
+          {
+              "type":"header",
+              "content":"t:sections.main-sidebar.blocks.recent-post.settings.header__1.content"
+          },
+          {
+              "type": "checkbox",
+              "id": "show_block",
+              "label": "t:sections.main-sidebar.blocks.recent-post.settings.general.label__1",
+              "default": true
+          },
+          {
+              "type": "text",
+              "id": "heading",
+              "label": "t:sections.main-sidebar.blocks.recent-post.settings.general.label__2",
+              "default": "Recent Post"
+          },
+          {
+              "type": "range",
+              "id": "number",
+              "label": "t:sections.main-sidebar.blocks.recent-post.settings.general.label__3",
+              "min": 1,
+              "max": 10,
+              "step": 1,
+              "default": 3
+          }
+      ]
+    },
+    {
+      "type": "category",
+      "name": "t:sections.main-sidebar.blocks.category.name",
+      "settings": [
+          {
+              "type":"header",
+              "content":"t:sections.main-sidebar.blocks.category.settings.header__1.content"
+          },
+          {
+              "type": "checkbox",
+              "id": "show_block",
+              "label": "t:sections.main-sidebar.blocks.category.settings.general.label__1",
+              "default": true
+          },
+          {
+              "type": "text",
+              "id": "heading",
+              "label": "t:sections.main-sidebar.blocks.recent-post.settings.general.label__2",
+              "default": "Blog Categories"
+          },
+          {
+            "type": "link_list",
+            "id": "menu_blog",
+            "default": "main-menu",
+            "label": "t:sections.header.settings.menu.label"
+          }
+      ]
+    },
+    {
+      "type": "recent-tags",
+      "name": "t:sections.main-sidebar.blocks.recent-tags.name",
+      "settings": [
+          {
+              "type":"header",
+              "content":"t:sections.main-sidebar.blocks.recent-tags.settings.header__1.content"
+          },
+          {
+              "type": "checkbox",
+              "id": "show_block",
+              "label": "t:sections.main-sidebar.blocks.recent-tags.settings.general.label__1",
+              "default": true
+          },
+          {
+              "type": "text",
+              "id": "heading",
+              "label": "t:sections.main-sidebar.blocks.recent-tags.settings.general.label__2",
+              "default": "Recent Tag"
+          },
+          {
+              "type": "range",
+              "id": "number",
+              "label": "t:sections.main-sidebar.blocks.recent-tags.settings.general.label__3",
+              "min": 1,
+              "max": 10,
+              "step": 1,
+              "default": 3
+          }
+      ]
+    }
+  ]
+}
+{% endschema %}

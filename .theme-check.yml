@@ -1,0 +1,5 @@
+# Disable a check
+TemplateLength:
+  enabled: false
+  ignore:
+   - sections/main-product.liquid

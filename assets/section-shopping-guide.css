@@ -1,0 +1,196 @@
+.main-shopping-guide .article-card__image {
+  border: 0;
+  background-color: transparent;
+}
+
+.main-shopping-guide .article-card__image-wrapper {
+  width: 6.4rem;
+  height: 6.4rem;
+}
+
+.main-shopping-guide .card__inner {
+  justify-content: center;
+}
+
+.main-shopping-guide .card__inner::before {
+  padding-bottom: 10rem;
+}
+
+.main-shopping-guide .card > .card__content {
+  margin: 0;
+}
+
+.main-shopping-guide .card-wrapper {
+  position: relative;
+}
+
+.main-shopping-guide .title-shopping-guide {
+  --color-background: 0, 0, 0;
+  --color-foreground: 255, 255, 255;
+  background: rgba(var(--color-background));
+  -webkit-box-shadow: -0.4rem 0 0 rgba(var(--color-background)),
+    0.4rem 0 0 rgba(var(--color-background));
+  box-shadow: -0.4rem 0 0 rgba(var(--color-background)),
+    0.4rem 0 0 rgba(var(--color-background));
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  color: rgba(var(--color-foreground));
+  display: inline;
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+  margin-left: 0.4rem;
+  padding: 2px 0;
+  text-transform: uppercase;
+  line-height: 1.85;
+  font-weight: normal;
+}
+
+/* Pop Up  */
+.article-overlay {
+  background-color: transparent;
+  display: inline-block !important;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.main-shopping-guide .multicolumn-list {
+  align-items: stretch;
+}
+
+.main-shopping-guide .contains-content-container .media {
+  display: inline-block;
+  width: 6rem;
+  height: 6rem;
+  padding: 0 !important;
+}
+
+.main-shopping-guide .contains-content-container .media img {
+  height: auto;
+}
+
+.main-shopping-guide .custom-model-main {
+  text-align: center;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; /* z-index: 1050; */
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+  opacity: 0;
+  z-index: -1;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.main-shopping-guide .model-open {
+  z-index: 99999;
+  opacity: 1;
+  overflow: hidden;
+}
+.main-shopping-guide .custom-model-inner {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30rem;
+  /* margin: 30px auto; */
+}
+
+@media screen and (min-width: 480px) {
+  .main-shopping-guide .custom-model-inner {
+    width: 40rem;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .main-shopping-guide .custom-model-inner {
+    width: 60rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-shopping-guide .custom-model-inner {
+    width: 90rem;
+  }
+}
+.main-shopping-guide .custom-model-wrap {
+  display: block;
+  width: 100%;
+  position: relative;
+  background-color: rgba(var(--color-base-background-1),1);
+  border: var(--text-boxes-border-width) solid rgba(var(--color-foreground), var(--text-boxes-border-opacity));
+  /* border-radius: 6px; */
+  box-shadow: 0 3px 9px rgba(var(--color-base-background-1), 0.5);
+  background-clip: padding-box;
+  outline: 0;
+  text-align: left;
+  padding: var(--grid-desktop-vertical-spacing);
+  box-sizing: border-box;
+  max-height: calc(100vh - 250px);
+  overflow-y: auto;
+}
+.main-shopping-guide .model-open .custom-model-inner {
+  position: absolute;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main-shopping-guide .model-open .bg-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 99;
+}
+.main-shopping-guide .bg-overlay {
+  background: rgba(0, 0, 0, 0);
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  transition: background 0.15s linear;
+}
+.main-shopping-guide .close-btn {
+  position: absolute;
+  right: -31px;
+  top: 0px;
+  cursor: pointer;
+  z-index: 99;
+  color: rgba(var(--color-base-background-1),1);
+  width: 3.2rem;
+  height: 3.2rem;
+  background-color: var(--gradient-base-accent-1);
+  padding: .2rem;
+}
+
+@media screen and (min-width: 800px) {
+  .main-shopping-guide .custom-model-main:before {
+    content: "";
+    display: inline-block;
+    height: auto;
+    vertical-align: middle;
+    margin-right: -0px;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 799px) {
+}
+
+.main-shopping-guide .custom-model-main div:empty {
+  display: block;
+}
+
+.main-shopping-guide .model-open .custom-model-inner img {
+  max-width: 100%;
+}
+
+.main-shopping-guide .custom-model-main .article-title {
+  margin-top: 0;
+}

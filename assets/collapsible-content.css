@@ -1,0 +1,197 @@
+.collapsible-content {
+  position: relative;
+  z-index: 0;
+}
+
+.collapsible-section-layout {
+}
+
+@media screen and (min-width: 750px) {
+}
+
+.collapsible-content__media--small {
+  height: 19.4rem;
+}
+
+.collapsible-content__media--large {
+  height: 43.5rem;
+}
+
+@media screen and (min-width: 750px) {
+  .collapsible-content__media--small {
+    height: 31.4rem;
+  }
+
+  .collapsible-content__media--large {
+    height: 69.5rem;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .collapsible-content__grid--reverse {
+    flex-direction: row-reverse;
+  }
+}
+
+.collapsible-content-wrapper-narrow {
+  margin: 0 auto;
+}
+
+.collapsible-content__header {
+  word-break: break-word;
+}
+
+.collapsible-content__heading {
+  margin-bottom: 2rem;
+  margin-top: 0;
+}
+
+@media screen and (min-width: 750px) {
+  .collapsible-content__heading {
+    margin-bottom: 3rem;
+  }
+}
+
+.collapsible-none-layout .accordion + .accordion {
+  border-top: 0;
+}
+
+.collapsible-row-layout .accordion:not(:first-child):not(.color-background-1) {
+  margin-top: 1rem;
+}
+
+.caption-with-letter-spacing + h2 {
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 750px) {
+  .collapsible-content .accordion {
+    margin-top: 0;
+  }
+}
+
+.collapsible-row-layout .accordion {
+  border: var(--text-boxes-border-width) solid rgba(var(--color-foreground),var(--text-boxes-border-opacity));
+  margin-bottom: 1.5rem;
+}
+
+.collapsible-row-layout .accordion summary,
+.collapsible-row-layout .accordion .accordion__content {
+  padding: 1.5rem;
+}
+
+.collapsible-row-layout .accordion .accordion__content {
+  padding-top: 0;
+}
+
+.collapsible-content summary:hover {
+  background: rgba(var(--color-foreground), 0.04);
+}
+
+.collapsible-content summary:hover .accordion__title {
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+}
+
+/* check for flexbox gap in older Safari versions */
+@supports not (inset: 10px) {
+  @media screen and (min-width: 750px) {
+    .collapsible-content__grid:not(.collapsible-content__grid--reverse) .grid__item:last-child,
+    .collapsible-content__grid--reverse .collapsible-content__grid-item {
+      padding-left: 5rem;
+      padding-right: 0;
+    }
+  }
+
+  @media screen and (min-width: 990px) {
+    .collapsible-content__grid:not(.collapsible-content__grid--reverse) .grid__item:last-child,
+    .collapsible-content__grid--reverse .collapsible-content__grid-item {
+      padding-left: 7rem;
+    }
+  }
+}
+
+/* FAQs Page */
+.faqs-page .collapsible-row-layout .collapsible-content__wrapper {
+  padding: 1.5rem;
+}
+
+@media screen and (min-width: 750px) {
+  .faqs-page .collapsible-row-layout .collapsible-content__wrapper {
+    padding: 2.4rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .faqs-page .collapsible-row-layout .collapsible-content__wrapper {
+    padding: 4.8rem;
+  }
+}
+
+.content_alignment-center {
+  margin: auto;
+}
+
+.content_alignment-right {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.faqs-page .accordion__title {
+  text-transform: none;
+  font-weight: normal;
+}
+
+.faqs-page summary{
+  transition: all .1s ease-out;
+}
+
+.faqs-page summary:hover {
+  background-color: var(--gradient-base-accent-1);
+}
+
+.faqs-page summary:hover .accordion__title {
+  color: #fff;
+  text-decoration: none;
+}
+
+.faqs-page summary:hover svg path {
+  fill: #fff;
+}
+
+.faqs-page .collapsible-content__wrapper {
+  max-width: 100%;
+  border: 0;
+}
+
+.faqs-page .collapsible-content__wrapper .grid__item{
+  max-width: 100%;
+  width: 100%;
+}
+
+.faqs-page .collapsible-row-layout .accordion summary {
+  padding: calc(var(--grid-desktop-vertical-spacing) / 1.5);
+}
+
+.faqs-page .collapsible-row-layout .accordion summary[aria-expanded="true"] {
+  background-color: var(--gradient-base-accent-1);
+}
+
+.faqs-page .collapsible-row-layout .accordion summary[aria-expanded="true"] h3{
+  color: #fff;
+}
+
+.faqs-page .collapsible-row-layout .accordion summary[aria-expanded="true"] svg path{
+  fill: #fff;
+}
+
+@media screen and (min-width: 950px) {
+  .faqs-page .collapsible-content__wrapper {
+    max-width: 66.66%;
+  }
+}
+
+
+.faqs-page .collapsible-row-layout .accordion .accordion__content {
+  padding-top: 1.5rem;
+}

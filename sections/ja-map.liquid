@@ -1,0 +1,146 @@
+{{ 'ja-map.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+
+    .section-{{ section.id }}-padding iframe {
+      width: {{ section.settings.width }};
+      height: {{ section.settings.height }};
+    }
+  }
+{%- endstyle -%}
+<div id="ja-map-{{ section.id }}" class="color-{{ section.settings.color_scheme }} isolate gradient">
+  <div class="ja-map-wrap section-{{ section.id }}-padding{% if section.settings.full_width %} ja-map--full-width{% endif %}">
+    <iframe src="https://maps.google.com/maps?&q={{ section.settings.address }}&z={{ section.settings.zoom }}&t=q&output=embed"></iframe>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.ja-map.name",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "default": "Google Map",
+      "label": "t:sections.ja-map.settings.title.label"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h4",
+          "label": "t:sections.all.heading_size.options__1.label"
+        },
+        {
+          "value": "h3",
+          "label": "t:sections.all.heading_size.options__2.label"
+        },
+        {
+          "value": "h1",
+          "label": "t:sections.all.heading_size.options__3.label"
+        }
+      ],
+      "default": "h1",
+      "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "text",
+      "id": "address",
+      "default": "Address",
+      "label": "t:sections.ja-map.settings.address.label"
+    },
+    {
+      "type": "range",
+      "id": "zoom",
+      "min": 1,
+      "max": 12,
+      "step": 1,
+      "default": 4,
+      "label": "t:sections.ja-map.settings.zoom.label"
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        {
+          "value": "accent-1",
+          "label": "t:sections.all.colors.accent_1.label"
+        },
+        {
+          "value": "accent-2",
+          "label": "t:sections.all.colors.accent_2.label"
+        },
+        {
+          "value": "background-1",
+          "label": "t:sections.all.colors.background_1.label"
+        },
+        {
+          "value": "background-2",
+          "label": "t:sections.all.colors.background_2.label"
+        },
+        {
+          "value": "inverse",
+          "label": "t:sections.all.colors.inverse.label"
+        }
+      ],
+      "default": "background-1",
+      "label": "t:sections.all.colors.label",
+      "info": "t:sections.all.colors.has_cards_info"
+    },
+    {
+      "type": "text",
+      "id": "width",
+      "default": "100%",
+      "label": "t:sections.ja-map.settings.width.label"
+    },
+    {
+      "type": "text",
+      "id": "height",
+      "default": "600px",
+      "label": "t:sections.ja-map.settings.height.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.ja-map.presets.name"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,18 @@
+.page-title-wrapper {
+	padding: 0;
+}
+
+.page-title-wrapper .page-title {
+	-webkit-text-stroke-color: #000;
+	-webkit-text-stroke-width: 1px;
+	color: transparent;
+	line-height: 1;
+	margin-bottom: 0;
+	margin-top: 0;
+	max-width: 100%;
+	overflow: hidden;
+	text-transform: uppercase;
+}
+.page-title-wrapper .page-title span:hover {
+	color: rgba(var(--color-base-text));
+}

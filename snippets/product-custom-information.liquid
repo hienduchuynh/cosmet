@@ -1,0 +1,32 @@
+{%- liquid 
+  assign icon = block.settings.icon
+  assign text = block.settings.title
+  assign text_description = block.settings.text_description
+-%}
+<div class="product-customInformation text-left" data-custom-information>
+  {%- if icon != blank -%}
+      <div class="product-customInformation__icon">
+          {{ icon }}
+      </div>
+  {%- endif -%}
+  {%- if text != blank or text_icon != blank -%}
+      <div class="product-customInformation__content">
+          {%- if text != blank -%}
+              <div class="product__text title" {{ block.shopify_attributes }}>
+                  <h5 class="title">{{ text }}</h5>
+                   {% render 'icon-info-note' %}
+              </div>
+          {%- endif -%}
+          {%- if text_description != blank -%}
+              <div class="product__text des" {{ block.shopify_attributes }}>
+                  {{ text_description }}
+              </div>
+          {%- endif -%}
+      </div>
+  {%- endif -%}
+  {% comment %} {%- if content_popup != blank -%}
+      <div class="product-customInformation__popup hidden">
+          {{ content_popup }}
+      </div>
+  {%- endif -%} {% endcomment %}
+</div>

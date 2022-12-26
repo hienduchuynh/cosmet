@@ -1,0 +1,157 @@
+.footer-05 .footer-block--main {
+	gap: 0px;
+	color: rgba(var(--color-foreground), 0.75);
+}
+.footer-05 .footer__content-top .grid {
+	row-gap: 0px;
+}
+
+.footer-05 .footer-block--main .footer__content__left,
+.footer-05 .footer-block--main .footer__content__right {
+	width: calc(100% - var(--grid-mobile-horizontal-spacing) / 2);
+	max-width: calc(100% - var(--grid-mobile-horizontal-spacing) / 2);
+}
+
+.footer-05 .footer-block--main .footer__content__right .grid__item:last-child {
+	padding-right: 0;
+}
+
+.footer-05 .footer-block--main .footer__content__left > * {
+	text-align: left;
+}
+
+.footer-05 .footer-block--main .footer__content__left .footer__list-social {
+	justify-content: flex-start;
+	margin-left: -1.4rem;
+}
+
+.footer-05 .grid--4-col-tablet > .grid__item {
+	max-width: calc(25% - var(--grid-mobile-horizontal-spacing) * 3 / 4);
+	min-width: calc(25% - var(--grid-mobile-horizontal-spacing) * 3 / 4);
+}
+
+.footer-05 .footer-block {
+	padding-top: calc(var(--grid-mobile-vertical-spacing)*2);
+	padding-bottom: calc(var(--grid-mobile-vertical-spacing)*2);
+}
+
+.footer-05 .footer-block:last-child {
+	border-right: 0;
+}
+
+.footer-05 .footer__content-top .grid__item {
+	padding-left: calc(var(--grid-mobile-horizontal-spacing));
+	padding-right: calc(var(--grid-mobile-horizontal-spacing));
+	border-right: 2px solid rgba(var(--color-foreground), 0.2);
+}
+
+@media screen and (min-width: 1200px) {
+	.footer-05 .footer-block {
+		padding-top: calc(var(--grid-desktop-vertical-spacing)*2);
+		padding-bottom: calc(var(--grid-desktop-vertical-spacing)*2);
+	}
+
+	.footer-05 .footer__content-top .grid__item {
+		padding-left: calc(var(--grid-desktop-horizontal-spacing));
+		padding-right: calc(var(--grid-desktop-horizontal-spacing));
+	}
+}
+
+@media screen and (min-width: 990px) {
+	.footer-05 .footer-block--main .footer__content__left,
+	.footer-05 .footer-block--main .footer__content__right {
+		width: calc(50% - var(--grid-desktop-horizontal-spacing) / 2);
+		max-width: calc(50% - var(--grid-desktop-horizontal-spacing) / 2);
+	}
+
+	.footer-05 .grid--4-col-tablet > .grid__item {
+		max-width: calc(25% - var(--grid-desktop-horizontal-spacing) * 3 / 4);
+		min-width: calc(25% - var(--grid-desktop-horizontal-spacing) * 3 / 4);
+	}
+}
+
+@media screen and (min-width: 750px) and (max-width: 989px) {
+	.footer-05 .footer__content__right {
+		border-top: 2px solid rgba(var(--color-foreground), 0.2);
+	}
+
+	.footer-05 .footer__content-top .footer__content__left {
+		border-right: 0;
+	}
+}
+
+@media screen and (max-width: 749px) {
+	.footer-05 .footer__content-top .grid__item {
+		border: 0;
+		margin: 0;
+	}
+
+	.footer-05 .grid--3-col-tablet-down {
+		display: flex;
+		flex-wrap: nowrap;
+	}
+
+	.footer-05 .grid--3-col-tablet-down .grid__item {
+		width: calc(33.33% - var(--grid-mobile-horizontal-spacing) / 2);
+		max-width: calc(33.33% - var(--grid-mobile-horizontal-spacing) / 2);
+		margin-top: 0;
+	}
+}
+
+.footer-05 .footer__content-top .grid__item:last-child {
+	border-right: 0;
+}
+
+.footer-05 .title-wrapper-03 {
+	margin-bottom: 0;
+	padding-bottom: 2.4rem;
+	border-bottom: 2px solid rgba(var(--color-foreground), 0.2);
+}
+
+@media screen and (max-width: 749px) {
+	.footer-05 .title-wrapper-03 {
+		display: none;
+	}
+}
+
+.footer-05 .footer__content-bottom {
+	border-top: 2px solid rgba(var(--color-foreground), 0.2);
+}
+
+.footer-05 .footer__content-bottom-wrapper {
+	display: block;
+}
+
+.footer-05 .footer__column--info {
+	padding-top: calc(var(--grid-mobile-vertical-spacing)*2);
+	padding-bottom: calc(var(--grid-mobile-vertical-spacing)*2);
+	display: block;
+}
+
+@media screen and (min-width: 750px) {
+	.footer-05 .title-wrapper-03 {
+		padding-bottom: 4.8rem;
+	}
+
+	.footer-05 .footer__column--info {
+		padding-top: calc(var(--grid-desktop-vertical-spacing)*2);
+		padding-bottom: calc(var(--grid-desktop-vertical-spacing)*2);
+	}
+}
+
+.footer-05 .footer__copyright {
+	text-align: inherit;
+}
+
+.footer-05 .footer__payment {
+	width: 100%;
+	margin-bottom: 2.4rem;
+}
+
+.footer-05 .footer__payment .list-payment {
+	justify-content: center;
+}
+
+.footer-05 .recently-viewed-inner {
+	display: none !important;
+}

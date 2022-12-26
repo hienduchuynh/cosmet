@@ -1,0 +1,18 @@
+{%- liquid 
+  assign image_1 = block.settings.image_1
+-%}
+<div class="product-customInformation text-left">
+  {%- if image_1 != blank -%}
+      <div class="badges_image">
+        {{ image_1 | image_url: width: 1000 | image_tag:
+          loading: 'lazy',
+          width: image_1.width,
+          height: auto,
+          class: image_class,
+          sizes: sizes,
+          widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+          alt: image_1.alt | escape
+        }}
+      </div>
+  {%- endif -%}
+</div>

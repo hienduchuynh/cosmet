@@ -1,0 +1,58 @@
+{% comment %}
+  Reduce below value if you need the back to the top button to appear higher up on the page.
+  That value is in pixels.
+{% endcomment %}
+{% comment %} {% assign vertical_offset_for_trigger = 300 %} {% endcomment %}
+
+
+<a id="BackToTop" href="#" title="Back to the top" class="back-to-top">
+  {% render 'icon-chevron-up' %}
+</a>
+
+<style>
+  .back-to-top {
+    position: fixed;
+    bottom: 10rem;
+    right: 1rem;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(var(--color-base-accent-1));
+    font-size: 16px;
+    padding: 1rem;
+    width: 4.8rem;
+    height: 4.8rem;
+    z-index: 2;
+    display: none;
+  }
+  .back-to-top svg {
+    vertical-align: middle;
+  }
+  .back-to-top svg path {
+    fill: #fff;
+  }
+  .back-to-top span {
+    padding-left: 0.5em;
+  }
+  .back-to-top i + span {
+    padding-left: 0;
+  }
+
+</style>
+<script>
+    var goTopBtn = document.getElementById('BackToTop');
+
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+      if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        goTopBtn.style.display = "block";
+      }else {
+        goTopBtn.style.display = "none";
+      }
+    }
+
+    goTopBtn.addEventListener('click', () => {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    })
+
+</script>

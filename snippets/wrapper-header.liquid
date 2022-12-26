@@ -1,0 +1,15 @@
+{%- if settings.header_layout == '01' %}
+	{% section 'announcement-bar' %}
+	{% section 'header' %}
+{% elsif settings.header_layout == '02' %}
+	{% section 'announcement-bar' %}
+	{% section 'header-02' %}
+{% elsif settings.header_layout == '03' %}
+	{% section 'announcement-bar' %}
+	{% section 'header-03' %}
+{% elsif settings.header_layout == '04' %}
+	{% section 'announcement-bar' %}
+	{% section 'header-04' %}
+{% elsif settings.header_layout == '05' %}
+	{% section 'header-05' %}
+{%- endif -%}

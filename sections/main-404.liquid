@@ -1,0 +1,175 @@
+<style type="text/css">
+  .template-404 .title + * {
+    margin-top: 1rem;
+  }
+
+  .code-error {
+    color: var(--color-base-background-1);
+    font-size: 15rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1;
+  }
+
+  .code-message {
+    font-size: 4.6rem;
+    font-weight: 700;
+    margin: 2rem 0;
+  }
+
+  .code-description {
+    margin-bottom: 2.4rem;
+    font-size: 2rem;
+  }
+
+  @media screen and (min-width: 750px) {
+    .template-404 .title + * {
+      margin-top: 2rem;
+    }
+
+    .code-error {
+      font-size: 20rem;
+    }
+  }
+
+</style>
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+  .template-404 {
+    background-image: url({{ section.settings.background_404 | img_url: 'master' }});
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+  }
+
+  .template-404::after{
+    content: "";
+    background-color: #000;
+    opacity: {{ section.settings.background_opacity }};
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  .wrapper {
+    position: relative;
+    z-index: 2;
+  }
+
+  .template-404 .wrapper > * {
+    color: {{ section.settings.text_color }};
+  }
+{%- endstyle -%}
+
+{%- liquid
+  assign image = section.settings.image_404
+-%}
+
+<div class="template-404 page-width center section-{{ section.id }}-padding">
+  <div class="wrapper">
+    {% if image != blank %}
+      <img
+      src="{{ image | image_url: width: 400 }}"
+      class="image-404"
+      loading="lazy"
+      width="auto"
+      height="auto"
+      >
+    {% else %}
+    <p class="code-error">
+      {{ 'templates.404.subtext' | t }}
+    </p>
+    {% endif %}
+    <h1 class="code-message">
+      {{ section.settings.error }}
+    </h1>
+    <p class="code-description">
+      {{ section.settings.description }}
+    </p>
+    <a href="{{ routes.all_products_collection_url }}" class="button redirect-home">
+      {{ 'general.continue_shopping' | t }}
+    </a>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "t:sections.main-404.name",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+      {
+      "type": "image_picker",
+      "id": "background_404",
+      "label": "t:sections.main-404.settings.background__404.label"
+    },
+    {
+      "type": "range",
+      "id": "background_opacity",
+      "min": 0.1,
+      "max": 1,
+      "step": 0.1,
+      "label": "t:sections.main-404.settings.background__opacity.label",
+      "default": 0.5
+    },
+    {
+      "type": "image_picker",
+      "id": "image_404",
+      "label": "t:sections.main-404.settings.pick__image.label"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "t:sections.main-404.settings.text__color.label"
+    },
+    {
+      "type": "text",
+      "id": "error",
+      "label": "t:sections.main-404.settings.error.label"
+    },
+    {
+      "type": "text",
+      "id": "description",
+      "label": "t:sections.main-404.settings.description.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 100,
+      "max": 300,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 160
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 100,
+      "max": 300,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 160
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,19 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-404",
+      "settings": {
+        "background_404": "shopify:\/\/shop_images\/linpaul-rodney-cg4qDmt5fiI-unsplash.jpg",
+        "background_opacity": 0.4,
+        "text_color": "#ffffff",
+        "error": "Ooops!",
+        "description": "SORRY! PAGE YOU ARE LOOKING CAN’T BE FOUND.",
+        "padding_top": 220,
+        "padding_bottom": 220
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

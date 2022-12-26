@@ -1,0 +1,90 @@
+{
+  "sections": {
+    "1191e715-ddc3-4b43-95af-e9dae8514cfb": {
+      "type": "breadcrumb",
+      "settings": {
+        "alignment_breadcrumb": "center",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "bb646369-fa26-4a54-9523-51fa8da87946": {
+          "type": "title",
+          "settings": {
+            "blog_show_date": true,
+            "blog_show_author": false
+          }
+        },
+        "featured_image": {
+          "type": "featured_image",
+          "settings": {
+            "image_height": "medium"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "e2c2bc9a-97f9-43f0-86bf-daaa5d5c1638": {
+          "type": "recent_post",
+          "settings": {
+            "show_block": true,
+            "heading": "Recent Post",
+            "number": 3
+          }
+        },
+        "3c2f85b9-aaa6-4055-b6a6-5f7bf207ab82": {
+          "type": "category",
+          "settings": {
+            "show_block": true,
+            "heading": "Blog Categories",
+            "menu_blog": "main-menu"
+          }
+        },
+        "829a0396-a3ca-46ec-b526-9f0271ee7ae1": {
+          "type": "recent-tags",
+          "settings": {
+            "show_block": true,
+            "heading": "Recent Tag",
+            "number": 3
+          }
+        }
+      },
+      "block_order": [
+        "bb646369-fa26-4a54-9523-51fa8da87946",
+        "featured_image",
+        "content",
+        "share",
+        "e2c2bc9a-97f9-43f0-86bf-daaa5d5c1638",
+        "3c2f85b9-aaa6-4055-b6a6-5f7bf207ab82",
+        "829a0396-a3ca-46ec-b526-9f0271ee7ae1"
+      ],
+      "settings": {
+        "alignment_title": "center",
+        "show_tags": true,
+        "show_share": true,
+        "show_previous_next_buttons": true,
+        "show_sidebar": false,
+        "show_collapse": true,
+        "enable_sticky": true,
+        "sidebar_position": "right",
+        "padding_top": 0,
+        "padding_bottom": 48
+      }
+    }
+  },
+  "order": [
+    "1191e715-ddc3-4b43-95af-e9dae8514cfb",
+    "main"
+  ]
+}

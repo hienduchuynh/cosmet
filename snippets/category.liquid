@@ -1,0 +1,28 @@
+{% comment %} Blog categories {% endcomment %}
+
+{%- liquid 
+  assign menu_blog = block.settings.menu_blog
+  assign categories = section.settings.category | split: ',' 
+  assign title = block.settings.heading
+  assign show = block.settings.show_block
+-%}
+
+{%- if show -%}
+<div class="blog-categories">
+  {% if categories %}
+    <div class="mod-header">
+      <h3 class="mod-title">{{ title }}</h3>
+      {% if show_collapse %}
+      <button id="toggle-category" title="Toggle slide-up and slide-down states for the target" class="btn-arrow btn-slide-down" name="button-category">{% render 'icon-chevron-up' %}</button>
+      {% endif %}
+    </div>
+    <ul id="target">
+      {% for link in menu_blog.links %}
+        <li class="category-item">
+        <a href="{{ link.url }}">{{ link.url }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+</div>
+{%- endif -%}

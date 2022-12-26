@@ -1,0 +1,49 @@
+/* Title  */
+.template-search__header .h2 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: calc(1 + 0.3/var(--font-body-scale));
+}
+
+.template-search h3.card__heading {
+  font-size: 1.5rem;
+  line-height: calc(1 + 0.3 / max(1, var(--font-heading-scale)));
+}
+
+.template-search .card__heading:hover {
+  color: rgb(var(--color-base-accent-1));
+}
+.search__input.field__input {
+  padding-right: 5rem;
+}
+
+.search__button {
+  right: var(--inputs-border-width);
+  top: var(--inputs-border-width);
+}
+
+.search__button:focus-visible {
+  background-color: rgb(var(--color-background));
+  z-index: 2;
+}
+
+.search__button:focus {
+  background-color: rgb(var(--color-background));
+  z-index: 2;
+}
+
+.search__button:not(:focus-visible):not(.focused){
+  box-shadow: inherit;
+  background-color: inherit;
+}
+
+.search__button .icon {
+  height: 1.8rem;
+  width: 1.8rem;
+}
+
+/* Remove extra spacing for search inputs in Safari */
+input::-webkit-search-decoration {
+  -webkit-appearance: none;
+}

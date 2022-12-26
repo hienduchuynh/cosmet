@@ -1,0 +1,804 @@
+{
+  "current": {
+    "header_layout": "04",
+    "footer_layout": "05",
+    "blog_layout": "01",
+    "colors_solid_button_labels": "#ffffff",
+    "colors_accent_1": "#000000",
+    "gradient_accent_1": "",
+    "colors_accent_2": "#ffc700",
+    "gradient_accent_2": "",
+    "colors_accent_3": "#f56836",
+    "colors_accent_4": "#0fa958",
+    "colors_text": "#000000",
+    "colors_outline_button_labels": "#000000",
+    "colors_background_1": "#ffffff",
+    "gradient_background_1": "",
+    "colors_background_2": "#f5f5f5",
+    "gradient_background_2": "",
+    "show_newsletter_popup": true,
+    "newsletter_popup_title": "SIGN UP AND SAVE",
+    "newsletter_popup_desc": "Join our mailing list to recieve exclusive offers, deals and to keep up to date with everything skating!",
+    "newsletter_popup_note": "No thanks, I hate cool new stuff",
+    "select_button_submit": "default",
+    "favicon": "shopify:\/\/shop_images\/favicon.png",
+    "type_header_font": "space_mono_n7",
+    "heading_scale": 100,
+    "type_body_font": "space_mono_n4",
+    "body_scale": 100,
+    "page_width": 1600,
+    "spacing_sections": 0,
+    "spacing_grid_horizontal": 24,
+    "spacing_grid_vertical": 24,
+    "buttons_border_thickness": 2,
+    "buttons_border_opacity": 100,
+    "buttons_radius": 0,
+    "buttons_shadow_opacity": 100,
+    "buttons_shadow_horizontal_offset": 4,
+    "buttons_shadow_vertical_offset": 4,
+    "buttons_shadow_blur": 0,
+    "variant_pills_border_thickness": 1,
+    "variant_pills_border_opacity": 50,
+    "variant_pills_radius": 40,
+    "variant_pills_shadow_opacity": 0,
+    "variant_pills_shadow_horizontal_offset": 0,
+    "variant_pills_shadow_vertical_offset": 4,
+    "variant_pills_shadow_blur": 5,
+    "inputs_border_thickness": 1,
+    "inputs_border_opacity": 55,
+    "inputs_radius": 0,
+    "inputs_shadow_opacity": 0,
+    "inputs_shadow_horizontal_offset": 0,
+    "inputs_shadow_vertical_offset": 4,
+    "inputs_shadow_blur": 5,
+    "card_style": "card",
+    "card_image_padding": 48,
+    "card_text_alignment": "left",
+    "card_color_scheme": "background-1",
+    "card_border_thickness": 2,
+    "card_border_opacity": 100,
+    "card_corner_radius": 0,
+    "card_shadow_opacity": 100,
+    "card_shadow_horizontal_offset": 4,
+    "card_shadow_vertical_offset": 4,
+    "card_shadow_blur": 0,
+    "text_boxes_border_thickness": 2,
+    "text_boxes_border_opacity": 100,
+    "text_boxes_radius": 0,
+    "text_boxes_shadow_opacity": 0,
+    "text_boxes_shadow_horizontal_offset": 0,
+    "text_boxes_shadow_vertical_offset": 0,
+    "text_boxes_shadow_blur": 5,
+    "media_border_thickness": 1,
+    "media_border_opacity": 5,
+    "media_radius": 0,
+    "media_shadow_opacity": 0,
+    "media_shadow_horizontal_offset": 0,
+    "media_shadow_vertical_offset": 8,
+    "media_shadow_blur": 5,
+    "popup_border_thickness": 1,
+    "popup_border_opacity": 10,
+    "popup_corner_radius": 0,
+    "popup_shadow_opacity": 0,
+    "popup_shadow_horizontal_offset": 0,
+    "popup_shadow_vertical_offset": 4,
+    "popup_shadow_blur": 5,
+    "drawer_border_thickness": 0,
+    "drawer_border_opacity": 25,
+    "drawer_shadow_opacity": 25,
+    "drawer_shadow_horizontal_offset": -22,
+    "drawer_shadow_vertical_offset": 4,
+    "drawer_shadow_blur": 0,
+    "badge_position": "top left",
+    "badge_corner_radius": 0,
+    "sale_badge_color_scheme": "accent-2",
+    "sold_out_badge_color_scheme": "background-1",
+    "accent_icons": "accent-1",
+    "social_twitter_link": "https:\/\/twitter.com\/shopify",
+    "social_facebook_link": "https:\/\/www.facebook.com\/shopify",
+    "social_pinterest_link": "#",
+    "social_instagram_link": "",
+    "social_tiktok_link": "",
+    "social_tumblr_link": "",
+    "social_snapchat_link": "",
+    "social_youtube_link": "https:\/\/youtube.com\/shopify",
+    "social_vimeo_link": "",
+    "predictive_search_enabled": true,
+    "predictive_search_show_vendor": false,
+    "predictive_search_show_price": false,
+    "currency_code_enabled": false,
+    "cart_type": "drawer",
+    "show_vendor": true,
+    "show_cart_note": false,
+    "background_color": "#ffffff",
+    "show_background_image": true,
+    "checkout_header_image": "shopify:\/\/shop_images\/pexels-jeshootscom-442585.jpg",
+    "checkout_logo_image": "shopify:\/\/shop_images\/atoms-logo_ab356fac-ace1-43d8-8c8a-369c6f83533b.png",
+    "checkout_body_background_color": "#ffffff",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_accent_color": "#212121",
+    "checkout_button_color": "#212121",
+    "countdown-title": "Special Offer End In The",
+    "countdown-timer": "Dec 22, 2022",
+    "sections": {
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "blocks": {
+          "announcement-bar-0": {
+            "type": "announcement",
+            "settings": {
+              "text": "<p>Free shipping on all orders over $70 <\/p>",
+              "content_alignment": "center"
+            }
+          }
+        },
+        "block_order": [
+          "announcement-bar-0"
+        ],
+        "settings": {
+          "bg_colors": "#000000",
+          "text_colors": "#ffffff",
+          "full_width": false,
+          "container": false,
+          "mod_class": ""
+        }
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "color_scheme": "background-1",
+          "logo_text": "PEAKSHOP",
+          "logo_font": "space_mono_n7",
+          "logo_width": 100,
+          "menu": "main-menu",
+          "menu_type_desktop": "dropdown",
+          "show_line_separator": true,
+          "enable_sticky_header": false,
+          "margin_bottom": 24,
+          "padding_top": 24,
+          "padding_bottom": 24
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "73cee245-4184-4443-8838-81aee70ec48e": {
+            "type": "newsletter",
+            "settings": {
+              "newsletter_enable": true,
+              "newsletter_heading": "Sign Up to Receive 15% Off Your First Order",
+              "newsletter_intro": ""
+            }
+          },
+          "2973bd8e-f167-403a-a4b0-35a394865560": {
+            "type": "logo_image",
+            "settings": {
+              "show_logo": true,
+              "image_width": 150,
+              "alignment": ""
+            }
+          },
+          "68870e20-c4f3-4f7a-acc3-b65972c531af": {
+            "type": "text",
+            "settings": {
+              "show_heading": false,
+              "heading": "Heading",
+              "show_subtext": true,
+              "subtext": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.<\/p>"
+            }
+          },
+          "b8d6d6e5-f903-4ad5-8de6-772b2d3e3d84": {
+            "type": "social",
+            "settings": {
+              "show_social": true
+            }
+          },
+          "footer-1": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Main Menu",
+              "menu": "main-menu"
+            }
+          },
+          "d2d2e96b-3357-4d10-b4d2-a65c9178bc68": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Other Pages",
+              "menu": ""
+            }
+          },
+          "footer-0": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Legal",
+              "menu": "footer"
+            }
+          },
+          "1d548923-6d7b-4763-976b-1a519ede76c2": {
+            "type": "social",
+            "settings": {
+              "show_social": true
+            }
+          }
+        },
+        "block_order": [
+          "73cee245-4184-4443-8838-81aee70ec48e",
+          "2973bd8e-f167-403a-a4b0-35a394865560",
+          "68870e20-c4f3-4f7a-acc3-b65972c531af",
+          "b8d6d6e5-f903-4ad5-8de6-772b2d3e3d84",
+          "footer-1",
+          "d2d2e96b-3357-4d10-b4d2-a65c9178bc68",
+          "footer-0",
+          "1d548923-6d7b-4763-976b-1a519ede76c2"
+        ],
+        "settings": {
+          "color_scheme": "inverse",
+          "enable_country_selector": true,
+          "enable_language_selector": true,
+          "payment_enable": true,
+          "margin_top": 0,
+          "padding_top": 32,
+          "padding_bottom": 32
+        }
+      },
+      "main-password-header": {
+        "type": "main-password-header",
+        "settings": {
+          "logo_max_width": 100,
+          "color_scheme": "background-1"
+        }
+      },
+      "main-password-footer": {
+        "type": "main-password-footer",
+        "settings": {
+          "color_scheme": "background-1"
+        }
+      },
+      "header-02": {
+        "type": "header-02",
+        "settings": {
+          "color_scheme": "background-1",
+          "logo_text": "Atoms",
+          "logo_font": "helvetica_n4",
+          "logo_width": 100,
+          "menu": "main-menu",
+          "menu_type_desktop": "dropdown",
+          "show_line_separator": true,
+          "enable_sticky_header": false,
+          "margin_bottom": 0,
+          "padding_top": 24,
+          "padding_bottom": 0
+        }
+      },
+      "footer-02": {
+        "type": "footer-02",
+        "blocks": {
+          "footer-4": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Main Page",
+              "menu": "main-menu"
+            }
+          },
+          "footer-5": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Other Page",
+              "menu": ""
+            }
+          },
+          "footer-6": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Legal",
+              "menu": "footer"
+            }
+          },
+          "0ab51a22-bfd0-4d40-8344-bacf47ebe682": {
+            "type": "newsletter",
+            "settings": {
+              "newsletter_enable": true,
+              "newsletter_heading": "Sign Up to Receive 15% Off Your First Order",
+              "newsletter_intro": ""
+            }
+          },
+          "4bb20c11-7066-4696-b580-2de3fbf9fa0c": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Support",
+              "menu": ""
+            }
+          },
+          "8f6ec5ca-267e-4429-ac3d-c23358b328da": {
+            "type": "logo_image",
+            "settings": {
+              "show_logo": true,
+              "image_width": 110,
+              "alignment": "center"
+            }
+          },
+          "c929164f-a119-45f6-b494-35b8acacb8b0": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Social",
+              "menu": ""
+            }
+          },
+          "dc583b2f-778a-4ff4-b937-d06ab7eaf604": {
+            "type": "breadcrumb",
+            "settings": {
+              "alignment_breadcrumb": "center"
+            }
+          }
+        },
+        "block_order": [
+          "footer-4",
+          "footer-5",
+          "footer-6",
+          "0ab51a22-bfd0-4d40-8344-bacf47ebe682",
+          "4bb20c11-7066-4696-b580-2de3fbf9fa0c",
+          "8f6ec5ca-267e-4429-ac3d-c23358b328da",
+          "c929164f-a119-45f6-b494-35b8acacb8b0",
+          "dc583b2f-778a-4ff4-b937-d06ab7eaf604"
+        ],
+        "settings": {
+          "color_scheme": "background-2",
+          "enable_country_selector": true,
+          "enable_language_selector": true,
+          "payment_enable": true,
+          "margin_top": 0,
+          "padding_top": 32,
+          "padding_bottom": 32
+        }
+      },
+      "header-03": {
+        "type": "header-03",
+        "settings": {
+          "color_scheme": "background-1",
+          "logo_text": "PEAKSHOP",
+          "logo_font": "space_mono_n4",
+          "logo_width": 100,
+          "menu": "main-menu",
+          "menu_type_desktop": "mega",
+          "show_line_separator": true,
+          "enable_sticky_header": false,
+          "margin_bottom": 0,
+          "padding_top": 16,
+          "padding_bottom": 16
+        }
+      },
+      "footer-03": {
+        "type": "footer-03",
+        "blocks": {
+          "footer-03-0": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Main Page",
+              "menu": "main-menu"
+            }
+          },
+          "99b4f4f6-a74b-4a33-933b-c3f03a2172bc": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Others Pages",
+              "menu": ""
+            }
+          },
+          "8b21a90f-5211-41ac-a2fc-0a1ff3fd96c4": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Legal",
+              "menu": "footer"
+            }
+          },
+          "4aafae82-cced-46e1-adef-2a4e06656d54": {
+            "type": "logo_image",
+            "settings": {
+              "show_logo": true,
+              "image_width": 100,
+              "alignment": "center"
+            }
+          },
+          "footer-03-1": {
+            "type": "text",
+            "settings": {
+              "show_heading": true,
+              "heading": "",
+              "show_subtext": true,
+              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+            }
+          },
+          "7dd0bbf8-003a-4b45-8d65-d2cf55bdb524": {
+            "type": "social",
+            "settings": {
+              "show_social": true
+            }
+          },
+          "9271150f-a434-414f-9266-42754a5b1c52": {
+            "type": "newsletter",
+            "settings": {
+              "newsletter_enable": true,
+              "newsletter_heading": "Sign Up to Receive 15% Off Your First Order",
+              "newsletter_intro": ""
+            }
+          },
+          "6db0f135-83b7-4c8f-8e7f-b9b807a60171": {
+            "type": "breadcrumb",
+            "settings": {
+              "alignment_breadcrumb": "left"
+            }
+          }
+        },
+        "block_order": [
+          "footer-03-0",
+          "99b4f4f6-a74b-4a33-933b-c3f03a2172bc",
+          "8b21a90f-5211-41ac-a2fc-0a1ff3fd96c4",
+          "4aafae82-cced-46e1-adef-2a4e06656d54",
+          "footer-03-1",
+          "7dd0bbf8-003a-4b45-8d65-d2cf55bdb524",
+          "9271150f-a434-414f-9266-42754a5b1c52",
+          "6db0f135-83b7-4c8f-8e7f-b9b807a60171"
+        ],
+        "settings": {
+          "color_scheme": "accent-1",
+          "enable_country_selector": true,
+          "enable_language_selector": true,
+          "payment_enable": true,
+          "margin_top": 0,
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
+      },
+      "footer-04": {
+        "type": "footer-04",
+        "blocks": {
+          "footer-04-0": {
+            "type": "link_list",
+            "settings": {
+              "heading": "EXPLORE",
+              "menu": "footer"
+            }
+          },
+          "e84e18af-92ff-439a-9ef1-191cadc935cb": {
+            "type": "text",
+            "settings": {
+              "show_heading": true,
+              "heading": "CONTACT",
+              "show_subtext": true,
+              "subtext": "<p>Phone:(123) 456-7890Fax: +31 71 800 99 89<\/p><p><a href=\"mailto:no-reply@gmail.com\">info@siggi.com<\/a><\/p><p><\/p><p>312 North 24th Street<br\/>Brooklyn, New York 10010<br\/><a href=\"https:\/\/ja-rights.demo.joomlart.com\/#\" title=\"Get Direction\">Get Direction<\/a><\/p>"
+            }
+          },
+          "5407ff9f-d4a6-4fc4-9401-fcb0c8f3705d": {
+            "type": "newsletter",
+            "settings": {
+              "newsletter_enable": true,
+              "newsletter_heading": "Subscribe to our emails",
+              "newsletter_intro": "Subscribe to the Joomlart newsletter to receive timely updates from your favorite products."
+            }
+          },
+          "037abfd5-833c-4b24-b0e9-6ed32c265c34": {
+            "type": "intro",
+            "settings": {
+              "show_heading": true,
+              "heading": "Introduction",
+              "show_intro": true,
+              "intro": "<p>Lorem ipsum dolor sit amet, ligula dolor consectetur adipiscing elit. Sed quis ante, pulvinar lorem eget libero, lobortis ullamcorper.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "footer-04-0",
+          "e84e18af-92ff-439a-9ef1-191cadc935cb",
+          "5407ff9f-d4a6-4fc4-9401-fcb0c8f3705d",
+          "037abfd5-833c-4b24-b0e9-6ed32c265c34"
+        ],
+        "settings": {
+          "color_scheme": "background-1",
+          "enable_country_selector": true,
+          "enable_language_selector": true,
+          "payment_enable": true,
+          "margin_top": 0,
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
+      },
+      "header-04": {
+        "type": "header-04",
+        "settings": {
+          "color_scheme": "background-1",
+          "layout_type": "logo-menu-icons",
+          "logo": "shopify:\/\/shop_images\/logo.png",
+          "logo_text": "Peakshop",
+          "logo_font": "space_mono_n7",
+          "logo_width": 115,
+          "menu": "main-menu",
+          "menu_type_desktop": "mega",
+          "enable_sticky_header": true,
+          "padding_top": 20,
+          "padding_bottom": 20,
+          "border_thickness": 2,
+          "border_opacity": 100
+        }
+      },
+      "footer-05": {
+        "type": "footer-05",
+        "blocks": {
+          "ddecc46f-d933-4737-8bc3-540bac0e01de": {
+            "type": "logo_image",
+            "settings": {
+              "show_logo": true,
+              "image": "shopify:\/\/shop_images\/logo-white.png",
+              "image_width": 115,
+              "alignment": ""
+            }
+          },
+          "2f02cd74-f52f-4875-bdfb-336290c29213": {
+            "type": "text",
+            "settings": {
+              "show_heading": false,
+              "heading": "Heading",
+              "show_subtext": true,
+              "subtext": "<p>312 North 24th Street<br\/>Brooklyn, New York 10010<br\/>United States<\/p><p>+33 212 218 8500<br\/><a href=\"mailto:sale@peakshop.com\" title=\"mailto:sale@peakshop.com\">sale@peakshop.com<\/a><\/p>"
+            }
+          },
+          "e09a2a58-5b5e-4eb4-90aa-29276177996a": {
+            "type": "link_list",
+            "settings": {
+              "heading": "",
+              "menu": "main-menu"
+            }
+          },
+          "footer-05-0": {
+            "type": "link_list",
+            "settings": {
+              "heading": "",
+              "menu": "other-pages"
+            }
+          },
+          "bc2627a9-4cb9-4497-a3a4-8bd19ca2f0ba": {
+            "type": "link_list",
+            "settings": {
+              "heading": "",
+              "menu": "footer"
+            }
+          },
+          "5b46d073-46bb-43f1-a941-a0c728f4fade": {
+            "type": "social",
+            "settings": {
+              "show_social": false
+            }
+          }
+        },
+        "block_order": [
+          "ddecc46f-d933-4737-8bc3-540bac0e01de",
+          "2f02cd74-f52f-4875-bdfb-336290c29213",
+          "e09a2a58-5b5e-4eb4-90aa-29276177996a",
+          "footer-05-0",
+          "bc2627a9-4cb9-4497-a3a4-8bd19ca2f0ba",
+          "5b46d073-46bb-43f1-a941-a0c728f4fade"
+        ],
+        "settings": {
+          "heading": "Peakshop",
+          "heading_size": "h0",
+          "color_scheme": "inverse",
+          "enable_country_selector": true,
+          "enable_language_selector": true,
+          "payment_enable": true,
+          "margin_top": 0,
+          "padding_top": 24,
+          "padding_bottom": 0
+        }
+      },
+      "header-05": {
+        "type": "header-05",
+        "settings": {
+          "color_scheme": "inverse",
+          "logo": "shopify:\/\/shop_images\/logo-white.png",
+          "logo_text": "",
+          "logo_font": "space_mono_n7",
+          "logo_width": 215,
+          "menu": "main-menu",
+          "padding_top": 0,
+          "padding_bottom": 0,
+          "border_thickness": 0,
+          "border_opacity": 0
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
+  },
+  "presets": {
+    "Default": {
+      "colors_solid_button_labels": "#ffffff",
+      "colors_accent_1": "#121212",
+      "gradient_accent_1": "",
+      "colors_accent_2": "#334fb4",
+      "gradient_accent_2": "",
+      "colors_text": "#121212",
+      "colors_outline_button_labels": "#121212",
+      "colors_background_1": "#ffffff",
+      "gradient_background_1": "",
+      "colors_background_2": "#f3f3f3",
+      "gradient_background_2": "",
+      "type_header_font": "assistant_n4",
+      "heading_scale": 100,
+      "type_body_font": "assistant_n4",
+      "body_scale": 100,
+      "page_width": 1870,
+      "spacing_sections": 0,
+      "spacing_grid_horizontal": 24,
+      "spacing_grid_vertical": 24,
+      "buttons_border_thickness": 1,
+      "buttons_border_opacity": 100,
+      "buttons_radius": 0,
+      "buttons_shadow_opacity": 0,
+      "buttons_shadow_horizontal_offset": 0,
+      "buttons_shadow_vertical_offset": 4,
+      "buttons_shadow_blur": 5,
+      "variant_pills_border_thickness": 1,
+      "variant_pills_border_opacity": 55,
+      "variant_pills_radius": 40,
+      "variant_pills_shadow_opacity": 0,
+      "variant_pills_shadow_horizontal_offset": 0,
+      "variant_pills_shadow_vertical_offset": 4,
+      "variant_pills_shadow_blur": 5,
+      "inputs_border_thickness": 1,
+      "inputs_border_opacity": 55,
+      "inputs_radius": 0,
+      "inputs_shadow_opacity": 0,
+      "inputs_shadow_horizontal_offset": 0,
+      "inputs_shadow_vertical_offset": 4,
+      "inputs_shadow_blur": 5,
+      "card_style": "standard",
+      "card_image_padding": 0,
+      "card_text_alignment": "left",
+      "card_color_scheme": "background-2",
+      "card_border_thickness": 0,
+      "card_border_opacity": 10,
+      "card_corner_radius": 0,
+      "card_shadow_opacity": 0,
+      "card_shadow_horizontal_offset": 0,
+      "card_shadow_vertical_offset": 4,
+      "card_shadow_blur": 5,
+      "text_boxes_border_thickness": 0,
+      "text_boxes_border_opacity": 10,
+      "text_boxes_radius": 0,
+      "text_boxes_shadow_opacity": 0,
+      "text_boxes_shadow_horizontal_offset": 0,
+      "text_boxes_shadow_vertical_offset": 4,
+      "text_boxes_shadow_blur": 5,
+      "media_border_thickness": 1,
+      "media_border_opacity": 5,
+      "media_radius": 0,
+      "media_shadow_opacity": 0,
+      "media_shadow_horizontal_offset": 0,
+      "media_shadow_vertical_offset": 4,
+      "media_shadow_blur": 5,
+      "popup_border_thickness": 1,
+      "popup_border_opacity": 10,
+      "popup_corner_radius": 0,
+      "popup_shadow_opacity": 0,
+      "popup_shadow_horizontal_offset": 0,
+      "popup_shadow_vertical_offset": 4,
+      "popup_shadow_blur": 5,
+      "drawer_border_thickness": 1,
+      "drawer_border_opacity": 10,
+      "drawer_shadow_opacity": 0,
+      "drawer_shadow_horizontal_offset": 0,
+      "drawer_shadow_vertical_offset": 4,
+      "drawer_shadow_blur": 5,
+      "badge_position": "bottom left",
+      "badge_corner_radius": 0,
+      "sale_badge_color_scheme": "accent-2",
+      "sold_out_badge_color_scheme": "inverse",
+      "accent_icons": "text",
+      "social_twitter_link": "",
+      "social_facebook_link": "",
+      "social_pinterest_link": "",
+      "social_instagram_link": "",
+      "social_tiktok_link": "",
+      "social_tumblr_link": "",
+      "social_snapchat_link": "",
+      "social_youtube_link": "",
+      "social_vimeo_link": "",
+      "predictive_search_enabled": true,
+      "predictive_search_show_vendor": false,
+      "predictive_search_show_price": false,
+      "currency_code_enabled": true,
+      "cart_type": "notification",
+      "show_vendor": false,
+      "show_cart_note": false,
+      "sections": {
+        "announcement-bar": {
+          "type": "announcement-bar",
+          "blocks": {
+            "announcement-bar-0": {
+              "type": "announcement",
+              "settings": {
+                "text": "<p>Welcome to our store<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "announcement-bar-0"
+          ],
+          "settings": {
+            "bg_colors": "#212121",
+            "text_colors": "#FFFFFF"
+          }
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "color_scheme": "background-1",
+            "logo": "{{ shop.brand.logo }}",
+            "logo_width": 90,
+            "menu": "main-menu",
+            "show_line_separator": true,
+            "enable_sticky_header": true,
+            "margin_bottom": 0,
+            "padding_top": 20,
+            "padding_bottom": 20
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "link_list",
+              "settings": {
+                "heading": "Quick links",
+                "menu": "footer"
+              }
+            },
+            "footer-1": {
+              "type": "link_list",
+              "settings": {
+                "heading": "Info",
+                "menu": "footer"
+              }
+            },
+            "footer-2": {
+              "type": "text",
+              "settings": {
+                "heading": "Our mission",
+                "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "footer-1",
+            "footer-2"
+          ],
+          "settings": {
+            "color_scheme": "background-1",
+            "enable_country_selector": false,
+            "enable_language_selector": false,
+            "payment_enable": true,
+            "margin_top": 48,
+            "padding_top": 36,
+            "padding_bottom": 36
+          }
+        },
+        "main-password-header": {
+          "type": "main-password-header",
+          "settings": {
+            "logo": "{{ shop.brand.logo }}",
+            "logo_max_width": 100,
+            "color_scheme": "background-1"
+          }
+        },
+        "main-password-footer": {
+          "type": "main-password-footer",
+          "settings": {
+            "color_scheme": "background-1"
+          }
+        }
+      }
+    }
+  }
+}

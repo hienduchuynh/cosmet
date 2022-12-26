@@ -1,0 +1,27 @@
+{%- liquid
+  assign show = block.settings.show_block
+  assign title = block.settings.heading
+  assign how_many_tag_to_show = block.settings.number
+-%}
+
+{%- if show -%} 
+<div class="list-tag">
+  <div class="mod-header">
+    <h3 class="mod-title">{{ title }}</h3>
+    {% if show_collapse %}
+    <button id="toggle-tags" title="Toggle slide-up and slide-down states for the target" class="btn-arrow btn-slide-down" name="button-tags">{% render 'icon-chevron-up' %}</button>
+    {% endif %}
+  </div>
+    <ul id="target3">
+      {% if blog.all_tags.size >= 1 %}
+        {%- for tag in blog.all_tags limit: how_many_tag_to_show -%}
+          <li>
+            <a href="{{ blog.url }}/tagged/{{ tag | handle }}">{{ tag }}</a>{% unless forloop.last %} {% endunless %}
+          </li>
+        {%- endfor -%}
+      {% else %}
+        <li><a class="not-found">Not Tag Found</a></li>
+      {% endif %}
+    </ul>
+</div>
+{%- endif -%} 

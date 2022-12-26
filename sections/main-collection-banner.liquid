@@ -1,0 +1,140 @@
+{% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
+{{ 'component-collection-hero.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  @media screen and (max-width: 749px) {
+    .collection-hero--with-image .collection-hero__inner {
+      padding-bottom: calc({{ settings.media_shadow_vertical_offset | at_least: 0 }}px + 2rem);
+    }
+  }
+
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="collection-hero{% if section.settings.show_collection_image and collection.image %} collection-hero--with-image{% endif %}{% if section.settings.show_collection_full_width and collection.image %} collection-hero--full-with{% endif %} color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding" style="{%- if section.settings.show_collection_full_width == true and collection.image -%} background: url('{{ collection.image | image_url: width: 1500 }}') top center no-repeat; background-size: cover;{%- endif -%} text-align: {{ section.settings.hero_align_content }}; ">
+  <div class="collection-hero__inner page-width">
+    {%- if section.settings.show_collection_image and collection.image and section.settings.show_collection_full_width == false -%}
+      <div style="background: url('{{ collection.image | image_url: width: 1500 }}') top center no-repeat; background-size: cover; min-height: 385px; align-items: center; display: flex; width: 100%; margin-top: 40px;">
+      {%- endif -%}
+      <div class="collection-hero__text-wrapper">
+        <h2 class="collection-hero__title h1">
+          <span>{{- collection.title | escape -}}</span>
+        </h2>
+        {%- if section.settings.show_collection_description -%}
+          <div class="collection-hero__description rte">{{ collection.description }}</div>
+        {%- endif -%}
+      </div>
+      {%- if section.settings.show_collection_image and collection.image and section.settings.show_collection_full_width == false -%}
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "t:sections.main-collection-banner.name",
+    "class": "section",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "t:sections.main-collection-banner.settings.paragraph.content"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_collection_description",
+        "default": true,
+        "label": "t:sections.main-collection-banner.settings.show_collection_description.label"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_collection_image",
+        "default": false,
+        "label": "t:sections.main-collection-banner.settings.show_collection_image.label",
+        "info": "t:sections.main-collection-banner.settings.show_collection_image.info"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_collection_full_width",
+        "default": true,
+        "label": "t:sections.main-collection-banner.settings.show_collection_full_width.label"
+      }, {
+        "type": "select",
+        "id": "color_scheme",
+        "options": [
+          {
+            "value": "accent-1",
+            "label": "t:sections.all.colors.accent_1.label"
+          },
+          {
+            "value": "accent-2",
+            "label": "t:sections.all.colors.accent_2.label"
+          },
+          {
+            "value": "background-1",
+            "label": "t:sections.all.colors.background_1.label"
+          },
+          {
+            "value": "background-2",
+            "label": "t:sections.all.colors.background_2.label"
+          }, {
+            "value": "inverse",
+            "label": "t:sections.all.colors.inverse.label"
+          }, {
+            "value": "none",
+            "label": "t:sections.all.colors.none.label"
+          }
+        ],
+        "default": "background-1",
+        "label": "t:sections.all.colors.label"
+      }, {
+        "type": "select",
+        "id": "hero_align_content",
+        "options": [
+          {
+            "value": "left",
+            "label": "t:sections.main-collection-banner.settings.hero_align_content.left.label"
+          }, {
+            "value": "center",
+            "label": "t:sections.main-collection-banner.settings.hero_align_content.center.label"
+          }, {
+            "value": "right",
+            "label": "t:sections.main-collection-banner.settings.hero_align_content.right.label"
+          }
+        ],
+        "default": "center",
+        "label": "t:sections.main-collection-banner.settings.hero_align_content.label"
+      }, {
+        "type": "header",
+        "content": "t:sections.all.padding.section_padding_heading"
+      }, {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 36
+      }, {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 36
+      }
+    ]
+  }
+{% endschema %}

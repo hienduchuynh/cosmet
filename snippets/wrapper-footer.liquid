@@ -1,0 +1,11 @@
+{%- if settings.footer_layout == '01' %}
+  {% section 'footer' %}
+{% elsif settings.footer_layout == '02' %}
+  {% section 'footer-02' %}
+{% elsif settings.footer_layout == '03' %}
+  {% section 'footer-03' %}
+{% elsif settings.footer_layout == '04' %}
+  {% section 'footer-04' %}
+  {% elsif settings.footer_layout == '05' %}
+  {% section 'footer-05' %}
+{% endif %}

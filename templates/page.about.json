@@ -1,0 +1,265 @@
+{
+  "sections": {
+    "61f849a9-f600-4591-8f82-0e40cc947bc5": {
+      "type": "breadcrumb",
+      "disabled": true,
+      "settings": {
+        "alignment_breadcrumb": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "page_title": "",
+        "alignment_title": "left",
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "suffix-class": "about-us-title"
+      }
+    },
+    "d907dfba-3a8d-4c3a-a756-aca10721690e": {
+      "type": "rich-text",
+      "blocks": {
+        "template--14995394134089__d907dfba-3a8d-4c3a-a756-aca10721690e-16650398972b716996-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Our Story<\/p>",
+            "heading_size": "h1"
+          }
+        },
+        "44929001-e0af-4679-92e9-15be36596752": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3481b27143ca1c5acf3d419e7ffe4a91.jpg"
+          }
+        },
+        "4682a639-6655-4fc0-b29d-3105b6eaa917": {
+          "type": "text",
+          "settings": {
+            "text": "<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).<\/p>"
+          }
+        },
+        "400a6ab5-7b62-492c-818e-fc31d57eda3f": {
+          "type": "text",
+          "settings": {
+            "text": "<p>In 2015, we opened the ways to our leader store in Chicago, US. In this space we work crosswise over various mediums from fashion and photography to accommodation. There’s nothing we won’t do. Joint efforts are constantly invited and sustained. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--14995394134089__d907dfba-3a8d-4c3a-a756-aca10721690e-16650398972b716996-0",
+        "44929001-e0af-4679-92e9-15be36596752",
+        "4682a639-6655-4fc0-b29d-3105b6eaa917",
+        "400a6ab5-7b62-492c-818e-fc31d57eda3f"
+      ],
+      "settings": {
+        "class_suffix": "about-us",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": false,
+        "padding_top": 96,
+        "padding_bottom": 48
+      }
+    },
+    "b02de568-d10d-46f6-a8c8-8318f2f4d050": {
+      "type": "timeline",
+      "blocks": {
+        "b7f65254-825c-4271-9eed-e989a3a4d9e7": {
+          "type": "event_history",
+          "settings": {
+            "date": "1\/1\/2010",
+            "heading": "Content here",
+            "description": "Joint efforts are constantly invited and sustained.",
+            "image_event": "shopify:\/\/shop_images\/pexels-jeshootscom-442585.jpg",
+            "align_text": "left"
+          }
+        },
+        "09ce1d25-15fe-47a2-9b8b-b91183be07fa": {
+          "type": "event_history",
+          "settings": {
+            "date": "6\/8\/2012",
+            "heading": "Content here",
+            "description": "Joint efforts are constantly invited and sustained.",
+            "image_event": "shopify:\/\/shop_images\/pexels-duren-williams-11883130.jpg",
+            "align_text": "right"
+          }
+        },
+        "587ecd54-8c08-466e-8e1a-f121218ddc52": {
+          "type": "event_history",
+          "settings": {
+            "date": "5\/4\/2015",
+            "heading": "Content here",
+            "description": "Joint efforts are constantly invited and sustained.",
+            "image_event": "shopify:\/\/shop_images\/bg-video.jpg",
+            "align_text": "left"
+          }
+        },
+        "545019c6-e324-43d6-b0f1-6a22895fd1da": {
+          "type": "event_history",
+          "settings": {
+            "date": "7\/9\/2019",
+            "heading": "Content here",
+            "description": "Joint efforts are constantly invited and sustained.",
+            "image_event": "shopify:\/\/shop_images\/wepik-photo-mode-2022118-102646.png",
+            "align_text": "right"
+          }
+        },
+        "d00aac84-b828-407c-9ab2-09275db0e6e9": {
+          "type": "event_history",
+          "settings": {
+            "date": "10\/6\/2021",
+            "heading": "Content here",
+            "description": "Joint efforts are constantly invited and sustained.",
+            "image_event": "shopify:\/\/shop_images\/Image_1.png",
+            "align_text": "left"
+          }
+        },
+        "431e4c86-6c7c-4669-9bf7-0e841d37af97": {
+          "type": "event_history",
+          "settings": {
+            "date": "9\/2\/2022",
+            "heading": "Content here",
+            "description": "Joint efforts are constantly invited and sustained.",
+            "image_event": "shopify:\/\/shop_images\/christophe-meyer-ffvA4qpRjHY-unsplash_2.jpg",
+            "align_text": "right"
+          }
+        }
+      },
+      "block_order": [
+        "b7f65254-825c-4271-9eed-e989a3a4d9e7",
+        "09ce1d25-15fe-47a2-9b8b-b91183be07fa",
+        "587ecd54-8c08-466e-8e1a-f121218ddc52",
+        "545019c6-e324-43d6-b0f1-6a22895fd1da",
+        "d00aac84-b828-407c-9ab2-09275db0e6e9",
+        "431e4c86-6c7c-4669-9bf7-0e841d37af97"
+      ],
+      "settings": {
+        "page_title": "History",
+        "alignment_title": "center",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "suffix-class": ""
+      }
+    },
+    "c8fd1c59-1297-4781-902e-86556452b36e": {
+      "type": "main-team",
+      "blocks": {
+        "template--17016614682899__c8fd1c59-1297-4781-902e-86556452b36e-16710903189814e952-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/avatar-1.jpg",
+            "image_position": "top",
+            "title": "BIANCA ALEXANDER",
+            "title_size": "h4",
+            "icon": "none",
+            "icon_position": "left",
+            "text": "<p>Designer<\/p>",
+            "link_label": "",
+            "link": "",
+            "link_style": "link",
+            "padding_left": 0,
+            "padding_right": 0,
+            "image_spacing": 24
+          }
+        },
+        "template--17016614682899__c8fd1c59-1297-4781-902e-86556452b36e-16710903189814e952-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/avatar-2.jpg",
+            "image_position": "top",
+            "title": "DALE SPRAGGINS",
+            "title_size": "h4",
+            "icon": "none",
+            "icon_position": "left",
+            "text": "<p>Designer<\/p>",
+            "link_label": "",
+            "link": "",
+            "link_style": "link",
+            "padding_left": 0,
+            "padding_right": 0,
+            "image_spacing": 24
+          }
+        },
+        "template--17016614682899__c8fd1c59-1297-4781-902e-86556452b36e-16710903189814e952-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/avatar-3.jpg",
+            "image_position": "top",
+            "title": "CURTIS WILCHER",
+            "title_size": "h4",
+            "icon": "none",
+            "icon_position": "left",
+            "text": "<p>Designer<\/p>",
+            "link_label": "",
+            "link": "",
+            "link_style": "link",
+            "padding_left": 0,
+            "padding_right": 0,
+            "image_spacing": 24
+          }
+        },
+        "1f842e9b-25a8-4d9e-be5d-40940417d417": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/avatar-4.jpg",
+            "image_position": "top",
+            "title": "FAYE WARNER",
+            "title_size": "h4",
+            "icon": "none",
+            "icon_position": "left",
+            "text": "<p>Designer<\/p>",
+            "link_label": "",
+            "link": "",
+            "link_style": "link",
+            "padding_left": 0,
+            "padding_right": 0,
+            "image_spacing": 24
+          }
+        }
+      },
+      "block_order": [
+        "template--17016614682899__c8fd1c59-1297-4781-902e-86556452b36e-16710903189814e952-0",
+        "template--17016614682899__c8fd1c59-1297-4781-902e-86556452b36e-16710903189814e952-1",
+        "template--17016614682899__c8fd1c59-1297-4781-902e-86556452b36e-16710903189814e952-2",
+        "1f842e9b-25a8-4d9e-be5d-40940417d417"
+      ],
+      "settings": {
+        "title": "OUR AWESOME TEAM",
+        "sub-title": "What Happens Here",
+        "heading_size": "h2",
+        "layout": "grid",
+        "image_width": "full",
+        "image_ratio": "portrait",
+        "columns_desktop": 4,
+        "row_alignment": "top",
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_tablet": "2",
+        "swipe_on_tablet": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "border_top_thickness": 0,
+        "border_right_thickness": 0,
+        "border_bottom_thickness": 0,
+        "border_left_thickness": 0,
+        "border_opacity": 0
+      }
+    }
+  },
+  "order": [
+    "61f849a9-f600-4591-8f82-0e40cc947bc5",
+    "main",
+    "d907dfba-3a8d-4c3a-a756-aca10721690e",
+    "b02de568-d10d-46f6-a8c8-8318f2f4d050",
+    "c8fd1c59-1297-4781-902e-86556452b36e"
+  ]
+}

@@ -1,0 +1,46 @@
+.title-wrapper-with-link {
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+}
+
+.title-wrapper-with-link h2 {
+    font-weight: 700;
+}
+
+.blog .title-wrapper-with-link .inner .blog__title {
+  text-transform: none;
+  margin: 0;
+}
+
+.blog__posts {
+  flex-direction: column;
+  padding: 0;
+   
+}
+
+.blog__posts .blog__post {
+  padding: 5px 0;
+  transition: all 0.2s ease;
+}
+
+.blog__posts .blog__post:hover  {
+  transform: translateX(3px);;
+}
+
+.blog__posts .blog__post:hover .blog-link {
+  color: #ac8124;
+}
+
+.blog__posts .blog__post span {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  margin-right: .8rem;
+}
+
+.blog__posts .blog__post .blog-link {
+  color: var(--color-base-accent-1);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.8667;
+}
