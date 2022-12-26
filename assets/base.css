@@ -1062,10 +1062,6 @@ summary::-webkit-details-marker {
 */
 
 /* Dangerous for a11y - Use with care */
-#MainContent {
-	border: 2px solid rgba(0, 0, 0, 100); 
-	border-top-width: calc(2px / 2);
-}
 .focus-none {
 	box-shadow: none !important;
 	outline: 0 !important;
