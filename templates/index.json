@@ -55,7 +55,6 @@
       "settings": {
         "layout": "full_bleed",
         "slide_height": "169",
-        "slider_visual": "counter",
         "auto_rotate": false,
         "change_slides_speed": 5,
         "show_text_below": true,
@@ -125,7 +124,7 @@
       "settings": {
         "title": "BEST SELLERS",
         "heading_size": "h0",
-        "title_style": "02",
+        "title_style": "03",
         "description_style": "body",
         "description": "",
         "show_description": false,
