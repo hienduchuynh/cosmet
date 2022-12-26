@@ -142,7 +142,7 @@
         "view_all_style": "outline",
         "enable_desktop_slider": true,
         "slider_visual": "nav",
-        "color_scheme": "accent-4",
+        "color_scheme": "background-1",
         "desktop_layout": "left",
         "image_ratio": "square",
         "show_secondary_image": false,
