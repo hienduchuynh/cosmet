@@ -510,7 +510,7 @@
           "layout_type": "menu-logo-icons",
           "logo_text": "Peakshop",
           "logo_font": "space_mono_n7",
-          "logo_width": 115,
+          "logo_width": 130,
           "menu": "main-menu",
           "menu_type_desktop": "mega",
           "enable_sticky_header": true,
