@@ -68,58 +68,52 @@
         "addition_class": ""
       }
     },
-    "21d4cf4d-5f90-4180-9277-6afc709981dd": {
-      "type": "image-with-text-grid",
+    "b7d4689b-aa5d-4fbd-93cf-446d84d85100": {
+      "type": "image-banner",
       "blocks": {
-        "template--17016615010579__21d4cf4d-5f90-4180-9277-6afc709981dd-1669167040bd7eb463-0": {
-          "type": "column",
+        "template--17016615010579__b7d4689b-aa5d-4fbd-93cf-446d84d85100-16691955563a648ee6-0": {
+          "type": "heading",
           "settings": {
-            "title": "Skateboard",
-            "link_label": "",
-            "link": "shopify:\/\/collections\/skateboard",
-            "link_style": "outline",
-            "desktop_content_position": "bottom-left",
-            "desktop_content_alignment": "left"
+            "heading": "Peak TaiChi Plus Men's Professional Running Shoes",
+            "heading_size": "h0"
           }
         },
-        "template--17016615010579__21d4cf4d-5f90-4180-9277-6afc709981dd-1669167040bd7eb463-1": {
-          "type": "column",
+        "template--17016615010579__b7d4689b-aa5d-4fbd-93cf-446d84d85100-16691955563a648ee6-1": {
+          "type": "text",
           "settings": {
-            "title": "Clothing",
-            "link_label": "",
-            "link": "shopify:\/\/collections\/clothing",
-            "link_style": "link",
-            "desktop_content_position": "bottom-left",
-            "desktop_content_alignment": "center"
+            "text": "Vans Skate Half Cab Bruce Lee Black\/Yellow",
+            "text_style": "subtitle"
           }
         },
-        "014b3800-b0ab-448d-b4ce-5248c1b568ca": {
-          "type": "column",
+        "template--17016615010579__b7d4689b-aa5d-4fbd-93cf-446d84d85100-16691955563a648ee6-2": {
+          "type": "buttons",
           "settings": {
-            "title": "Shoes",
-            "link_label": "",
-            "link": "shopify:\/\/collections\/shoes",
-            "link_style": "link",
-            "desktop_content_position": "bottom-left",
-            "desktop_content_alignment": "center"
+            "button_label_1": "VIEW ALL PRODUCTS",
+            "button_link_1": "shopify:\/\/collections\/all",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
           }
         }
       },
       "block_order": [
-        "template--17016615010579__21d4cf4d-5f90-4180-9277-6afc709981dd-1669167040bd7eb463-0",
-        "template--17016615010579__21d4cf4d-5f90-4180-9277-6afc709981dd-1669167040bd7eb463-1",
-        "014b3800-b0ab-448d-b4ce-5248c1b568ca"
+        "template--17016615010579__b7d4689b-aa5d-4fbd-93cf-446d84d85100-16691955563a648ee6-0",
+        "template--17016615010579__b7d4689b-aa5d-4fbd-93cf-446d84d85100-16691955563a648ee6-1",
+        "template--17016615010579__b7d4689b-aa5d-4fbd-93cf-446d84d85100-16691955563a648ee6-2"
       ],
       "settings": {
-        "title": "",
-        "heading_size": "h5",
-        "layout": "grid--gapless",
-        "item_ratio": "169",
-        "columns_desktop": 3,
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 0,
-        "padding_bottom": 0,
+        "mod_class": "",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
         "border_top_thickness": 1,
         "border_right_thickness": 0,
         "border_bottom_thickness": 1,
@@ -380,59 +374,6 @@
         "mod_class": "new-arrivals-collection"
       }
     },
-    "b7d4689b-aa5d-4fbd-93cf-446d84d85100": {
-      "type": "image-banner",
-      "blocks": {
-        "template--17016615010579__b7d4689b-aa5d-4fbd-93cf-446d84d85100-16691955563a648ee6-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Peak TaiChi Plus Men's Professional Running Shoes",
-            "heading_size": "h0"
-          }
-        },
-        "template--17016615010579__b7d4689b-aa5d-4fbd-93cf-446d84d85100-16691955563a648ee6-1": {
-          "type": "text",
-          "settings": {
-            "text": "Vans Skate Half Cab Bruce Lee Black\/Yellow",
-            "text_style": "subtitle"
-          }
-        },
-        "template--17016615010579__b7d4689b-aa5d-4fbd-93cf-446d84d85100-16691955563a648ee6-2": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "VIEW ALL PRODUCTS",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "template--17016615010579__b7d4689b-aa5d-4fbd-93cf-446d84d85100-16691955563a648ee6-0",
-        "template--17016615010579__b7d4689b-aa5d-4fbd-93cf-446d84d85100-16691955563a648ee6-1",
-        "template--17016615010579__b7d4689b-aa5d-4fbd-93cf-446d84d85100-16691955563a648ee6-2"
-      ],
-      "settings": {
-        "mod_class": "",
-        "image_overlay_opacity": 0,
-        "image_height": "large",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-left",
-        "show_text_box": false,
-        "desktop_content_alignment": "left",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true,
-        "border_top_thickness": 1,
-        "border_right_thickness": 0,
-        "border_bottom_thickness": 1,
-        "border_left_thickness": 0,
-        "border_opacity": 100
-      }
-    },
     "cb809454-489b-40a4-895f-7a4805ef7846": {
       "type": "ja-slider",
       "blocks": {
@@ -509,12 +450,11 @@
   },
   "order": [
     "74ef7de1-0419-46ce-aad7-bdd5bd61498a",
-    "21d4cf4d-5f90-4180-9277-6afc709981dd",
+    "b7d4689b-aa5d-4fbd-93cf-446d84d85100",
     "dea5835c-24f7-475f-a0a4-51739b13776e",
     "de99a705-2695-4857-953e-c4d63681937b",
     "1ae5d19b-0d31-4b2e-8a50-43e86c054bb5",
     "7afcf70d-4f53-4da2-9322-a5c118360a18",
-    "b7d4689b-aa5d-4fbd-93cf-446d84d85100",
     "cb809454-489b-40a4-895f-7a4805ef7846",
     "c6f98de6-047d-4264-a053-0e2a5b108dab"
   ]
