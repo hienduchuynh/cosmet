@@ -32,7 +32,7 @@
     "spacing_grid_vertical": 24,
     "buttons_border_thickness": 2,
     "buttons_border_opacity": 100,
-    "buttons_radius": 0,
+    "buttons_radius": 8,
     "buttons_shadow_opacity": 100,
     "buttons_shadow_horizontal_offset": 4,
     "buttons_shadow_vertical_offset": 4,
@@ -507,7 +507,7 @@
         "type": "header-04",
         "settings": {
           "color_scheme": "background-1",
-          "layout_type": "logo-menu-icons",
+          "layout_type": "menu-logo-icons",
           "logo_text": "Peakshop",
           "logo_font": "space_mono_n7",
           "logo_width": 115,
@@ -516,8 +516,8 @@
           "enable_sticky_header": true,
           "padding_top": 20,
           "padding_bottom": 20,
-          "border_thickness": 2,
-          "border_opacity": 100
+          "border_thickness": 0,
+          "border_opacity": 0
         }
       },
       "footer-05": {
