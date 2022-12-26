@@ -297,7 +297,6 @@ html.no-js .no-js-hidden {
 }
 
 .ja-container {
-	max-width: var(--container-width);
 	margin: 0 auto;
 }
 
