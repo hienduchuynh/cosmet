@@ -22,7 +22,7 @@
     "newsletter_popup_note": "No thanks, I hate cool new stuff",
     "select_button_submit": "default",
     "favicon": "shopify:\/\/shop_images\/favicon.png",
-    "type_header_font": "space_mono_n7",
+    "type_header_font": "archivo_n4",
     "heading_scale": 100,
     "type_body_font": "space_mono_n4",
     "body_scale": 100,
@@ -508,7 +508,6 @@
         "settings": {
           "color_scheme": "background-1",
           "layout_type": "logo-menu-icons",
-          "logo": "shopify:\/\/shop_images\/logo.png",
           "logo_text": "Peakshop",
           "logo_font": "space_mono_n7",
           "logo_width": 115,
@@ -528,7 +527,6 @@
             "type": "logo_image",
             "settings": {
               "show_logo": true,
-              "image": "shopify:\/\/shop_images\/logo-white.png",
               "image_width": 115,
               "alignment": ""
             }
@@ -553,7 +551,7 @@
             "type": "link_list",
             "settings": {
               "heading": "",
-              "menu": "other-pages"
+              "menu": ""
             }
           },
           "bc2627a9-4cb9-4497-a3a4-8bd19ca2f0ba": {
