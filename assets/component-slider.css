@@ -491,13 +491,12 @@ slider-component.slider-component-full-width {
   background: transparent;
   border: none;
   cursor: pointer;
-  width: 48px;
-  height: 48px;
+  width: 4.8rem;
+  height: 4.8rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: var(--text-boxes-border-width) solid
-    rgba(var(--color-foreground), var(--text-boxes-border-opacity));
+  border-radius: var(--buttons-radius-outset);
 }
 
 .slider-button:not([disabled]):hover {
@@ -580,9 +579,9 @@ slider-component:hover .slider-button {
 }
 
 .slider-navigation .slider-button--prev {
-  left: 0;
+  left: 6.4rem;
 }
 
 .slider-navigation .slider-button--next {
-  right: 0;
+  right: 6.4rem;
 }

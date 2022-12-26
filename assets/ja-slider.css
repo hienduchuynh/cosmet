@@ -103,11 +103,11 @@
 }
 
 .ja-slider .slider-buttons .slider-button--prev {
-  left: 0;
+  left: 6.4rem;
 }
 
 .ja-slider .slider-buttons .slider-button--next {
-  right: 0;
+  right: 6.4rem;
 }
 
 .ja-slider .slideshow__text-wrapper.banner__content {

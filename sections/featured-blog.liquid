@@ -153,7 +153,8 @@
   </div>
 </div>
 
-{% javascript %}
+{% if section.settings.title_style == "03" %}
+<script type="text/javascript">
 const _getposy = document.querySelector(".blog .marquee");
 const _getposl = document.querySelector(".blog .marqueee");
 
@@ -179,7 +180,8 @@ window.addEventListener("scroll", function() {
   });
 })
 
-{% endjavascript %}
+</script>
+{%- endif -%}
 
 {% schema %}
 {

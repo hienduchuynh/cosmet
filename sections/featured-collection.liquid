@@ -216,33 +216,35 @@
   </div>
 </div>
 
-{% javascript %}
-const _getposy = document.querySelector(".collection .marquee");
-const _getposl = document.querySelector(".collection .marqueee");
+{% if section.settings.title_style == "03" %}
+<script type="text/javascript">
+  const _getposy = document.querySelector(".collection .marquee");
+  const _getposl = document.querySelector(".collection .marqueee");
 
-const _config = {
-  speed: 1,
-  ease: 1
-}
+  const _config = {
+    speed: 1,
+    ease: 1
+  }
 
-window.addEventListener("scroll", function() {
-  let pageY = window.pageYOffset;
-  let bodyRect = _getposy.getBoundingClientRect();
-  let bodyRectl = _getposl.getBoundingClientRect();
-  //--
-  gsap.to('.collection .marqueee', {
-    duration:_config.speed,
-    x: -(pageY-(bodyRectl.top - window.innerWidth))/2,
-    ease: _config.ease
-  });
-  gsap.to(".collection .marquee", {
-    duration:_config.speed,
-    x: -(pageY-(bodyRectl.top - window.innerWidth))/3,
-    ease: _config.ease
-  });
-})
+  window.addEventListener("scroll", function() {
+    let pageY = window.pageYOffset;
+    let bodyRect = _getposy.getBoundingClientRect();
+    let bodyRectl = _getposl.getBoundingClientRect();
+    //--
+    gsap.to('.collection .marqueee', {
+      duration:_config.speed,
+      x: -(pageY-(bodyRectl.top - window.innerWidth))/2,
+      ease: _config.ease
+    });
+    gsap.to(".collection .marquee", {
+      duration:_config.speed,
+      x: -(pageY-(bodyRectl.top - window.innerWidth))/3,
+      ease: _config.ease
+    });
+  })
 
-{% endjavascript %}
+</script>
+{%- endif -%}
 
 {% schema %}
   {
