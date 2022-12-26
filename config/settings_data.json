@@ -24,7 +24,7 @@
     "favicon": "shopify:\/\/shop_images\/favicon.png",
     "type_header_font": "archivo_n4",
     "heading_scale": 100,
-    "type_body_font": "space_mono_n4",
+    "type_body_font": "archivo_n4",
     "body_scale": 100,
     "page_width": 1600,
     "spacing_sections": 0,
