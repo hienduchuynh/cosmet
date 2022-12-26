@@ -580,9 +580,9 @@ slider-component:hover .slider-button {
 }
 
 .slider-navigation .slider-button--prev {
-  left: -2px;
+  left: 0;
 }
 
 .slider-navigation .slider-button--next {
-  right: -2px;
+  right: 0;
 }

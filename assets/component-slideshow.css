@@ -294,11 +294,11 @@ slideshow-component .slider-buttons .slider-button {
 }
 
 slideshow-component .slider-buttons .slider-button--prev {
-  left: -2px;
+  left: 0;
 }
 
 slideshow-component .slider-buttons .slider-button--next {
-  right: -2px;
+  right: 0;
 }
 
 slideshow-component .slider-counter {

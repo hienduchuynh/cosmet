@@ -216,7 +216,7 @@
 
 .gallery_full_width .at-resp-share-element {
 	margin-top: 2.4rem;
-	margin-left: -2px;
+	margin-left: 0;
 }
 
 @media screen and (min-width: 1200px) {

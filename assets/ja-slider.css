@@ -103,11 +103,11 @@
 }
 
 .ja-slider .slider-buttons .slider-button--prev {
-  left: -2px;
+  left: 0;
 }
 
 .ja-slider .slider-buttons .slider-button--next {
-  right: -2px;
+  right: 0;
 }
 
 .ja-slider .slideshow__text-wrapper.banner__content {
