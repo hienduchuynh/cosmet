@@ -519,7 +519,7 @@ h6,
 }
 
 .hxl {
-	font-size: calc(var(--font-heading-scale) * 7.2rem);
+	font-size: calc(var(--font-heading-scale) * 9.6rem);
 }
 
 @media only screen and (min-width: 750px) {
@@ -1184,24 +1184,9 @@ summary::-webkit-details-marker {
 }
 
 .subtitle span {
+	font-weight: 600;
 	font-size: 1.8rem;
-	letter-spacing: 0.06rem;
-	--color-background: 0, 0, 0;
-	--color-foreground: 255, 255, 255;
-	background: rgba(var(--color-background));
-	-webkit-box-shadow: -0.4rem 0 0 rgba(var(--color-background)), 0.4rem 0 0 rgba(var(--color-background));
-	box-shadow: -0.4rem 0 0 rgba(var(--color-background)), 0.4rem 0 0 rgba(var(--color-background));
-	-webkit-box-decoration-break: clone;
-	box-decoration-break: clone;
-	color: rgba(var(--color-foreground));
-	display: inline;
-	margin-top: 0;
-	margin-bottom: 0.4rem;
-	margin-left: 0.4rem;
-	padding: 2px 0;
-	text-transform: uppercase;
 	line-height: 1.6;
-	font-weight: normal;
 }
 
 .subtitle--small {

@@ -6,12 +6,6 @@
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-    border-style: solid;
-    border-color: rgba(0, 0, 0, {{ section.settings.border_opacity }});
-    border-top-width: {{ section.settings.border_top_thickness }}px;
-    border-bottom-width: {{ section.settings.border_bottom_thickness }}px;
-    border-left-width: {{ section.settings.border_left_thickness }}px;
-    border-right-width: {{ section.settings.border_right_thickness }}px;
   }
 
   @media screen and (min-width: 750px) {
@@ -123,14 +117,17 @@
             {%- endif -%}
           </div>
           <div class="slideshow__text-wrapper banner__content banner__content--{{ block.settings.box_align }} page-width{% if block.settings.show_text_box == false %} banner--desktop-transparent{% endif %}">
-            <div class="slideshow__text banner__box content-container content-container--full-width-mobile color-{{ block.settings.color_scheme }} gradient slideshow__text--{{ block.settings.text_alignment }} slideshow__text-mobile--{{ block.settings.text_alignment_mobile }}">{%- if block.settings.heading != blank -%}
-                <h2 class="banner__heading {{ block.settings.heading_size }}"><span>{{ block.settings.heading | escape }}</span></h2>
-              {%- endif -%}
+            <div class="slideshow__text banner__box content-container content-container--full-width-mobile color-{{ block.settings.color_scheme }} gradient slideshow__text--{{ block.settings.text_alignment }} slideshow__text-mobile--{{ block.settings.text_alignment_mobile }}">
               {%- if block.settings.subheading != blank -%}
                 <div class="banner__text subtitle" {{ block.shopify_attributes }}>
                   <span>{{ block.settings.subheading | escape }}</span>
                 </div>
               {%- endif -%}
+              
+              {%- if block.settings.heading != blank -%}
+                <h2 class="banner__heading {{ block.settings.heading_size }}"><span>{{ block.settings.heading | escape }}</span></h2>
+              {%- endif -%}
+              
               {%- if block.settings.button_label != blank or block.settings.button_label2 != blank -%}
                 <div class="banner__buttons">
                   {%- if block.settings.button_label != blank -%}
@@ -324,60 +321,6 @@
         "unit": "px",
         "label": "t:sections.all.padding.padding_bottom",
         "default": 36
-      }, 
-      {
-        "type": "header",
-        "content": "t:settings_schema.global.settings.header__border.content"
-      },
-      {
-        "type": "range",
-        "id": "border_top_thickness",
-        "min": 0,
-        "max": 24,
-        "step": 1,
-        "unit": "px",
-        "label": "t:settings_schema.global.settings.top_thickness.label",
-        "default": 0
-      },
-      {
-        "type": "range",
-        "id": "border_right_thickness",
-        "min": 0,
-        "max": 24,
-        "step": 1,
-        "unit": "px",
-        "label": "t:settings_schema.global.settings.right_thickness.label",
-        "default": 0
-      },
-      {
-        "type": "range",
-        "id": "border_bottom_thickness",
-        "min": 0,
-        "max": 24,
-        "step": 1,
-        "unit": "px",
-        "label": "t:settings_schema.global.settings.bottom_thickness.label",
-        "default": 0
-      },
-      {
-        "type": "range",
-        "id": "border_left_thickness",
-        "min": 0,
-        "max": 24,
-        "step": 1,
-        "unit": "px",
-        "label": "t:settings_schema.global.settings.left_thickness.label",
-        "default": 0
-      },
-      {
-        "type": "range",
-        "id": "border_opacity",
-        "min": 0,
-        "max": 100,
-        "step": 5,
-        "unit": "%",
-        "label": "t:settings_schema.global.settings.opacity.label",
-        "default": 0
       },
       {
         "type": "header",
