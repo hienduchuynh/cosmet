@@ -508,6 +508,7 @@
         "settings": {
           "color_scheme": "background-1",
           "layout_type": "menu-logo-icons",
+          "logo": "shopify:\/\/shop_images\/Logo.png",
           "logo_text": "Cosmet",
           "logo_font": "space_mono_n7",
           "logo_width": 130,
