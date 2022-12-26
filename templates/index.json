@@ -206,7 +206,7 @@
       "settings": {
         "title": "NEW ARRIVALS",
         "heading_size": "h0",
-        "title_style": "03",
+        "title_style": "02",
         "description_style": "body",
         "description": "",
         "show_description": false,
@@ -287,7 +287,7 @@
       "settings": {
         "heading": "Blog posts",
         "heading_size": "h0",
-        "title_style": "03",
+        "title_style": "02",
         "description_style": "body",
         "description": "",
         "blog": "skateboard",
