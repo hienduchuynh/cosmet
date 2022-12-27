@@ -74,13 +74,6 @@
             "heading_size": "h1"
           }
         },
-        "template--17016615010579__b7d4689b-aa5d-4fbd-93cf-446d84d85100-16691955563a648ee6-1": {
-          "type": "text",
-          "settings": {
-            "text": "Vans Skate Half Cab Bruce Lee Black\/Yellow",
-            "text_style": "subtitle"
-          }
-        },
         "template--17016615010579__b7d4689b-aa5d-4fbd-93cf-446d84d85100-16691955563a648ee6-2": {
           "type": "buttons",
           "settings": {
@@ -95,7 +88,6 @@
       },
       "block_order": [
         "template--17016615010579__b7d4689b-aa5d-4fbd-93cf-446d84d85100-16691955563a648ee6-0",
-        "template--17016615010579__b7d4689b-aa5d-4fbd-93cf-446d84d85100-16691955563a648ee6-1",
         "template--17016615010579__b7d4689b-aa5d-4fbd-93cf-446d84d85100-16691955563a648ee6-2"
       ],
       "settings": {
