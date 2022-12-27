@@ -17,7 +17,7 @@
     "colors_background_1": "#ffffff",
     "gradient_background_1": "",
     "colors_background_2": "#5d8c5d",
-    "gradient_background_2": "linear-gradient(180deg, rgba(155, 185, 126, NaN), rgba(255, 255, 255, NaN) 100%)",
+    "gradient_background_2": "linear-gradient(180deg, rgba(155, 185, 126, 0.2) 0%, rgba(255, 255, 255, 0) 100%)",
     "show_newsletter_popup": true,
     "newsletter_popup_title": "SIGN UP AND SAVE",
     "newsletter_popup_desc": "Join our mailing list to recieve exclusive offers, deals and to keep up to date with everything skating!",
