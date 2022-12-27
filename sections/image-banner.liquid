@@ -24,21 +24,12 @@
 {%- endif -%}
 
 {%- style -%}
-  #Banner-{{ section.id }} {
-    border-style: solid;
-    border-color: rgba(0, 0, 0, {{ section.settings.border_opacity }});
-    border-top-width: {{ section.settings.border_top_thickness }}px;
-    border-bottom-width: {{ section.settings.border_bottom_thickness }}px;
-    border-left-width: {{ section.settings.border_left_thickness }}px;
-    border-right-width: {{ section.settings.border_right_thickness }}px;
-  }
-  
   #Banner-{{ section.id }}::after {
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
   }
 {%- endstyle -%}
 
-<div id="Banner-{{ section.id }}" class="banner banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.adapt_height_first_image and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %} {{ section.settings.mod_class }}">
+<div id="Banner-{{ section.id }}" class="banner banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.adapt_height_first_image and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom {%- endif -%}{% if section.settings.color_scheme %} color-{{ section.settings.color_scheme }} gradient{%- endif -%}{{ section.settings.mod_class }}">
   {%- if section.settings.image != blank -%}
     <div class="banner__media media{% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}">
       {%-liquid
@@ -96,7 +87,7 @@
     </div>
   {%- endif -%}
   <div class="banner__content banner__content--{{ section.settings.desktop_content_position }} page-width">
-    <div class="banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient">
+    <div class="banner__box content-container content-container--full-width-mobile">
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'heading' -%}
@@ -316,60 +307,6 @@
       "id": "show_text_below",
       "default": true,
       "label": "t:sections.image-banner.settings.show_text_below.label"
-    },
-    {
-      "type": "header",
-      "content": "t:settings_schema.global.settings.header__border.content"
-    },
-    {
-      "type": "range",
-      "id": "border_top_thickness",
-      "min": 0,
-      "max": 24,
-      "step": 1,
-      "unit": "px",
-      "label": "t:settings_schema.global.settings.top_thickness.label",
-      "default": 0
-    },
-    {
-      "type": "range",
-      "id": "border_right_thickness",
-      "min": 0,
-      "max": 24,
-      "step": 1,
-      "unit": "px",
-      "label": "t:settings_schema.global.settings.right_thickness.label",
-      "default": 0
-    },
-    {
-      "type": "range",
-      "id": "border_bottom_thickness",
-      "min": 0,
-      "max": 24,
-      "step": 1,
-      "unit": "px",
-      "label": "t:settings_schema.global.settings.bottom_thickness.label",
-      "default": 0
-    },
-    {
-      "type": "range",
-      "id": "border_left_thickness",
-      "min": 0,
-      "max": 24,
-      "step": 1,
-      "unit": "px",
-      "label": "t:settings_schema.global.settings.left_thickness.label",
-      "default": 0
-    },
-    {
-      "type": "range",
-      "id": "border_opacity",
-      "min": 0,
-      "max": 100,
-      "step": 5,
-      "unit": "%",
-      "label": "t:settings_schema.global.settings.opacity.label",
-      "default": 0
     }
   ],
   "blocks": [

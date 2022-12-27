@@ -464,7 +464,6 @@
 .banner--desktop-transparent .banner__box .banner__heading {
   margin-top: 1.6rem;
   margin-bottom: 2.4rem;
-  line-height: 1;
 }
 
 @media screen and (max-width: 749px) {
