@@ -1200,11 +1200,22 @@ summary::-webkit-details-marker {
 .title-wrapper-02 {
 	text-align: center;
 	margin-bottom: 6.4rem;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
 }
 
 .title-wrapper-02 .title {
 	margin-top: 0;
 	margin-bottom: 1.6rem;
+}
+
+.title-wrapper-02 .subtitle {
+	color: rgba(var(--color-base-accent-2));
+	text-transform: uppercase;
+	font-size: 1.4rem;
+	line-height: 1.25;
+	font-weight: 300;
 }
 
 .title-wrapper-02 .recently__description {
@@ -1213,7 +1224,8 @@ summary::-webkit-details-marker {
 }
 
 @media screen and (max-width: 749px) {
-	.title-wrapper-02 .recently__description {
+	.title-wrapper-02 {
+		width: 90%;
 	}
 }
 @media screen and (min-width: 750px) {
