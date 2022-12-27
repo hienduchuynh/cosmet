@@ -150,6 +150,9 @@
       "settings": {
         "title": "Our picks for you",
         "heading_size": "h1",
+        "title_style": "02",
+        "description_style": "subtitle",
+        "description": "<p>Our categories<\/p>",
         "image_ratio": "portrait",
         "columns_desktop": 5,
         "color_scheme": "background-1",
