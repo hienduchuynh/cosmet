@@ -67,6 +67,15 @@
     {%- unless section.settings.title == blank -%}
       <div class="collection__title title-wrapper title-wrapper--no-top-margin title-wrapper-{{ section.settings.title_style }} {% if section.settings.full_width == false and section.settings.title_style != "03" %} page-width{% endif %}{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
         <div class="inner">
+          {%- if section.settings.description != blank or section.settings.show_description and section.settings.collection.description != empty -%}
+            <div class="collection__description {{ section.settings.description_style }}">
+              {%- if section.settings.show_description -%}
+                {{ section.settings.collection.description }}
+              {%- else -%}
+                {{ section.settings.description }}{% endif %}
+            </div>
+          {%- endif -%}
+          
           {%- if section.settings.title != blank -%}
             <h2 class="title {{ section.settings.heading_size }}">
               {% if section.settings.title_style == "03" %}
@@ -100,15 +109,6 @@
                 {{ section.settings.title | escape }}
               {% endif %}
             </h2>
-          {%- endif -%}
-
-          {%- if section.settings.description != blank or section.settings.show_description and section.settings.collection.description != empty -%}
-            <div class="collection__description {{ section.settings.description_style }}">
-              {%- if section.settings.show_description -%}
-                {{ section.settings.collection.description }}
-              {%- else -%}
-                {{ section.settings.description }}{% endif %}
-            </div>
           {%- endif -%}
 
           {%- if section.settings.show_view_all and more_in_collection and section.settings.view_all_style == 'link' -%}
