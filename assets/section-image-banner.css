@@ -184,12 +184,27 @@
 }
 
 .banner__media-half {
-  width: 50%;
+  width: 25%;
+  background: none;
+}
+
+.banner__media.banner__media-half {
+  height: 50%;
+}
+
+.banner__media-half > img {
+  object-position: center right;
 }
 
 .banner__media-half + .banner__media-half {
   right: 0;
   left: auto;
+  top: auto;
+  bottom: 0;
+}
+
+.banner__media-half + .banner__media-half > img {
+  object-position: center left;
 }
 
 .banner__box-media img {
@@ -281,7 +296,7 @@
 }
 
 .banner__content {
-  padding: 2.4rem;
+  padding: calc(var(--grid-mobile-horizontal-spacing) * 4) calc(var(--grid-mobile-vertical-spacing) * 2);
   display: flex;
   position: relative;
   width: 100%;
@@ -339,7 +354,7 @@
 
 @media screen and (min-width: 1200px) {
   .banner__content {
-    padding: 4.8rem;
+    padding: calc(var(--grid-desktop-horizontal-spacing) * 4) calc(var(--grid-desktop-vertical-spacing) * 2);
   }
 }
 
