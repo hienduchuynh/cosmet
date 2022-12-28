@@ -201,6 +201,14 @@
     "9c5800dd-9764-413a-b02d-e6f2f45f67f5": {
       "type": "image-with-text",
       "blocks": {
+        "c71faeab-0e09-432a-82ed-b89d59be7576": {
+          "type": "caption",
+          "settings": {
+            "caption": "Proven results",
+            "text_style": "subtitle",
+            "text_size": "small"
+          }
+        },
         "template--17347501523219__9c5800dd-9764-413a-b02d-e6f2f45f67f5-167221148174312811-0": {
           "type": "heading",
           "settings": {
@@ -224,6 +232,7 @@
         }
       },
       "block_order": [
+        "c71faeab-0e09-432a-82ed-b89d59be7576",
         "template--17347501523219__9c5800dd-9764-413a-b02d-e6f2f45f67f5-167221148174312811-0",
         "template--17347501523219__9c5800dd-9764-413a-b02d-e6f2f45f67f5-167221148174312811-1",
         "template--17347501523219__9c5800dd-9764-413a-b02d-e6f2f45f67f5-167221148174312811-2"
