@@ -218,8 +218,8 @@
         "template--17347501523219__9c5800dd-9764-413a-b02d-e6f2f45f67f5-167221148174312811-2": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
-            "button_link": ""
+            "button_label": "Shop all products",
+            "button_link": "shopify:\/\/collections\/all"
           }
         }
       },
