@@ -155,6 +155,12 @@
     padding: 1.3rem 1rem;
 }
 
+.card__information .price {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.6;
+}
+
 .card:not(.ratio)>.card__content {
     grid-template-rows: max-content minmax(0, 1fr) max-content auto;
 }
@@ -210,16 +216,16 @@
 }
 
 .card__vendor {
-    margin-bottom: 0.8rem;
-    color: rgba(var(--color-base-accent-3));
-    text-transform: uppercase;
-    font-size: 1.2rem;
+    margin-bottom: 2.2rem;
+    color: rgba(43, 43, 43, 0.75);
+    font-size: 1.4rem;
+    line-height: 1.6;
 }
 
 .card__heading {
     margin-top: 0;
     margin-bottom: 0;
-    font-weight: 500;
+    font-weight: 300;
 }
 
 .card__heading:last-child {
@@ -379,9 +385,8 @@
     color: rgb(var(--color-foreground));
 }
 
-.card-information .card_heading_price > .price {
+.card-information>.price {
     color: rgb(var(--color-foreground));
-    font-weight: normal;
 }
 
 .card-information>.rating {
