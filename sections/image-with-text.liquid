@@ -46,6 +46,16 @@
       <div id="ImageWithText--{{ section.id }}" class="image-with-text__content image-with-text__content--{{ section.settings.desktop_content_position }} image-with-text__content--desktop-{{ section.settings.desktop_content_alignment }} image-with-text__content--mobile-{{ section.settings.mobile_content_alignment }} image-with-text__content--{{ section.settings.height }} gradient color-{{ section.settings.color_scheme }} content-container">
         {%- for block in section.blocks -%}
           {% case block.type %}
+            {%- when 'title_decor' -%}
+              <img
+                class="title_decor"
+                srcset= "{{ block.settings.title_decor | image_url: width: 80 }}"
+                src="{{ block.settings.title_decor | image_url: width: 80 }}"
+                alt="{{ block.settings.title_decor.alt | escape }}"
+                loading="lazy"
+                width="{{ block.settings.title_decor.width }}"
+                height="{{ block.settings.title_decor.height }}"
+              >
             {%- when 'heading' -%}
               <h2 class="image-with-text__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
                 {{ block.settings.heading | escape }}
@@ -383,7 +393,7 @@
     {
       "type": "text",
       "name": "t:sections.image-with-text.blocks.text.name",
-      "limit": 1,
+      "limit": 2,
       "settings": [
         {
           "type": "richtext",
@@ -425,6 +435,18 @@
           "type": "url",
           "id": "button_link",
           "label": "t:sections.image-with-text.blocks.button.settings.button_link.label"
+        }
+      ]
+    },
+    {
+      "type": "title_decor",
+      "name": "Title Decor",
+      "limit": 1,
+      "settings": [
+        {
+          "id": "title_decor",
+          "type": "image_picker",
+          "label": "Title Decor"
         }
       ]
     }
