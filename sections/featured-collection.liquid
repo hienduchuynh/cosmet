@@ -63,6 +63,7 @@
         <div class="inner">
           {%- if section.settings.title_decor != blank -%}
             <img
+              class="title_decor"
               srcset= "{{ section.settings.title_decor | image_url: width: 80 }}"
               src="{{ section.settings.title_decor | image_url: width: 80 }}"
               alt="{{ section.settings.title_decor.alt | escape }}"

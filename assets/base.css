@@ -1210,6 +1210,10 @@ summary::-webkit-details-marker {
 	margin-bottom: 1.6rem;
 }
 
+.title-wrapper-02 .title_decor {
+	margin-bottom: 2.4rem;
+}
+
 .title-wrapper-02 .subtitle {
 	color: rgba(var(--color-base-accent-2));
 	text-transform: uppercase;
