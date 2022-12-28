@@ -198,6 +198,52 @@
         "mod_class": "new-arrivals-collection"
       }
     },
+    "9c5800dd-9764-413a-b02d-e6f2f45f67f5": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--17347501523219__9c5800dd-9764-413a-b02d-e6f2f45f67f5-167221148174312811-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Natural products powered by science",
+            "heading_size": "h1"
+          }
+        },
+        "template--17347501523219__9c5800dd-9764-413a-b02d-e6f2f45f67f5-167221148174312811-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We partnered with a community of experts, including botanists, formulation scientists, nutritionists and a University to formulate natural products that work.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--17347501523219__9c5800dd-9764-413a-b02d-e6f2f45f67f5-167221148174312811-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17347501523219__9c5800dd-9764-413a-b02d-e6f2f45f67f5-167221148174312811-0",
+        "template--17347501523219__9c5800dd-9764-413a-b02d-e6f2f45f67f5-167221148174312811-1",
+        "template--17347501523219__9c5800dd-9764-413a-b02d-e6f2f45f67f5-167221148174312811-2"
+      ],
+      "settings": {
+        "class_suffix": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "border_thickness": 0,
+        "border_opacity": 0
+      }
+    },
     "c6f98de6-047d-4264-a053-0e2a5b108dab": {
       "type": "featured-blog",
       "settings": {
@@ -234,6 +280,7 @@
     "b7d4689b-aa5d-4fbd-93cf-446d84d85100",
     "44a202b8-e952-4c31-b97a-232026256692",
     "7afcf70d-4f53-4da2-9322-a5c118360a18",
+    "9c5800dd-9764-413a-b02d-e6f2f45f67f5",
     "c6f98de6-047d-4264-a053-0e2a5b108dab"
   ]
 }
