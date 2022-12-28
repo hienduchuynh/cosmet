@@ -142,7 +142,7 @@
 }
 
 .button--primary {
-	--color-button: 33, 33, 33;
+	--color-button: 30, 41, 59;
 	--color-button-text: 255, 255, 255;
 	--alpha-button-background: 1;
 }
