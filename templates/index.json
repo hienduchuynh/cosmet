@@ -201,6 +201,12 @@
     "9c5800dd-9764-413a-b02d-e6f2f45f67f5": {
       "type": "image-with-text",
       "blocks": {
+        "16883d94-9cc8-40f6-acb8-e5d69157b05e": {
+          "type": "title_decor",
+          "settings": {
+            "title_decor": "shopify:\/\/shop_images\/decor-3.png"
+          }
+        },
         "c71faeab-0e09-432a-82ed-b89d59be7576": {
           "type": "caption",
           "settings": {
@@ -223,6 +229,13 @@
             "text_style": "body"
           }
         },
+        "51cd75d2-f9d2-4621-94fd-617d1a1539eb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our highly concentrated extracts from our ecofarm are combined with additional tech ingredients for resilient, glowing skin.<\/p>",
+            "text_style": "body"
+          }
+        },
         "template--17347501523219__9c5800dd-9764-413a-b02d-e6f2f45f67f5-167221148174312811-2": {
           "type": "button",
           "settings": {
@@ -232,9 +245,11 @@
         }
       },
       "block_order": [
+        "16883d94-9cc8-40f6-acb8-e5d69157b05e",
         "c71faeab-0e09-432a-82ed-b89d59be7576",
         "template--17347501523219__9c5800dd-9764-413a-b02d-e6f2f45f67f5-167221148174312811-0",
         "template--17347501523219__9c5800dd-9764-413a-b02d-e6f2f45f67f5-167221148174312811-1",
+        "51cd75d2-f9d2-4621-94fd-617d1a1539eb",
         "template--17347501523219__9c5800dd-9764-413a-b02d-e6f2f45f67f5-167221148174312811-2"
       ],
       "settings": {
