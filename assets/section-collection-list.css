@@ -2,12 +2,14 @@
 	border: 2px solid rgba(0, 0, 0, 100);
 	border-top: 0;
 }
+
 .collection-hero__title {
 	margin: 0;
 	text-transform: uppercase;
 	padding-top: 64px;
 	padding-bottom: 64px;
 }
+
 .collection-hero__title span {
 	background: #000;
 	color: #fff;
@@ -17,27 +19,58 @@
 .main-list-collections > .section {
 	margin-top: 0;
 }
+
 .collection-list {
 	margin-top: 0;
 	margin-bottom: 0;
 }
 
-.collection-list__item .card__information {
-	padding: 0;
+.collection-list__item .card--card .card__inner .card__media {
+	border-radius: var(--card-corner-radius);
 }
 
-.collection-list__item .card__heading a:hover {
-	-webkit-box-shadow: -0.4rem 0 0 rgba(var(--color-base-accent-3)), 0.4rem 0 0 rgba(var(--color-base-accent-3));
-	background: rgba(var(--color-base-accent-3));
-	box-shadow: -0.4rem 0 0 rgba(var(--color-base-accent-3)), 0.4rem 0 0 rgba(var(--color-base-accent-3));
+.collection-list__item .card--card.card--media .card__inner {
+	border-radius: var(--card-corner-radius);
 }
-.collection-list__item .card__information .count {
-	color: #999999;
+
+.collection-list__item .card--card.card--media .card__inner .card__content {
+	grid-template-rows: auto;
+	border-radius: var(--card-corner-radius);
+}
+
+.collection-list__item .card--card.card--media .card__inner .card__information {
+	--color-base-text: 255,255,255;
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 71.35%);
+	padding: 3.2rem;
 	display: block;
-	margin: calc(var(--grid-desktop-vertical-spacing) / 2) 0;
+	height: 100%;
+	grid-row-start: unset;
+	display: grid;
+	border-radius: var(--card-corner-radius);
+	grid-template-rows: minmax(0, 1fr) max-content minmax(0, 1fr);
 }
+
+.collection-list__item .card--card.card--media .card__inner .card__information .card__buttons {
+	grid-row-start: 4;
+}
+
+.collection-list__item .card__heading a:hover {}
+
+.collection-list__item .card__information .count {
+	display: block;
+	color: rgba(var(--color-base-text));
+	font-size: 1.6rem;
+	line-height: 1.6;
+}
+
 .collection-list__item .card__information .button {
 	margin-top: var(--grid-desktop-vertical-spacing);
+	padding: 1.2rem;
+	min-width: 4.8rem;
+}
+
+.collection-list__item .card__information .button .icon-wrap {
+	margin-left: 0;
 }
 
 /*Style for page > collections*/
