@@ -169,6 +169,7 @@
         "title": "New arrivals",
         "heading_size": "h1",
         "title_style": "02",
+        "title_decor": "shopify:\/\/shop_images\/decor-3.png",
         "description_style": "subtitle",
         "description": "<p>Hand-Picked by Us<\/p>",
         "show_description": false,
@@ -193,11 +194,6 @@
         "swipe_on_mobile": true,
         "padding_top": 128,
         "padding_bottom": 128,
-        "border_top_thickness": 0,
-        "border_right_thickness": 0,
-        "border_bottom_thickness": 0,
-        "border_left_thickness": 0,
-        "border_opacity": 100,
         "mod_class": "new-arrivals-collection"
       }
     },
