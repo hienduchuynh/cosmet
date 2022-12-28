@@ -67,18 +67,11 @@
     "b7d4689b-aa5d-4fbd-93cf-446d84d85100": {
       "type": "image-banner",
       "blocks": {
-        "template--17016615010579__b7d4689b-aa5d-4fbd-93cf-446d84d85100-16691955563a648ee6-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "We created the new generation of nature-tech skincare. Our formulas have been developed to boost your skin resilience.",
-            "heading_size": "h1"
-          }
-        },
         "23459631-dc9a-4ef6-9477-7ba5effc553a": {
           "type": "text",
           "settings": {
-            "text": "We created the new generation of nature-tech skincare. Our formulas have been developed to boost your skin resilience.",
-            "text_style": "body"
+            "text": "<p>We created the new generation of nature-tech skincare. Our formulas have been developed to boost your skin resilience.<\/p>",
+            "text_style": "heading"
           }
         },
         "template--17016615010579__b7d4689b-aa5d-4fbd-93cf-446d84d85100-16691955563a648ee6-2": {
@@ -94,7 +87,6 @@
         }
       },
       "block_order": [
-        "template--17016615010579__b7d4689b-aa5d-4fbd-93cf-446d84d85100-16691955563a648ee6-0",
         "23459631-dc9a-4ef6-9477-7ba5effc553a",
         "template--17016615010579__b7d4689b-aa5d-4fbd-93cf-446d84d85100-16691955563a648ee6-2"
       ],
