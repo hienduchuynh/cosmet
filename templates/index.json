@@ -159,8 +159,8 @@
         "show_view_all": false,
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 100,
-        "padding_bottom": 100
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "7afcf70d-4f53-4da2-9322-a5c118360a18": {
@@ -191,8 +191,8 @@
         "enable_quick_add": false,
         "columns_mobile": "1",
         "swipe_on_mobile": true,
-        "padding_top": 56,
-        "padding_bottom": 56,
+        "padding_top": 100,
+        "padding_bottom": 100,
         "border_top_thickness": 0,
         "border_right_thickness": 0,
         "border_bottom_thickness": 0,
