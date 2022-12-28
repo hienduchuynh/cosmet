@@ -88,8 +88,6 @@
 }
 
 .card--card .card__inner .card__media {
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
 }
 
 .card--standard.card--text {
@@ -381,8 +379,9 @@
     color: rgb(var(--color-foreground));
 }
 
-.card-information>.price {
+.card-information .card_heading_price > .price {
     color: rgb(var(--color-foreground));
+    font-weight: normal;
 }
 
 .card-information>.rating {
