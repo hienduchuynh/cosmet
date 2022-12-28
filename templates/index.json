@@ -151,6 +151,7 @@
         "title": "Our picks for you",
         "heading_size": "h1",
         "title_style": "02",
+        "title_decor": "shopify:\/\/shop_images\/decor-3.png",
         "description_style": "subtitle",
         "description": "<p>Our categories<\/p>",
         "image_ratio": "portrait",
