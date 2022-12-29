@@ -426,9 +426,24 @@
     "a15d71e1-ec79-47fb-8829-c7fae36e9456": {
       "type": "collage",
       "blocks": {
+        "template--17347501523219__a15d71e1-ec79-47fb-8829-c7fae36e9456-1672303821527c36de-1": {
+          "type": "product",
+          "settings": {
+            "product": "hair-shampoo",
+            "second_image": false
+          }
+        },
+        "template--17347501523219__a15d71e1-ec79-47fb-8829-c7fae36e9456-1672303821527c36de-2": {
+          "type": "product",
+          "settings": {
+            "product": "firming-mask",
+            "second_image": false
+          }
+        },
         "template--17347501523219__a15d71e1-ec79-47fb-8829-c7fae36e9456-1672303821527c36de-0": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/banner-03.jpg",
             "image_padding": false,
             "heading_size": "h1",
             "static_img_title": "Column",
@@ -437,64 +452,51 @@
             "static_img_link": ""
           }
         },
-        "template--17347501523219__a15d71e1-ec79-47fb-8829-c7fae36e9456-1672303821527c36de-1": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "second_image": false
-          }
-        },
-        "template--17347501523219__a15d71e1-ec79-47fb-8829-c7fae36e9456-1672303821527c36de-2": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "second_image": false
-          }
-        },
         "template--17347501523219__a15d71e1-ec79-47fb-8829-c7fae36e9456-1672303821527c36de-3": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "firming-mask",
             "second_image": false
           }
         },
         "template--17347501523219__a15d71e1-ec79-47fb-8829-c7fae36e9456-1672303821527c36de-4": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "hair-shampoo",
             "second_image": false
           }
         },
         "template--17347501523219__a15d71e1-ec79-47fb-8829-c7fae36e9456-1672303821527c36de-5": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "firming-whey",
             "second_image": false
           }
         },
         "template--17347501523219__a15d71e1-ec79-47fb-8829-c7fae36e9456-1672303821527c36de-6": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "natural-balm",
             "second_image": false
           }
         }
       },
       "block_order": [
-        "template--17347501523219__a15d71e1-ec79-47fb-8829-c7fae36e9456-1672303821527c36de-0",
         "template--17347501523219__a15d71e1-ec79-47fb-8829-c7fae36e9456-1672303821527c36de-1",
         "template--17347501523219__a15d71e1-ec79-47fb-8829-c7fae36e9456-1672303821527c36de-2",
+        "template--17347501523219__a15d71e1-ec79-47fb-8829-c7fae36e9456-1672303821527c36de-0",
         "template--17347501523219__a15d71e1-ec79-47fb-8829-c7fae36e9456-1672303821527c36de-3",
         "template--17347501523219__a15d71e1-ec79-47fb-8829-c7fae36e9456-1672303821527c36de-4",
         "template--17347501523219__a15d71e1-ec79-47fb-8829-c7fae36e9456-1672303821527c36de-5",
         "template--17347501523219__a15d71e1-ec79-47fb-8829-c7fae36e9456-1672303821527c36de-6"
       ],
       "settings": {
-        "heading": "Multimedia collage",
+        "heading": "Gentle skincare for every day",
         "heading_size": "h1",
         "title_style": "02",
-        "description_style": "body",
-        "description": "",
+        "title_decor": "shopify:\/\/shop_images\/decor-3.png",
+        "description_style": "subtitle",
+        "description": "<p>Hand-Picked by Us<\/p>",
         "desktop_layout": "left",
         "mobile_layout": "collage",
         "color_scheme": "background-1",
