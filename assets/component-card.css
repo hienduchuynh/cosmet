@@ -172,6 +172,12 @@
     }
 }
 
+.card .card__information .card_heading_price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .card__badge {
     align-self: flex-end;
     grid-row-start: 3;

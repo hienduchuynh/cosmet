@@ -91,12 +91,6 @@
 	padding-right: 0;
 }
 
-.collection .card .card__information .card_heading_price {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-
 .collection__description > * {
 	margin: 0;
 }

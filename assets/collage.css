@@ -15,6 +15,16 @@
   flex-grow: initial;
 }
 
+.collage__item--product {
+  --color-base-background-1: 255,255,255,0;
+  --gradient-base-background-1: 255,255,255,0;
+}
+
+.collage__item--product .card__information {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 @media screen and (max-width: 749px) {
   .collage {
     grid-column-gap: var(--grid-mobile-horizontal-spacing);
