@@ -322,6 +322,45 @@
         "border_left_thickness": 0,
         "border_opacity": 100
       }
+    },
+    "3aca603d-fa4a-4b6b-9efd-d2cad8eb990d": {
+      "type": "collage",
+      "blocks": {
+        "template--17347501523219__3aca603d-fa4a-4b6b-9efd-d2cad8eb990d-16722827297345b2bc-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "frontpage"
+          }
+        },
+        "template--17347501523219__3aca603d-fa4a-4b6b-9efd-d2cad8eb990d-16722827297345b2bc-1": {
+          "type": "product",
+          "settings": {
+            "product": "firming-mask",
+            "second_image": false
+          }
+        },
+        "6b864e15-d1ea-4f22-9cf0-d2789bf457f2": {
+          "type": "product",
+          "settings": {
+            "product": "firming-whey",
+            "second_image": false
+          }
+        }
+      },
+      "block_order": [
+        "template--17347501523219__3aca603d-fa4a-4b6b-9efd-d2cad8eb990d-16722827297345b2bc-2",
+        "template--17347501523219__3aca603d-fa4a-4b6b-9efd-d2cad8eb990d-16722827297345b2bc-1",
+        "6b864e15-d1ea-4f22-9cf0-d2789bf457f2"
+      ],
+      "settings": {
+        "heading": "Multimedia collage",
+        "heading_size": "h2",
+        "desktop_layout": "left",
+        "mobile_layout": "collage",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -330,6 +369,7 @@
     "44a202b8-e952-4c31-b97a-232026256692",
     "7afcf70d-4f53-4da2-9322-a5c118360a18",
     "9c5800dd-9764-413a-b02d-e6f2f45f67f5",
-    "c6f98de6-047d-4264-a053-0e2a5b108dab"
+    "c6f98de6-047d-4264-a053-0e2a5b108dab",
+    "3aca603d-fa4a-4b6b-9efd-d2cad8eb990d"
   ]
 }
