@@ -362,8 +362,8 @@
         "desktop_layout": "left",
         "mobile_layout": "collage",
         "color_scheme": "accent-2",
-        "padding_top": 100,
-        "padding_bottom": 100
+        "padding_top": 128,
+        "padding_bottom": 128
       }
     }
   },
