@@ -369,7 +369,7 @@
         "description": "<p>Hand-Picked by Us<\/p>",
         "desktop_layout": "left",
         "mobile_layout": "collage",
-        "color_scheme": "accent-2",
+        "color_scheme": "background-2",
         "padding_top": 128,
         "padding_bottom": 128
       }
