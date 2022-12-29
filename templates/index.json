@@ -293,38 +293,73 @@
         "border_opacity": 0
       }
     },
-    "0c8d1d38-8a3f-4cc9-8657-9348917d2c2e": {
-      "type": "featured-collection",
+    "e6e41702-ecb2-47ec-adfa-65cb65822c02": {
+      "type": "collage",
+      "blocks": {
+        "template--17347501523219__e6e41702-ecb2-47ec-adfa-65cb65822c02-1672287978bd2e77ad-4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/banner-01.jpg",
+            "image_padding": false,
+            "heading_size": "h1",
+            "static_img_title": "Column",
+            "static_img_desc": "",
+            "static_img_link_label": "",
+            "static_img_link": ""
+          }
+        },
+        "template--17347501523219__e6e41702-ecb2-47ec-adfa-65cb65822c02-1672287978bd2e77ad-1": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "second_image": false
+          }
+        },
+        "cfdabc44-e9aa-4778-a97b-3fa4e38694e0": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "second_image": false
+          }
+        },
+        "70832a83-140e-40c0-9288-de2715d4a440": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "second_image": false
+          }
+        },
+        "13c2fcb5-dd97-4f0f-af14-8f3732e54e79": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "second_image": false
+          }
+        },
+        "b453af3a-6d08-4cd4-b929-ed9e194742a0": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "second_image": false
+          }
+        }
+      },
+      "block_order": [
+        "template--17347501523219__e6e41702-ecb2-47ec-adfa-65cb65822c02-1672287978bd2e77ad-4",
+        "template--17347501523219__e6e41702-ecb2-47ec-adfa-65cb65822c02-1672287978bd2e77ad-1",
+        "cfdabc44-e9aa-4778-a97b-3fa4e38694e0",
+        "70832a83-140e-40c0-9288-de2715d4a440",
+        "13c2fcb5-dd97-4f0f-af14-8f3732e54e79",
+        "b453af3a-6d08-4cd4-b929-ed9e194742a0"
+      ],
       "settings": {
-        "title": "Pleasure for the body",
-        "heading_size": "h1",
-        "title_style": "02",
-        "title_decor": "shopify:\/\/shop_images\/decor-3.png",
-        "description_style": "subtitle",
-        "description": "<p>Hand-Picked by Us<\/p>",
-        "show_description": false,
-        "collection": "latest-products",
-        "show_card_collection": true,
-        "products_to_show": 6,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "slider_visual": "nav",
-        "color_scheme": "accent-2",
+        "heading": "Multimedia collage",
+        "heading_size": "h2",
         "desktop_layout": "left",
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "show_product_description": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 128,
-        "padding_bottom": 128,
-        "mod_class": ""
+        "mobile_layout": "collage",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
@@ -334,6 +369,6 @@
     "44a202b8-e952-4c31-b97a-232026256692",
     "7afcf70d-4f53-4da2-9322-a5c118360a18",
     "9c5800dd-9764-413a-b02d-e6f2f45f67f5",
-    "0c8d1d38-8a3f-4cc9-8657-9348917d2c2e"
+    "e6e41702-ecb2-47ec-adfa-65cb65822c02"
   ]
 }
