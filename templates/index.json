@@ -355,14 +355,14 @@
         "d64ffdb0-7e8c-47dc-a000-8a5cae8aa44c": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "hair-shampoo",
             "second_image": false
           }
         },
         "fe0f6c1b-8cbd-44f5-accc-d6893478aa7f": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "natural-balm",
             "second_image": false
           }
         },
