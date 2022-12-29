@@ -24,7 +24,75 @@
 
 <div class="color-{{ section.settings.color_scheme }} gradient isolate">
   <div class="page-width{% if section.settings.heading == blank %} no-heading{% endif %} section-{{ section.id }}-padding">
-    <h2 class="collage-wrapper-title {{ section.settings.heading_size }}">{{ section.settings.heading | escape }}</h2>
+    {%- unless section.settings.heading == blank -%}
+      <div class="collage-wrapper-title title-wrapper title-wrapper--no-top-margin title-wrapper-{{ section.settings.heading_style }} {% if section.settings.full_width == false and section.settings.heading_style != "03" %} page-width{% endif %}{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
+        <div class="inner">
+          {%- if section.settings.heading_decor != blank -%}
+            <img
+              class="title_decor"
+              srcset= "{{ section.settings.heading_decor | image_url: width: 80 }}"
+              src="{{ section.settings.heading_decor | image_url: width: 80 }}"
+              alt="{{ section.settings.heading_decor.alt | escape }}"
+              loading="lazy"
+              width="{{ section.settings.heading_decor.width }}"
+              height="{{ section.settings.heading_decor.height }}"
+            >
+          {%- endif -%}
+          {%- if section.settings.description != blank or section.settings.show_description and section.settings.collection.description != empty -%}
+            <div class="collection__description {{ section.settings.description_style }}">
+              {%- if section.settings.show_description -%}
+                {{ section.settings.collection.description }}
+              {%- else -%}
+                {{ section.settings.description }}{% endif %}
+            </div>
+          {%- endif -%}
+          
+          {%- if section.settings.heading != blank -%}
+            <h2 class="title {{ section.settings.heading_size }}">
+              {% if section.settings.heading_style == "03" %}
+              <div class="marquee-group">
+                <div class="marquee">
+                  <span>{{ section.settings.heading | escape }}</span>
+                  <span>{{ section.settings.heading | escape }}</span> 
+                  <span>{{ section.settings.heading | escape }}</span>
+                  <span>{{ section.settings.heading | escape }}</span>
+                  <span>{{ section.settings.heading | escape }}</span>
+                  <span>{{ section.settings.heading | escape }}</span>
+                  <span>{{ section.settings.heading | escape }}</span>
+                  <span>{{ section.settings.heading | escape }}</span>
+                  <span>{{ section.settings.heading | escape }}</span>
+                  <span>{{ section.settings.heading | escape }}</span>
+                </div>
+                <div class="marqueee">
+                  <span>{{ section.settings.heading | escape }}</span>
+                  <span>{{ section.settings.heading | escape }}</span> 
+                  <span>{{ section.settings.heading | escape }}</span>
+                  <span>{{ section.settings.heading | escape }}</span>
+                  <span>{{ section.settings.heading | escape }}</span>
+                  <span>{{ section.settings.heading | escape }}</span>
+                  <span>{{ section.settings.heading | escape }}</span>
+                  <span>{{ section.settings.heading | escape }}</span>
+                  <span>{{ section.settings.heading | escape }}</span>
+                  <span>{{ section.settings.heading | escape }}</span>
+                </div>
+              </div>
+              {% else %}
+                {{ section.settings.heading | escape }}
+              {% endif %}
+            </h2>
+          {%- endif -%}
+
+          {%- if section.settings.show_view_all and more_in_collection and section.settings.view_all_style == 'link' -%}
+            <div class="center collection__view-all">
+              <a href="{{ section.settings.collection.url }}" class="{% if section.settings.view_all_style == 'link' %}link hightlight-link link--text{% elsif section.settings.view_all_style == 'solid' %}button{% else %}button button--secondary{% endif %}" aria-label="{{ 'sections.featured_collection.view_all_label' | t: collection_name: section.settings.collection.title }}">
+                <span>{{ 'sections.featured_collection.view_all' | t }}</span>
+                <span class="icon-wrap">{% render 'icon-arrow' %}</span>
+              </a>
+            </div>
+          {%- endif -%}
+        </div>
+      </div>
+    {%- endunless -%}
     <div class="collage{% if section.settings.mobile_layout == 'collage' %} collage--mobile{% endif %}">
       {%- for block in section.blocks -%}
         <div class="collage__item collage__item--{{ block.type }} collage__item--{{ section.settings.desktop_layout }}" {{ block.shopify_attributes }}>
@@ -516,20 +584,70 @@
       "id": "heading_size",
       "options": [
         {
-          "value": "h2",
+          "value": "h3",
           "label": "t:sections.all.heading_size.options__1.label"
-        },
-        {
-          "value": "h1",
+        }, {
+          "value": "h2",
           "label": "t:sections.all.heading_size.options__2.label"
-        },
-        {
-          "value": "h0",
+        }, {
+          "value": "h1",
           "label": "t:sections.all.heading_size.options__3.label"
+        }, {
+          "value": "h0",
+          "label": "t:sections.all.heading_size.options__4.label"
+        }, {
+          "value": "hxl",
+          "label": "t:sections.all.heading_size.options__5.label"
         }
       ],
-      "default": "h2",
+      "default": "h1",
       "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "select",
+      "id": "title_style",
+      "label": "t:sections.featured-collection.settings.title_style.label",
+      "options": [
+        {
+          "value": "01",
+          "label": "t:sections.featured-collection.settings.title_style.options__1.label"
+        }, {
+          "value": "02",
+          "label": "t:sections.featured-collection.settings.title_style.options__2.label"
+        }, {
+          "value": "03",
+          "label": "t:sections.featured-collection.settings.title_style.options__3.label"
+        }
+      ],
+      "default": "02"
+    },
+    {
+      "type": "image_picker",
+      "id": "title_decor",
+      "label": "Title Decor"
+    },
+    {
+      "type": "select",
+      "id": "description_style",
+      "label": "t:sections.featured-collection.settings.description_style.label",
+      "options": [
+        {
+          "value": "body",
+          "label": "t:sections.featured-collection.settings.description_style.options__1.label"
+        }, {
+          "value": "subtitle",
+          "label": "t:sections.featured-collection.settings.description_style.options__2.label"
+        }, {
+          "value": "uppercase",
+          "label": "t:sections.featured-collection.settings.description_style.options__3.label"
+        }
+      ],
+      "default": "body"
+    }, 
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "t:sections.featured-collection.settings.description.label"
     },
     {
       "type": "select",
@@ -576,14 +694,21 @@
           "label": "t:sections.all.colors.accent_2.label"
         },
         {
+          "value": "accent-3",
+          "label": "t:sections.all.colors.accent_3.label"
+        },
+        {
+          "value": "accent-4",
+          "label": "t:sections.all.colors.accent_4.label"
+        },
+        {
           "value": "background-1",
           "label": "t:sections.all.colors.background_1.label"
         },
         {
           "value": "background-2",
           "label": "t:sections.all.colors.background_2.label"
-        },
-        {
+        }, {
           "value": "inverse",
           "label": "t:sections.all.colors.inverse.label"
         }
@@ -600,7 +725,7 @@
       "type": "range",
       "id": "padding_top",
       "min": 0,
-      "max": 100,
+      "max": 200,
       "step": 4,
       "unit": "px",
       "label": "t:sections.all.padding.padding_top",
@@ -610,7 +735,7 @@
       "type": "range",
       "id": "padding_bottom",
       "min": 0,
-      "max": 100,
+      "max": 200,
       "step": 4,
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
