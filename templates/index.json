@@ -293,36 +293,6 @@
         "border_opacity": 0
       }
     },
-    "c6f98de6-047d-4264-a053-0e2a5b108dab": {
-      "type": "featured-blog",
-      "settings": {
-        "heading": "Blog posts",
-        "heading_size": "h0",
-        "title_style": "02",
-        "description_style": "body",
-        "description": "",
-        "blog": "skateboard",
-        "post_limit": 3,
-        "columns_desktop": 3,
-        "full_width": false,
-        "color_scheme": "accent-3",
-        "show_image": true,
-        "image_height": "medium",
-        "show_date": true,
-        "show_author": false,
-        "show_view_all": true,
-        "view_all_content": "View all posts",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 48,
-        "padding_bottom": 48,
-        "border_top_thickness": 0,
-        "border_right_thickness": 0,
-        "border_bottom_thickness": 0,
-        "border_left_thickness": 0,
-        "border_opacity": 100
-      }
-    },
     "3aca603d-fa4a-4b6b-9efd-d2cad8eb990d": {
       "type": "collage",
       "blocks": {
@@ -369,14 +339,14 @@
         "bf0b02bd-420c-4c9c-ad3d-9cb7b64ea771": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "hair-shampoo",
             "second_image": false
           }
         },
         "144139e0-cd0e-4ca3-a996-2bf12c6c75ff": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "firming-mask",
             "second_image": false
           }
         }
@@ -399,6 +369,36 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "c6f98de6-047d-4264-a053-0e2a5b108dab": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Blog posts",
+        "heading_size": "h0",
+        "title_style": "02",
+        "description_style": "body",
+        "description": "",
+        "blog": "skateboard",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "full_width": false,
+        "color_scheme": "accent-3",
+        "show_image": true,
+        "image_height": "medium",
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "view_all_content": "View all posts",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "border_top_thickness": 0,
+        "border_right_thickness": 0,
+        "border_bottom_thickness": 0,
+        "border_left_thickness": 0,
+        "border_opacity": 100
+      }
     }
   },
   "order": [
@@ -407,7 +407,7 @@
     "44a202b8-e952-4c31-b97a-232026256692",
     "7afcf70d-4f53-4da2-9322-a5c118360a18",
     "9c5800dd-9764-413a-b02d-e6f2f45f67f5",
-    "c6f98de6-047d-4264-a053-0e2a5b108dab",
-    "3aca603d-fa4a-4b6b-9efd-d2cad8eb990d"
+    "3aca603d-fa4a-4b6b-9efd-d2cad8eb990d",
+    "c6f98de6-047d-4264-a053-0e2a5b108dab"
   ]
 }
