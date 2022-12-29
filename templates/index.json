@@ -377,18 +377,18 @@
     "82de993e-14c6-4ad7-988f-fac67f2e0e51": {
       "type": "image-banner",
       "blocks": {
-        "template--17347501523219__82de993e-14c6-4ad7-988f-fac67f2e0e51-16723014001ba68006-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "hxl"
-          }
-        },
         "template--17347501523219__82de993e-14c6-4ad7-988f-fac67f2e0e51-16723014001ba68006-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Give customers details about the banner image(s) or content on the template.<\/p>",
-            "text_style": "body"
+            "text": "<p>WE OFFER<\/p>",
+            "text_style": "subtitle"
+          }
+        },
+        "template--17347501523219__82de993e-14c6-4ad7-988f-fac67f2e0e51-16723014001ba68006-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Recovery treatments for your hair and keratin straightening",
+            "heading_size": "h1"
           }
         },
         "template--17347501523219__82de993e-14c6-4ad7-988f-fac67f2e0e51-16723014001ba68006-2": {
@@ -404,14 +404,14 @@
         }
       },
       "block_order": [
-        "template--17347501523219__82de993e-14c6-4ad7-988f-fac67f2e0e51-16723014001ba68006-0",
         "template--17347501523219__82de993e-14c6-4ad7-988f-fac67f2e0e51-16723014001ba68006-1",
+        "template--17347501523219__82de993e-14c6-4ad7-988f-fac67f2e0e51-16723014001ba68006-0",
         "template--17347501523219__82de993e-14c6-4ad7-988f-fac67f2e0e51-16723014001ba68006-2"
       ],
       "settings": {
         "mod_class": "",
         "image": "shopify:\/\/shop_images\/banner-02.jpg",
-        "image_overlay_opacity": 0,
+        "image_overlay_opacity": 30,
         "image_height": "medium",
         "adapt_height_first_image": false,
         "desktop_content_position": "middle-center",
