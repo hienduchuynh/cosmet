@@ -67,11 +67,11 @@
           {%- endcase -%}
         {%- endfor -%}
 
-        <ul class="grid">
+        <ul class="grid grid--1-col grid--3-col-tablet features-intro">
         {%- for block in section.blocks -%}
           {% case block.type %}
             {%- when 'features' -%}
-            <li class="grid__item">
+            <li class="grid__item feature-item">
               <img
                 srcset="{{ block.settings.image | image_url }}"
                 src="{{ block.settings.image | image_url: width: 80 }}"
