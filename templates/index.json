@@ -311,35 +311,42 @@
         "template--17347501523219__e6e41702-ecb2-47ec-adfa-65cb65822c02-1672287978bd2e77ad-1": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "hair-shampoo",
             "second_image": false
           }
         },
         "cfdabc44-e9aa-4778-a97b-3fa4e38694e0": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "natural-balm",
             "second_image": false
           }
         },
         "70832a83-140e-40c0-9288-de2715d4a440": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "firming-mask",
             "second_image": false
           }
         },
         "13c2fcb5-dd97-4f0f-af14-8f3732e54e79": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "firming-whey",
             "second_image": false
           }
         },
         "b453af3a-6d08-4cd4-b929-ed9e194742a0": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "firming-whey",
+            "second_image": false
+          }
+        },
+        "28c6cf08-fc88-420e-9625-acbf99928130": {
+          "type": "product",
+          "settings": {
+            "product": "hair-shampoo",
             "second_image": false
           }
         }
@@ -350,7 +357,8 @@
         "cfdabc44-e9aa-4778-a97b-3fa4e38694e0",
         "70832a83-140e-40c0-9288-de2715d4a440",
         "13c2fcb5-dd97-4f0f-af14-8f3732e54e79",
-        "b453af3a-6d08-4cd4-b929-ed9e194742a0"
+        "b453af3a-6d08-4cd4-b929-ed9e194742a0",
+        "28c6cf08-fc88-420e-9625-acbf99928130"
       ],
       "settings": {
         "heading": "Pleasure for the body",
