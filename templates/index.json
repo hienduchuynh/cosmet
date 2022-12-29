@@ -326,10 +326,16 @@
     "3aca603d-fa4a-4b6b-9efd-d2cad8eb990d": {
       "type": "collage",
       "blocks": {
-        "template--17347501523219__3aca603d-fa4a-4b6b-9efd-d2cad8eb990d-16722827297345b2bc-2": {
-          "type": "collection",
+        "fd6b3b79-1939-426b-98dd-30e580982d69": {
+          "type": "image",
           "settings": {
-            "collection": "frontpage"
+            "image": "shopify:\/\/shop_images\/ftc-01.jpg",
+            "image_padding": false,
+            "heading_size": "h1",
+            "static_img_title": "Column",
+            "static_img_desc": "",
+            "static_img_link_label": "",
+            "static_img_link": ""
           }
         },
         "template--17347501523219__3aca603d-fa4a-4b6b-9efd-d2cad8eb990d-16722827297345b2bc-1": {
@@ -345,12 +351,44 @@
             "product": "firming-whey",
             "second_image": false
           }
+        },
+        "d64ffdb0-7e8c-47dc-a000-8a5cae8aa44c": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "second_image": false
+          }
+        },
+        "fe0f6c1b-8cbd-44f5-accc-d6893478aa7f": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "second_image": false
+          }
+        },
+        "bf0b02bd-420c-4c9c-ad3d-9cb7b64ea771": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "second_image": false
+          }
+        },
+        "144139e0-cd0e-4ca3-a996-2bf12c6c75ff": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "second_image": false
+          }
         }
       },
       "block_order": [
-        "template--17347501523219__3aca603d-fa4a-4b6b-9efd-d2cad8eb990d-16722827297345b2bc-2",
+        "fd6b3b79-1939-426b-98dd-30e580982d69",
         "template--17347501523219__3aca603d-fa4a-4b6b-9efd-d2cad8eb990d-16722827297345b2bc-1",
-        "6b864e15-d1ea-4f22-9cf0-d2789bf457f2"
+        "6b864e15-d1ea-4f22-9cf0-d2789bf457f2",
+        "d64ffdb0-7e8c-47dc-a000-8a5cae8aa44c",
+        "fe0f6c1b-8cbd-44f5-accc-d6893478aa7f",
+        "bf0b02bd-420c-4c9c-ad3d-9cb7b64ea771",
+        "144139e0-cd0e-4ca3-a996-2bf12c6c75ff"
       ],
       "settings": {
         "heading": "Multimedia collage",
