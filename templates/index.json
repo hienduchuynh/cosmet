@@ -572,9 +572,11 @@
       ],
       "settings": {
         "title": "287,422+ clients love Omaie",
-        "sub-title": "Testimonials",
-        "mod_class": "",
         "heading_size": "h1",
+        "title_style": "02",
+        "title_decor": "shopify:\/\/shop_images\/decor-3.png",
+        "description_style": "subtitle",
+        "description": "<p>Testimonials<\/p>",
         "layout": "grid",
         "image_width": "full",
         "image_ratio": "adapt",
@@ -591,11 +593,7 @@
         "swipe_on_mobile": false,
         "padding_top": 128,
         "padding_bottom": 128,
-        "border_top_thickness": 0,
-        "border_right_thickness": 0,
-        "border_bottom_thickness": 0,
-        "border_left_thickness": 0,
-        "border_opacity": 0
+        "mod_class": ""
       }
     }
   },
