@@ -293,111 +293,38 @@
         "border_opacity": 0
       }
     },
-    "3aca603d-fa4a-4b6b-9efd-d2cad8eb990d": {
-      "type": "collage",
-      "blocks": {
-        "fd6b3b79-1939-426b-98dd-30e580982d69": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/ftc-01.jpg",
-            "image_padding": false,
-            "heading_size": "h1",
-            "static_img_title": "Column",
-            "static_img_desc": "",
-            "static_img_link_label": "",
-            "static_img_link": ""
-          }
-        },
-        "template--17347501523219__3aca603d-fa4a-4b6b-9efd-d2cad8eb990d-16722827297345b2bc-1": {
-          "type": "product",
-          "settings": {
-            "product": "firming-mask",
-            "second_image": false
-          }
-        },
-        "6b864e15-d1ea-4f22-9cf0-d2789bf457f2": {
-          "type": "product",
-          "settings": {
-            "product": "firming-whey",
-            "second_image": false
-          }
-        },
-        "d64ffdb0-7e8c-47dc-a000-8a5cae8aa44c": {
-          "type": "product",
-          "settings": {
-            "product": "hair-shampoo",
-            "second_image": false
-          }
-        },
-        "fe0f6c1b-8cbd-44f5-accc-d6893478aa7f": {
-          "type": "product",
-          "settings": {
-            "product": "natural-balm",
-            "second_image": false
-          }
-        },
-        "bf0b02bd-420c-4c9c-ad3d-9cb7b64ea771": {
-          "type": "product",
-          "settings": {
-            "product": "hair-shampoo",
-            "second_image": false
-          }
-        },
-        "144139e0-cd0e-4ca3-a996-2bf12c6c75ff": {
-          "type": "product",
-          "settings": {
-            "product": "firming-mask",
-            "second_image": false
-          }
-        }
-      },
-      "block_order": [
-        "fd6b3b79-1939-426b-98dd-30e580982d69",
-        "template--17347501523219__3aca603d-fa4a-4b6b-9efd-d2cad8eb990d-16722827297345b2bc-1",
-        "6b864e15-d1ea-4f22-9cf0-d2789bf457f2",
-        "d64ffdb0-7e8c-47dc-a000-8a5cae8aa44c",
-        "fe0f6c1b-8cbd-44f5-accc-d6893478aa7f",
-        "bf0b02bd-420c-4c9c-ad3d-9cb7b64ea771",
-        "144139e0-cd0e-4ca3-a996-2bf12c6c75ff"
-      ],
+    "0c8d1d38-8a3f-4cc9-8657-9348917d2c2e": {
+      "type": "featured-collection",
       "settings": {
-        "heading": "Pleasure for the body",
-        "heading_size": "h2",
-        "desktop_layout": "left",
-        "mobile_layout": "collage",
-        "color_scheme": "background-2",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "c6f98de6-047d-4264-a053-0e2a5b108dab": {
-      "type": "featured-blog",
-      "settings": {
-        "heading": "Blog posts",
-        "heading_size": "h0",
+        "title": "Pleasure for the body",
+        "heading_size": "h1",
         "title_style": "02",
-        "description_style": "body",
-        "description": "",
-        "blog": "skateboard",
-        "post_limit": 3,
-        "columns_desktop": 3,
+        "title_decor": "shopify:\/\/shop_images\/decor-3.png",
+        "description_style": "subtitle",
+        "description": "<p>Hand-Picked by Us<\/p>",
+        "show_description": false,
+        "collection": "latest-products",
+        "show_card_collection": true,
+        "products_to_show": 6,
+        "columns_desktop": 4,
         "full_width": false,
-        "color_scheme": "accent-3",
-        "show_image": true,
-        "image_height": "medium",
-        "show_date": true,
-        "show_author": false,
         "show_view_all": true,
-        "view_all_content": "View all posts",
-        "columns_mobile": "1",
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "slider_visual": "nav",
+        "color_scheme": "accent-2",
+        "desktop_layout": "left",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "show_product_description": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "padding_top": 48,
-        "padding_bottom": 48,
-        "border_top_thickness": 0,
-        "border_right_thickness": 0,
-        "border_bottom_thickness": 0,
-        "border_left_thickness": 0,
-        "border_opacity": 100
+        "padding_top": 128,
+        "padding_bottom": 128,
+        "mod_class": ""
       }
     }
   },
@@ -407,7 +334,6 @@
     "44a202b8-e952-4c31-b97a-232026256692",
     "7afcf70d-4f53-4da2-9322-a5c118360a18",
     "9c5800dd-9764-413a-b02d-e6f2f45f67f5",
-    "3aca603d-fa4a-4b6b-9efd-d2cad8eb990d",
-    "c6f98de6-047d-4264-a053-0e2a5b108dab"
+    "0c8d1d38-8a3f-4cc9-8657-9348917d2c2e"
   ]
 }
