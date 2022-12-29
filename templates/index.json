@@ -353,8 +353,12 @@
         "b453af3a-6d08-4cd4-b929-ed9e194742a0"
       ],
       "settings": {
-        "heading": "Multimedia collage",
-        "heading_size": "h2",
+        "heading": "Pleasure for the body",
+        "heading_size": "h1",
+        "title_style": "02",
+        "title_decor": "shopify:\/\/shop_images\/decor-3.png",
+        "description_style": "subtitle",
+        "description": "<p>Hand-Picked by Us<\/p>",
         "desktop_layout": "left",
         "mobile_layout": "collage",
         "color_scheme": "accent-2",
