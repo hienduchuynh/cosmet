@@ -38,12 +38,9 @@
               height="{{ section.settings.title_decor.height }}"
             >
           {%- endif -%}
-          {%- if section.settings.description != blank or section.settings.show_description and section.settings.collection.description != empty -%}
-            <div class="collection__description {{ section.settings.description_style }}">
-              {%- if section.settings.show_description -%}
-                {{ section.settings.collection.description }}
-              {%- else -%}
-                {{ section.settings.description }}{% endif %}
+          {%- if section.settings.description != blank -%}
+            <div class="{{ section.settings.description_style }}">
+              {{ section.settings.description }}
             </div>
           {%- endif -%}
           
@@ -80,15 +77,6 @@
                 {{ section.settings.heading | escape }}
               {% endif %}
             </h2>
-          {%- endif -%}
-
-          {%- if section.settings.show_view_all and more_in_collection and section.settings.view_all_style == 'link' -%}
-            <div class="center collection__view-all">
-              <a href="{{ section.settings.collection.url }}" class="{% if section.settings.view_all_style == 'link' %}link hightlight-link link--text{% elsif section.settings.view_all_style == 'solid' %}button{% else %}button button--secondary{% endif %}" aria-label="{{ 'sections.featured_collection.view_all_label' | t: collection_name: section.settings.collection.title }}">
-                <span>{{ 'sections.featured_collection.view_all' | t }}</span>
-                <span class="icon-wrap">{% render 'icon-arrow' %}</span>
-              </a>
-            </div>
           {%- endif -%}
         </div>
       </div>
