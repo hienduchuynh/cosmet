@@ -35,7 +35,7 @@
         "filter_type": "offcanvas",
         "enable_sorting": true,
         "columns_mobile": "2",
-        "padding_top": 24,
+        "padding_top": 0,
         "padding_bottom": 48,
         "enable_recently_products": false
       }
