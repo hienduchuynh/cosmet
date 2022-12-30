@@ -2706,6 +2706,10 @@ input[type='checkbox'] {
 	border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
 }
 
+.ja-container:not(.ja-page-index) .section-header {
+	border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
+}
+
 .header {
 	display: flex;
 	grid-template-areas: 'left-icon heading icons';
