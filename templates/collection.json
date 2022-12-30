@@ -3,7 +3,7 @@
     "cde2e82e-9ee6-4ecc-91f6-a4cf4a607b02": {
       "type": "breadcrumb",
       "settings": {
-        "alignment_breadcrumb": "left",
+        "alignment_breadcrumb": "center",
         "padding_top": 24,
         "padding_bottom": 18
       }
