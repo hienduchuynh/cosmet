@@ -30,8 +30,8 @@
   endif
 -%}
 
-<div class="testimonials color-{{ section.settings.color_scheme }} gradient{% unless section.settings.background_style == 'none' and settings.text_boxes_border_thickness > 0 or settings.text_boxes_shadow_opacity > 0 %} background-{{ section.settings.background_style }}{% endunless %}{% if section.settings.title == blank %} no-heading{% endif %} {{ section.settings.mod_class }}">
-  <div class="{% if section.settings.layout == 'grid' %} page-width{% else %} testimonials-fullwidth {% endif %} section-{{ section.id }}-padding isolate">
+<div class="testimonials {% if section.settings.title == blank %} no-heading{% endif %} {{ section.settings.mod_class }}">
+  <div class="{% if section.settings.layout == 'grid' %} page-width{% else %} testimonials-fullwidth {% endif %} section-{{ section.id }}-padding color-{{ section.settings.color_scheme }} gradient{% unless section.settings.background_style == 'none' and settings.text_boxes_border_thickness > 0 or settings.text_boxes_shadow_opacity > 0 %} background-{{ section.settings.background_style }}{% endunless %} isolate">
 
     {%- unless section.settings.title == blank -%}
       <div class="title-wrapper title-wrapper--no-top-margin title-wrapper-{{ section.settings.title_style }} {% if section.settings.full_width == false and section.settings.title_style != "03" %} page-width{% endif %}{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
