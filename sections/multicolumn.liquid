@@ -6,12 +6,6 @@
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px;
-    border-style: solid;
-    border-color: rgba(0, 0, 0, {{ section.settings.border_opacity }});
-    border-top-width: {{ section.settings.border_top_thickness }}px;
-    border-bottom-width: {{ section.settings.border_bottom_thickness }}px;
-    border-left-width: {{ section.settings.border_left_thickness }}px;
-    border-right-width: {{ section.settings.border_right_thickness }}px;
   }
 
   @media screen and (min-width: 750px) {
@@ -38,22 +32,63 @@
 
 <div class="multicolumn color-{{ section.settings.color_scheme }} gradient{% unless section.settings.background_style == 'none' and settings.text_boxes_border_thickness > 0 or settings.text_boxes_shadow_opacity > 0 %} background-{{ section.settings.background_style }}{% endunless %}{% if section.settings.title == blank %} no-heading{% endif %} {{ section.settings.mod_class }}">
   <div class="{% if section.settings.layout == 'grid' %} page-width{% else %} multicolumn-fullwidth {% endif %} section-{{ section.id }}-padding isolate">
+
     {%- unless section.settings.title == blank -%}
-      <div class="title-wrapper title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin">
+      <div class="title-wrapper title-wrapper--no-top-margin title-wrapper-{{ section.settings.title_style }} {% if section.settings.full_width == false and section.settings.title_style != "03" %} page-width{% endif %}{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
         <div class="inner">
-          <h2 class="title {{ section.settings.heading_size }}">
-            {{ section.settings.title | escape }}
-          </h2>
-          {%- if section.settings.button_label != blank and show_tablet_slider -%}
-            <a href="{{ section.settings.button_link }}" class="link underlined-link large-up-hide">{{ section.settings.button_label | escape }}</a>
+          {%- if section.settings.title_decor != blank -%}
+            <img
+              class="title_decor"
+              srcset= "{{ section.settings.title_decor | image_url: width: 80 }}"
+              src="{{ section.settings.title_decor | image_url: width: 80 }}"
+              alt="{{ section.settings.title_decor.alt | escape }}"
+              loading="lazy"
+              width="{{ section.settings.title_decor.width }}"
+              height="{{ section.settings.title_decor.height }}"
+            >
+          {%- endif -%}
+          {%- if section.settings.description != blank -%}
+            <div class="{{ section.settings.description_style }}">
+                {{ section.settings.description }}
+            </div>
+          {%- endif -%}
+          
+          {%- if section.settings.title != blank -%}
+            <h2 class="title {{ section.settings.heading_size }}">
+              {% if section.settings.title_style == "03" %}
+              <div class="marquee-group">
+                <div class="marquee">
+                  <span>{{ section.settings.title | escape }}</span>
+                  <span>{{ section.settings.title | escape }}</span> 
+                  <span>{{ section.settings.title | escape }}</span>
+                  <span>{{ section.settings.title | escape }}</span>
+                  <span>{{ section.settings.title | escape }}</span>
+                  <span>{{ section.settings.title | escape }}</span>
+                  <span>{{ section.settings.title | escape }}</span>
+                  <span>{{ section.settings.title | escape }}</span>
+                  <span>{{ section.settings.title | escape }}</span>
+                  <span>{{ section.settings.title | escape }}</span>
+                </div>
+                <div class="marqueee">
+                  <span>{{ section.settings.title | escape }}</span>
+                  <span>{{ section.settings.title | escape }}</span> 
+                  <span>{{ section.settings.title | escape }}</span>
+                  <span>{{ section.settings.title | escape }}</span>
+                  <span>{{ section.settings.title | escape }}</span>
+                  <span>{{ section.settings.title | escape }}</span>
+                  <span>{{ section.settings.title | escape }}</span>
+                  <span>{{ section.settings.title | escape }}</span>
+                  <span>{{ section.settings.title | escape }}</span>
+                  <span>{{ section.settings.title | escape }}</span>
+                </div>
+              </div>
+              {% else %}
+                {{ section.settings.title | escape }}
+              {% endif %}
+            </h2>
           {%- endif -%}
         </div>
       </div>
-    {%- endunless -%}
-    {%- unless section.settings.sub-title == blank -%}
-      <p class="sub-title">
-        {{ section.settings.sub-title | escape }}
-      </p>
     {%- endunless -%}
     <slider-component class="slider-mobile-gutter slider-tablet-gutter">
       <ul class="multicolumn-list contains-content-container grid {% if section.settings.layout == 'grid--gapless' %} grid--gapless{% endif %} grid--{{ section.settings.columns_mobile }}-col-tablet-down grid--{{ section.settings.columns_tablet }}-col-tablet grid--{{ section.settings.columns_desktop }}-col-desktop{% if show_mobile_slider %} slider slider--mobile grid--peek{% endif %} {% if show_tablet_slider %} slider slider--tablet grid--peek{% endif %} align-items-{{ section.settings.row_alignment }}"
@@ -201,16 +236,6 @@
       "label": "t:sections.multicolumn.settings.title.label"
     },
     {
-      "type": "text",
-      "id": "sub-title",
-      "label": "t:sections.multicolumn.settings.sub-title.label"
-    },
-    {
-      "type": "text",
-      "id": "mod_class",
-      "label": "Module Class Suffix"
-    },
-    {
       "type": "select",
       "id": "heading_size",
       "options": [
@@ -231,8 +256,54 @@
           "label": "t:sections.all.heading_size.options__5.label"
         }
       ],
-      "default": "h0",
+      "default": "h1",
       "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "select",
+      "id": "title_style",
+      "label": "t:sections.featured-collection.settings.title_style.label",
+      "options": [
+        {
+          "value": "01",
+          "label": "t:sections.featured-collection.settings.title_style.options__1.label"
+        }, {
+          "value": "02",
+          "label": "t:sections.featured-collection.settings.title_style.options__2.label"
+        }, {
+          "value": "03",
+          "label": "t:sections.featured-collection.settings.title_style.options__3.label"
+        }
+      ],
+      "default": "02"
+    },
+    {
+      "type": "image_picker",
+      "id": "title_decor",
+      "label": "Title Decor"
+    },
+    {
+      "type": "select",
+      "id": "description_style",
+      "label": "t:sections.featured-collection.settings.description_style.label",
+      "options": [
+        {
+          "value": "body",
+          "label": "t:sections.featured-collection.settings.description_style.options__1.label"
+        }, {
+          "value": "subtitle",
+          "label": "t:sections.featured-collection.settings.description_style.options__2.label"
+        }, {
+          "value": "uppercase",
+          "label": "t:sections.featured-collection.settings.description_style.options__3.label"
+        }
+      ],
+      "default": "body"
+    }, 
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "t:sections.featured-collection.settings.description.label"
     },
     {
       "type": "select",
@@ -491,58 +562,9 @@
       "default": 36
     },
     {
-      "type": "header",
-      "content": "t:settings_schema.global.settings.header__border.content"
-    },
-    {
-      "type": "range",
-      "id": "border_top_thickness",
-      "min": 0,
-      "max": 24,
-      "step": 1,
-      "unit": "px",
-      "label": "t:settings_schema.global.settings.top_thickness.label",
-      "default": 0
-    },
-    {
-      "type": "range",
-      "id": "border_right_thickness",
-      "min": 0,
-      "max": 24,
-      "step": 1,
-      "unit": "px",
-      "label": "t:settings_schema.global.settings.right_thickness.label",
-      "default": 0
-    },
-    {
-      "type": "range",
-      "id": "border_bottom_thickness",
-      "min": 0,
-      "max": 24,
-      "step": 1,
-      "unit": "px",
-      "label": "t:settings_schema.global.settings.bottom_thickness.label",
-      "default": 0
-    },
-    {
-      "type": "range",
-      "id": "border_left_thickness",
-      "min": 0,
-      "max": 24,
-      "step": 1,
-      "unit": "px",
-      "label": "t:settings_schema.global.settings.left_thickness.label",
-      "default": 0
-    },
-    {
-      "type": "range",
-      "id": "border_opacity",
-      "min": 0,
-      "max": 100,
-      "step": 5,
-      "unit": "%",
-      "label": "t:settings_schema.global.settings.opacity.label",
-      "default": 0
+      "type": "text",
+      "id": "mod_class",
+      "label": "Module Class Suffix"
     }
   ],
   "blocks": [

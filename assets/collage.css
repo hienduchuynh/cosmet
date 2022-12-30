@@ -15,42 +15,20 @@
   flex-grow: initial;
 }
 
+.collage__item--product {
+  --color-base-background-1: 255,255,255,0;
+  --gradient-base-background-1: 255,255,255,0;
+}
+
+.collage__item--product .card__information {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 @media screen and (max-width: 749px) {
   .collage {
     grid-column-gap: var(--grid-mobile-horizontal-spacing);
     grid-row-gap: var(--grid-mobile-vertical-spacing);
-  }
-
-  .collage--mobile {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .collage--mobile .collage__item--left:nth-child(3n - 2) {
-    grid-column: span 2;
-  }
-
-  .collage--mobile .collage__item--left:nth-child(3n - 2):nth-last-child(2) {
-    grid-column: span 1;
-  }
-
-  .collage--mobile .collage__item--left:nth-child(3n) {
-    grid-column-start: 2;
-  }
-
-  .collage--mobile .collage__item--right:nth-child(3n - 2) {
-    grid-column-start: 1;
-  }
-
-  .collage--mobile .collage__item--right:nth-child(3n - 2):last-child {
-    grid-column: span 2;
-  }
-
-  .collage--mobile .collage__item--right:nth-child(3n - 1) {
-    grid-column-start: 2;
-  }
-
-  .collage--mobile .collage__item--right:nth-child(3n) {
-    grid-column: 1 / span 2;
   }
 }
 
@@ -59,47 +37,13 @@
     grid-auto-flow: column;
     grid-column-gap: var(--grid-desktop-horizontal-spacing);
     grid-row-gap: var(--grid-desktop-vertical-spacing);
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "area-1 area-1 auto auto"; 
   }
 
-  .collage__item--left:nth-child(3n - 2) {
-    grid-column: 1 / span 2;
-    grid-row: span 2;
-  }
-
-  .collage__item--left:nth-child(3n - 2):last-child {
-    grid-column: 1 / span 3;
-  }
-
-  .collage__item--left:nth-child(3n - 1),
-  .collage__item--left:nth-child(3n) {
-    grid-column-start: 3;
-  }
-
-  .collage__item--left:nth-child(3n - 1):last-child {
-    grid-row: span 2;
-  }
-
-  .collage__item--right:nth-child(3n - 2) {
-    grid-column: 1 / span 1;
-    grid-row: span 1;
-  }
-
-  .collage__item--right:nth-child(3n - 2):last-child {
-    grid-column: 1 / span 3;
-  }
-
-  .collage__item--right:nth-child(3n - 1) {
-    grid-column-start: 1;
-  }
-
-  .collage__item--right:nth-child(3n-1):last-child {
-    grid-column: span 2;
-  }
-
-  .collage__item--right:nth-child(3n) {
-    grid-column: 2 / span 2;
-    grid-row: span 2;
+  .collage__item--image {
+    grid-area: area-1;
   }
 
   .collage__item--collection:only-child,

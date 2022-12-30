@@ -427,6 +427,11 @@
   margin-top: 1.5rem;
 }
 
+.banner__text a {
+  color: rgba(93, 140, 93);
+  text-decoration: none;
+}
+
 @media screen and (min-width: 750px) {
   .banner__box > * + .banner__text {
     margin-top: 2rem;

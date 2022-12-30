@@ -67,11 +67,11 @@
     "b7d4689b-aa5d-4fbd-93cf-446d84d85100": {
       "type": "image-banner",
       "blocks": {
-        "template--17016615010579__b7d4689b-aa5d-4fbd-93cf-446d84d85100-16691955563a648ee6-0": {
-          "type": "heading",
+        "23459631-dc9a-4ef6-9477-7ba5effc553a": {
+          "type": "text",
           "settings": {
-            "heading": "We created the new generation of nature-tech skincare. Our formulas have been developed to boost your skin resilience.",
-            "heading_size": "h1"
+            "text": "<p>We created the new generation of nature-tech skincare. Our formulas have been developed to <a href=\"#\" title=\"#\">boost your skin resilience.<\/a><\/p>",
+            "text_style": "h1"
           }
         },
         "template--17016615010579__b7d4689b-aa5d-4fbd-93cf-446d84d85100-16691955563a648ee6-2": {
@@ -87,7 +87,7 @@
         }
       },
       "block_order": [
-        "template--17016615010579__b7d4689b-aa5d-4fbd-93cf-446d84d85100-16691955563a648ee6-0",
+        "23459631-dc9a-4ef6-9477-7ba5effc553a",
         "template--17016615010579__b7d4689b-aa5d-4fbd-93cf-446d84d85100-16691955563a648ee6-2"
       ],
       "settings": {
@@ -151,6 +151,7 @@
         "title": "Our picks for you",
         "heading_size": "h1",
         "title_style": "02",
+        "title_decor": "shopify:\/\/shop_images\/decor-3.png",
         "description_style": "subtitle",
         "description": "<p>Our categories<\/p>",
         "image_ratio": "portrait",
@@ -166,9 +167,10 @@
     "7afcf70d-4f53-4da2-9322-a5c118360a18": {
       "type": "featured-collection",
       "settings": {
-        "title": "NEW ARRIVALS",
+        "title": "New arrivals",
         "heading_size": "h1",
         "title_style": "02",
+        "title_decor": "shopify:\/\/shop_images\/decor-3.png",
         "description_style": "subtitle",
         "description": "<p>Hand-Picked by Us<\/p>",
         "show_description": false,
@@ -193,85 +195,405 @@
         "swipe_on_mobile": true,
         "padding_top": 128,
         "padding_bottom": 128,
-        "border_top_thickness": 0,
-        "border_right_thickness": 0,
-        "border_bottom_thickness": 0,
-        "border_left_thickness": 0,
-        "border_opacity": 100,
         "mod_class": "new-arrivals-collection"
       }
     },
-    "cb809454-489b-40a4-895f-7a4805ef7846": {
-      "type": "ja-slider",
+    "9c5800dd-9764-413a-b02d-e6f2f45f67f5": {
+      "type": "image-with-text",
       "blocks": {
-        "template--17016615010579__cb809454-489b-40a4-895f-7a4805ef7846-16691955570c9dd991-0": {
-          "type": "slide",
+        "16883d94-9cc8-40f6-acb8-e5d69157b05e": {
+          "type": "title_decor",
           "settings": {
-            "heading": "Vans x Peak Shoes Collection",
-            "heading_size": "h0",
-            "subheading": "Fusce posuere nec ipsum a volutpat. In at dictum est, at pulvinar mauris. Sed hendrerit nisl a tincidunt placerat. Suspendisse potenti. Sed at maximus est. Mauris vel auctor ex. Morbi at fermentum urna, in cursus leo. Sed aliquam auctor ante, id pharetra augue aliquet in. Sed at rutrum odio.",
-            "button_label": "VIEW ALL PRODUCTS",
-            "link": "shopify:\/\/collections\/all",
-            "link_style": "outline",
-            "box_align": "right",
-            "box_width": 90,
-            "button_label2": "",
-            "link2": "",
-            "link_style2": "solid",
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "text_alignment_mobile": "center"
+            "title_decor": "shopify:\/\/shop_images\/decor-3.png"
+          }
+        },
+        "c71faeab-0e09-432a-82ed-b89d59be7576": {
+          "type": "caption",
+          "settings": {
+            "caption": "Proven results",
+            "text_style": "subtitle",
+            "text_size": "small"
+          }
+        },
+        "template--17347501523219__9c5800dd-9764-413a-b02d-e6f2f45f67f5-167221148174312811-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Natural products powered by science",
+            "heading_size": "h1"
+          }
+        },
+        "template--17347501523219__9c5800dd-9764-413a-b02d-e6f2f45f67f5-167221148174312811-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We partnered with a community of experts, including botanists, formulation scientists, nutritionists and a University to formulate natural products that work.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "51cd75d2-f9d2-4621-94fd-617d1a1539eb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our highly concentrated extracts from our ecofarm are combined with additional tech ingredients for resilient, glowing skin.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "53ece0f2-f19a-44df-930e-723175f753f9": {
+          "type": "features",
+          "settings": {
+            "text": "Vegan products",
+            "image": "shopify:\/\/shop_images\/sunflower.png"
+          }
+        },
+        "ab21e8c2-7319-45b6-95dc-c77cb2c82ac4": {
+          "type": "features",
+          "settings": {
+            "text": "Hand made",
+            "image": "shopify:\/\/shop_images\/talcum-powder.png"
+          }
+        },
+        "d032dab0-3fcd-4362-b0c2-b92cae79da33": {
+          "type": "features",
+          "settings": {
+            "text": "Paraben free",
+            "image": "shopify:\/\/shop_images\/mineral-water.png"
+          }
+        },
+        "template--17347501523219__9c5800dd-9764-413a-b02d-e6f2f45f67f5-167221148174312811-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop all products",
+            "button_link": "shopify:\/\/collections\/all"
           }
         }
       },
       "block_order": [
-        "template--17016615010579__cb809454-489b-40a4-895f-7a4805ef7846-16691955570c9dd991-0"
+        "16883d94-9cc8-40f6-acb8-e5d69157b05e",
+        "c71faeab-0e09-432a-82ed-b89d59be7576",
+        "template--17347501523219__9c5800dd-9764-413a-b02d-e6f2f45f67f5-167221148174312811-0",
+        "template--17347501523219__9c5800dd-9764-413a-b02d-e6f2f45f67f5-167221148174312811-1",
+        "51cd75d2-f9d2-4621-94fd-617d1a1539eb",
+        "53ece0f2-f19a-44df-930e-723175f753f9",
+        "ab21e8c2-7319-45b6-95dc-c77cb2c82ac4",
+        "d032dab0-3fcd-4362-b0c2-b92cae79da33",
+        "template--17347501523219__9c5800dd-9764-413a-b02d-e6f2f45f67f5-167221148174312811-2"
       ],
       "settings": {
-        "layout": "grid--gapless",
-        "slide_height": "square",
-        "change_slides_speed": 5,
-        "show_text_below": true,
-        "accessibility_info": "ja_slider about our brand",
+        "class_suffix": "",
+        "image": "shopify:\/\/shop_images\/ftc-01.jpg",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
         "padding_top": 0,
-        "padding_bottom": 0,
-        "border_top_thickness": 1,
-        "border_right_thickness": 0,
-        "border_bottom_thickness": 1,
-        "border_left_thickness": 0,
-        "border_opacity": 100,
-        "addition_class": ""
+        "padding_bottom": 100,
+        "border_thickness": 0,
+        "border_opacity": 0
       }
     },
-    "c6f98de6-047d-4264-a053-0e2a5b108dab": {
-      "type": "featured-blog",
+    "e6e41702-ecb2-47ec-adfa-65cb65822c02": {
+      "type": "collage",
+      "blocks": {
+        "template--17347501523219__e6e41702-ecb2-47ec-adfa-65cb65822c02-1672287978bd2e77ad-4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/banner-01.jpg",
+            "image_padding": false,
+            "heading_size": "h1",
+            "static_img_title": "Column",
+            "static_img_desc": "",
+            "static_img_link_label": "",
+            "static_img_link": ""
+          }
+        },
+        "template--17347501523219__e6e41702-ecb2-47ec-adfa-65cb65822c02-1672287978bd2e77ad-1": {
+          "type": "product",
+          "settings": {
+            "product": "hair-shampoo",
+            "second_image": false
+          }
+        },
+        "cfdabc44-e9aa-4778-a97b-3fa4e38694e0": {
+          "type": "product",
+          "settings": {
+            "product": "natural-balm",
+            "second_image": false
+          }
+        },
+        "70832a83-140e-40c0-9288-de2715d4a440": {
+          "type": "product",
+          "settings": {
+            "product": "firming-mask",
+            "second_image": false
+          }
+        },
+        "13c2fcb5-dd97-4f0f-af14-8f3732e54e79": {
+          "type": "product",
+          "settings": {
+            "product": "firming-whey",
+            "second_image": false
+          }
+        },
+        "b453af3a-6d08-4cd4-b929-ed9e194742a0": {
+          "type": "product",
+          "settings": {
+            "product": "firming-whey",
+            "second_image": false
+          }
+        },
+        "28c6cf08-fc88-420e-9625-acbf99928130": {
+          "type": "product",
+          "settings": {
+            "product": "hair-shampoo",
+            "second_image": false
+          }
+        }
+      },
+      "block_order": [
+        "template--17347501523219__e6e41702-ecb2-47ec-adfa-65cb65822c02-1672287978bd2e77ad-4",
+        "template--17347501523219__e6e41702-ecb2-47ec-adfa-65cb65822c02-1672287978bd2e77ad-1",
+        "cfdabc44-e9aa-4778-a97b-3fa4e38694e0",
+        "70832a83-140e-40c0-9288-de2715d4a440",
+        "13c2fcb5-dd97-4f0f-af14-8f3732e54e79",
+        "b453af3a-6d08-4cd4-b929-ed9e194742a0",
+        "28c6cf08-fc88-420e-9625-acbf99928130"
+      ],
       "settings": {
-        "heading": "Blog posts",
-        "heading_size": "h0",
+        "heading": "Pleasure for the body",
+        "heading_size": "h1",
         "title_style": "02",
-        "description_style": "body",
-        "description": "",
-        "blog": "skateboard",
-        "post_limit": 3,
-        "columns_desktop": 3,
-        "full_width": false,
-        "color_scheme": "accent-3",
-        "show_image": true,
+        "title_decor": "shopify:\/\/shop_images\/decor-3.png",
+        "description_style": "subtitle",
+        "description": "<p>Hand-Picked by Us<\/p>",
+        "desktop_layout": "left",
+        "mobile_layout": "collage",
+        "color_scheme": "background-2",
+        "padding_top": 128,
+        "padding_bottom": 128
+      }
+    },
+    "82de993e-14c6-4ad7-988f-fac67f2e0e51": {
+      "type": "image-banner",
+      "blocks": {
+        "template--17347501523219__82de993e-14c6-4ad7-988f-fac67f2e0e51-16723014001ba68006-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>WE OFFER<\/p>",
+            "text_style": "subtitle"
+          }
+        },
+        "template--17347501523219__82de993e-14c6-4ad7-988f-fac67f2e0e51-16723014001ba68006-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Recovery treatments for your hair and keratin straightening",
+            "heading_size": "h1"
+          }
+        },
+        "template--17347501523219__82de993e-14c6-4ad7-988f-fac67f2e0e51-16723014001ba68006-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "View more",
+            "button_link_1": "shopify:\/\/collections\/all",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--17347501523219__82de993e-14c6-4ad7-988f-fac67f2e0e51-16723014001ba68006-1",
+        "template--17347501523219__82de993e-14c6-4ad7-988f-fac67f2e0e51-16723014001ba68006-0",
+        "template--17347501523219__82de993e-14c6-4ad7-988f-fac67f2e0e51-16723014001ba68006-2"
+      ],
+      "settings": {
+        "mod_class": "",
+        "image": "shopify:\/\/shop_images\/banner-02.jpg",
+        "image_overlay_opacity": 30,
         "image_height": "medium",
-        "show_date": true,
-        "show_author": false,
-        "show_view_all": true,
-        "view_all_content": "View all posts",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "inverse",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "a15d71e1-ec79-47fb-8829-c7fae36e9456": {
+      "type": "collage",
+      "blocks": {
+        "template--17347501523219__a15d71e1-ec79-47fb-8829-c7fae36e9456-1672303821527c36de-1": {
+          "type": "product",
+          "settings": {
+            "product": "hair-shampoo",
+            "second_image": false
+          }
+        },
+        "template--17347501523219__a15d71e1-ec79-47fb-8829-c7fae36e9456-1672303821527c36de-2": {
+          "type": "product",
+          "settings": {
+            "product": "firming-mask",
+            "second_image": false
+          }
+        },
+        "template--17347501523219__a15d71e1-ec79-47fb-8829-c7fae36e9456-1672303821527c36de-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/banner-03.jpg",
+            "image_padding": false,
+            "heading_size": "h1",
+            "static_img_title": "Column",
+            "static_img_desc": "",
+            "static_img_link_label": "",
+            "static_img_link": ""
+          }
+        },
+        "template--17347501523219__a15d71e1-ec79-47fb-8829-c7fae36e9456-1672303821527c36de-3": {
+          "type": "product",
+          "settings": {
+            "product": "firming-mask",
+            "second_image": false
+          }
+        },
+        "template--17347501523219__a15d71e1-ec79-47fb-8829-c7fae36e9456-1672303821527c36de-4": {
+          "type": "product",
+          "settings": {
+            "product": "hair-shampoo",
+            "second_image": false
+          }
+        },
+        "template--17347501523219__a15d71e1-ec79-47fb-8829-c7fae36e9456-1672303821527c36de-5": {
+          "type": "product",
+          "settings": {
+            "product": "firming-whey",
+            "second_image": false
+          }
+        },
+        "template--17347501523219__a15d71e1-ec79-47fb-8829-c7fae36e9456-1672303821527c36de-6": {
+          "type": "product",
+          "settings": {
+            "product": "natural-balm",
+            "second_image": false
+          }
+        }
+      },
+      "block_order": [
+        "template--17347501523219__a15d71e1-ec79-47fb-8829-c7fae36e9456-1672303821527c36de-1",
+        "template--17347501523219__a15d71e1-ec79-47fb-8829-c7fae36e9456-1672303821527c36de-2",
+        "template--17347501523219__a15d71e1-ec79-47fb-8829-c7fae36e9456-1672303821527c36de-0",
+        "template--17347501523219__a15d71e1-ec79-47fb-8829-c7fae36e9456-1672303821527c36de-3",
+        "template--17347501523219__a15d71e1-ec79-47fb-8829-c7fae36e9456-1672303821527c36de-4",
+        "template--17347501523219__a15d71e1-ec79-47fb-8829-c7fae36e9456-1672303821527c36de-5",
+        "template--17347501523219__a15d71e1-ec79-47fb-8829-c7fae36e9456-1672303821527c36de-6"
+      ],
+      "settings": {
+        "heading": "Gentle skincare for every day",
+        "heading_size": "h1",
+        "title_style": "02",
+        "title_decor": "shopify:\/\/shop_images\/decor-3.png",
+        "description_style": "subtitle",
+        "description": "<p>Hand-Picked by Us<\/p>",
+        "desktop_layout": "left",
+        "mobile_layout": "collage",
+        "color_scheme": "background-1",
+        "padding_top": 128,
+        "padding_bottom": 128
+      }
+    },
+    "d2da5983-bc11-43bc-8f65-7261979c6f4b": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--17347501523219__d2da5983-bc11-43bc-8f65-7261979c6f4b-1672304453c687df02-0": {
+          "type": "column",
+          "settings": {
+            "image_position": "top",
+            "title": "Column",
+            "title_size": "h4",
+            "icon": "none",
+            "icon_position": "left",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": "",
+            "link_style": "link",
+            "padding_left": 32,
+            "padding_right": 32,
+            "padding_top": 48,
+            "padding_bottom": 48,
+            "image_spacing": 25
+          }
+        },
+        "template--17347501523219__d2da5983-bc11-43bc-8f65-7261979c6f4b-1672304453c687df02-1": {
+          "type": "column",
+          "settings": {
+            "image_position": "top",
+            "title": "Column",
+            "title_size": "h4",
+            "icon": "none",
+            "icon_position": "left",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": "",
+            "link_style": "link",
+            "padding_left": 32,
+            "padding_right": 32,
+            "padding_top": 48,
+            "padding_bottom": 48,
+            "image_spacing": 25
+          }
+        },
+        "template--17347501523219__d2da5983-bc11-43bc-8f65-7261979c6f4b-1672304453c687df02-2": {
+          "type": "column",
+          "settings": {
+            "image_position": "top",
+            "title": "Column",
+            "title_size": "h4",
+            "icon": "none",
+            "icon_position": "left",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": "",
+            "link_style": "link",
+            "padding_left": 32,
+            "padding_right": 32,
+            "padding_top": 48,
+            "padding_bottom": 48,
+            "image_spacing": 25
+          }
+        }
+      },
+      "block_order": [
+        "template--17347501523219__d2da5983-bc11-43bc-8f65-7261979c6f4b-1672304453c687df02-0",
+        "template--17347501523219__d2da5983-bc11-43bc-8f65-7261979c6f4b-1672304453c687df02-1",
+        "template--17347501523219__d2da5983-bc11-43bc-8f65-7261979c6f4b-1672304453c687df02-2"
+      ],
+      "settings": {
+        "title": "287,422+ clients love Omaie",
+        "heading_size": "h1",
+        "title_style": "02",
+        "title_decor": "shopify:\/\/shop_images\/decor-3.png",
+        "description_style": "subtitle",
+        "description": "<p>Testimonials<\/p>",
+        "layout": "grid",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "row_alignment": "top",
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-2",
+        "columns_tablet": "2",
+        "swipe_on_tablet": false,
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 48,
-        "padding_bottom": 48,
-        "border_top_thickness": 0,
-        "border_right_thickness": 0,
-        "border_bottom_thickness": 0,
-        "border_left_thickness": 0,
-        "border_opacity": 100
+        "padding_top": 128,
+        "padding_bottom": 128,
+        "mod_class": ""
       }
     }
   },
@@ -280,7 +602,10 @@
     "b7d4689b-aa5d-4fbd-93cf-446d84d85100",
     "44a202b8-e952-4c31-b97a-232026256692",
     "7afcf70d-4f53-4da2-9322-a5c118360a18",
-    "cb809454-489b-40a4-895f-7a4805ef7846",
-    "c6f98de6-047d-4264-a053-0e2a5b108dab"
+    "9c5800dd-9764-413a-b02d-e6f2f45f67f5",
+    "e6e41702-ecb2-47ec-adfa-65cb65822c02",
+    "82de993e-14c6-4ad7-988f-fac67f2e0e51",
+    "a15d71e1-ec79-47fb-8829-c7fae36e9456",
+    "d2da5983-bc11-43bc-8f65-7261979c6f4b"
   ]
 }

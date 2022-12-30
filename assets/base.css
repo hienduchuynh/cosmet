@@ -142,7 +142,7 @@
 }
 
 .button--primary {
-	--color-button: 33, 33, 33;
+	--color-button: 30, 41, 59;
 	--color-button-text: 255, 255, 255;
 	--alpha-button-background: 1;
 }
@@ -1208,6 +1208,10 @@ summary::-webkit-details-marker {
 .title-wrapper-02 .title {
 	margin-top: 0;
 	margin-bottom: 1.6rem;
+}
+
+.title-wrapper-02 .title_decor {
+	margin-bottom: 2.4rem;
 }
 
 .title-wrapper-02 .subtitle {
