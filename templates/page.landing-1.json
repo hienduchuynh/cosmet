@@ -24,7 +24,7 @@
         "template--17179901002003__a0cb26df-4304-4592-91f2-906a3c339412-1670471044b4379327-1": {
           "type": "text",
           "settings": {
-            "text": "merry christmas and happy new year",
+            "text": "<p>merry christmas and happy new year</p>",
             "text_style": "subtitle"
           }
         },
@@ -170,7 +170,7 @@
         "template--17179901002003__45089086-27b1-42c9-b4f6-2d3eb65f3675-1670466778e1c9c147-1": {
           "type": "text",
           "settings": {
-            "text": "Vans Skate Half Cab Bruce Lee Black\/Yellow",
+            "text": "<p>Vans Skate Half Cab Bruce Lee Black\/Yellow</p>",
             "text_style": "subtitle"
           }
         },
