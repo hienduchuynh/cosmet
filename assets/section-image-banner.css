@@ -369,6 +369,7 @@
 }
 
 .banner__box {
+  --color-base-text: var(--color-foreground);
   padding: 4rem 3.5rem;
   position: relative;
   height: fit-content;

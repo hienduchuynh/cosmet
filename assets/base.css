@@ -1181,9 +1181,13 @@ summary::-webkit-details-marker {
 }
 
 .subtitle span {
-	font-weight: 600;
-	font-size: 1.8rem;
-	line-height: 1.6;
+	font-weight: 300;
+	font-size: 1.4rem;
+	line-height: 1.25;
+}
+
+.subtitle p {
+	margin: 0;
 }
 
 .subtitle--small {
