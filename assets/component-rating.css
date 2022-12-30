@@ -6,7 +6,8 @@
 }
 
 .rating-options .rating-count {
-    color: rgba(var(--color-base-text),0.5);
+    color: rgb(var(--color-base-text), 0.75);
+    padding-left: 5px;
 }
 
 .rating {
@@ -26,7 +27,7 @@
 
 .rating-star {
     --percent: calc( ( var(--rating) / var(--rating-max) + var(--rating-decimal) * var(--font-size) / (var(--rating-max) * (var(--letter-spacing) + var(--font-size)))) * 100%);
-    --color-icon: #ffc107;
+    --color-icon: #1e293b;
     letter-spacing: calc(var(--letter-spacing) * 1rem);
     font-size: calc(var(--font-size) * 1rem);
     line-height: 1;
@@ -37,9 +38,10 @@
 
 .rating-star::before {
     content: '★★★★★';
-    background: linear-gradient( 90deg, var(--color-icon) var(--percent), rgba(var(--color-foreground), 0.15) var(--percent));
+    background: linear-gradient( 90deg, var(--color-icon) var(--percent), rgba(var(--color-foreground), 1) var(--percent));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size: 1.8rem;
 }
 
 .rating-text {

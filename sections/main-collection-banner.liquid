@@ -20,7 +20,6 @@
     }
   }
 {%- endstyle -%}
-
 <div class="collection-hero{% if section.settings.show_collection_image and collection.image %} collection-hero--with-image{% endif %}{% if section.settings.show_collection_full_width and collection.image %} collection-hero--full-with{% endif %} color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding" style="{%- if section.settings.show_collection_full_width == true and collection.image -%} background: url('{{ collection.image | image_url: width: 1500 }}') top center no-repeat; background-size: cover;{%- endif -%} text-align: {{ section.settings.hero_align_content }}; ">
   <div class="collection-hero__inner page-width">
     {%- if section.settings.show_collection_image and collection.image and section.settings.show_collection_full_width == false -%}
@@ -28,7 +27,7 @@
       {%- endif -%}
       <div class="collection-hero__text-wrapper">
         <h2 class="collection-hero__title h1">
-          <span>{{- collection.title | escape -}}</span>
+          <span>{{- collection.title | escape -}}<span class="collection-count">({{ collection.products_count }})</span></span>
         </h2>
         {%- if section.settings.show_collection_description -%}
           <div class="collection-hero__description rte">{{ collection.description }}</div>

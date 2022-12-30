@@ -308,25 +308,6 @@
         {% endif %}
 
         {%- if filter_type == 'horizontal' -%}
-          {% comment %} Sorting and product count are the last elements when filter type is horizontal {% endcomment %}
-          <div class="product-count light" role="status">
-            <h2 class="product-count__text text-body">
-              <span id="ProductCountDesktop">
-                {%- if results.results_count -%}
-                  {{ 'templates.search.results_with_count' | t: terms: results.terms, count: results.results_count }}
-                {%- elsif results.products_count == results.all_products_count -%}
-                  {{ 'products.facets.product_count_simple' | t: count: results.products_count }}
-                {%- else -%}
-                  {{ 'products.facets.product_count' | t: product_count: results.products_count, count: results.all_products_count }}
-                {%- endif -%}
-              </span>
-            </h2>
-            <div class="loading-overlay__spinner">
-              <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-                <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-              </svg>
-            </div>
-          </div>  
           {%- if enable_sorting -%}
             <div class="facet-filters sorting caption">
               <div class="facet-filters__field">
@@ -653,24 +634,6 @@
   </div>
   {% comment %} Sort, product count and filter pills at the end when filter is type of Drawer for the correct tabbing order {% endcomment %}
   {%- comment -%} <div class="product-count light{% if filter_type == 'vertical' or filter_type == 'horizontal' %} medium-hide large-up-hide{% endif %}" role="status"> {%- endcomment -%}
-  <div class="product-count light{% if filter_type == 'vertical' or filter_type == 'horizontal' or filter_type == 'offcanvas' %} desktop-large-up-hide{% endif %}" role="status">
-    <h2 class="product-count__text text-body">
-      <span id="ProductCount">
-        {%- if results.results_count -%}
-          {{ 'templates.search.results_with_count' | t: terms: results.terms, count: results.results_count }}
-        {%- elsif results.products_count == results.all_products_count -%}
-          {{ 'products.facets.product_count_simple' | t: count: results.products_count }}
-        {%- else -%}
-          {{ 'products.facets.product_count' | t: product_count: results.products_count, count: results.all_products_count }}
-        {%- endif -%}
-      </span>
-    </h2>
-    <div class="loading-overlay__spinner">
-      <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-        <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-      </svg>
-    </div>
-  </div>
   {%- if enable_sorting and filter_type == 'drawer' -%}
     {%- comment -%} <facet-filters-form class="facets small-hide"> {%- endcomment -%}
     <facet-filters-form class="facets tablet-down-hide">

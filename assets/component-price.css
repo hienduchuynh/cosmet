@@ -80,7 +80,20 @@
 .price--on-sale .price-item--regular {
     text-decoration: line-through;
     color: rgba(var(--color-foreground), 0.5);
-    font-size: 1.3rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+.price--on-sale .price-item--last {
+    font-weight: 600;
+}
+.price--on-sale .price-item--regular,
+.price--on-sale .price-item--last { 
+    margin-right: 0;
+}
+.price--on-sale .price-item--regular-wrapper { 
+    clear: both;
+    display: block;
+    line-height: 1;
 }
 
 .unit-price {
