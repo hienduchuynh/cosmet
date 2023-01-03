@@ -3,8 +3,8 @@
     "166382168102e080c5": {
       "type": "breadcrumb",
       "settings": {
-        "alignment_breadcrumb": "left",
-        "padding_top": 24,
+        "alignment_breadcrumb": "center",
+        "padding_top": 64,
         "padding_bottom": 18
       }
     },
@@ -46,7 +46,6 @@
         "template--17016614912275__07e1a3cb-3f8c-4898-8b30-767b7b6f7a5e-1669624875b97d8a42-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/client-01.png",
             "image_position": "top",
             "title": "",
             "title_size": "h4",
@@ -66,7 +65,6 @@
         "template--17016614912275__07e1a3cb-3f8c-4898-8b30-767b7b6f7a5e-1669624875b97d8a42-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/client-02.png",
             "image_position": "top",
             "title": "",
             "title_size": "h4",
@@ -86,7 +84,6 @@
         "template--17016614912275__07e1a3cb-3f8c-4898-8b30-767b7b6f7a5e-1669624875b97d8a42-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/client-03.png",
             "image_position": "top",
             "title": "",
             "title_size": "h4",
@@ -106,7 +103,6 @@
         "328aa748-57a7-441b-b802-408757c04ec4": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/client-04.png",
             "image_position": "top",
             "title": "",
             "title_size": "h4",
@@ -126,7 +122,6 @@
         "418e9deb-f494-421e-b8e2-c10e108afe5d": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/client-05.png",
             "image_position": "top",
             "title": "",
             "title_size": "h4",
@@ -153,9 +148,10 @@
       ],
       "settings": {
         "title": "",
-        "sub-title": "",
-        "mod_class": "clients-list",
         "heading_size": "h4",
+        "title_style": "02",
+        "description_style": "body",
+        "description": "",
         "layout": "grid--gapless",
         "image_width": "half",
         "image_ratio": "adapt",
@@ -172,11 +168,7 @@
         "swipe_on_mobile": true,
         "padding_top": 0,
         "padding_bottom": 0,
-        "border_top_thickness": 0,
-        "border_right_thickness": 0,
-        "border_bottom_thickness": 0,
-        "border_left_thickness": 0,
-        "border_opacity": 0
+        "mod_class": "clients-list"
       }
     }
   },
