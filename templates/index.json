@@ -563,6 +563,10 @@
       "settings": {
         "title": "287,422+ clients love Omaie",
         "heading_size": "h1",
+        "title_style": "02",
+        "title_decor": "shopify:\/\/shop_images\/decor-3.png",
+        "description_style": "subtitle",
+        "description": "<p>Testimonials<\/p>",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 2,
@@ -572,7 +576,6 @@
         "button_link": "",
         "color_scheme": "background-2",
         "columns_mobile": "1",
-        "swipe_on_mobile": true,
         "padding_top": 128,
         "padding_bottom": 128
       }
