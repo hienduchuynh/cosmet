@@ -45,7 +45,7 @@
         {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
         {%- if section.settings.enable_sorting and section.settings.filter_type == 'vertical' or section.settings.filter_type == 'offcanvas' -%}
           {%- comment -%} <facet-filters-form class="facets facets-vertical-sort small-hide no-js-hidden"> {%- endcomment -%}
-          <facet-filters-form class="facets facets-vertical-sort tablet-down-hide no-js-hidden">
+          <facet-filters-form class="{%- if section.settings.filter_type == 'vertical' -%} facets-vertical-sort {% endif %} facets  tablet-down-hide no-js-hidden">
             <form class="facets-vertical-form" id="FacetSortForm">
               {% if section.settings.filter_type == 'offcanvas' %}
                 <summary class="mobile-facets__open-wrapper focus-offset" id="filter-off-canvas">
