@@ -68,7 +68,7 @@
 }
 
 .testimonials:not(.background-none) .testimonials-card {
-  background: rgb(var(--color-background));
+  background: none;
   height: 100%;
 }
 

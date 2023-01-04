@@ -17,6 +17,8 @@
 {%- endstyle -%}
 
 {%- liquid
+  assign show_desktop_slider = true
+  
   assign columns_mobile_int = section.settings.columns_mobile | plus: 0
   assign show_mobile_slider = false
   if section.settings.swipe_on_mobile and section.blocks.size > columns_mobile_int
@@ -91,7 +93,7 @@
       </div>
     {%- endunless -%}
     <slider-component class="slider-mobile-gutter slider-tablet-gutter">
-      <ul class="testimonials-list contains-content-container grid {% if section.settings.layout == 'grid--gapless' %} grid--gapless{% endif %} grid--{{ section.settings.columns_mobile }}-col-tablet-down grid--{{ section.settings.columns_tablet }}-col-tablet grid--{{ section.settings.columns_desktop }}-col-desktop{% if show_mobile_slider %} slider slider--mobile grid--peek{% endif %} {% if show_tablet_slider %} slider slider--tablet grid--peek{% endif %} align-items-{{ section.settings.row_alignment }}"
+      <ul class="testimonials-list contains-content-container grid {% if section.settings.layout == 'grid--gapless' %} grid--gapless{% endif %} grid--{{ section.settings.columns_mobile }}-col-tablet-down grid--{{ section.settings.columns_tablet }}-col-tablet grid--{{ section.settings.columns_desktop }}-col-desktop {% if show_desktop_slider %} slider slider--desktop{% endif %}{% if show_mobile_slider %} slider slider--mobile grid--peek{% endif %} {% if show_tablet_slider %} slider slider--tablet grid--peek{% endif %} align-items-{{ section.settings.row_alignment }}"
         id="Slider-{{ section.id }}"
         role="list"
       >
@@ -213,7 +215,7 @@
         </div>
       {%- endif -%}
     </slider-component>
-    <div class="center{% if show_mobile_slider or show_tablet_slider %} small-hide medium-hide{% endif %}">
+    <div class="center{% if show_mobile_slider or show_tablet_slider or show_desktop_slider %} small-hide medium-hide{% endif %}">
       {%- if section.settings.button_label != blank -%}
         <a class="button button--primary"{% if section.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ section.settings.button_link }}"{% endif %}>
           {{ section.settings.button_label | escape }}

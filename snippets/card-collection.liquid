@@ -21,6 +21,11 @@ Usage:
  if ratio == 0 or ratio == nil 
  assign ratio = 1 
  endif 
+
+ assign show_description = true 
+ if show_collection_description == false 
+ assign show_description = false
+ endif
  -%}
 <div class="card-wrapper animate-arrow">
   <div class="card
@@ -77,7 +82,7 @@ Usage:
             <span class="count">
               {{ card_collection.all_products_count }} Product's
             </span>
-            {%- if card_collection.description != blank -%}
+            {%- if card_collection.description != blank and show_description == true -%}
               <p class="card__description">
                 {{- card_collection.description | strip_html | truncatewords: 12 -}}
               </p>
