@@ -588,9 +588,9 @@
         "button_link": "",
         "color_scheme": "background-2",
         "columns_tablet": "2",
-        "swipe_on_tablet": false,
+        "swipe_on_tablet": true,
         "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "padding_top": 128,
         "padding_bottom": 128,
         "mod_class": ""
