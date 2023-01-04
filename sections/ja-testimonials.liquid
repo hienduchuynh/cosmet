@@ -28,13 +28,60 @@
 <div class="testimonials page-width {% if section.settings.title == blank %} no-heading{% endif %}">
   <div class="page-width section-{{ section.id }}-padding isolate color-{{ section.settings.color_scheme }} gradient{% unless section.settings.background_style == 'none' and settings.text_boxes_border_thickness > 0 or settings.text_boxes_shadow_opacity > 0 %} background-{{ section.settings.background_style }}{% endunless %}">
     {%- unless section.settings.title == blank -%}
-      <div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin">
-        <h2 class="title {{ section.settings.heading_size }}">
-          {{ section.settings.title | escape }}
-        </h2>
-        {%- if section.settings.button_label != blank and show_mobile_slider -%}
-          <a href="{{ section.settings.button_link }}" class="link underlined-link large-up-hide">{{ section.settings.button_label | escape }}</a>
-        {%- endif -%}
+      <div class="title-wrapper title-wrapper--no-top-margin title-wrapper-{{ section.settings.title_style }} {% if section.settings.full_width == false and section.settings.title_style != "03" %} page-width{% endif %}{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
+        <div class="inner">
+          {%- if section.settings.title_decor != blank -%}
+            <img
+              class="title_decor"
+              srcset= "{{ section.settings.title_decor | image_url: width: 80 }}"
+              src="{{ section.settings.title_decor | image_url: width: 80 }}"
+              alt="{{ section.settings.title_decor.alt | escape }}"
+              loading="lazy"
+              width="{{ section.settings.title_decor.width }}"
+              height="{{ section.settings.title_decor.height }}"
+            >
+          {%- endif -%}
+          {%- if section.settings.description != blank -%}
+            <div class="{{ section.settings.description_style }}">
+                {{ section.settings.description }}
+            </div>
+          {%- endif -%}
+          
+          {%- if section.settings.title != blank -%}
+            <h2 class="title {{ section.settings.heading_size }}">
+              {% if section.settings.title_style == "03" %}
+              <div class="marquee-group">
+                <div class="marquee">
+                  <span>{{ section.settings.title | escape }}</span>
+                  <span>{{ section.settings.title | escape }}</span> 
+                  <span>{{ section.settings.title | escape }}</span>
+                  <span>{{ section.settings.title | escape }}</span>
+                  <span>{{ section.settings.title | escape }}</span>
+                  <span>{{ section.settings.title | escape }}</span>
+                  <span>{{ section.settings.title | escape }}</span>
+                  <span>{{ section.settings.title | escape }}</span>
+                  <span>{{ section.settings.title | escape }}</span>
+                  <span>{{ section.settings.title | escape }}</span>
+                </div>
+                <div class="marqueee">
+                  <span>{{ section.settings.title | escape }}</span>
+                  <span>{{ section.settings.title | escape }}</span> 
+                  <span>{{ section.settings.title | escape }}</span>
+                  <span>{{ section.settings.title | escape }}</span>
+                  <span>{{ section.settings.title | escape }}</span>
+                  <span>{{ section.settings.title | escape }}</span>
+                  <span>{{ section.settings.title | escape }}</span>
+                  <span>{{ section.settings.title | escape }}</span>
+                  <span>{{ section.settings.title | escape }}</span>
+                  <span>{{ section.settings.title | escape }}</span>
+                </div>
+              </div>
+              {% else %}
+                {{ section.settings.title | escape }}
+              {% endif %}
+            </h2>
+          {%- endif -%}
+        </div>
       </div>
     {%- endunless -%}
     <slider-component class="slider-mobile-gutter slider-desktop-gutter">
@@ -131,20 +178,70 @@
       "id": "heading_size",
       "options": [
         {
-          "value": "h2",
+          "value": "h3",
           "label": "t:sections.all.heading_size.options__1.label"
-        },
-        {
-          "value": "h1",
+        }, {
+          "value": "h2",
           "label": "t:sections.all.heading_size.options__2.label"
-        },
-        {
-          "value": "h0",
+        }, {
+          "value": "h1",
           "label": "t:sections.all.heading_size.options__3.label"
+        }, {
+          "value": "h0",
+          "label": "t:sections.all.heading_size.options__4.label"
+        }, {
+          "value": "hxl",
+          "label": "t:sections.all.heading_size.options__5.label"
         }
       ],
       "default": "h1",
       "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "select",
+      "id": "title_style",
+      "label": "t:sections.featured-collection.settings.title_style.label",
+      "options": [
+        {
+          "value": "01",
+          "label": "t:sections.featured-collection.settings.title_style.options__1.label"
+        }, {
+          "value": "02",
+          "label": "t:sections.featured-collection.settings.title_style.options__2.label"
+        }, {
+          "value": "03",
+          "label": "t:sections.featured-collection.settings.title_style.options__3.label"
+        }
+      ],
+      "default": "02"
+    },
+    {
+      "type": "image_picker",
+      "id": "title_decor",
+      "label": "Title Decor"
+    },
+    {
+      "type": "select",
+      "id": "description_style",
+      "label": "t:sections.featured-collection.settings.description_style.label",
+      "options": [
+        {
+          "value": "body",
+          "label": "t:sections.featured-collection.settings.description_style.options__1.label"
+        }, {
+          "value": "subtitle",
+          "label": "t:sections.featured-collection.settings.description_style.options__2.label"
+        }, {
+          "value": "uppercase",
+          "label": "t:sections.featured-collection.settings.description_style.options__3.label"
+        }
+      ],
+      "default": "body"
+    }, 
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "t:sections.featured-collection.settings.description.label"
     },
     {
       "type": "select",
