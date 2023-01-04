@@ -510,8 +510,9 @@
         "template--17347501523219__d2da5983-bc11-43bc-8f65-7261979c6f4b-1672304453c687df02-0": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify:\/\/shop_images\/stars.png",
+            "title": "Repairing eye stick",
+            "text": "<p>“ I was surprised at how sturdy the bed frame actually is. I’m a larger guy so I’m always worried about weight capacity but I don’t have any issue at all. It doesn’t make a single sound all night! \"<\/p>",
             "link_label": "",
             "link": ""
           }
