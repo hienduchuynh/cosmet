@@ -633,10 +633,10 @@
         "desktop_layout": {
           "label": "Desktop layout",
           "options__1": {
-            "label": "Left large block"
+            "label": "Left Top large block"
           },
           "options__2": {
-            "label": "Right large block"
+            "label": "Left Bottom large block"
           }
         },
         "mobile_layout": {
