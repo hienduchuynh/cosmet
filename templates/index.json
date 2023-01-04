@@ -367,7 +367,7 @@
         "title_decor": "shopify:\/\/shop_images\/decor-3.png",
         "description_style": "subtitle",
         "description": "<p>Hand-Picked by Us<\/p>",
-        "desktop_layout": "left",
+        "desktop_layout": "left-top",
         "mobile_layout": "collage",
         "color_scheme": "background-2",
         "padding_top": 128,
