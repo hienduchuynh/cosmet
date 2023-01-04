@@ -42,8 +42,24 @@
     grid-template-areas: "area-1 area-1 auto auto"; 
   }
 
+  .collage_desktop--left-bottom {
+    grid-template-areas:". . . ." "area-left-bottom area-left-bottom . .";
+  }
+
+  .collage_desktop--left-top {
+    grid-template-areas: "area-left-top area-left-top auto auto"; 
+  }
+
   .collage__item--image {
     grid-area: area-1;
+  }
+
+  .collage__item--image.collage__item--left-top {
+    grid-area: area-left-top;
+  }
+
+  .collage__item--image.collage__item--left-bottom {
+    grid-area: area-left-bottom;
   }
 
   .collage__item--collection:only-child,
