@@ -662,11 +662,11 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/banner-04.jpg",
-            "title": "Column",
-            "link_label": "",
-            "link": "",
-            "link_style": "link",
-            "desktop_content_position": "middle-center",
+            "title": "Introducing Carbon capture cleanser",
+            "link_label": "Shop now",
+            "link": "shopify:\/\/collections\/all",
+            "link_style": "solid",
+            "desktop_content_position": "bottom-center",
             "desktop_content_alignment": "center"
           }
         },
@@ -674,11 +674,11 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/banner-05.jpg",
-            "title": "Column",
-            "link_label": "",
-            "link": "",
-            "link_style": "link",
-            "desktop_content_position": "middle-center",
+            "title": "Here’s to no guessing Digital gift cards",
+            "link_label": "Send a gift",
+            "link": "shopify:\/\/collections\/all",
+            "link_style": "solid",
+            "desktop_content_position": "bottom-center",
             "desktop_content_alignment": "center"
           }
         }
