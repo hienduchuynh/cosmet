@@ -196,7 +196,7 @@
         "4d16be99-0cc5-4a35-8c00-63510ede95b5"
       ],
       "settings": {
-        "collapsible_type": "tabs",
+        "collapsible_type": "accordion",
         "box_width": 60,
         "collapsible_tab_header_position": "left",
         "padding_top": 36,
@@ -275,7 +275,6 @@
       ],
       "settings": {
         "mod_class": "",
-        "image": "shopify:\/\/shop_images\/3481b27143ca1c5acf3d419e7ffe4a91.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "adapt_height_first_image": false,
