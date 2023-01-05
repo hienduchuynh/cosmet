@@ -718,7 +718,7 @@
         "full_width": false,
         "color_scheme": "background-1",
         "show_image": true,
-        "image_height": "adapt",
+        "image_height": "medium",
         "show_date": true,
         "show_author": false,
         "show_view_all": true,
