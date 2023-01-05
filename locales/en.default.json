@@ -112,7 +112,8 @@
       "choose_product_options": "Choose options for {{ product_name }}",
       "description": "Description",
       "on_sale": "Sale",
-      "on_new": "New Arrivals",
+      "on_hot": "Hot",
+      "on_new": "New",
       "product_variants": "Product variants",
       "media": {
         "gallery_viewer": "Gallery Viewer",
@@ -125,7 +126,7 @@
         "play_video": "Play video"
       },
       "quantity": {
-        "label": "Quantity",
+        "label": "One-time purchase",
         "input_label": "Quantity for {{ product }}",
         "increase": "Increase quantity for {{ product }}",
         "decrease": "Decrease quantity for {{ product }}"

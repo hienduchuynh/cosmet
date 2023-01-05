@@ -25,19 +25,19 @@
 }
 
 .color-accent-2 {
-	--color-foreground: 000,000,000;
+	--color-foreground: 255, 255, 255;
 	--color-background: var(--color-base-accent-2);
 	--gradient-background: var(--gradient-base-accent-2);
 }
 
 .color-accent-3 {
-	--color-foreground: 000,000,000;
+	--color-foreground: 000, 000, 000;
 	--color-background: var(--color-base-accent-3);
 	--gradient-background: var(--gradient-base-accent-3);
 }
 
 .color-accent-4 {
-	--color-foreground: 000,000,000;
+	--color-foreground: 000, 000, 000;
 	--color-background: var(--color-base-accent-4);
 	--gradient-background: var(--gradient-base-accent-4);
 }
@@ -106,11 +106,10 @@
 .color-background-2 .button--secondary,
 .color-accent-1 .button--secondary {
 	--color-button: var(--color-background);
-	--color-button-text: 255,255,255;
+	--color-button-text: 255, 255, 255;
 }
 
 .color-accent-3 .button--secondary {
-
 }
 
 .color-accent-4 .button--secondary,
@@ -120,7 +119,7 @@
 .color-accent-4 .button--secondary:hover,
 .color-accent-2 .button--secondary:hover,
 .color-accent-3 .button--secondary:hover {
-	background: rgba(255,255,255);
+	background: rgba(255, 255, 255);
 	opacity: 1;
 }
 
@@ -949,7 +948,6 @@ summary {
 	position: relative;
 }
 
-
 summary .icon-caret {
 	position: absolute;
 	height: 0.6rem;
@@ -1292,7 +1290,7 @@ summary::-webkit-details-marker {
 }
 
 .color-accent-1 .title-wrapper-03 .title,
-.color-inverse .title-wrapper-03 .title { 
+.color-inverse .title-wrapper-03 .title {
 	-webkit-text-stroke-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -2079,7 +2077,7 @@ details[open] > .share-button__fallback {
 	-webkit-appearance: none;
 	appearance: none;
 	background-color: rgb(var(--color-background));
-  border: var(--text-boxes-border-width) solid rgba(var(--color-foreground), var(--text-boxes-border-opacity));;
+	border: var(--text-boxes-border-width) solid rgba(var(--color-foreground), var(--text-boxes-border-opacity));
 	color: rgb(var(--color-foreground));
 	font-size: 1.3rem;
 	width: 100%;
@@ -3298,10 +3296,10 @@ details-disclosure > details {
 .badge {
 	border-radius: var(--badge-corner-radius);
 	display: inline-block;
-	font-size: 1rem;
+	font-size: 1.4rem;
 	letter-spacing: 0.1rem;
-	line-height: 1.33;
-	padding: 4px 8px;
+	line-height: 1.6;
+	padding: 4px 16px;
 	text-align: center;
 	background-color: rgb(var(--color-badge-background));
 	border-color: rgba(var(--color-badge-border), var(--alpha-badge-border));

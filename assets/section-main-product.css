@@ -286,6 +286,9 @@
 	.ja-summary-scroll.scrolling .btn-buys {
 		display: block;
 	}
+	.product__info-wrapper {
+		padding-left: calc(var(--grid-desktop-vertical-spacing) * 5);
+	}
 }
 
 /* Dynamic checkout */
@@ -555,6 +558,7 @@ fieldset.product-form__input .form__label {
 }
 
 .product__info-container .price--on-sale .badge {
+	display: none;
 }
 
 .product__text {
@@ -958,17 +962,7 @@ a.product__text {
 	.slider-main-photo .slider--mobile:not(.slider--tablet) + .slider-buttons {
 		display: flex;
 	}
-	.product__media-list.product__media-thumbnail_slider {
-		border: var(--text-boxes-border-width) solid rgba(var(--color-foreground), var(--text-boxes-border-opacity));
-	}
-
-	.product__media-list li {
-		border: var(--text-boxes-border-width) solid rgba(var(--color-foreground), var(--text-boxes-border-opacity));
-	}
-	.product__media-list.product__media-thumbnail_slider li {
-		border: 0;
-	}
-
+	
 	.product--thumbnail .product__media-list,
 	.product--thumbnail_slider .product__media-list {
 		padding-bottom: calc(var(--media-shadow-vertical-offset) * var(--media-shadow-visible));
@@ -1536,36 +1530,6 @@ a.product__text {
     border-color: rgb(var(--color-base-accent-1));
 } */
 
-.thumbnail-list-thumbnail_slider .thumbnail-list__item img {
-	box-shadow: none;
-	border: 1px solid transparent;
-}
-
-.thumbnail-list-thumbnail_slider .thumbnail-list__item .thumbnail.global-media-settings {
-	width: 100%;
-	max-width: 100%;
-	height: auto;
-	border: 0;
-}
-
-.thumbnail-list-thumbnail_slider .thumbnail-list__item .thumbnail.global-media-settings .image-thumbnail {
-	width: auto;
-}
-
-.thumbnail-list-thumbnail_slider .thumbnail-list__item img {
-	width: 100%;
-	height: 75px;
-}
-
-.thumbnail-list-thumbnail img,
-.thumbnail-list-thumbnail_slider .thumbnail-list__item img {
-	border: 2px solid rgb(var(--color-base-accent-1));
-}
-
-.thumbnail-list-thumbnail [aria-current] img,
-.thumbnail-list-thumbnail_slider .thumbnail-list__item [aria-current] img {
-	border-color: rgba(var(--color-base-accent-1), 0.2);
-}
 .thumbnail[aria-current]:focus-visible {
 	box-shadow: none;
 }

@@ -56,11 +56,6 @@
     border-radius: calc(var(--card-corner-radius) - var(--card-border-width) - var(--card-image-padding));
 }
 
-.card .card__inner .color-new_badge {
-    background-color: #28a745;
-    color: #fff;
-}
-
 .card .card__inner .card_media-actions {
     position: relative;
     height: 100%;
@@ -69,6 +64,10 @@
 
 .card .card__content .quick-add {
     display: none;
+}
+
+.card .card__content .quick-add  .quick-add__submit[disabled] {
+    display: none !important;
 }
 
 .card-wrapper:hover .card__content .quick-add {
@@ -177,22 +176,28 @@
     justify-self: flex-start;
 }
 
-.card__badge .badge {
-    text-transform: uppercase;
-}
-
 .card__badge.top {
     align-self: flex-start;
     grid-row-start: 1;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 12px;
+    right: 12px;
     line-height: 1;
 }
 
 .card__badge.top .badge {
     border-left: var(--card-border-width) solid rgba(var(--color-foreground), var(--card-border-opacity));
     border-bottom: var(--card-border-width) solid rgba(var(--color-foreground), var(--card-border-opacity));
+}
+
+.badge.color-hot_badge {
+    background: #ef4444;
+    color: #fff;
+}
+
+.badge.color-new_badge {
+    background: #efc768;
+    color: #fff;
 }
 
 .card__badge.right {
@@ -259,9 +264,10 @@
     margin-bottom: 0.4rem;
     font-weight: normal;
 }
-
+.card-wrapper:hover .card__heading a,
 .card__heading a:hover {
     text-decoration: none;
+    color: rgba(var(--color-base-background-2));
 }
 
 .card__heading a::after {
