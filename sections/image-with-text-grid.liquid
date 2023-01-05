@@ -4,12 +4,6 @@
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-    border-style: solid;
-    border-color: rgba(0, 0, 0, {{ section.settings.border_opacity }});
-    border-top-width: {{ section.settings.border_top_thickness }}px;
-    border-bottom-width: {{ section.settings.border_bottom_thickness }}px;
-    border-left-width: {{ section.settings.border_left_thickness }}px;
-    border-right-width: {{ section.settings.border_right_thickness }}px;
   }
 
   @media screen and (min-width: 750px) {
@@ -72,10 +66,10 @@
           <div class="content banner__content--{{ block.settings.desktop_content_position }} banner--content-align-{{ block.settings.desktop_content_alignment }}">
             <div class="inner">
             {%- if block.settings.title != blank -%}
-              <h3 class="h5">{{ block.settings.title | escape }}</h3>
+              <h3 class="h2">{{ block.settings.title | escape }}</h3>
             {%- endif -%}
             {%- if block.settings.link_label != blank -%}
-              <a class="{% if block.settings.link_style == 'link' %}link hightlight-link animate-arrow link--text{% elsif block.settings.link_style == 'solid' %}button{% else %}button button--secondary{% endif %}" {% if block.settings.link == blank %}role="link" aria-disabled="true"{% else %}href="{{ block.settings.link }}"{% endif %}>{{ block.settings.link_label | escape }}<span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span></a>
+              <a class="{% if block.settings.link_style == 'link' %}link hightlight-link animate-arrow link--text{% elsif block.settings.link_style == 'solid' %}button{% else %}button button--secondary{% endif %}" {% if block.settings.link == blank %}role="link" aria-disabled="true"{% else %}href="{{ block.settings.link }}"{% endif %}>{{ block.settings.link_label | escape }}</a>
             {%- endif -%}
             </div>
           </div>
@@ -219,7 +213,7 @@
       "type": "range",
       "id": "padding_top",
       "min": 0,
-      "max": 100,
+      "max": 200,
       "step": 2,
       "unit": "px",
       "label": "t:sections.all.padding.padding_top",
@@ -229,65 +223,11 @@
       "type": "range",
       "id": "padding_bottom",
       "min": 0,
-      "max": 100,
+      "max": 200,
       "step": 2,
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 24
-    },
-    {
-      "type": "header",
-      "content": "t:settings_schema.global.settings.header__border.content"
-    },
-    {
-      "type": "range",
-      "id": "border_top_thickness",
-      "min": 0,
-      "max": 24,
-      "step": 1,
-      "unit": "px",
-      "label": "t:settings_schema.global.settings.top_thickness.label",
-      "default": 0
-    },
-    {
-      "type": "range",
-      "id": "border_right_thickness",
-      "min": 0,
-      "max": 24,
-      "step": 1,
-      "unit": "px",
-      "label": "t:settings_schema.global.settings.right_thickness.label",
-      "default": 0
-    },
-    {
-      "type": "range",
-      "id": "border_bottom_thickness",
-      "min": 0,
-      "max": 24,
-      "step": 1,
-      "unit": "px",
-      "label": "t:settings_schema.global.settings.bottom_thickness.label",
-      "default": 0
-    },
-    {
-      "type": "range",
-      "id": "border_left_thickness",
-      "min": 0,
-      "max": 24,
-      "step": 1,
-      "unit": "px",
-      "label": "t:settings_schema.global.settings.left_thickness.label",
-      "default": 0
-    },
-    {
-      "type": "range",
-      "id": "border_opacity",
-      "min": 0,
-      "max": 100,
-      "step": 5,
-      "unit": "%",
-      "label": "t:settings_schema.global.settings.opacity.label",
-      "default": 0
     }
   ],
   "blocks": [
