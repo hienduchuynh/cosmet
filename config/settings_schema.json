@@ -62,6 +62,10 @@
           {
             "value": "05",
             "label": "t:settings_schema.multilayout.settings.footer_layout.label__5"
+          },
+          {
+            "value": "06",
+            "label": "t:settings_schema.multilayout.settings.footer_layout.label__6"
           }
         ],
         "default": "05"
