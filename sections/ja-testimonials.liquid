@@ -84,6 +84,7 @@
         </div>
       </div>
     {%- endunless -%}
+
     <slider-component class="slider-mobile-gutter slider-desktop-gutter">
       <ul class="testimonials-list contains-content-container grid grid--{{ section.settings.columns_mobile }}-col-tablet-down grid--{{ section.settings.columns_desktop }}-col-desktop slider slider--desktop grid--peek"
         id="Slider-{{ section.id }}"
@@ -96,47 +97,59 @@
               assign highest_ratio = block.settings.image.aspect_ratio
             endif
           endfor
-        -%}
-        {%- for block in section.blocks -%}
-          {%- assign empty_column = '' -%}
-          {%- if block.settings.image == blank and block.settings.title == blank and block.settings.text == blank and block.settings.link_label == blank -%}
-            {%- assign empty_column = ' testimonials-list__item--empty' -%}
-          {%- endif -%}
 
-          <li id="Slide-{{ section.id }}-{{ forloop.index }}" class="testimonials-list__item grid__item{% if swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}{{ empty_column }}" {{ block.shopify_attributes }}>
-            <div class="testimonials-card content-container">
-              {%- if block.settings.image != blank -%}
-                {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
-                  {% assign spaced_image = true %}
-                {% endif %}
-                <div class="testimonials-card__image-wrapper testimonials-card__image-wrapper--{{ section.settings.image_width }}-width{% if section.settings.image_width != 'full' or spaced_image %} testimonials-card-spacing{% endif %}">
-                  <div class="media media--transparent media--{{ section.settings.image_ratio }}"
-                    {% if section.settings.image_ratio == 'adapt' %}
-                      style="padding-bottom: {{ 1 | divided_by: highest_ratio | times: 100 }}%;"
-                    {% endif %}>
-                    {%- capture sizes -%}(min-width: 990px) {% if section.blocks.size <= 2 %}710px{% else %}550px{% endif %}, (min-width: 750px) {% if section.blocks.size == 1 %}710px{% else %}550px{% endif %}, calc(100vw - 30px){%- endcapture -%}
-                    {{ block.settings.image | image_url: width: 1420 | image_tag:
-                      loading: 'lazy',
-                      sizes: sizes,
-                      widths: '275, 550, 710, 1420',
-                      class: 'testimonials-card__image'
-                    }}
+          assign number_testimonial = 0
+        -%}
+
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'testimonial' -%}
+              {%- liquid
+                assign empty_column = '' 
+              -%}
+              {%- if block.settings.image == blank and block.settings.title == blank and block.settings.text == blank and block.settings.link_label == blank -%}
+                {%- assign empty_column = ' testimonials-list__item--empty' -%}
+              {%- endif -%}
+
+              <li id="Slide-{{ section.id }}-{{ forloop.index }}" class="testimonials-list__item grid__item{% if swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}{{ empty_column }}" {{ block.shopify_attributes }}>
+                <div class="testimonials-card content-container">
+                  {%- if block.settings.image != blank -%}
+                    {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
+                      {% assign spaced_image = true %}
+                    {% endif %}
+                    <div class="testimonials-card__image-wrapper testimonials-card__image-wrapper--{{ section.settings.image_width }}-width{% if section.settings.image_width != 'full' or spaced_image %} testimonials-card-spacing{% endif %}">
+                      <div class="media media--transparent media--{{ section.settings.image_ratio }}"
+                        {% if section.settings.image_ratio == 'adapt' %}
+                          style="padding-bottom: {{ 1 | divided_by: highest_ratio | times: 100 }}%;"
+                        {% endif %}>
+                        {%- capture sizes -%}(min-width: 990px) {% if section.blocks.size <= 2 %}710px{% else %}550px{% endif %}, (min-width: 750px) {% if section.blocks.size == 1 %}710px{% else %}550px{% endif %}, calc(100vw - 30px){%- endcapture -%}
+                        {{ block.settings.image | image_url: width: 1420 | image_tag:
+                          loading: 'lazy',
+                          sizes: sizes,
+                          widths: '275, 550, 710, 1420',
+                          class: 'testimonials-card__image'
+                        }}
+                      </div>
+                    </div>
+                  {%- endif -%}
+                  <div class="testimonials-card__info">
+                    {%- if block.settings.title != blank -%}
+                      <h3>{{ block.settings.title | escape }}</h3>
+                    {%- endif -%}
+                    {%- if block.settings.text != blank -%}
+                      <div class="rte">{{ block.settings.text }}</div>
+                    {%- endif -%}
+                    {%- if block.settings.link_label != blank -%}
+                      <a class="link animate-arrow" {% if block.settings.link == blank %}role="link" aria-disabled="true"{% else %}href="{{ block.settings.link }}"{% endif %}>{{ block.settings.link_label | escape }}<span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span></a>
+                    {%- endif -%}
                   </div>
                 </div>
-              {%- endif -%}
-              <div class="testimonials-card__info">
-                {%- if block.settings.title != blank -%}
-                  <h3>{{ block.settings.title | escape }}</h3>
-                {%- endif -%}
-                {%- if block.settings.text != blank -%}
-                  <div class="rte">{{ block.settings.text }}</div>
-                {%- endif -%}
-                {%- if block.settings.link_label != blank -%}
-                  <a class="link animate-arrow" {% if block.settings.link == blank %}role="link" aria-disabled="true"{% else %}href="{{ block.settings.link }}"{% endif %}>{{ block.settings.link_label | escape }}<span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span></a>
-                {%- endif -%}
-              </div>
-            </div>
-          </li>
+              </li>
+
+              {%- 
+                assign number_testimonial = number_testimonial | plus: 1
+              -%}
+          {%- endcase -%}
         {%- endfor -%}
       </ul>
 
@@ -146,17 +159,40 @@
             <span class="slider-counter--current">1</span>
             <span aria-hidden="true"> / </span>
             <span class="visually-hidden">{{ 'general.slider.of' | t }}</span>
-            <span class="slider-counter--total">{{ section.blocks.size }}</span>
+            <span class="slider-counter--total">{{ number_testimonial }}</span>
           </div>
         </div>
       {%- endif -%}
     </slider-component>
+
     <div class="center{% if show_mobile_slider %} small-hide medium-hide{% endif %}">
       {%- if section.settings.button_label != blank -%}
         <a class="button button--primary"{% if section.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ section.settings.button_link }}"{% endif %}>
           {{ section.settings.button_label | escape }}
         </a>
       {%- endif -%}
+    </div>
+
+    <div class="clients-wrapper grid grid--6-col-desktop">
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'client' -%}
+            <div class="grid__item">
+              {%- if block.settings.image != blank -%}
+                <div class="client-card__image-wrapper">
+                  <div class="client-card__image">
+                    <img
+                    src="{{ block.settings.image.src | image_url: width: 128 }}"
+                    alt="{{ block.settings.image.src.alt | escape }}"
+                    width="{{ block.settings.image.width }}"
+                    height="{{ block.settings.image.height }}"
+                  >
+                  </div>
+                </div>
+              {%- endif -%}
+            </div>
+        {%- endcase -%}
+      {%- endfor -%}  
     </div>
   </div>
 </div>

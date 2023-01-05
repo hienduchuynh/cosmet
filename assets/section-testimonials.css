@@ -369,3 +369,17 @@
   .grid__item {
   width: 100%;
 }
+
+.client-card__image-wrapper {
+  text-align: center;
+}
+
+.clients-wrapper {
+  margin-top: 7.2rem;
+  padding-top: 7.2rem;
+  border-top: 1px solid rgba(0,0,0, 0.1);
+}
+
+.clients-wrapper .grid__item {
+  align-self: center;
+}
