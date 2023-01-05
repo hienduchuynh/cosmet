@@ -414,19 +414,19 @@
   ],
   "blocks": [
     {
-      "type": "column",
-      "name": "t:sections.testimonials.blocks.column.name",
+      "type": "testimonial",
+      "name": "t:sections.testimonials.blocks.testimonial.name",
       "settings": [
         {
           "type": "image_picker",
           "id": "image",
-          "label": "t:sections.testimonials.blocks.column.settings.image.label"
+          "label": "t:sections.testimonials.blocks.testimonial.settings.image.label"
         },
         {
           "type": "text",
           "id": "title",
-          "default": "Column",
-          "label": "t:sections.testimonials.blocks.column.settings.title.label"
+          "default": "testimonial",
+          "label": "t:sections.testimonials.blocks.testimonial.settings.title.label"
         },
         {
           "type": "richtext",
@@ -437,12 +437,39 @@
         {
           "type": "text",
           "id": "link_label",
-          "label": "t:sections.testimonials.blocks.column.settings.link_label.label"
+          "label": "t:sections.testimonials.blocks.testimonial.settings.link_label.label"
         },
         {
           "type": "url",
           "id": "link",
-          "label": "t:sections.testimonials.blocks.column.settings.link.label"
+          "label": "t:sections.testimonials.blocks.testimonial.settings.link.label"
+        }
+      ]
+    },
+    {
+      "type": "client",
+      "name": "t:sections.testimonials.blocks.client.name",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:sections.testimonials.blocks.client.settings.image.label"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "default": "client",
+          "label": "t:sections.testimonials.blocks.client.settings.title.label"
+        },
+        {
+          "type": "text",
+          "id": "link_label",
+          "label": "t:sections.testimonials.blocks.client.settings.link_label.label"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "t:sections.testimonials.blocks.client.settings.link.label"
         }
       ]
     }
@@ -452,13 +479,13 @@
       "name": "t:sections.testimonials.presets.name",
       "blocks": [
         {
-          "type": "column"
+          "type": "testimonial"
         },
         {
-          "type": "column"
+          "type": "testimonial"
         },
         {
-          "type": "column"
+          "type": "testimonial"
         }
       ]
     }
