@@ -703,6 +703,36 @@
         "border_left_thickness": 0,
         "border_opacity": 0
       }
+    },
+    "13070f5d-8a58-4daf-a17a-288e26b73b06": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "The latest from Cosmet",
+        "heading_size": "h1",
+        "title_style": "02",
+        "description_style": "body",
+        "description": "<p>Our Blog<\/p>",
+        "blog": "news",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "full_width": false,
+        "color_scheme": "background-1",
+        "show_image": true,
+        "image_height": "adapt",
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "view_all_content": "View all posts",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 64,
+        "padding_bottom": 100,
+        "border_top_thickness": 0,
+        "border_right_thickness": 0,
+        "border_bottom_thickness": 0,
+        "border_left_thickness": 0,
+        "border_opacity": 0
+      }
     }
   },
   "order": [
@@ -715,6 +745,7 @@
     "82de993e-14c6-4ad7-988f-fac67f2e0e51",
     "a15d71e1-ec79-47fb-8829-c7fae36e9456",
     "0c1f2d58-429c-4e05-9297-54c51fdeebc5",
-    "b0963866-3da4-4117-baf6-c6d8cadd1abf"
+    "b0963866-3da4-4117-baf6-c6d8cadd1abf",
+    "13070f5d-8a58-4daf-a17a-288e26b73b06"
   ]
 }
