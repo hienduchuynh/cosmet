@@ -238,54 +238,6 @@
         "padding_top": 24,
         "padding_bottom": 48
       }
-    },
-    "61f5ea28-b77a-443d-aceb-a97580875f20": {
-      "type": "image-banner",
-      "blocks": {
-        "template--17016615436563__61f5ea28-b77a-443d-aceb-a97580875f20-1670485131a855bd3a-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Peak TaiChi Plus Men's Professional Running Shoes",
-            "heading_size": "h0"
-          }
-        },
-        "template--17016615436563__61f5ea28-b77a-443d-aceb-a97580875f20-1670485131a855bd3a-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Vans Skate Half Cab Bruce Lee Black\/Yellow<\/p>",
-            "text_style": "subtitle"
-          }
-        },
-        "template--17016615436563__61f5ea28-b77a-443d-aceb-a97580875f20-1670485131a855bd3a-2": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "VIEW ALL PRODUCTS",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "template--17016615436563__61f5ea28-b77a-443d-aceb-a97580875f20-1670485131a855bd3a-0",
-        "template--17016615436563__61f5ea28-b77a-443d-aceb-a97580875f20-1670485131a855bd3a-1",
-        "template--17016615436563__61f5ea28-b77a-443d-aceb-a97580875f20-1670485131a855bd3a-2"
-      ],
-      "settings": {
-        "mod_class": "",
-        "image_overlay_opacity": 0,
-        "image_height": "large",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-left",
-        "show_text_box": false,
-        "desktop_content_alignment": "left",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
     }
   },
   "order": [
@@ -293,7 +245,6 @@
     "main",
     "538ed27d-666d-4169-9ba0-d844989d9d9b",
     "1670299102da5a53ff",
-    "product-recommendations",
-    "61f5ea28-b77a-443d-aceb-a97580875f20"
+    "product-recommendations"
   ]
 }
