@@ -709,6 +709,7 @@
       "settings": {
         "heading": "The latest from Cosmet",
         "heading_size": "h1",
+        "title_decor": "shopify:\/\/shop_images\/decor-3.png",
         "title_style": "02",
         "description_style": "subtitle",
         "description": "<p>Our Blog<\/p>",
@@ -726,12 +727,7 @@
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 64,
-        "padding_bottom": 100,
-        "border_top_thickness": 0,
-        "border_right_thickness": 0,
-        "border_bottom_thickness": 0,
-        "border_left_thickness": 0,
-        "border_opacity": 0
+        "padding_bottom": 100
       }
     }
   },
