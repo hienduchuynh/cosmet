@@ -667,7 +667,8 @@
             "link": "shopify:\/\/collections\/all",
             "link_style": "solid",
             "desktop_content_position": "bottom-center",
-            "desktop_content_alignment": "center"
+            "desktop_content_alignment": "center",
+            "color_scheme": "inverse"
           }
         },
         "template--17347501523219__b0963866-3da4-4117-baf6-c6d8cadd1abf-1672900711eddce6bf-1": {
@@ -679,7 +680,8 @@
             "link": "shopify:\/\/collections\/all",
             "link_style": "solid",
             "desktop_content_position": "bottom-center",
-            "desktop_content_alignment": "center"
+            "desktop_content_alignment": "center",
+            "color_scheme": "inverse"
           }
         }
       },
