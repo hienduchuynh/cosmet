@@ -1,7 +1,7 @@
 {
   "current": {
     "header_layout": "04",
-    "footer_layout": "05",
+    "footer_layout": "06",
     "blog_layout": "01",
     "colors_solid_button_labels": "#ffffff",
     "colors_accent_1": "#1e293b",
@@ -47,7 +47,7 @@
     "variant_pills_shadow_vertical_offset": 4,
     "variant_pills_shadow_blur": 5,
     "inputs_border_thickness": 1,
-    "inputs_border_opacity": 55,
+    "inputs_border_opacity": 10,
     "inputs_radius": 8,
     "inputs_shadow_opacity": 0,
     "inputs_shadow_horizontal_offset": 0,
@@ -604,6 +604,81 @@
           "padding_bottom": 0,
           "border_thickness": 0,
           "border_opacity": 0
+        }
+      },
+      "footer-06": {
+        "type": "footer-06",
+        "blocks": {
+          "footer-06-0": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Quick links",
+              "menu": "footer"
+            }
+          },
+          "footer-06-1": {
+            "type": "text",
+            "settings": {
+              "show_heading": true,
+              "heading": "Heading",
+              "show_subtext": true,
+              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+            }
+          },
+          "2eb20cce-2fa2-41e9-beb5-254e9198aef9": {
+            "type": "newsletter",
+            "settings": {
+              "newsletter_enable": true,
+              "newsletter_heading": "Subscribe to our emails",
+              "newsletter_intro": "Subscribe to the Joomlart newsletter to receive timely updates from your favorite products."
+            }
+          },
+          "d7fbba8c-f1c5-47ec-b02c-b15483f0dfcc": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Quick links",
+              "menu": "footer"
+            }
+          },
+          "1eb5c66a-fd82-4b17-b245-93bc47ba1807": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Quick links",
+              "menu": "footer"
+            }
+          },
+          "399e4266-45e1-4242-b565-b96405e80513": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Quick links",
+              "menu": "footer"
+            }
+          },
+          "ea312a78-bade-4c39-a55a-f71d4f8cf385": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Quick links",
+              "menu": "footer"
+            }
+          }
+        },
+        "block_order": [
+          "footer-06-0",
+          "footer-06-1",
+          "2eb20cce-2fa2-41e9-beb5-254e9198aef9",
+          "d7fbba8c-f1c5-47ec-b02c-b15483f0dfcc",
+          "1eb5c66a-fd82-4b17-b245-93bc47ba1807",
+          "399e4266-45e1-4242-b565-b96405e80513",
+          "ea312a78-bade-4c39-a55a-f71d4f8cf385"
+        ],
+        "settings": {
+          "color_scheme": "background-1",
+          "enable_country_selector": true,
+          "enable_language_selector": true,
+          "payment_enable": true,
+          "margin_top": 0,
+          "padding_top": 36,
+          "padding_bottom": 36
         }
       }
     },

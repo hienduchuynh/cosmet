@@ -25,7 +25,7 @@
 }
 
 .color-accent-2 {
-	--color-foreground: 255, 255, 255;
+	--color-foreground: 255,255,255;
 	--color-background: var(--color-base-accent-2);
 	--gradient-background: var(--gradient-base-accent-2);
 }

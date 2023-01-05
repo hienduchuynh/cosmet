@@ -367,7 +367,8 @@
           "label__2": "Footer 02",
           "label__3": "Footer 03",
           "label__4": "Footer 04",
-          "label__5": "Footer 05"
+          "label__5": "Footer 05",
+          "label__6": "Footer 06"
         },
         "blog_layout": {
           "label": "Blog Layout",
@@ -4783,8 +4784,61 @@
         }
       },
       "blocks": {
-        "column": {
-          "name": "Column",
+        "testimonial": {
+          "name": "Testimonial",
+          "settings": {
+            "image": {
+              "label": "Image"
+            },
+            "title": {
+              "label": "Heading"
+            },
+            "text": {
+              "label": "Description"
+            },
+            "link_label": {
+              "label": "Link label"
+            },
+            "link_style": {
+              "label": "Link style",
+              "options__1": {
+                "label": "Link"
+              },
+              "options__2": {
+                "label": "Outline"
+              },
+              "options__3": {
+                "label": "Solid"
+              }
+            },
+            "link": {
+              "label": "Link"
+            },
+            "icon_position": {
+              "label": "Icon Position",
+              "options__1": {
+                "label": "Left"
+              },
+              "options__2": {
+                "label": "Center"
+              },
+              "options__3": {
+                "label": "Right"
+              }
+            },
+            "image_position": {
+              "label": "Image Position",
+              "options__1": {
+                "label": "Top"
+              },
+              "options__2": {
+                "label": "Bottom"
+              }
+            }
+          }
+        },
+        "client": {
+          "name": "Client",
           "settings": {
             "image": {
               "label": "Image"
