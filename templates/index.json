@@ -710,7 +710,7 @@
         "heading": "The latest from Cosmet",
         "heading_size": "h1",
         "title_style": "02",
-        "description_style": "body",
+        "description_style": "subtitle",
         "description": "<p>Our Blog<\/p>",
         "blog": "news",
         "post_limit": 3,
