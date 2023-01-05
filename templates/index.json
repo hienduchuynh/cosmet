@@ -661,6 +661,7 @@
         "template--17347501523219__b0963866-3da4-4117-baf6-c6d8cadd1abf-1672900711eddce6bf-0": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/banner-04.jpg",
             "title": "Column",
             "link_label": "",
             "link": "",
@@ -672,6 +673,7 @@
         "template--17347501523219__b0963866-3da4-4117-baf6-c6d8cadd1abf-1672900711eddce6bf-1": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/banner-05.jpg",
             "title": "Column",
             "link_label": "",
             "link": "",
