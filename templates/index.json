@@ -546,7 +546,53 @@
         "273a922f-6d47-4b36-a5f4-132f6e1bb07d": {
           "type": "client",
           "settings": {
+            "image": "shopify:\/\/shop_images\/snowflake.png",
+            "title": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "8cc66974-01cc-443a-a473-3bf5de13a2de": {
+          "type": "client",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/stdlib.png",
+            "title": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "c3a93765-96d9-489e-a2af-5e3e9489ab37": {
+          "type": "client",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/stylus.png",
+            "title": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "0f43797b-9348-4a39-a03a-5261ff8c7cc9": {
+          "type": "client",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bugsnag.png",
             "title": "Client",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "8b7bf80d-3ea9-4c0b-b88f-b810fe389528": {
+          "type": "client",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/arduino.png",
+            "title": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "fc0a76bb-efdd-4a88-8a7b-8ff9a2edc785": {
+          "type": "client",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/strapi.png",
+            "title": "",
             "link_label": "",
             "link": ""
           }
@@ -557,7 +603,12 @@
         "ad2004c6-ad21-488f-94c0-de4e498e6111",
         "0abe2484-50ce-4c57-97cf-fcf0a707cb99",
         "0c944998-6a14-44b1-bf4c-d5fda7dbebdf",
-        "273a922f-6d47-4b36-a5f4-132f6e1bb07d"
+        "273a922f-6d47-4b36-a5f4-132f6e1bb07d",
+        "8cc66974-01cc-443a-a473-3bf5de13a2de",
+        "c3a93765-96d9-489e-a2af-5e3e9489ab37",
+        "0f43797b-9348-4a39-a03a-5261ff8c7cc9",
+        "8b7bf80d-3ea9-4c0b-b88f-b810fe389528",
+        "fc0a76bb-efdd-4a88-8a7b-8ff9a2edc785"
       ],
       "settings": {
         "title": "287,422+ clients love Omaie",
