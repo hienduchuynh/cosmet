@@ -507,52 +507,57 @@
     "0c1f2d58-429c-4e05-9297-54c51fdeebc5": {
       "type": "ja-testimonials",
       "blocks": {
-        "template--17347501523219__d2da5983-bc11-43bc-8f65-7261979c6f4b-1672304453c687df02-0": {
-          "type": "column",
+        "418f3dfe-b6ca-42b4-97a1-797d9e542b2b": {
+          "type": "testimonial",
           "settings": {
-            "image": "shopify:\/\/shop_images\/stars.png",
-            "title": "Repairing eye stick",
-            "text": "<p>“ I was surprised at how sturdy the bed frame actually is. I’m a larger guy so I’m always worried about weight capacity but I don’t have any issue at all. It doesn’t make a single sound all night! \"<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--17347501523219__d2da5983-bc11-43bc-8f65-7261979c6f4b-1672304453c687df02-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/stars.png",
-            "title": "Charcoal face cleanser stick",
-            "text": "<p>“ I can’t recommend this bed enough! It’s very high quality and extremely easy to put together— no screws, you just need to fit the frame, legs, and the slats together. \"<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--17347501523219__d2da5983-bc11-43bc-8f65-7261979c6f4b-1672304453c687df02-2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/stars.png",
-            "title": "Column",
+            "title": "Testimonial",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
             "link": ""
           }
         },
-        "8fd5d1b9-a2cb-42c9-b05c-e234a39eff1b": {
-          "type": "column",
+        "ad2004c6-ad21-488f-94c0-de4e498e6111": {
+          "type": "testimonial",
           "settings": {
-            "image": "shopify:\/\/shop_images\/stars.png",
-            "title": "Column",
+            "title": "Testimonial",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "0abe2484-50ce-4c57-97cf-fcf0a707cb99": {
+          "type": "testimonial",
+          "settings": {
+            "title": "Testimonial",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "0c944998-6a14-44b1-bf4c-d5fda7dbebdf": {
+          "type": "testimonial",
+          "settings": {
+            "title": "Testimonial",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "273a922f-6d47-4b36-a5f4-132f6e1bb07d": {
+          "type": "client",
+          "settings": {
+            "title": "Client",
             "link_label": "",
             "link": ""
           }
         }
       },
       "block_order": [
-        "template--17347501523219__d2da5983-bc11-43bc-8f65-7261979c6f4b-1672304453c687df02-0",
-        "template--17347501523219__d2da5983-bc11-43bc-8f65-7261979c6f4b-1672304453c687df02-1",
-        "template--17347501523219__d2da5983-bc11-43bc-8f65-7261979c6f4b-1672304453c687df02-2",
-        "8fd5d1b9-a2cb-42c9-b05c-e234a39eff1b"
+        "418f3dfe-b6ca-42b4-97a1-797d9e542b2b",
+        "ad2004c6-ad21-488f-94c0-de4e498e6111",
+        "0abe2484-50ce-4c57-97cf-fcf0a707cb99",
+        "0c944998-6a14-44b1-bf4c-d5fda7dbebdf",
+        "273a922f-6d47-4b36-a5f4-132f6e1bb07d"
       ],
       "settings": {
         "title": "287,422+ clients love Omaie",
