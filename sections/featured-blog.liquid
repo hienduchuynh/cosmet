@@ -17,12 +17,6 @@
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px;
-    border-style: solid;
-    border-color: rgba(0, 0, 0, {{ section.settings.border_opacity }});
-    border-top-width: {{ section.settings.border_top_thickness }}px;
-    border-bottom-width: {{ section.settings.border_bottom_thickness }}px;
-    border-left-width: {{ section.settings.border_left_thickness }}px;
-    border-right-width: {{ section.settings.border_right_thickness }}px;
   }
 
   @media screen and (min-width: 750px) {
@@ -51,8 +45,25 @@
     {%- unless section.settings.heading == blank -%}
       <div class="blogs__title title-wrapper title-wrapper--no-top-margin title-wrapper-{{ section.settings.title_style }} {% if section.settings.full_width == false and section.settings.title_style != "03" %} page-width{% endif %}{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}">
         <div class="inner">
-          <h2 id="SectionHeading-{{ section.id }}" class="blog__title title {{ section.settings.heading_size }}">
-            {% if section.settings.title_style == "03" %}
+          {%- if section.settings.title_decor != blank -%}
+            <img
+              class="title_decor"
+              srcset= "{{ section.settings.title_decor | image_url: width: 80 }}"
+              src="{{ section.settings.title_decor | image_url: width: 80 }}"
+              alt="{{ section.settings.title_decor.alt | escape }}"
+              loading="lazy"
+              width="{{ section.settings.title_decor.width }}"
+              height="{{ section.settings.title_decor.height }}"
+            >
+          {%- endif -%}
+
+          {%- if section.settings.description != blank -%}
+            <div class="blogs__description {{ section.settings.description_style }}">{{ section.settings.description }}</div>
+          {%- endif -%}
+
+          {%- if section.settings.heading != blank -%}
+            <h2 class="title {{ section.settings.heading_size }}">
+              {% if section.settings.title_style == "03" %}
               <div class="marquee-group">
                 <div class="marquee">
                   <span>{{ section.settings.heading | escape }}</span>
@@ -82,10 +93,7 @@
               {% else %}
                 {{ section.settings.heading | escape }}
               {% endif %}
-          </h2>
-
-          {%- if section.settings.description != blank -%}
-            <div class="blogs__description {{ section.settings.description_style }}">{{ section.settings.description }}</div>
+            </h2>
           {%- endif -%}
 
           {% if section.settings.title_style == "01" %}
@@ -222,6 +230,11 @@ window.addEventListener("scroll", function() {
       ],
       "default": "hxl",
       "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "image_picker",
+      "id": "title_decor",
+      "label": "Title Decor"
     },
     {
       "type": "select",
@@ -419,7 +432,7 @@ window.addEventListener("scroll", function() {
       "type": "range",
       "id": "padding_top",
       "min": 0,
-      "max": 100,
+      "max": 200,
       "step": 4,
       "unit": "px",
       "label": "t:sections.all.padding.padding_top",
@@ -429,65 +442,11 @@ window.addEventListener("scroll", function() {
       "type": "range",
       "id": "padding_bottom",
       "min": 0,
-      "max": 100,
+      "max": 200,
       "step": 4,
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
-    },
-    {
-      "type": "header",
-      "content": "t:settings_schema.global.settings.header__border.content"
-    },
-    {
-      "type": "range",
-      "id": "border_top_thickness",
-      "min": 0,
-      "max": 24,
-      "step": 1,
-      "unit": "px",
-      "label": "t:settings_schema.global.settings.top_thickness.label",
-      "default": 0
-    },
-    {
-      "type": "range",
-      "id": "border_right_thickness",
-      "min": 0,
-      "max": 24,
-      "step": 1,
-      "unit": "px",
-      "label": "t:settings_schema.global.settings.right_thickness.label",
-      "default": 0
-    },
-    {
-      "type": "range",
-      "id": "border_bottom_thickness",
-      "min": 0,
-      "max": 24,
-      "step": 1,
-      "unit": "px",
-      "label": "t:settings_schema.global.settings.bottom_thickness.label",
-      "default": 0
-    },
-    {
-      "type": "range",
-      "id": "border_left_thickness",
-      "min": 0,
-      "max": 24,
-      "step": 1,
-      "unit": "px",
-      "label": "t:settings_schema.global.settings.left_thickness.label",
-      "default": 0
-    },
-    {
-      "type": "range",
-      "id": "border_opacity",
-      "min": 0,
-      "max": 100,
-      "step": 5,
-      "unit": "%",
-      "label": "t:settings_schema.global.settings.opacity.label",
-      "default": 0
     }
   ],
   "presets": [

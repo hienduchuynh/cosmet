@@ -10,6 +10,15 @@
   align-items: center;
 }
 
+.testimonials {
+}
+
+.testimonials > .page-width {
+  padding-left: 12.8rem;
+  padding-right: 12.8rem;
+  border-radius: 0.8rem;
+}
+
 .testimonials.no-heading .title {
   display: none;
 }
@@ -19,6 +28,11 @@
 }
 
 @media screen and (max-width: 749px) {
+  .testimonials > .page-width {
+    padding-left: 6.4rem;
+    padding-right: 6.4rem;
+  }
+
   .testimonials .title-wrapper-with-link {
     margin-bottom: 3rem;
   }
@@ -361,13 +375,35 @@
   margin-left: 0;
 }
 
-.testimonials
-  .grid--gapless.slider--tablet.grid--peek.grid--1-col-tablet-down
-  .grid__item,
-.testimonials
-  .grid--gapless.slider--mobile.grid--peek.grid--1-col-tablet-down
-  .grid__item {
+.testimonials .grid--gapless.slider--tablet.grid--peek.grid--1-col-tablet-down .grid__item,
+.testimonials .grid--gapless.slider--mobile.grid--peek.grid--1-col-tablet-down .grid__item {
   width: 100%;
+}
+
+@media screen and (min-width: 990px) {
+  .testimonials .slider--desktop.grid--2-col-desktop .grid__item {
+    width: calc(100% - var(--desktop-margin-left-first-item) / 1);
+  }
+
+  .testimonials .slider--desktop.grid--2-col-desktop .grid__item {
+    width: calc(100% - var(--desktop-margin-left-first-item) / 2);
+  }
+
+  .testimonials .slider--desktop.grid--3-col-desktop .grid__item {
+    width: calc(100% - var(--desktop-margin-left-first-item) / 3);
+  }
+
+  .testimonials .slider--desktop.grid--4-col-desktop .grid__item {
+    width: calc(100% - var(--desktop-margin-left-first-item) / 4);
+  }
+
+  .testimonials .slider--desktop.grid--5-col-desktop .grid__item {
+    width: calc(100% - var(--desktop-margin-left-first-item) / 5);
+  }
+
+  .testimonials .slider--desktop.grid--6-col-desktop .grid__item {
+    width: calc(100% - var(--desktop-margin-left-first-item) / 6);
+  }
 }
 
 .client-card__image-wrapper {
@@ -377,7 +413,7 @@
 .clients-wrapper {
   margin-top: 7.2rem;
   padding-top: 7.2rem;
-  border-top: 1px solid rgba(0,0,0, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .clients-wrapper .grid__item {
