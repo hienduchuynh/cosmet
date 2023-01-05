@@ -199,7 +199,7 @@
         "show_description": false,
         "collection": "latest-products",
         "show_card_collection": false,
-        "products_to_show": 8,
+        "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
         "show_view_all": true,
@@ -696,12 +696,7 @@
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 64,
-        "padding_bottom": 64,
-        "border_top_thickness": 0,
-        "border_right_thickness": 0,
-        "border_bottom_thickness": 0,
-        "border_left_thickness": 0,
-        "border_opacity": 0
+        "padding_bottom": 64
       }
     },
     "13070f5d-8a58-4daf-a17a-288e26b73b06": {
