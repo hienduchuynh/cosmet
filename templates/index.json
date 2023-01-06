@@ -10,6 +10,7 @@
             "heading": "Brighter skin days ahead",
             "heading_size": "hxl",
             "subheading": "Introducing Skin Hydration Elixir",
+            "description": "<p>Our formulations have proven efficacy, contain organic ingredients only and are 100% cruelty free.<\/p>",
             "button_label": "Shop gift kits",
             "link": "shopify:\/\/collections\/all",
             "link_style": "solid",
@@ -32,6 +33,7 @@
             "heading": "The beauty from natural",
             "heading_size": "hxl",
             "subheading": "Introducing Skin Hydration Elixir",
+            "description": "<p>Our formulations have proven efficacy, contain organic ingredients only and are 100% cruelty free.<\/p>",
             "button_label": "Shop gift kits",
             "link": "shopify:\/\/collections\/all",
             "link_style": "solid",
@@ -43,7 +45,7 @@
             "show_text_box": false,
             "text_alignment": "left",
             "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
+            "color_scheme": "background-2",
             "text_alignment_mobile": "center"
           }
         },
@@ -54,6 +56,7 @@
             "heading": "Holiday shine just in time",
             "heading_size": "hxl",
             "subheading": "Plus 3 deluxe samples on orders $75+",
+            "description": "<p>Our formulations have proven efficacy, contain organic ingredients only and are 100% cruelty free.<\/p>",
             "button_label": "Shop Collection",
             "link": "shopify:\/\/collections",
             "link_style": "solid",
