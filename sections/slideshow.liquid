@@ -122,7 +122,7 @@
               {%- if block.settings.button_label != blank or block.settings.button_label2 != blank -%}
                 <div class="banner__buttons">
                   {%- if block.settings.button_label != blank -%}
-                    <a {% if block.settings.link %}href="{{ block.settings.link }}" {% else %} role="link"aria-disabled="true"{% endif %} class="{% if block.settings.link_style == 'link' %}link hightlight-link animate-arrow link--text{% elsif block.settings.link_style == 'solid' %}button{% else %}button button--secondary{% endif %}">{{ block.settings.button_label | escape }}
+                    <a {% if block.settings.link %}href="{{ block.settings.link }}" {% else %} role="link"aria-disabled="true"{% endif %} class="{% if block.settings.link_style == 'link' %}link hightlight-link animate-arrow link--text{% elsif block.settings.link_style == 'solid' %}button button--primary{% else %}button button--secondary{% endif %}">{{ block.settings.button_label | escape }}
                       {% if block.settings.link_style == 'link' %}
                         <span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>
                       {% endif %}

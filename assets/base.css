@@ -146,13 +146,17 @@
 	--alpha-button-background: 1;
 }
 
-.color-background-2 .button--primary,
 .color-accent-1 .button--primary,
 .color-accent-2 .button--primary,
 .color-accent-3 .button--primary,
 .color-accent-4 .button--primary {
 	--color-button: var(--color-background);
 	--color-button-text: var(--color-foreground);
+}
+
+.color-background-2 .button--primary {
+	--color-button: var(--color-background);
+	--color-button-text: 255, 255, 255;
 }
 
 .color-inverse .button--primary {
@@ -1182,6 +1186,7 @@ summary::-webkit-details-marker {
 	font-weight: 300;
 	font-size: 1.4rem;
 	line-height: 1.25;
+	text-transform: uppercase;
 }
 
 .subtitle p {
