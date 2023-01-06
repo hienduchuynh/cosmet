@@ -5,6 +5,7 @@
 
 .shopify-section-header-sticky {
     z-index: 5;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
 }
 
 .header-04 {

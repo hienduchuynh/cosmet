@@ -16,6 +16,11 @@
 	margin-bottom: 0.8rem;
 }
 
+.footer-06 .footer-block--menu .footer-block__heading {
+	margin-top: 0;
+	margin-bottom: 2.4rem;
+}
+
 .footer-06 .footer-block__newsletter {
   color: rgba(var(--color-foreground), 0.75);
 	padding: 0 0 6.4rem;
