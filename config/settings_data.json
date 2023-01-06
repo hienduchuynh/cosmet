@@ -620,15 +620,15 @@
           "footer-06-0": {
             "type": "link_list",
             "settings": {
-              "heading": "Quick links",
+              "heading": "Shop",
               "menu": "footer"
             }
           },
           "d7fbba8c-f1c5-47ec-b02c-b15483f0dfcc": {
             "type": "link_list",
             "settings": {
-              "heading": "Quick links",
-              "menu": "footer"
+              "heading": "Discover",
+              "menu": "discover"
             }
           },
           "1eb5c66a-fd82-4b17-b245-93bc47ba1807": {
