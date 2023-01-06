@@ -162,35 +162,49 @@
                   {%- for block in section.blocks -%}
                     <div class="footer-block grid__item" {{ block.shopify_attributes }}>
                       {%- case block.type -%}  
-                      {%- when 'logo_image' -%}
-                        {% if block.settings.show_logo %}
-                        <div class="footer-block__details-content footer-block-image {{ block.settings.alignment }}">
+                      {%- when 'text' -%}
+                        <div class="footer-block__details-content rte">
                           {%- if block.settings.image != blank -%}
-                            {%- assign image_size_2x = block.settings.image_width | times: 2 | at_most: 5760 -%}
                             <img
-                              srcset= "{{ block.settings.image | image_url: width: block.settings.image_width }}, {{ block.settings.image | image_url: width: image_size_2x }} 2x"
-                              src="{{ block.settings.image | image_url: width: 400 }}"
+                              srcset= "{{ block.settings.image | image_url: width: 56 }}"
+                              src="{{ block.settings.image | image_url: width: 56 }}"
                               alt="{{ block.settings.image.alt | escape }}"
                               loading="lazy"
                               width="{{ block.settings.image.width }}"
                               height="{{ block.settings.image.height }}"
-                              style="max-width: min(100%, {{ block.settings.image_width }}px);"
                             >
                           {%- else -%}
                             {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
                           {%- endif -%}
-                        </div>
-                      {% endif %}
-                      {%- when 'text' -%}
-                        <div class="footer-block__details-content rte">
                           {% if block.settings.show_heading %}
-                            <h2>{{ block.settings.heading }}</h2>
+                            <h2 class="h4">{{ block.settings.heading }}</h2>
                           {% endif %}
                           {% if block.settings.show_subtext %}
-                            <p>{{ block.settings.subtext }}</p>
+                            <div>{{ block.settings.subtext }}</div>
                           {% endif %}
                         </div>
                       {%- when 'social' -%}
+                        {%- if block.settings.image != blank -%}
+                          <img
+                            srcset= "{{ block.settings.image | image_url: width: 56 }}"
+                            src="{{ block.settings.image | image_url: width: 56 }}"
+                            alt="{{ block.settings.image.alt | escape }}"
+                            loading="lazy"
+                            width="{{ block.settings.image.width }}"
+                            height="{{ block.settings.image.height }}"
+                          >
+                        {%- else -%}
+                          {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+                        {%- endif -%}
+
+                        {% if block.settings.heading != blank %}
+                          <h2 class="h4">{{ block.settings.heading }}</h2>
+                        {% endif %}
+
+                        {% if block.settings.subtext != blank %}
+                          <div>{{ block.settings.subtext }}</div>
+                        {% endif %}
+
                         {%- if block.settings.show_social -%}
                           <ul class="footer__list-social list-unstyled list-social" role="list">
                             {%- if settings.social_twitter_link != blank -%}

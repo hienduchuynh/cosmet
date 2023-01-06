@@ -7,17 +7,13 @@
 	display: block;
 }
 
-.footer-06 .footer-block--main .footer__content__left > * {
-	text-align: left;
-}
-
-.footer-06 .footer-block--main .footer__content__left .footer__list-social {
-	justify-content: flex-start;
-	margin-left: -1.4rem;
-}
-
 .footer-06 .footer-block {
 	min-width: 0;
+}
+
+.footer-06 .footer-block h2 {
+	margin-top: 2.8rem;
+	margin-bottom: 0.8rem;
 }
 
 .footer-06 .footer-block__newsletter {
@@ -42,6 +38,20 @@
 .footer-06.color-accent-2 .newsletter-form__field-wrapper .field__input {
 	background-color: #fff;
 	border: var(--text-boxes-border-width) solid #1E293B;
+}
+
+.footer-06 .footer__list-social {
+	margin-top: 4rem;
+}
+
+.footer-06 .list-social__link {
+	background: rgb(var(--color-foreground));
+	color: #fff;
+	border-radius: 50%;
+}
+
+.footer-06 .list-social__item + .list-social__item {
+	margin-left: 1.8rem;
 }
 
 @media screen and (min-width: 750px) {
