@@ -109,6 +109,13 @@
 	--color-button-text: 255, 255, 255;
 }
 
+.color-background-1 .button--secondary {
+	--color-button: var(--color-base-accent-2);
+	--color-button-text: var(--color-base-solid-button-labels);
+	--alpha-button-background: 1;
+	--alpha-button-border: 1;
+}
+
 .color-accent-3 .button--secondary {
 }
 
@@ -119,8 +126,7 @@
 .color-accent-4 .button--secondary:hover,
 .color-accent-2 .button--secondary:hover,
 .color-accent-3 .button--secondary:hover {
-	background: rgba(255, 255, 255);
-	opacity: 1;
+	
 }
 
 .color-inverse .button--secondary {

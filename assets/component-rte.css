@@ -46,7 +46,7 @@
   margin-bottom: 0;
 }
 
-.rte a {
+.rte a:not(.button) {
   color: rgba(var(--color-link), var(--alpha-link));
   text-underline-offset: 0.3rem;
   text-decoration-thickness: 0.1rem;
@@ -54,7 +54,7 @@
   word-wrap: anywhere;
 }
 
-.rte a:hover {
+.rte a:not(.button):hover {
   color: rgb(var(--color-link));
   text-decoration-thickness: 0.2rem;
 }

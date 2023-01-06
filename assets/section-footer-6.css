@@ -40,7 +40,8 @@
 	border: var(--text-boxes-border-width) solid #1E293B;
 }
 
-.footer-06 .footer__list-social {
+.footer-06 .footer__list-social,
+.footer-06 .footer-block__details-content .button {
 	margin-top: 4rem;
 }
 
