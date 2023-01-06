@@ -1797,10 +1797,10 @@ button.shopify-payment-button__button--unbranded {
 .customer button {
 	font-size: 1.6rem;
 	letter-spacing: normal;
-	line-height: 1.6;
-	padding: 2.3rem 4.8rem;
-	text-transform: uppercase;
-	font-weight: 700;
+	line-height: 1.25;
+	padding: 2rem 3.2rem;
+	text-transform: capitalize;
+	font-weight: 500;
 }
 
 @media screen and (max-width: 749px) {

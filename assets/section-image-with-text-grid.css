@@ -134,6 +134,12 @@
 .image-with-text-grid .grid__item .content h3,
 .image-with-text-grid .grid__item .content .image-with-text__heading {
     color: var(--color-foreground);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.image-with-text-grid .grid__item .content h3 + .button {
+    margin-top: 3.2rem;
 }
 
 .image-with-text-grid .grid__item .banner__content--bottom-left .inner {
