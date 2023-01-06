@@ -659,7 +659,9 @@
               "show_heading": true,
               "heading": "Need Help?",
               "show_subtext": true,
-              "subtext": "<p>Chat with one of our customer service reps<\/p>"
+              "subtext": "<p>Chat with one of our customer service reps<\/p>",
+              "button_label": "Chat now",
+              "button_link": "#"
             }
           },
           "de205195-d470-4e66-9b36-702af52abf14": {
@@ -679,7 +681,9 @@
               "show_heading": true,
               "heading": "Store locator",
               "show_subtext": true,
-              "subtext": "<p>Explore a rentail store or outlet near you<\/p>"
+              "subtext": "<p>Explore a rentail store or outlet near you<\/p>",
+              "button_label": "Button label",
+              "button_link": ""
             }
           }
         },
