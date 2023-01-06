@@ -16,6 +16,10 @@
 	margin-left: -1.4rem;
 }
 
+.footer-06 .footer-block {
+	min-width: 0;
+}
+
 .footer-06 .footer-block__newsletter {
   color: rgba(var(--color-foreground), 0.75);
 	padding: 0 0 6.4rem;
@@ -59,8 +63,18 @@
 	}
 }
 
-.footer__content__box {
+.footer-06 .footer__content__box {
 	border-radius: 0.8rem;
 	padding: 6.4rem;
 	margin-top: 6.4rem;
+}
+
+.footer-06 .footer__column--info {
+	padding-bottom: 0;
+	text-align: center;
+	display: block;
+}
+
+.footer-06 .footer__column--info .footer__copyright {
+	text-align: center;
 }

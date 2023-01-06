@@ -133,7 +133,7 @@
               </div>
               
               <div class="footer-block--main">
-                <div class="grid grid--2-col-tablet-down {{ footer_grid_class }} footer__content__links">
+                <div class="grid grid--2-col-tablet-down grid--5-col-desktop footer__content__links">
                 {%- for block in section.blocks -%}
                   <div class="footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}" {{ block.shopify_attributes }}>
                     {%- case block.type -%}  
@@ -158,8 +158,10 @@
                 </div>
 
                 <div class="footer__content__box color-background-1 gradient"> 
-                  {% for block in section.blocks %}
-                    {% case block.type %}
+                  <div class="grid grid--1-col-tablet-down grid--3-col-desktop">
+                  {%- for block in section.blocks -%}
+                    <div class="footer-block grid__item" {{ block.shopify_attributes }}>
+                      {%- case block.type -%}  
                       {%- when 'logo_image' -%}
                         {% if block.settings.show_logo %}
                         <div class="footer-block__details-content footer-block-image {{ block.settings.alignment }}">
@@ -265,8 +267,10 @@
                             {%- endif -%}
                           </ul>
                         {%- endif -%}
-                    {% endcase %}
-                  {% endfor %}
+                      {%- endcase -%}
+                    </div>
+                  {%- endfor -%}
+                  </div>
                 </div>
               </div>
             </div>
@@ -450,32 +454,6 @@
   "name": "t:sections.footer.name",
   "blocks": [
     {
-      "type": "breadcrumb",
-      "name": "t:sections.breadcrumb.name",
-      "settings": [
-        {
-          "type": "select",
-          "id": "alignment_breadcrumb",
-          "label": "t:sections.breadcrumb.settings.alignment.name.label",
-          "options": [
-            {
-              "value": "left",
-              "label": "t:sections.breadcrumb.settings.alignment.left.label"
-            },
-            {
-              "value": "center",
-              "label": "t:sections.breadcrumb.settings.alignment.center.label"
-            },
-            {
-              "value": "right",
-              "label": "t:sections.breadcrumb.settings.alignment.right.label"
-            }
-          ],
-          "default": "left"
-        }
-      ]
-    },
-    {
       "type": "link_list",
       "name": "t:sections.footer.blocks.link_list.name",
       "settings": [
@@ -499,6 +477,11 @@
       "name": "t:sections.footer.blocks.text.name",
       "settings": [
         {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
           "type": "checkbox",
           "id": "show_heading",
           "default": true,
@@ -521,52 +504,6 @@
           "id": "subtext",
           "default": "<p>Share contact information, store details, and brand content with your customers.</p>",
           "label": "t:sections.footer.blocks.text.settings.subtext.label"
-        }
-      ]
-    },
-    {
-      "type": "logo_image",
-      "name": "Logo Image",
-      "settings": [
-        {
-          "type": "checkbox",
-          "id": "show_logo",
-          "label": "Show Logo Image"
-        },
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Image"
-        },
-        {
-          "type": "range",
-          "id": "image_width",
-          "min": 50,
-          "max": 200,
-          "step": 5,
-          "unit": "px",
-          "label": "Image width",
-          "default": 100
-        },
-        {
-          "type": "select",
-          "id": "alignment",
-          "label": "Image alignment on large screen",
-          "options": [
-            {
-              "value": "",
-              "label": "Left"
-            },
-            {
-              "value": "center",
-              "label": "Center"
-            },
-            {
-              "value": "right",
-              "label": "Right"
-            }
-          ],
-          "default": "center"
         }
       ]
     },
@@ -604,10 +541,33 @@
       "name": "Social",
       "settings": [
         {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
           "type": "checkbox",
           "id": "show_social",
           "default": true,
           "label": "t:sections.footer.blocks.social.settings.show_social.label"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "Heading",
+          "label": "t:sections.footer.blocks.text.settings.heading.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_subtext",
+          "default": true,
+          "label": "Show Subtext"
+        },
+        {
+          "type": "richtext",
+          "id": "subtext",
+          "default": "<p>Share contact information, store details, and brand content with your customers.</p>",
+          "label": "t:sections.footer.blocks.text.settings.subtext.label"
         }
       ]
     }
