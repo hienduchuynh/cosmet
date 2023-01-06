@@ -629,8 +629,8 @@
             "type": "newsletter",
             "settings": {
               "newsletter_enable": true,
-              "newsletter_heading": "Subscribe to our emails",
-              "newsletter_intro": "Subscribe to the Joomlart newsletter to receive timely updates from your favorite products."
+              "newsletter_heading": "Give your inbox a refresh.",
+              "newsletter_intro": "10% off your first order when you sign up for our plastic-free and spam-free emails."
             }
           },
           "d7fbba8c-f1c5-47ec-b02c-b15483f0dfcc": {
