@@ -682,8 +682,8 @@
               "heading": "Store locator",
               "show_subtext": true,
               "subtext": "<p>Explore a rentail store or outlet near you<\/p>",
-              "button_label": "Button label",
-              "button_link": ""
+              "button_label": "Find a store",
+              "button_link": "shopify:\/\/pages\/contact"
             }
           }
         },
