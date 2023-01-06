@@ -160,8 +160,6 @@
 }
 
 .color-inverse .button--primary {
-	--color-button: var(--color-background);
-	--color-button-text: var(--color-foreground);
 }
 
 .button--tertiary {

@@ -65,6 +65,11 @@ slideshow-component .slideshow.banner {
   display: flex;
 }
 
+.slideshow__text.banner__box .banner__description {
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+
 @media screen and (max-width: 749px) {
   .slideshow__text.banner__box > * + .banner__buttons {
     margin-top: 2.4rem;

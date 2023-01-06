@@ -118,6 +118,10 @@
               {%- if block.settings.heading != blank -%}
                 <h2 class="banner__heading {{ block.settings.heading_size }}"><span>{{ block.settings.heading | escape }}</span></h2>
               {%- endif -%}
+
+              {%- if block.settings.description != blank -%}
+                <div class="banner__description">{{ block.settings.description }}</div>
+              {%- endif -%}
               
               {%- if block.settings.button_label != blank or block.settings.button_label2 != blank -%}
                 <div class="banner__buttons">
@@ -324,7 +328,14 @@
             "id": "subheading",
             "default": "Tell your brand's story through images",
             "label": "t:sections.slideshow.blocks.slide.settings.subheading.label"
-          }, {
+          }, 
+          {
+            "type": "richtext",
+            "id": "description",
+            "default": "<p>Our formulations have proven efficacy, contain organic ingredients only and are 100% cruelty free.</p>",
+            "label": "t:sections.slideshow.blocks.slide.settings.description.label"
+          },
+          {
             "type": "text",
             "id": "button_label",
             "default": "Button label",
