@@ -609,28 +609,19 @@
       "footer-06": {
         "type": "footer-06",
         "blocks": {
-          "footer-06-0": {
-            "type": "link_list",
-            "settings": {
-              "heading": "Quick links",
-              "menu": "footer"
-            }
-          },
-          "footer-06-1": {
-            "type": "text",
-            "settings": {
-              "show_heading": true,
-              "heading": "Heading",
-              "show_subtext": true,
-              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
-            }
-          },
           "2eb20cce-2fa2-41e9-beb5-254e9198aef9": {
             "type": "newsletter",
             "settings": {
               "newsletter_enable": true,
               "newsletter_heading": "Give your inbox a refresh.",
               "newsletter_intro": "10% off your first order when you sign up for our plastic-free and spam-free emails."
+            }
+          },
+          "footer-06-0": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Quick links",
+              "menu": "footer"
             }
           },
           "d7fbba8c-f1c5-47ec-b02c-b15483f0dfcc": {
@@ -660,16 +651,42 @@
               "heading": "Quick links",
               "menu": "footer"
             }
+          },
+          "footer-06-1": {
+            "type": "text",
+            "settings": {
+              "show_heading": true,
+              "heading": "Heading",
+              "show_subtext": true,
+              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+            }
+          },
+          "de205195-d470-4e66-9b36-702af52abf14": {
+            "type": "social",
+            "settings": {
+              "show_social": true
+            }
+          },
+          "758d546a-b520-404f-a06b-141143777e84": {
+            "type": "text",
+            "settings": {
+              "show_heading": true,
+              "heading": "Heading",
+              "show_subtext": true,
+              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+            }
           }
         },
         "block_order": [
-          "footer-06-0",
-          "footer-06-1",
           "2eb20cce-2fa2-41e9-beb5-254e9198aef9",
+          "footer-06-0",
           "d7fbba8c-f1c5-47ec-b02c-b15483f0dfcc",
           "1eb5c66a-fd82-4b17-b245-93bc47ba1807",
           "399e4266-45e1-4242-b565-b96405e80513",
-          "ea312a78-bade-4c39-a55a-f71d4f8cf385"
+          "ea312a78-bade-4c39-a55a-f71d4f8cf385",
+          "footer-06-1",
+          "de205195-d470-4e66-9b36-702af52abf14",
+          "758d546a-b520-404f-a06b-141143777e84"
         ],
         "settings": {
           "color_scheme": "accent-2",
