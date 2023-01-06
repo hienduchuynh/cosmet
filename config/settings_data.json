@@ -665,10 +665,11 @@
           "de205195-d470-4e66-9b36-702af52abf14": {
             "type": "social",
             "settings": {
+              "image": "shopify:\/\/shop_images\/Phone.png",
               "show_social": true,
-              "heading": "Heading",
+              "heading": "Call us: (303) 555-0105",
               "show_subtext": true,
-              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+              "subtext": "<p>We’re here to answer your questions<\/p>"
             }
           },
           "758d546a-b520-404f-a06b-141143777e84": {
