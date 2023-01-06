@@ -655,25 +655,30 @@
           "footer-06-1": {
             "type": "text",
             "settings": {
+              "image": "shopify:\/\/shop_images\/Chats.png",
               "show_heading": true,
-              "heading": "Heading",
+              "heading": "Need Help?",
               "show_subtext": true,
-              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+              "subtext": "<p>Chat with one of our customer service reps<\/p>"
             }
           },
           "de205195-d470-4e66-9b36-702af52abf14": {
             "type": "social",
             "settings": {
-              "show_social": true
+              "show_social": true,
+              "heading": "Heading",
+              "show_subtext": true,
+              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
             }
           },
           "758d546a-b520-404f-a06b-141143777e84": {
             "type": "text",
             "settings": {
+              "image": "shopify:\/\/shop_images\/MapPin.png",
               "show_heading": true,
-              "heading": "Heading",
+              "heading": "Store locator",
               "show_subtext": true,
-              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+              "subtext": "<p>Explore a rentail store or outlet near you<\/p>"
             }
           }
         },
