@@ -182,6 +182,10 @@
                           {% if block.settings.show_subtext %}
                             <div>{{ block.settings.subtext }}</div>
                           {% endif %}
+
+                          {%- if block.settings.button_label != blank -%}
+                            <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button button--primary">{{ block.settings.button_label | escape }}</a>
+                          {%- endif -%}
                         </div>
                       {%- when 'social' -%}
                         {%- if block.settings.image != blank -%}
@@ -518,6 +522,18 @@
           "id": "subtext",
           "default": "<p>Share contact information, store details, and brand content with your customers.</p>",
           "label": "t:sections.footer.blocks.text.settings.subtext.label"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "default": "Button label",
+          "label": "t:sections.rich-text.blocks.buttons.settings.button_label_1.label",
+          "info": "t:sections.rich-text.blocks.buttons.settings.button_label_1.info"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "t:sections.rich-text.blocks.buttons.settings.button_link_1.label"
         }
       ]
     },
