@@ -29,11 +29,11 @@
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/slide-2.jpg",
-            "heading": "Image slide",
+            "heading": "The beauty from natural",
             "heading_size": "hxl",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "Button label",
-            "link": "",
+            "subheading": "Introducing Skin Hydration Elixir",
+            "button_label": "Shop gift kits",
+            "link": "shopify:\/\/collections\/all",
             "link_style": "solid",
             "box_align": "middle-left",
             "box_width": 40,
@@ -51,11 +51,11 @@
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/slide-3.jpg",
-            "heading": "Image slide",
+            "heading": "Holiday shine just in time",
             "heading_size": "hxl",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "Button label",
-            "link": "",
+            "subheading": "Plus 3 deluxe samples on orders $75+",
+            "button_label": "Shop Collection",
+            "link": "shopify:\/\/collections",
             "link_style": "solid",
             "box_align": "middle-left",
             "box_width": 50,
@@ -65,7 +65,7 @@
             "show_text_box": false,
             "text_alignment": "left",
             "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
+            "color_scheme": "inverse",
             "text_alignment_mobile": "left"
           }
         }
