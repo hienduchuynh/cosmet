@@ -3,10 +3,6 @@
 <script src="{{ 'gsap.min.js' | asset_url }}" defer="defer"></script>
 
 {%- style -%}
-  .footer {
-    margin-top: {{ section.settings.margin_top | times: 0.75 | round: 0 }}px;
-  }
-
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | round: 0 }}px;
@@ -14,8 +10,8 @@
 
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top | times: 2 }}px;
-      padding-bottom: {{ section.settings.padding_bottom | times: 2 }}px;
+      padding-top: {{ section.settings.padding_top | round: 0 }}px;
+      padding-bottom: {{ section.settings.padding_bottom | round: 0 }}px;
     }
   }
 {%- endstyle -%}
@@ -38,18 +34,6 @@
               <span>{{ section.settings.heading | escape }}</span>
               <span>{{ section.settings.heading | escape }}</span>
             </div>
-            <div class="marqueee">
-              <span>{{ section.settings.heading | escape }}</span>
-              <span>{{ section.settings.heading | escape }}</span> 
-              <span>{{ section.settings.heading | escape }}</span>
-              <span>{{ section.settings.heading | escape }}</span>
-              <span>{{ section.settings.heading | escape }}</span>
-              <span>{{ section.settings.heading | escape }}</span>
-              <span>{{ section.settings.heading | escape }}</span> 
-              <span>{{ section.settings.heading | escape }}</span>
-              <span>{{ section.settings.heading | escape }}</span>
-              <span>{{ section.settings.heading | escape }}</span>
-            </div>
           </div>
         </h2>
       </div>
@@ -61,7 +45,6 @@
 
 {% javascript %}
   const _getposy = document.querySelector(".ja-marquee .marquee");
-  const _getposl = document.querySelector(".ja-marquee .marqueee");
 
   const _config = {
     speed: 1,
@@ -71,16 +54,10 @@
   window.addEventListener("scroll", function() {
     let pageY = window.pageYOffset;
     let bodyRect = _getposy.getBoundingClientRect();
-    let bodyRectl = _getposl.getBoundingClientRect();
     //--
-    gsap.to('.ja-marquee .marqueee', {
-      duration:_config.speed,
-      x: -(pageY-(bodyRectl.top - window.innerWidth))/4.5,
-      ease: _config.ease
-    });
     gsap.to(".ja-marquee .marquee", {
       duration:_config.speed,
-      x: -(pageY-(bodyRectl.top - window.innerWidth))/4,
+      x: -(pageY-(bodyRect.top - window.innerWidth))/4,
       ease: _config.ease
     });
   })
@@ -109,6 +86,10 @@
           "label": "t:sections.all.colors.accent_2.label"
         },
         {
+          "value": "accent-3",
+          "label": "t:sections.all.colors.accent_3.label"
+        },
+        {
           "value": "background-1",
           "label": "t:sections.all.colors.background_1.label"
         },
@@ -125,7 +106,7 @@
           "label": "t:sections.all.colors.none.label"
         }
       ],
-      "default": "background-1",
+      "default": "accent-3",
       "label": "t:sections.all.colors.label"
     },
     {
