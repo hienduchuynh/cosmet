@@ -3,6 +3,11 @@
 	border-top: 0;
 }
 
+.section-collection-list {
+	overflow: hidden;
+	max-width: 100%;
+}
+
 .collection-hero__title {
 	margin: 0;
 	text-transform: uppercase;
@@ -23,6 +28,11 @@
 .collection-list {
 	margin-top: 0;
 	margin-bottom: 0;
+}
+
+.collection-list-wrapper slider-component {
+	width: 100vw;
+	white-space: nowrap;
 }
 
 .collection-list__item .card--card .card__inner .card__media {
