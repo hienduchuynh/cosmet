@@ -64,6 +64,8 @@
 }
 
 .collection-list__item .card__information .button {
+	--color-button: var(--color-background);
+	--color-button-text: 30, 41, 59;
 	margin-top: var(--grid-desktop-vertical-spacing);
 	padding: 1.2rem;
 	min-width: 4.8rem;
@@ -71,6 +73,11 @@
 
 .collection-list__item .card__information .button .icon-wrap {
 	margin-left: 0;
+}
+
+.collection-list__item .card-wrapper:hover .card__heading a, 
+.collection-list__item .card__heading a:hover {
+	color: var(--color-button-text);
 }
 
 /*Style for page > collections*/
