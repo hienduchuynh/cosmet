@@ -3317,6 +3317,10 @@ details-disclosure > details {
 	font-weight: 400;
 }
 
+.badge.color-accent-2 {
+	--color-foreground: 255,255,255;
+}
+
 .gradient {
 	background: rgb(var(--color-background));
 	background: var(--gradient-background);
