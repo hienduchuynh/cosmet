@@ -453,6 +453,7 @@
       "type": "ja-marquee",
       "settings": {
         "heading": "make clean haircare fun",
+        "image": "shopify:\/\/shop_images\/Sun.png",
         "color_scheme": "accent-3",
         "padding_top": 32,
         "padding_bottom": 32
