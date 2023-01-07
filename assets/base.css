@@ -421,6 +421,10 @@ body,
 	background-color: rgb(var(--color-background));
 }
 
+.color-accent-3 {
+	--color-foreground: 255,255,255;
+}
+
 .background-secondary {
 	background-color: rgba(var(--color-foreground), 0.04);
 }

@@ -1,3 +1,13 @@
 .ja-marquee .title-wrapper-03 {
 	margin-bottom: 0;
 }
+
+.ja-marquee .title-wrapper-03 .title {
+	text-transform: none;
+	color: var(--color-foreground);
+	-webkit-text-stroke-width: 0;
+}
+
+.ja-marquee .title-wrapper-03 .title span:hover {
+	color: var(--color-foreground);
+}
