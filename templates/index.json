@@ -449,6 +449,15 @@
         "show_text_below": true
       }
     },
+    "4889dbed-fb8c-4a17-8286-5ab085cdfaa5": {
+      "type": "ja-marquee",
+      "settings": {
+        "heading": "Peakshop",
+        "color_scheme": "accent-1",
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    },
     "a15d71e1-ec79-47fb-8829-c7fae36e9456": {
       "type": "collage",
       "blocks": {
@@ -739,6 +748,7 @@
     "9c5800dd-9764-413a-b02d-e6f2f45f67f5",
     "e6e41702-ecb2-47ec-adfa-65cb65822c02",
     "82de993e-14c6-4ad7-988f-fac67f2e0e51",
+    "4889dbed-fb8c-4a17-8286-5ab085cdfaa5",
     "a15d71e1-ec79-47fb-8829-c7fae36e9456",
     "0c1f2d58-429c-4e05-9297-54c51fdeebc5",
     "b0963866-3da4-4117-baf6-c6d8cadd1abf",
