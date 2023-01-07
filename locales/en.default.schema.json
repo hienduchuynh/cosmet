@@ -4897,6 +4897,14 @@
       "presets": {
         "name": "Testimonials"
       }
+    },
+    "ja-marquee": {
+      "name": "Marquee",
+      "settings": {
+        "heading": {
+          "label": "Marquee"
+        }
+      }
     }
   }
 }
