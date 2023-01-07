@@ -11,3 +11,8 @@
 .ja-marquee .title-wrapper-03 .title span:hover {
 	color: var(--color-foreground);
 }
+
+.ja-marquee .title-wrapper-03 .title img {
+	margin-left: 3.6rem;
+	margin-right: 3.6rem;
+}
