@@ -4,6 +4,10 @@
   flex-direction: column;
 }
 
+.banner.color-background-2 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
 .banner__box {
   text-align: center;
 }
