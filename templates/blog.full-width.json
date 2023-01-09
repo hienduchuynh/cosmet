@@ -46,7 +46,7 @@
         "description": "A blog about your smile, our planet, and daily changes that add up.",
         "alignment_title": "center",
         "layout": "collage",
-        "number_article": 9,
+        "number_article": 6,
         "show_image": true,
         "image_height": "small",
         "heading_size": "h3",
