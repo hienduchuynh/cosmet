@@ -40,6 +40,24 @@
         {%- else -%}
           {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
         {%- endif -%}
+
+        {%- if section.settings.second_image != blank -%}
+          <img
+            srcset="{%- if section.settings.second_image.width >= 165 -%}{{ section.settings.second_image | image_url: width: 165 }} 165w,{%- endif -%}
+              {%- if section.settings.second_image.width >= 360 -%}{{ section.settings.second_image | image_url: width: 360 }} 360w,{%- endif -%}
+              {%- if section.settings.second_image.width >= 535 -%}{{ section.settings.second_image | image_url: width: 535 }} 535w,{%- endif -%}
+              {%- if section.settings.second_image.width >= 750 -%}{{ section.settings.second_image | image_url: width: 750 }} 750w,{%- endif -%}
+              {%- if section.settings.second_image.width >= 1070 -%}{{ section.settings.second_image | image_url: width: 1070 }} 1070w,{%- endif -%}
+              {%- if section.settings.second_image.width >= 1500 -%}{{ section.settings.second_image | image_url: width: 1500 }} 1500w,{%- endif -%}
+              {{ section.settings.second_image | image_url }} {{ section.settings.second_image.width }}w"
+            src="{{ section.settings.second_image | image_url: width: 352 }}"
+            alt="{{ section.settings.second_image.alt | escape }}"
+            loading="lazy"
+            width="{{ section.settings.second_image.width }}"
+            height="{{ section.settings.second_image.height }}"
+            class="second_image"
+          >
+        {%- endif -%}
       </div>
     </div>
     <div class="image-with-text__text-item grid__item">
@@ -259,6 +277,11 @@
       "label": "t:sections.all.colors.label"
     },
     {
+      "type": "image_picker",
+      "id": "second_image",
+      "label": "Second Image"
+    },
+    {
       "type": "header",
       "content": "Mobile layout"
     },
@@ -305,30 +328,6 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
-    },
-    {
-      "type": "header",
-      "content": "t:settings_schema.global.settings.header__border.content"
-    },
-    {
-      "type": "range",
-      "id": "border_thickness",
-      "min": 0,
-      "max": 24,
-      "step": 1,
-      "unit": "px",
-      "label": "t:settings_schema.global.settings.thickness.label",
-      "default": 0
-    },
-    {
-      "type": "range",
-      "id": "border_opacity",
-      "min": 0,
-      "max": 100,
-      "step": 5,
-      "unit": "%",
-      "label": "t:settings_schema.global.settings.opacity.label",
-      "default": 0
     }
   ],
   "blocks": [

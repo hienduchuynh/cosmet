@@ -8,6 +8,10 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
+.color-inverse.color-inverse .banner__heading {
+  color: #fff;
+}
+
 .banner__box {
   text-align: center;
 }
