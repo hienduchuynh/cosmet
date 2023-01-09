@@ -118,7 +118,7 @@
         "cb426e0b-8dfb-4c88-b27d-8034cd02685c": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "asfasdasdas as aa"
+            "custom_liquid": "<div>abc<\/div>"
           }
         }
       },
