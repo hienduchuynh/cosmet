@@ -515,7 +515,7 @@
           "logo_font": "space_mono_n7",
           "logo_width": 130,
           "menu": "main-menu",
-          "menu_type_desktop": "mega",
+          "menu_type_desktop": "dropdown",
           "enable_sticky_header": true,
           "padding_top": 24,
           "padding_bottom": 24,
