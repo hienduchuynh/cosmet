@@ -115,6 +115,32 @@
     rgba(var(--color-shadow), var(--media-shadow-opacity));
 }
 
+.image-with-text .grid__item.has-second-image {
+  padding-right: 17.6rem;
+  padding-bottom: 17.6rem;
+}
+
+.image-with-text .image-with-text__media-item .media--second-image {
+  position: absolute;
+  width: 35.2rem;
+  height: 35.2rem;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.image-with-text .grid__item.has-second-image:before {
+  content: "";
+  position: absolute;
+  right: 5rem;
+  bottom: 0;
+  width: 51.2rem;
+  height: 51.2rem;
+  z-index: 0;
+  background: #E7FAE7;
+  filter: blur(5rem);
+}
+
 .image-with-text .global-media-settings {
   overflow: hidden !important;
 }
