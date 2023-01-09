@@ -2530,6 +2530,9 @@
         "text": {
           "name": "Text",
           "settings": {
+            "text_icon": {
+              "label": "Icon"
+            },
             "text": {
               "label": "Text"
             },
