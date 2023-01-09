@@ -93,6 +93,20 @@
             "text": "Delivered every 4 months",
             "text_style": "body"
           }
+        },
+        "3c41933b-2a37-42e6-8c2c-65cb8b0739f3": {
+          "type": "text",
+          "settings": {
+            "text": "100% plastic free",
+            "text_style": "body"
+          }
+        },
+        "0150d71f-a39e-4f6f-aac1-46db3dd81423": {
+          "type": "text",
+          "settings": {
+            "text": "Baking soda–free",
+            "text_style": "body"
+          }
         }
       },
       "block_order": [
@@ -108,7 +122,9 @@
         "9fa8cd8f-9da1-4095-b196-127e981de0b7",
         "049a4a74-1606-4a65-b127-c585e281b0a2",
         "c383b0e2-d909-4810-8420-37d1392b0a4b",
-        "cb40ea41-87c5-494b-a210-e1cc200c032b"
+        "cb40ea41-87c5-494b-a210-e1cc200c032b",
+        "3c41933b-2a37-42e6-8c2c-65cb8b0739f3",
+        "0150d71f-a39e-4f6f-aac1-46db3dd81423"
       ],
       "settings": {
         "media_size": "medium",
