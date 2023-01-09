@@ -553,6 +553,8 @@
 .footer-block__details-content .list-menu__item--active {
 	transition: text-decoration-thickness var(--duration-short) ease;
 	color: rgb(var(--color-foreground));
+	text-decoration: underline;
+	text-underline-offset: 0.3rem;
 }
 
 .footer-block__details-content .list-menu__item--link:hover {
@@ -567,7 +569,7 @@
 	}
 
 	.footer-block__details-content .list-menu__item--active:hover {
-		text-decoration-thickness: 0.2rem;
+		text-underline-offset: 0.3rem;
 	}
 }
 
