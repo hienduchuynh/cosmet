@@ -320,11 +320,10 @@
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
         "color_scheme": "background-1",
+        "second_image": "shopify:\/\/shop_images\/prd-05.jpg",
         "mobile_content_alignment": "left",
         "padding_top": 0,
-        "padding_bottom": 128,
-        "border_thickness": 0,
-        "border_opacity": 0
+        "padding_bottom": 128
       }
     },
     "e6e41702-ecb2-47ec-adfa-65cb65822c02": {
