@@ -141,9 +141,7 @@
   }
 }
 
-.blog-articles__article .article-card__image {
-  border: var(--text-boxes-border-width) solid rgba(var(--color-foreground), var(--text-boxes-border-opacity));
-}
+.blog-articles__article .article-card__image {}
 
 .main-blog .blog-articles__article .card__information {
   padding-top: 1.4rem;

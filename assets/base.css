@@ -2090,7 +2090,7 @@ details[open] > .share-button__fallback {
 	-webkit-appearance: none;
 	appearance: none;
 	background-color: rgb(var(--color-background));
-	border: var(--text-boxes-border-width) solid rgba(var(--color-foreground), var(--text-boxes-border-opacity));
+	border: var(--inputs-border-width) solid rgba(var(--color-foreground), var(--inputs-border-opacity));
 	color: rgb(var(--color-foreground));
 	font-size: 1.3rem;
 	width: 100%;
