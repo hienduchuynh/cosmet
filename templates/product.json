@@ -66,57 +66,17 @@
             "show_dynamic_checkout": true
           }
         },
-        "share": {
-          "type": "share",
-          "disabled": true,
-          "settings": {
-            "share_label": "Share"
-          }
-        },
-        "collapsible-row-3": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Care Instructions",
-            "icon": "heart",
-            "content": "<p>ullam porta lorem laoreet est auctor imperdiet. Vestibulum consequat nibh sit amet ullamcorper posuere. Sed eu purus nulla. Duis scelerisque a tortor ut congue. Etiam mollis nibh vel dolor eleifend tincidunt. Praesent pharetra, nunc ac auctor tristique, metus lectus accumsan nibh, vel sodales orci ante eget dui.<\/p>",
-            "image_ratio": "43",
-            "page": ""
-          }
-        },
-        "collapsible-row-2": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Product Detail",
-            "icon": "clipboard",
-            "content": "<p>{{ product.metafields.custom.product_detail | metafield_tag }}<\/p>",
-            "image_ratio": "43",
-            "page": ""
-          }
-        },
-        "collapsible-row-1": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Shipping & Returns",
-            "icon": "truck",
-            "content": "<p>- Ships Worldwide<br\/>- Free Shipping all orders over $50 (the contiguous US only)<br\/>- Free returns\/exchanges up to 30 days from purchase<\/p>",
-            "image_ratio": "43",
-            "page": ""
-          }
-        },
-        "collapsible-row-0": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "HELP",
-            "icon": "chat_bubble",
-            "content": "<p>Our fashion consultants are on hand & ready to support you.Get in touch via our contact form here.<\/p>",
-            "image_ratio": "43",
-            "page": ""
-          }
-        },
         "9fa8cd8f-9da1-4095-b196-127e981de0b7": {
           "type": "text",
           "settings": {
             "text": "Vegan & cruelty–free",
+            "text_style": "body"
+          }
+        },
+        "049a4a74-1606-4a65-b127-c585e281b0a2": {
+          "type": "text",
+          "settings": {
+            "text": "Aluminum–free formula",
             "text_style": "body"
           }
         }
@@ -131,12 +91,8 @@
         "quantity_selector",
         "description",
         "buy_buttons",
-        "share",
-        "collapsible-row-3",
-        "collapsible-row-2",
-        "collapsible-row-1",
-        "collapsible-row-0",
-        "9fa8cd8f-9da1-4095-b196-127e981de0b7"
+        "9fa8cd8f-9da1-4095-b196-127e981de0b7",
+        "049a4a74-1606-4a65-b127-c585e281b0a2"
       ],
       "settings": {
         "media_size": "medium",
