@@ -44,6 +44,7 @@
 }
 
 .collection-list__item .card--card.card--media .card__inner .card__content {
+	--color-base-accent-1: 255,255,255;
 	grid-template-rows: auto;
 	border-radius: var(--card-corner-radius);
 }
