@@ -86,6 +86,13 @@
             "text": "Infinitely refillable",
             "text_style": "body"
           }
+        },
+        "cb40ea41-87c5-494b-a210-e1cc200c032b": {
+          "type": "text",
+          "settings": {
+            "text": "Delivered every 4 months",
+            "text_style": "body"
+          }
         }
       },
       "block_order": [
@@ -100,7 +107,8 @@
         "buy_buttons",
         "9fa8cd8f-9da1-4095-b196-127e981de0b7",
         "049a4a74-1606-4a65-b127-c585e281b0a2",
-        "c383b0e2-d909-4810-8420-37d1392b0a4b"
+        "c383b0e2-d909-4810-8420-37d1392b0a4b",
+        "cb40ea41-87c5-494b-a210-e1cc200c032b"
       ],
       "settings": {
         "media_size": "medium",
