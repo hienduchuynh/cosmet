@@ -130,11 +130,11 @@
 }
 
 .main-blog .blog-articles__article .card__heading {
-  margin-bottom: 2.4rem;
+  margin-bottom: 1.6rem;
 }
 
 .main-blog .blog-articles__article .card__heading a {
-  font-weight: 700;
+  margin-bottom: 0;
 }
 
 /*=== Layout List 
