@@ -175,7 +175,7 @@
 
   .blog-layout-default .blog-articles--collage .article .card__content,
   .blog-layout-simple .blog-articles--collage .article .card__content {
-    padding-left: 0;
+    padding-right: 0;
   }
 }
 
