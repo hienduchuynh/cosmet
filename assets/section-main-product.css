@@ -592,14 +592,29 @@ button.shopify-payment-button__button--unbranded {
 	line-height: 59px;
 	border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
 	color: rgb(var(--color-base-accent-1));
-	padding-left: 40px;
+	padding-left: 50px;
 	background-size: 24px 24px;
 	background-repeat: no-repeat;
 	background-position:  12px center;
 	
 }
 .product__info-container .featured-list li.item1 {
-	background-image: url('https://cdn.shopify.com/s/files/1/0696/9812/6099/files/item01.png?v=1673257698');
+	background-image: url('https://cdn.shopify.com/s/files/1/0696/9812/6099/files/item01.jpg?v=1673314207');
+}
+.product__info-container .featured-list li.item2 {
+	background-image: url('https://cdn.shopify.com/s/files/1/0696/9812/6099/files/item02.jpg?v=1673314411');
+}
+.product__info-container .featured-list li.item3 {
+	background-image: url('https://cdn.shopify.com/s/files/1/0696/9812/6099/files/item03.jpg?v=1673314411');
+}
+.product__info-container .featured-list li.item4 {
+	background-image: url('https://cdn.shopify.com/s/files/1/0696/9812/6099/files/item04.jpg?v=1673314411');
+}
+.product__info-container .featured-list li.item5 {
+	background-image: url('https://cdn.shopify.com/s/files/1/0696/9812/6099/files/item05.jpg?v=1673314411');
+}
+.product__info-container .featured-list li.item6 {
+	background-image: url('https://cdn.shopify.com/s/files/1/0696/9812/6099/files/item06.jpg?v=1673314411');
 }
 .product__info-container .featured-list li:nth-child(odd) { 
 	border-right: 0.1rem solid rgba(var(--color-foreground), 0.08);
@@ -2001,7 +2016,7 @@ a.product__text {
 @media screen and (min-width: 750px) {
 	.product-page [data-block-handle='reviews'] {
 		margin: 0 auto;
-		max-width: 96rem;
+		max-width: 95rem;
 		padding: 4rem 4.8rem;
 	}
 	.product-page [data-block-handle='reviews'] .spr-summary {

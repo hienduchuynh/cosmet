@@ -84,10 +84,16 @@
     font-weight: 400;
 }
 .price--on-sale .price-item--last {
-    font-weight: 300;
-    font-size: 3.6rem;
+    font-weight: 600;
+    font-size: 1.8rem;
     color: rgb(var(--color-base-accent-1));
-
+}
+.product__info-wrapper .price--on-sale .price-item--regular { 
+    font-size: 2.4rem;
+}
+.product__info-wrapper .price--on-sale .price-item--last { 
+    font-size: 3.6rem;
+    font-weight: 300;
 }
 .price--on-sale .price-item--regular,
 .price--on-sale .price-item--last { 
