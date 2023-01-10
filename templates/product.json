@@ -273,7 +273,7 @@
         "title_decor": "shopify:\/\/shop_images\/decor-3.png",
         "description_style": "subtitle",
         "description": "<p>how to use<\/p>",
-        "layout": "grid",
+        "layout": "grid--gapless",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 3,
