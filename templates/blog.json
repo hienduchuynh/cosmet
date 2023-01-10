@@ -51,7 +51,7 @@
         "number_article": 9,
         "show_image": true,
         "image_height": "medium",
-        "heading_size": "h4",
+        "heading_size": "h3",
         "show_date": true,
         "show_author": false,
         "show_excerpt": true,
