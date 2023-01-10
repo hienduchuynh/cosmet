@@ -419,3 +419,11 @@
 .clients-wrapper .grid__item {
   align-self: center;
 }
+
+.testimonials-card .rating-star {
+  --color-foreground: 170,170,170;
+}
+
+.testimonials-card .rating-star::before { 
+  font-size: 3.8rem;
+}
