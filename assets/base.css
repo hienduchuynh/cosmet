@@ -3231,6 +3231,7 @@ details[open] > .header__menu-item .icon-caret {
 
 .header__submenu .header__menu-item:hover {
 	background-color: var(--gradient-base-background-2);
+	color: #5e8c5e;
 }
 
 .header__submenu .header__submenu .header__menu-item {
