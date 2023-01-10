@@ -72,6 +72,15 @@
           "settings": {
             "custom_liquid": "<ul class=\"featured-list\">\n    <li class=\"item1\">Vegan & cruelty–free<\/li>\n    <li class=\"item2\">Aluminum–free formula<\/li>\n    <li class=\"item3\">Infinitely refillable<\/li>\n    <li class=\"item4\">Delivered every 4 months<\/li>\n    <li class=\"item5\">100% plastic free<\/li>\n    <li class=\"item6\">Baking soda–free<\/li>\n<\/ul>"
           }
+        },
+        "bf5c8fde-8819-4964-b062-53a1e30c87ed": {
+          "type": "related_products",
+          "settings": {
+            "heading": "Related Products",
+            "heading_font_size": 18,
+            "heading_color": "#121212",
+            "hover_border_color": "#121212"
+          }
         }
       },
       "block_order": [
@@ -84,7 +93,8 @@
         "quantity_selector",
         "description",
         "buy_buttons",
-        "cb426e0b-8dfb-4c88-b27d-8034cd02685c"
+        "cb426e0b-8dfb-4c88-b27d-8034cd02685c",
+        "bf5c8fde-8819-4964-b062-53a1e30c87ed"
       ],
       "settings": {
         "media_size": "medium",
