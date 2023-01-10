@@ -343,22 +343,22 @@
               {{ block.settings.custom_liquid }}
           {%- when 'boost_products' -%}
             {% if product.metafields.custom.addon %}
-              {% assign relatedProducts = product.metafields.custom.addon.value %}
+              {% assign boostProducts = product.metafields.custom.addon.value %}
               {%- liquid 
                 assign has1product = false
-                for prod in relatedProducts
+                for prod in boostProducts
                   if prod.available == true
                     assign has1product = true
                   endif
                 endfor
               -%}
               {% if has1product %}
-                <p class="related-products-heading" style="font-size: {{block.settings.heading_font_size}}px; color: {{block.settings.heading_color}};">{{ block.settings.heading }}</p>
-                <div class="related-products" id="related-products-{{ block.id }}">
-                  {% for prod in relatedProducts %}
+                <p class="boost-products-heading">{{ block.settings.heading }}</p>
+                <div class="boost-products" id="boost-products-{{ block.id }}">
+                  {% for prod in boostProducts %}
                     {% if prod.available == true %}
-                      <a href="{{ prod.url }}" class="related-product" aria-label="{{prod.title}}" title="{{ prod.title }}">
-                        <img class="related-product__image" src="{{ prod.images[0] | img_url: '500x' }}" alt="{{ prod.title }}">
+                      <a href="{{ prod.url }}" class="boost-product" aria-label="{{prod.title}}" title="{{ prod.title }}">
+                        <img class="boost-product__image" src="{{ prod.images[0] | img_url: '500x' }}" alt="{{ prod.title }}">
                       </a>
                       <span class="add-on-element"><strong>{{ prod.title }}</strong><span>
                         <span class="add-on-element">+ {{ prod.price | money }}<span>
