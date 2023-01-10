@@ -4,8 +4,8 @@
       "type": "breadcrumb",
       "settings": {
         "alignment_breadcrumb": "left",
-        "padding_top": 46,
-        "padding_bottom": 24
+        "padding_top": 64,
+        "padding_bottom": 16
       }
     },
     "main": {
@@ -25,7 +25,7 @@
           "settings": {
             "show_block": true,
             "heading": "Blog Categories",
-            "menu_blog": "blogs"
+            "menu_blog": ""
           }
         },
         "2fc29e48-d715-4fbb-98ef-97405268bf85": {
@@ -71,7 +71,6 @@
         "template--17016615272723__4fc8cb09-af79-40c9-8eee-0f1b82ca3bcc-1669779462a79b922d-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/client-01.png",
             "image_position": "top",
             "title": "",
             "title_size": "h4",
@@ -91,7 +90,6 @@
         "template--17016615272723__4fc8cb09-af79-40c9-8eee-0f1b82ca3bcc-1669779462a79b922d-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/client-02.png",
             "image_position": "top",
             "title": "",
             "title_size": "h4",
@@ -111,7 +109,6 @@
         "template--17016615272723__4fc8cb09-af79-40c9-8eee-0f1b82ca3bcc-1669779462a79b922d-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/client-03.png",
             "image_position": "top",
             "title": "",
             "title_size": "h4",
@@ -131,7 +128,6 @@
         "5e20abb3-af11-42fe-bf68-da7f4ef26565": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/client-04.png",
             "image_position": "top",
             "title": "",
             "title_size": "h4",
@@ -151,7 +147,6 @@
         "88433a95-d577-4153-97c9-52c4483eb00e": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/client-05.png",
             "image_position": "top",
             "title": "",
             "title_size": "h4",
@@ -178,9 +173,10 @@
       ],
       "settings": {
         "title": "",
-        "sub-title": "",
-        "mod_class": "clients-list",
         "heading_size": "h4",
+        "title_style": "02",
+        "description_style": "body",
+        "description": "",
         "layout": "grid--gapless",
         "image_width": "half",
         "image_ratio": "adapt",
@@ -197,11 +193,7 @@
         "swipe_on_mobile": true,
         "padding_top": 0,
         "padding_bottom": 0,
-        "border_top_thickness": 2,
-        "border_right_thickness": 0,
-        "border_bottom_thickness": 0,
-        "border_left_thickness": 0,
-        "border_opacity": 100
+        "mod_class": "clients-list"
       }
     }
   },
