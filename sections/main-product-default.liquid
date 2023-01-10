@@ -583,6 +583,34 @@
                         {{ form | payment_button }}
                       {%- endif -%}
                     </div>
+                    {% for metafield in product.metafields.details.addon %}
+                      {% for product in collections.all.products %}
+                          {% for variant in product.variants %}
+                              {% if metafield == variant.sku %}
+                                  <div class="add-on-product-container"> 
+                                    <a href="{{ product.url }}"><img src="{{ product.featured_media | img_url: 'x50' }}" class="add-on-image"></a>
+                                    <span class="add-on-element"><strong>Optional: {{ product.title }}</strong><span>
+                                      <span class="add-on-element">+ {{ product.price | money }}<span>
+                                      <span class="add-on-element"><input class="add-on-product-checkbox" type="checkbox" name="id[]" value="{{ variant.id }}" /></span>
+                                  </div>
+                                {% endif %}
+                          {% endfor %} 
+                      {% endfor %} 
+                  {% endfor %}
+                  {% for metafield in product.metafields.details.addon2 %}
+                      {% for product in collections.all.products %}
+                          {% for variant in product.variants %}
+                              {% if metafield == variant.sku %}
+                                  <div class="add-on-product-container"> 
+                                    <a href="{{ product.url }}"><img src="{{ product.featured_media | img_url: 'x50' }}" class="add-on-image"></a>
+                                    <span class="add-on-element"><strong>Optional: {{ product.title }}</strong><span>
+                                      <span class="add-on-element">+ {{ product.price | money }}<span>
+                                      <span class="add-on-element"><input class="add-on-product-checkbox" type="checkbox" name="id[]" value="{{ variant.id }}" /></span>
+                                  </div>
+                                {% endif %}
+                          {% endfor %} 
+                      {% endfor %} 
+                  {% endfor %} 
                   {%- endform -%}
                 </product-form>
 
@@ -653,6 +681,8 @@
         {{ 'products.product.view_full_details' | t }}
         {% render 'icon-arrow' %}
         </a>
+
+
       </div>
     </div>
   </div>
