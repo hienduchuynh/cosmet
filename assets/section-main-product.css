@@ -2041,3 +2041,23 @@ a.product__text {
 		max-width: 645px;
 	}
 }
+
+/*override-multi*/
+.product-how-to-use {
+	background: #F9FAF7;
+}
+.product-how-to-use  .multicolumn-card {
+	background: none !important;
+}
+.product-how-to-use  .multicolumn-card__image-wrapper { 
+	padding: 0;
+	margin: 0;
+}
+.product-how-to-use  .multicolumn-card__info { 
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.product-guide-join-vip {
+	background: #F9FAF7;
+}
