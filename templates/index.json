@@ -730,7 +730,7 @@
         "title_style": "02",
         "description_style": "subtitle",
         "description": "<p>Our Blog<\/p>",
-        "blog": "news",
+        "blog": "blog-layout-1",
         "post_limit": 3,
         "columns_desktop": 3,
         "full_width": false,
