@@ -274,10 +274,11 @@
     "4ccb95de-3281-4f51-b638-ddbcc58b0469": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"product-guide-join-vip\">VIP<\/div>",
+        "custom_liquid": "VIP",
         "color_scheme": "background-1",
         "padding_top": 100,
-        "padding_bottom": 100
+        "padding_bottom": 100,
+        "mod_class": "product-guide-join-vip"
       }
     },
     "product-recommendations": {
