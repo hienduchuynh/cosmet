@@ -90,6 +90,9 @@
                 </p>
               {%- endif -%}
               <div class="article-card__footer">
+                {%- if show_readmore -%}
+                  <a href="{{ article.url }}" class="button button--primary">Read More</a> 
+                {%- endif -%} 
                 {%- if article.comments_count > 0 and blog.comments_enabled? -%}
                   <span>{{ 'blogs.article.comments' | t: count: article.comments_count }}</span>
                 {%- endif -%}
@@ -133,6 +136,9 @@
               </p>
             {%- endif -%}
             <div class="article-card__footer">
+              {%- if show_readmore -%}
+                <a href="{{ article.url }}" class="button button--primary">Read More</a> 
+              {%- endif -%}
               {%- if article.comments_count > 0 and blog.comments_enabled? -%}
                 <span class="icon-svg">{%- render 'icon-comments' -%}</span><span>{{ 'blogs.article.comments' | t: count: article.comments_count }}</span>
               {%- endif -%}
