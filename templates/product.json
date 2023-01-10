@@ -182,6 +182,7 @@
         "heading": "We think you’ll love these too",
         "heading_size": "h2",
         "heading_style": "02",
+        "title_decor": "shopify:\/\/shop_images\/decor-3.png",
         "description": "<p>Our categories<\/p>",
         "description_style": "subtitle",
         "products_to_show": 4,
