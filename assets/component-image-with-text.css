@@ -127,6 +127,31 @@
   right: 0;
   bottom: 0;
   z-index: 2;
+  overflow: visible;
+}
+
+.image-with-text .image-with-text__media-item .media--second-image:before {
+  content: "";
+  position: absolute;
+  width: 238px;
+  height: 266px;
+  bottom: -50px;
+  left: -128px;
+  background: url(decor-1.png);
+}
+
+.image-with-text .image-with-text__media-item .media--second-image:after {
+  content: "";
+  position: absolute;
+  width: 251px;
+  height: 185px;
+  top: -128px;
+  z-index: -1;
+  background: url(decor-2.png);
+}
+
+.image-with-text .image-with-text__media-item .media--second-image .second_image {
+  border-radius: 0.8rem;
 }
 
 .image-with-text .grid__item.has-second-image:before {
