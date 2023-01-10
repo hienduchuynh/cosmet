@@ -341,6 +341,58 @@
             </div>
           {%- when 'custom_liquid' -%}
               {{ block.settings.custom_liquid }}
+          {%- when 'related_products' -%}
+            {% if product.metafields.custom.addon %}
+              {% assign relatedProducts = product.metafields.custom.addon.value %}
+              <!-- check at least one recommended product is available --> 
+              {%- liquid 
+                assign has1product = false
+                for prod in relatedProducts
+                  if prod.available == true
+                    assign has1product = true
+                  endif
+                endfor
+              -%}
+              {% if has1product %}
+                <p class="related-products-heading" style="font-size: {{block.settings.heading_font_size}}px; color: {{block.settings.heading_color}};">{{ block.settings.heading }}</p>
+                <div class="related-products" id="related-products-{{ block.id }}">
+                  {% for prod in relatedProducts %}
+                    {% if prod.available == true %}
+                      <a href="{{ prod.url }}" class="related-product" aria-label="{{prod.title}}" title="{{ prod.title }}">
+                        <img class="related-product__image" src="{{ prod.images[0] | img_url: '500x' }}" alt="{{ prod.title }}">
+                      </a>
+                    {% endif %}
+                  {% endfor %}
+                </div>
+                <style>
+                  #related-products-{{ block.id }} {
+                    text-align: left;
+                    display: flex;
+                    flex-wrap: wrap;
+                  }
+                  #related-products-{{ block.id }} .related-product {
+                    display: inline-block;
+                    width: calc(25% - 0.4rem);
+                    margin: 0px 0.4rem 0.8rem 0px;
+                    position: relative;
+                    border: 1px solid transparent;
+                    text-align: center;
+                  }
+                  #related-products-{{ block.id }} .related-product:last-child {
+                    margin-right: 0;
+                  }
+                  #related-products-{{ block.id }} .related-product__image {
+                    width: 100%;
+                    max-width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                  }
+                  #related-products-{{ block.id }} .related-product:hover {
+                    border-color: {{ block.settings.hover_border_color }};
+                  }
+                </style>
+              {% endif %}
+            {% endif %}
           {%- when 'description' -%}
             {%- if section.settings.layout_description == 'accordion' or section.settings.layout_description == 'no-tabs' -%}
               {%- if product.description != blank -%}
@@ -583,34 +635,6 @@
                         {{ form | payment_button }}
                       {%- endif -%}
                     </div>
-                    {% for metafield in product.metafields.details.addon %}
-                      {% for product in collections.all.products %}
-                          {% for variant in product.variants %}
-                              {% if metafield == variant.sku %}
-                                  <div class="add-on-product-container"> 
-                                    <a href="{{ product.url }}"><img src="{{ product.featured_media | img_url: 'x50' }}" class="add-on-image"></a>
-                                    <span class="add-on-element"><strong>Optional: {{ product.title }}</strong><span>
-                                      <span class="add-on-element">+ {{ product.price | money }}<span>
-                                      <span class="add-on-element"><input class="add-on-product-checkbox" type="checkbox" name="id[]" value="{{ variant.id }}" /></span>
-                                  </div>
-                                {% endif %}
-                          {% endfor %} 
-                      {% endfor %} 
-                  {% endfor %}
-                  {% for metafield in product.metafields.details.addon2 %}
-                      {% for product in collections.all.products %}
-                          {% for variant in product.variants %}
-                              {% if metafield == variant.sku %}
-                                  <div class="add-on-product-container"> 
-                                    <a href="{{ product.url }}"><img src="{{ product.featured_media | img_url: 'x50' }}" class="add-on-image"></a>
-                                    <span class="add-on-element"><strong>Optional: {{ product.title }}</strong><span>
-                                      <span class="add-on-element">+ {{ product.price | money }}<span>
-                                      <span class="add-on-element"><input class="add-on-product-checkbox" type="checkbox" name="id[]" value="{{ variant.id }}" /></span>
-                                  </div>
-                                {% endif %}
-                          {% endfor %} 
-                      {% endfor %} 
-                  {% endfor %} 
                   {%- endform -%}
                 </product-form>
 
@@ -681,8 +705,6 @@
         {{ 'products.product.view_full_details' | t }}
         {% render 'icon-arrow' %}
         </a>
-
-
       </div>
     </div>
   </div>
@@ -828,6 +850,37 @@
   "blocks": [
     {
       "type": "@app"
+    },
+    {
+      "type": "related_products",
+      "name": "Related Products",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Related Products"
+        },
+      {
+          "type": "number",
+          "id": "heading_font_size",
+          "label": "Heading font size (px)",
+          "default": 18
+        },
+        {
+          "type": "color",
+          "id": "heading_color",
+          "label": "Heading color",
+          "default": "#121212"
+        },
+        {
+          "type": "color",
+          "id": "hover_border_color",
+          "label": "Border color (hover)",
+          "default": "#121212",
+          "info": "Make color field blank (transparent) if you don't want a border"
+        }
+      ]
     },
     {
       "type": "text",
