@@ -341,7 +341,7 @@
             </div>
           {%- when 'custom_liquid' -%}
               {{ block.settings.custom_liquid }}
-          {%- when 'related_products' -%}
+          {%- when 'boost_products' -%}
             {% if product.metafields.custom.addon %}
               {% assign relatedProducts = product.metafields.custom.addon.value %}
               {%- liquid 
@@ -827,33 +827,14 @@
       "type": "@app"
     },
     {
-      "type": "related_products",
-      "name": "Related Products",
+      "type": "boost_products",
+      "name": "Boost Products",
       "settings": [
         {
           "type": "text",
           "id": "heading",
           "label": "Heading",
-          "default": "Related Products"
-        },
-      {
-          "type": "number",
-          "id": "heading_font_size",
-          "label": "Heading font size (px)",
-          "default": 18
-        },
-        {
-          "type": "color",
-          "id": "heading_color",
-          "label": "Heading color",
-          "default": "#121212"
-        },
-        {
-          "type": "color",
-          "id": "hover_border_color",
-          "label": "Border color (hover)",
-          "default": "#121212",
-          "info": "Make color field blank (transparent) if you don't want a border"
+          "default": "Boost your routine"
         }
       ]
     },
