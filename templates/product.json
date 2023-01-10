@@ -179,9 +179,9 @@
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
-        "heading": "You may also like",
-        "heading_size": "h3",
-        "heading_style": "01",
+        "heading": "We think you’ll love these too",
+        "heading_size": "h2",
+        "heading_style": "02",
         "description": "",
         "description_style": "body",
         "products_to_show": 4,
