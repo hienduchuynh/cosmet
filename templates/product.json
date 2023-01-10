@@ -196,6 +196,98 @@
         "padding_top": 24,
         "padding_bottom": 48
       }
+    },
+    "e3d3167a-cd69-4da6-978c-88c32cdfd237": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--17347500605715__e3d3167a-cd69-4da6-978c-88c32cdfd237-1673317970aaef8ef5-0": {
+          "type": "column",
+          "settings": {
+            "image_position": "top",
+            "title": "Column",
+            "title_size": "h4",
+            "icon": "none",
+            "icon_position": "left",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": "",
+            "link_style": "link",
+            "padding_left": 32,
+            "padding_right": 32,
+            "padding_top": 48,
+            "padding_bottom": 48,
+            "image_spacing": 25
+          }
+        },
+        "template--17347500605715__e3d3167a-cd69-4da6-978c-88c32cdfd237-1673317970aaef8ef5-1": {
+          "type": "column",
+          "settings": {
+            "image_position": "top",
+            "title": "Column",
+            "title_size": "h4",
+            "icon": "none",
+            "icon_position": "left",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": "",
+            "link_style": "link",
+            "padding_left": 32,
+            "padding_right": 32,
+            "padding_top": 48,
+            "padding_bottom": 48,
+            "image_spacing": 25
+          }
+        },
+        "template--17347500605715__e3d3167a-cd69-4da6-978c-88c32cdfd237-1673317970aaef8ef5-2": {
+          "type": "column",
+          "settings": {
+            "image_position": "top",
+            "title": "Column",
+            "title_size": "h4",
+            "icon": "none",
+            "icon_position": "left",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": "",
+            "link_style": "link",
+            "padding_left": 32,
+            "padding_right": 32,
+            "padding_top": 48,
+            "padding_bottom": 48,
+            "image_spacing": 25
+          }
+        }
+      },
+      "block_order": [
+        "template--17347500605715__e3d3167a-cd69-4da6-978c-88c32cdfd237-1673317970aaef8ef5-0",
+        "template--17347500605715__e3d3167a-cd69-4da6-978c-88c32cdfd237-1673317970aaef8ef5-1",
+        "template--17347500605715__e3d3167a-cd69-4da6-978c-88c32cdfd237-1673317970aaef8ef5-2"
+      ],
+      "settings": {
+        "title": "Feel better in 3 easy steps",
+        "heading_size": "h1",
+        "title_style": "02",
+        "title_decor": "shopify:\/\/shop_images\/decor-3.png",
+        "description_style": "subtitle",
+        "description": "<p>how to use<\/p>",
+        "layout": "grid--gapless",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "row_alignment": "top",
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_tablet": "2",
+        "swipe_on_tablet": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "mod_class": ""
+      }
     }
   },
   "order": [
@@ -203,6 +295,7 @@
     "main",
     "538ed27d-666d-4169-9ba0-d844989d9d9b",
     "1670299102da5a53ff",
-    "product-recommendations"
+    "product-recommendations",
+    "e3d3167a-cd69-4da6-978c-88c32cdfd237"
   ]
 }
