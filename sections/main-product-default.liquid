@@ -341,9 +341,9 @@
             </div>
           {%- when 'custom_liquid' -%}
               {{ block.settings.custom_liquid }}
-          {%- when 'boots_products' -%}
-            {% if product.metafields.custom.addon %}
-              {% assign relatedProducts = product.metafields.custom.addon.value %}
+          {%- when 'boost_products' -%}
+            {% if product.metafields.boots.addon %}
+              {% assign relatedProducts = product.metafields.boots.addon.value %}
               {%- liquid 
                 assign has1product = false
                 for prod in relatedProducts
@@ -353,15 +353,16 @@
                 endfor
               -%}
               {% if has1product %}
-                <p class="boots-products-heading">{{ block.settings.heading }}</p>
-                <div class="boots-products" id="boots-products-{{ block.id }}">
+                <p class="related-products-heading" style="font-size: {{block.settings.heading_font_size}}px; color: {{block.settings.heading_color}};">{{ block.settings.heading }}</p>
+                <div class="related-products" id="related-products-{{ block.id }}">
                   {% for prod in relatedProducts %}
                     {% if prod.available == true %}
-                      <a href="{{ prod.url }}" class="boots-product" aria-label="{{prod.title}}" title="{{ prod.title }}">
-                        <img class="boots-product__image" src="{{ prod.images[0] | img_url: '500x' }}" alt="{{ prod.title }}">
+                      <a href="{{ prod.url }}" class="related-product" aria-label="{{prod.title}}" title="{{ prod.title }}">
+                        <img class="related-product__image" src="{{ prod.images[0] | img_url: '500x' }}" alt="{{ prod.title }}">
                       </a>
                       <span class="add-on-element"><strong>{{ prod.title }}</strong><span>
-                      <span class="add-on-element">{{ prod.price | money }}<span>
+                        <span class="add-on-element">+ {{ prod.price | money }}<span>
+                        <span class="add-on-element"><input class="add-on-product-checkbox" type="checkbox" name="id[]" value="{{ variant.id }}" /></span>
                     {% endif %}
                   {% endfor %}
                 </div>
@@ -826,8 +827,8 @@
       "type": "@app"
     },
     {
-      "type": "boots_products",
-      "name": "Boost your routine",
+      "type": "boost_products",
+      "name": "Boost Products",
       "settings": [
         {
           "type": "text",

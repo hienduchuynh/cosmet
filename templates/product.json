@@ -73,8 +73,8 @@
             "custom_liquid": "<ul class=\"featured-list\">\n    <li class=\"item1\">Vegan & cruelty–free<\/li>\n    <li class=\"item2\">Aluminum–free formula<\/li>\n    <li class=\"item3\">Infinitely refillable<\/li>\n    <li class=\"item4\">Delivered every 4 months<\/li>\n    <li class=\"item5\">100% plastic free<\/li>\n    <li class=\"item6\">Baking soda–free<\/li>\n<\/ul>"
           }
         },
-        "0a48a6ec-38bc-4490-a71e-74361e810bba": {
-          "type": "boots_products",
+        "2f0edd9a-c456-4888-8004-4ec9b73fdd80": {
+          "type": "boost_products",
           "settings": {
             "heading": "Boost your routine"
           }
@@ -91,7 +91,7 @@
         "description",
         "buy_buttons",
         "cb426e0b-8dfb-4c88-b27d-8034cd02685c",
-        "0a48a6ec-38bc-4490-a71e-74361e810bba"
+        "2f0edd9a-c456-4888-8004-4ec9b73fdd80"
       ],
       "settings": {
         "media_size": "medium",
