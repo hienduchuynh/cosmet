@@ -267,8 +267,17 @@
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 128,
-        "padding_bottom": 0,
+        "padding_bottom": 64,
         "mod_class": "product-how-to-use"
+      }
+    },
+    "4ccb95de-3281-4f51-b638-ddbcc58b0469": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "acsacaca",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "product-recommendations": {
@@ -299,6 +308,7 @@
     "538ed27d-666d-4169-9ba0-d844989d9d9b",
     "1670299102da5a53ff",
     "e3d3167a-cd69-4da6-978c-88c32cdfd237",
+    "4ccb95de-3281-4f51-b638-ddbcc58b0469",
     "product-recommendations"
   ]
 }
