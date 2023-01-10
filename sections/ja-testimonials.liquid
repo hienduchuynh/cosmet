@@ -121,9 +121,6 @@
                     {%- if block.settings.text != blank -%}
                       <div class="rte">{{ block.settings.text }}</div>
                     {%- endif -%}
-                    {%- if block.settings.link_label != blank -%}
-                      <a class="link animate-arrow" {% if block.settings.link == blank %}role="link" aria-disabled="true"{% else %}href="{{ block.settings.link }}"{% endif %}>{{ block.settings.link_label | escape }}<span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span></a>
-                    {%- endif -%}
                   </div>
                 </div>
               </li>
@@ -455,16 +452,6 @@
           "id": "text",
           "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
           "label": "t:sections.testimonials.blocks.testimonial.settings.text.label"
-        },
-        {
-          "type": "text",
-          "id": "link_label",
-          "label": "t:sections.testimonials.blocks.testimonial.settings.link_label.label"
-        },
-        {
-          "type": "url",
-          "id": "link",
-          "label": "t:sections.testimonials.blocks.testimonial.settings.link.label"
         }
       ]
     },
