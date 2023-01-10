@@ -342,8 +342,8 @@
           {%- when 'custom_liquid' -%}
               {{ block.settings.custom_liquid }}
           {%- when 'boost_products' -%}
-            {% if product.metafields.custom.addon %}
-              {% assign relatedProducts = product.metafields.custom.addon.value %}
+            {% if product.metafields.boots.addon %}
+              {% assign relatedProducts = product.metafields.boots.addon.value %}
               {%- liquid 
                 assign has1product = false
                 for prod in relatedProducts
