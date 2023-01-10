@@ -154,7 +154,7 @@
       ],
       "settings": {
         "collapsible_type": "accordion",
-        "box_width": 60,
+        "box_width": 50,
         "collapsible_tab_header_position": "left",
         "padding_top": 36,
         "padding_bottom": 36
@@ -182,7 +182,7 @@
         "heading": "You may also like",
         "heading_size": "h3",
         "heading_style": "01",
-        "description": "<p><\/p>",
+        "description": "",
         "description_style": "body",
         "products_to_show": 4,
         "columns_desktop": 4,
