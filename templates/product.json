@@ -14,7 +14,7 @@
         "vendor": {
           "type": "text",
           "settings": {
-            "text_icon": "check_mark",
+            "text_icon": "none",
             "text": "{{ product.vendor }}",
             "text_style": "uppercase"
           }
