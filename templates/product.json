@@ -3,6 +3,11 @@
     "main": {
       "type": "main-product-default",
       "blocks": {
+        "d0fa3877-6362-4a29-a396-35504a70d9e3": {
+          "type": "title",
+          "settings": {
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -11,13 +16,14 @@
         }
       },
       "block_order": [
+        "d0fa3877-6362-4a29-a396-35504a70d9e3",
         "buy_buttons"
       ],
       "settings": {
-        "media_size": "medium",
+        "enable_sticky_info": true,
+        "media_position": "left",
         "gallery_layout": "thumbnail_slider",
-        "gallery_position": "bottom",
-        "thumbnail_ratio": "34",
+        "media_size": "medium",
         "mobile_thumbnails": "hide",
         "hide_variants": true,
         "enable_video_looping": false,
