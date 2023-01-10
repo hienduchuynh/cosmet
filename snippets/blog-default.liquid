@@ -36,6 +36,7 @@
   assign show_excerpt = section.settings.show_excerpt
   assign alignment_content = section.settings.alignment_content
   assign alignment__vertical = section.settings.alignment__vertical
+  assign show_featured_article = section.settings.show_featured_article
 -%}
 
 <div data-section-id="{{ section.id }}" data-section-type="blog-layout-default" id="BlogSection-{{ section.id }}" data-section="{{ section.id }}" class="main-blog-block page-width blog-layout-default section-{{ section.id }}-padding {% if show_sidebar %} has-sidebar {% endif %} {{ section.settings.mod_class }}">
@@ -61,8 +62,36 @@
     <div class="wrap-inner {% if show_sidebar %}{% if sidebar_position == "right" %}sidebar-right{% endif %} {% if sidebar_position == "left" %}sidebar-left{% endif %}{% endif %} {% if layout_article == "collapse" %}layout-collapse{% endif %}">
       {%- if blog.articles_count > 0 -%}
         <div class="list-blogs">
+          {% if show_featured_article %}
+          <div class="blog-articles blog-articles--collage">
+          {%- for article in blog.articles -%}
+            <div class="blog-articles__article article">
+              {%- render 'article-card',
+                article: article,
+                media_height: section.settings.image_height,
+                media_aspect_ratio: article.image.aspect_ratio,
+                show_image: show_image,
+                show_date: show_date,
+                show_author: show_author,
+                show_excerpt: show_excerpt,
+                alignment_content: alignment_content,
+                alignment__vertical: alignment__vertical,
+                heading_size: section.settings.heading_size
+              -%}
+            </div>
+            {% break %}
+          {%- endfor -%}
+          </div>
+          {% endif %}
           <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}{% if section.settings.layout == 'grid' %}blog-articles--grid{% endif %}">
+            {% if show_featured_article %}
+              {% assign count = 0 %}
+            {% else %}
+              {% assign count = 1 %}
+            {% endif %}
+
             {%- for article in blog.articles -%}
+              {% if count != 0 %}
               <div class="blog-articles__article article">
                 {%- render 'article-card',
                   article: article,
@@ -77,6 +106,10 @@
                   heading_size: section.settings.heading_size
                 -%}
               </div>
+              {% endif %}
+
+              {% assign count = count | plus:1 %}
+
             {%- endfor -%}
           </div>
         </div>
