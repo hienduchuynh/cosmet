@@ -555,9 +555,7 @@
           "settings": {
             "rating": 4,
             "title": "Repairing eye stick",
-            "text": "<p>“ I was surprised at how sturdy the bed frame actually is. I’m a larger guy so I’m always worried about weight capacity but I don’t have any issue at all. It doesn’t make a single sound all night! \"<\/p>",
-            "link_label": "",
-            "link": ""
+            "text": "<p>“ I was surprised at how sturdy the bed frame actually is. I’m a larger guy so I’m always worried about weight capacity but I don’t have any issue at all. It doesn’t make a single sound all night! \"<\/p>"
           }
         },
         "ad2004c6-ad21-488f-94c0-de4e498e6111": {
@@ -565,9 +563,7 @@
           "settings": {
             "rating": 5,
             "title": "Charcoal face cleanser stick",
-            "text": "<p>“ I can’t recommend this bed enough! It’s very high quality and extremely easy to put together— no screws, you just need to fit the frame, legs, and the slats together. \"<\/p>",
-            "link_label": "",
-            "link": ""
+            "text": "<p>“ I can’t recommend this bed enough! It’s very high quality and extremely easy to put together— no screws, you just need to fit the frame, legs, and the slats together. \"<\/p>"
           }
         },
         "0abe2484-50ce-4c57-97cf-fcf0a707cb99": {
@@ -575,9 +571,7 @@
           "settings": {
             "rating": 5,
             "title": "Testimonial",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
           }
         },
         "0c944998-6a14-44b1-bf4c-d5fda7dbebdf": {
@@ -585,9 +579,7 @@
           "settings": {
             "rating": 5,
             "title": "Testimonial",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
           }
         },
         "273a922f-6d47-4b36-a5f4-132f6e1bb07d": {
@@ -746,7 +738,11 @@
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 64,
-        "padding_bottom": 128
+        "padding_bottom": 128,
+        "border_top_thickness": 1,
+        "border_top_opacity": 8,
+        "border_bottom_thickness": 0,
+        "border_bottom_opacity": 0
       }
     }
   },
