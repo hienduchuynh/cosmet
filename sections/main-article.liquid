@@ -37,15 +37,18 @@
           </div>
         {%- when 'title'-%}
           <header class="article-title {% if alignment_title == "center" %} center {% endif %} {% if alignment_title == "right" %} right {% endif %}" {{ block.shopify_attributes }}>
+            <div class="article-info">
+              {%- if block.settings.blog_show_date -%}
+                <span class="circle-divider" itemprop="dateCreated pubdate datePublished">{{ article.published_at | time_tag: format: 'date' }}</span>
+              {%- endif -%}
+              {%- if block.settings.blog_show_author -%}
+                <span class="" itemprop="author" itemscope itemtype="http://schema.org/Person">
+                  <span itemprop="name">{{ article.author }}</span>
+                </span>
+              {%- endif -%}
+            </div>
+
             <h1 class="article-template__title h1" itemprop="headline">{{ article.title | escape }}</h1>
-            {%- if block.settings.blog_show_date -%}
-              <span class="circle-divider" itemprop="dateCreated pubdate datePublished">{{ article.published_at | time_tag: format: 'date' }}</span>
-            {%- endif -%}
-            {%- if block.settings.blog_show_author -%}
-              <span class="" itemprop="author" itemscope itemtype="http://schema.org/Person">
-                <span itemprop="name">{{ article.author }}</span>
-              </span>
-            {%- endif -%}
           </header>
         <div class="wrap-content{% if show_sidebar %} sidebar-article {% if sidebar_position == "right" %}sidebar-right{% endif %} {% if sidebar_position == "left" %}sidebar-left{% endif %}{% endif %}">
         <div class="article-content">
