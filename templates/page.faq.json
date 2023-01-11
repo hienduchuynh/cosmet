@@ -2,11 +2,10 @@
   "sections": {
     "292fd3d9-f618-4284-9370-955d059efefe": {
       "type": "breadcrumb",
-      "disabled": true,
       "settings": {
-        "alignment_breadcrumb": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "alignment_breadcrumb": "center",
+        "padding_top": 64,
+        "padding_bottom": 16
       }
     },
     "b196a01e-f1bc-4e66-a068-4a8605559b96": {
@@ -15,14 +14,14 @@
         "template--14995343081545__b196a01e-f1bc-4e66-a068-4a8605559b96-166496376312dfa138-0": {
           "type": "heading",
           "settings": {
-            "heading": "<p>Frequently Asked Questions<\/p>",
+            "heading": "<p>Frequently asked questions<\/p>",
             "heading_size": "h1"
           }
         },
         "template--14995343081545__b196a01e-f1bc-4e66-a068-4a8605559b96-166496376312dfa138-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": "<p>Please check the FAQ below for answers to commonly asked questions. Need more help? Email us at <a href=\"mailto:sale@cosmet.com\" title=\"mailto:sale@cosmet.com\">sale@cosmet.com<\/a><\/p>"
           }
         }
       },
@@ -32,8 +31,8 @@
       ],
       "settings": {
         "class_suffix": "faqs-page",
-        "desktop_content_position": "left",
-        "content_alignment": "left",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
         "color_scheme": "background-1",
         "full_width": true,
         "padding_top": 48,
