@@ -41,11 +41,6 @@
               {%- if block.settings.blog_show_date -%}
                 <span class="circle-divider" itemprop="dateCreated pubdate datePublished">{{ article.published_at | time_tag: format: 'date' }}</span>
               {%- endif -%}
-              {%- if block.settings.blog_show_author -%}
-                <span class="" itemprop="author" itemscope itemtype="http://schema.org/Person">
-                  <span itemprop="name">{{ article.author }}</span>
-                </span>
-              {%- endif -%}
             </div>
 
             <h1 class="article-template__title h1" itemprop="headline">{{ article.title | escape }}</h1>
@@ -78,10 +73,44 @@
           {%- endif -%}
 
         {%- when 'content'-%}
+        <div class="article-template__wrap">
+          <div class="article-template__sidebar">
+            {%- if block.settings.blog_show_author -%}
+              <span class="" itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <span itemprop="name">{{ article.author }}</span>
+              </span>
+            {%- endif -%}
+
+            {%- if show_share -%}
+            <div class="social-media">
+            {%- if settings.social_facebook_link != blank -%}
+              <li>
+                <a class="social-icons__link" href="{{ settings.social_facebook_link | escape }}" aria-describedby="a11y-external-message">
+                  <span class="icon-svg">{%- render 'icon-facebook' -%}</span>
+                </a>
+              </li>
+            {%- endif -%}
+            {%- if settings.social_twitter_link != blank -%}
+              <li>
+                <a class="social-icons__link" href="{{ settings.social_twitter_link | escape }}" aria-describedby="a11y-external-message">
+                  <span class="icon-svg">{%- render 'icon-twitter' -%}</span>
+                </a>
+              </li>
+            {%- endif -%}
+            {%- if settings.social_instagram_link != blank -%}
+              <li>
+                <a class="social-icons__link" href="{{ settings.social_instagram_link | escape }}" aria-describedby="a11y-external-message">
+                  <span class="icon-svg">{%- render 'icon-instagram' -%}</span>
+                </a>
+              </li>
+            {%- endif -%}
+            </div>
+            {%- endif -%}
+          </div>
           <div class="article-template__content rte" itemprop="articleBody" {{ block.shopify_attributes }}>
               {{ article.content }}
           </div>
-
+        </div>
       {%- endcase -%}
     {%- endfor -%}
 
@@ -94,34 +123,6 @@
             <li>#{{ tag }}</li>
           {% endfor %}
           </ul>
-        </div>
-        {%- endif -%}
-        {%- if show_share -%}
-        <div class="social-media">
-        {% if settings.social_facebook_link != blank or settings.social_twitter_link != blank or settings.social_instagram_link != blank %}
-          <span>Share:</span>
-        {% endif %}
-        {%- if settings.social_facebook_link != blank -%}
-          <li>
-            <a class="social-icons__link" href="{{ settings.social_facebook_link | escape }}" aria-describedby="a11y-external-message">
-              <span class="icon-svg">{%- render 'icon-facebook' -%}</span>
-            </a>
-          </li>
-        {%- endif -%}
-        {%- if settings.social_twitter_link != blank -%}
-          <li>
-            <a class="social-icons__link" href="{{ settings.social_twitter_link | escape }}" aria-describedby="a11y-external-message">
-              <span class="icon-svg">{%- render 'icon-twitter' -%}</span>
-            </a>
-          </li>
-        {%- endif -%}
-        {%- if settings.social_instagram_link != blank -%}
-          <li>
-            <a class="social-icons__link" href="{{ settings.social_instagram_link | escape }}" aria-describedby="a11y-external-message">
-              <span class="icon-svg">{%- render 'icon-instagram' -%}</span>
-            </a>
-          </li>
-        {%- endif -%}
         </div>
         {%- endif -%}
       </div>
