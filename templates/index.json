@@ -739,8 +739,8 @@
         "swipe_on_mobile": false,
         "padding_top": 64,
         "padding_bottom": 128,
-        "border_top_thickness": 1,
-        "border_top_opacity": 8,
+        "border_top_thickness": 0,
+        "border_top_opacity": 0,
         "border_bottom_thickness": 0,
         "border_bottom_opacity": 0
       }
