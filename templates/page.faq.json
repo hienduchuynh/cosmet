@@ -128,36 +128,36 @@
         "template--17347501555987__1636cc56-5129-4105-863b-fa1a2346cdab-1673430893cae778a9-0": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "How do I add a new product?",
+            "icon": "none",
+            "row_content": "<p>1. From your Shopify admin, go to <strong>Products<\/strong>.<\/p><p>2. Click <strong>Add product<\/strong>.<\/p><p>3. Enter a title for your product, along with additional details.<\/p><p>4. Click <strong>Save<\/strong>.<\/p><p><a href=\"https:\/\/help.shopify.com\/en\/manual\/products\/add-update-products\" target=\"_blank\">Learn more about adding products<\/a><\/p><p><a href=\"https:\/\/www.youtube.com\/watch?v=Qks-MlwP6c4\" target=\"_blank\"><span style=\"text-decoration:underline\">Watch \"How to add a product\"<\/span><br\/><br\/><\/a><\/p>",
             "page": ""
           }
         },
         "template--17347501555987__1636cc56-5129-4105-863b-fa1a2346cdab-1673430893cae778a9-1": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "How do I add a new product?",
+            "icon": "none",
+            "row_content": "<p>1. From your Shopify admin, go to <strong>Products<\/strong>.<\/p><p>2. Click <strong>Add product<\/strong>.<\/p><p>3. Enter a title for your product, along with additional details.<\/p><p>4. Click <strong>Save<\/strong>.<\/p><p><a href=\"https:\/\/help.shopify.com\/en\/manual\/products\/add-update-products\" target=\"_blank\">Learn more about adding products<\/a><\/p><p><a href=\"https:\/\/www.youtube.com\/watch?v=Qks-MlwP6c4\" target=\"_blank\"><span style=\"text-decoration:underline\">Watch \"How to add a product\"<\/span><br\/><br\/><\/a><\/p>",
             "page": ""
           }
         },
         "template--17347501555987__1636cc56-5129-4105-863b-fa1a2346cdab-1673430893cae778a9-2": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "How do I add a new product?",
+            "icon": "none",
+            "row_content": "<p>1. From your Shopify admin, go to <strong>Products<\/strong>.<\/p><p>2. Click <strong>Add product<\/strong>.<\/p><p>3. Enter a title for your product, along with additional details.<\/p><p>4. Click <strong>Save<\/strong>.<\/p><p><a href=\"https:\/\/help.shopify.com\/en\/manual\/products\/add-update-products\" target=\"_blank\">Learn more about adding products<\/a><\/p><p><a href=\"https:\/\/www.youtube.com\/watch?v=Qks-MlwP6c4\" target=\"_blank\"><span style=\"text-decoration:underline\">Watch \"How to add a product\"<\/span><br\/><br\/><\/a><\/p>",
             "page": ""
           }
         },
         "template--17347501555987__1636cc56-5129-4105-863b-fa1a2346cdab-1673430893cae778a9-3": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "How do I add a new product?",
+            "icon": "none",
+            "row_content": "<p>1. From your Shopify admin, go to <strong>Products<\/strong>.<\/p><p>2. Click <strong>Add product<\/strong>.<\/p><p>3. Enter a title for your product, along with additional details.<\/p><p>4. Click <strong>Save<\/strong>.<\/p><p><a href=\"https:\/\/help.shopify.com\/en\/manual\/products\/add-update-products\" target=\"_blank\">Learn more about adding products<\/a><\/p><p><a href=\"https:\/\/www.youtube.com\/watch?v=Qks-MlwP6c4\" target=\"_blank\"><span style=\"text-decoration:underline\">Watch \"How to add a product\"<\/span><br\/><br\/><\/a><\/p>",
             "page": ""
           }
         }
@@ -169,20 +169,20 @@
         "template--17347501555987__1636cc56-5129-4105-863b-fa1a2346cdab-1673430893cae778a9-3"
       ],
       "settings": {
-        "class_suffix": "",
+        "class_suffix": "faqs-page",
         "caption": "",
-        "heading": "Collapsible content",
-        "heading_size": "h1",
-        "heading_alignment": "center",
+        "heading": "The basics",
+        "heading_size": "h2",
+        "heading_alignment": "left",
         "content_alignment": "left",
-        "layout": "none",
+        "layout": "section",
         "color_scheme": "background-1",
-        "container_color_scheme": "background-2",
-        "open_first_collapsible_row": false,
+        "container_color_scheme": "background-1",
+        "open_first_collapsible_row": true,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 64,
+        "padding_bottom": 64
       }
     },
     "7798f4bf-39ac-4576-ab6d-81f1c6e900c1": {
@@ -191,36 +191,36 @@
         "template--17347501555987__7798f4bf-39ac-4576-ab6d-81f1c6e900c1-1673430893cae778a9-0": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "How do I add a new product?",
+            "icon": "none",
+            "row_content": "<p>1. From your Shopify admin, go to <strong>Products<\/strong>.<\/p><p>2. Click <strong>Add product<\/strong>.<\/p><p>3. Enter a title for your product, along with additional details.<\/p><p>4. Click <strong>Save<\/strong>.<\/p><p><a href=\"https:\/\/help.shopify.com\/en\/manual\/products\/add-update-products\" target=\"_blank\">Learn more about adding products<\/a><\/p><p><a href=\"https:\/\/www.youtube.com\/watch?v=Qks-MlwP6c4\" target=\"_blank\"><span style=\"text-decoration:underline\">Watch \"How to add a product\"<\/span><br\/><br\/><\/a><\/p>",
             "page": ""
           }
         },
         "template--17347501555987__7798f4bf-39ac-4576-ab6d-81f1c6e900c1-1673430893cae778a9-1": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "How do I add a new product?",
+            "icon": "none",
+            "row_content": "<p>1. From your Shopify admin, go to <strong>Products<\/strong>.<\/p><p>2. Click <strong>Add product<\/strong>.<\/p><p>3. Enter a title for your product, along with additional details.<\/p><p>4. Click <strong>Save<\/strong>.<\/p><p><a href=\"https:\/\/help.shopify.com\/en\/manual\/products\/add-update-products\" target=\"_blank\">Learn more about adding products<\/a><\/p><p><a href=\"https:\/\/www.youtube.com\/watch?v=Qks-MlwP6c4\" target=\"_blank\"><span style=\"text-decoration:underline\">Watch \"How to add a product\"<\/span><br\/><br\/><\/a><\/p>",
             "page": ""
           }
         },
         "template--17347501555987__7798f4bf-39ac-4576-ab6d-81f1c6e900c1-1673430893cae778a9-2": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "How do I add a new product?",
+            "icon": "none",
+            "row_content": "<p>1. From your Shopify admin, go to <strong>Products<\/strong>.<\/p><p>2. Click <strong>Add product<\/strong>.<\/p><p>3. Enter a title for your product, along with additional details.<\/p><p>4. Click <strong>Save<\/strong>.<\/p><p><a href=\"https:\/\/help.shopify.com\/en\/manual\/products\/add-update-products\" target=\"_blank\">Learn more about adding products<\/a><\/p><p><a href=\"https:\/\/www.youtube.com\/watch?v=Qks-MlwP6c4\" target=\"_blank\"><span style=\"text-decoration:underline\">Watch \"How to add a product\"<\/span><br\/><br\/><\/a><\/p>",
             "page": ""
           }
         },
         "template--17347501555987__7798f4bf-39ac-4576-ab6d-81f1c6e900c1-1673430893cae778a9-3": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "How do I add a new product?",
+            "icon": "none",
+            "row_content": "<p>1. From your Shopify admin, go to <strong>Products<\/strong>.<\/p><p>2. Click <strong>Add product<\/strong>.<\/p><p>3. Enter a title for your product, along with additional details.<\/p><p>4. Click <strong>Save<\/strong>.<\/p><p><a href=\"https:\/\/help.shopify.com\/en\/manual\/products\/add-update-products\" target=\"_blank\">Learn more about adding products<\/a><\/p><p><a href=\"https:\/\/www.youtube.com\/watch?v=Qks-MlwP6c4\" target=\"_blank\"><span style=\"text-decoration:underline\">Watch \"How to add a product\"<\/span><br\/><br\/><\/a><\/p>",
             "page": ""
           }
         }
@@ -232,20 +232,20 @@
         "template--17347501555987__7798f4bf-39ac-4576-ab6d-81f1c6e900c1-1673430893cae778a9-3"
       ],
       "settings": {
-        "class_suffix": "",
+        "class_suffix": "faqs-page",
         "caption": "",
-        "heading": "Collapsible content",
-        "heading_size": "h1",
-        "heading_alignment": "center",
+        "heading": "The basics",
+        "heading_size": "h2",
+        "heading_alignment": "left",
         "content_alignment": "left",
-        "layout": "none",
+        "layout": "section",
         "color_scheme": "background-1",
-        "container_color_scheme": "background-2",
-        "open_first_collapsible_row": false,
+        "container_color_scheme": "background-1",
+        "open_first_collapsible_row": true,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 64,
+        "padding_bottom": 64
       }
     }
   },
