@@ -21,7 +21,7 @@
         "alignment_content": "center",
         "enable_modal": true,
         "padding_top": 0,
-        "padding_bottom": 0
+        "padding_bottom": 100
       }
     }
   },
