@@ -14,8 +14,7 @@
         "bb646369-fa26-4a54-9523-51fa8da87946": {
           "type": "title",
           "settings": {
-            "blog_show_date": false,
-            "blog_show_author": false
+            "blog_show_date": false
           }
         },
         "content": {

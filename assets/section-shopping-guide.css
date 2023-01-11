@@ -24,25 +24,10 @@
   position: relative;
 }
 
-.main-shopping-guide .title-shopping-guide {
-  --color-background: 0, 0, 0;
-  --color-foreground: 255, 255, 255;
-  background: rgba(var(--color-background));
-  -webkit-box-shadow: -0.4rem 0 0 rgba(var(--color-background)),
-    0.4rem 0 0 rgba(var(--color-background));
-  box-shadow: -0.4rem 0 0 rgba(var(--color-background)),
-    0.4rem 0 0 rgba(var(--color-background));
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
-  color: rgba(var(--color-foreground));
-  display: inline;
-  margin-top: 0;
-  margin-bottom: 0.4rem;
-  margin-left: 0.4rem;
-  padding: 2px 0;
-  text-transform: uppercase;
-  line-height: 1.85;
-  font-weight: normal;
+.main-shopping-guide .article-card {
+  padding: 4.8rem 6.4rem;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
 }
 
 /* Pop Up  */

@@ -11,8 +11,8 @@
     "main": {
       "type": "main-shopping-guide",
       "settings": {
-        "page_title": "The good Cosmet",
-        "description": "A blog about your smile, our planet, and daily changes that add up.",
+        "page_title": "Shopping with Cosmet",
+        "description": "Please check the FAQ below for answers to commonly asked questions. Need more help? Email us at sale@cosmet.com",
         "alignment_title": "center",
         "layout": "grid",
         "number_article": 6,
@@ -21,7 +21,7 @@
         "alignment_content": "center",
         "enable_modal": true,
         "padding_top": 0,
-        "padding_bottom": 0
+        "padding_bottom": 64
       }
     }
   },

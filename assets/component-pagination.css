@@ -26,6 +26,7 @@
 
 .pagination__item {
   color: rgb(var(--color-foreground));
+  background-color: #F9FAF7;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -34,31 +35,23 @@
   width: 100%;
   padding: 0;
   text-decoration: none;
+  border-radius: 0.8rem;
 }
 
-a.pagination__item:hover::after {
-  height: 0.1rem;
+.pagination__item:hover {
+  text-decoration: none;
+  background-color: rgba(var(--color-base-text));
+  color: #fff;
+}
+
+.active > .pagination__item {
+  background-color: rgba(var(--color-base-accent-3));
+  color: #fff;
+  opacity: 1;
 }
 
 .pagination__item .icon-caret {
   height: 0.6rem;
-}
-
-.pagination__item--current::after {
-  height: 0.1rem;
-}
-
-.pagination__item--current::after,
-.pagination__item:hover::after {
-  content: '';
-  display: block;
-  width: 2rem;
-  height: .2rem;
-  position: absolute;
-  bottom: 8px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: currentColor;
 }
 
 .pagination__item--next .icon {

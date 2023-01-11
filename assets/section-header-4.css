@@ -113,7 +113,8 @@
 }
 
 /* Menu */
-.header__menu-item {
+.header-layout-menu-logo-icons .list-menu--inline > li:first-child .header__menu-item {
+    padding-left: 0;
 }
 
 .header__menu-item > span {

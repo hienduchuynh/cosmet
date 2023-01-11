@@ -38,6 +38,12 @@
         "opacity": {
           "label": "Opacity"
         },
+        "top_opacity": {
+          "label": "Top Opacity"
+        },
+        "bottom_opacity": {
+          "label": "Bottom Opacity"
+        },
         "image_padding": {
           "label": "Image padding"
         },

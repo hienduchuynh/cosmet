@@ -113,34 +113,13 @@
 
               <li id="Slide-{{ section.id }}-{{ forloop.index }}" class="testimonials-list__item grid__item{% if swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}{{ empty_column }}" {{ block.shopify_attributes }}>
                 <div class="testimonials-card content-container">
-                  {%- if block.settings.image != blank -%}
-                    {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
-                      {% assign spaced_image = true %}
-                    {% endif %}
-                    <div class="testimonials-card__image-wrapper testimonials-card__image-wrapper--{{ section.settings.image_width }}-width{% if section.settings.image_width != 'full' or spaced_image %} testimonials-card-spacing{% endif %}">
-                      <div class="media media--transparent media--{{ section.settings.image_ratio }}"
-                        {% if section.settings.image_ratio == 'adapt' %}
-                          style="padding-bottom: {{ 1 | divided_by: highest_ratio | times: 100 }}%;"
-                        {% endif %}>
-                        {%- capture sizes -%}(min-width: 990px) {% if section.blocks.size <= 2 %}710px{% else %}550px{% endif %}, (min-width: 750px) {% if section.blocks.size == 1 %}710px{% else %}550px{% endif %}, calc(100vw - 30px){%- endcapture -%}
-                        {{ block.settings.image | image_url: width: 1420 | image_tag:
-                          loading: 'lazy',
-                          sizes: sizes,
-                          widths: '275, 550, 710, 1420',
-                          class: 'testimonials-card__image'
-                        }}
-                      </div>
-                    </div>
-                  {%- endif -%}
+                  <span aria-hidden="true" class="rating-star color-icon-accent-1" style="--rating: {{ block.settings.rating }}; --rating-max: 5.0; --rating-decimal: 0; --letter-spacing: 0.2; --font-size: 3.8;"></span>
                   <div class="testimonials-card__info">
                     {%- if block.settings.title != blank -%}
                       <h3>{{ block.settings.title | escape }}</h3>
                     {%- endif -%}
                     {%- if block.settings.text != blank -%}
                       <div class="rte">{{ block.settings.text }}</div>
-                    {%- endif -%}
-                    {%- if block.settings.link_label != blank -%}
-                      <a class="link animate-arrow" {% if block.settings.link == blank %}role="link" aria-disabled="true"{% else %}href="{{ block.settings.link }}"{% endif %}>{{ block.settings.link_label | escape }}<span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span></a>
                     {%- endif -%}
                   </div>
                 </div>
@@ -454,9 +433,13 @@
       "name": "t:sections.testimonials.blocks.testimonial.name",
       "settings": [
         {
-          "type": "image_picker",
-          "id": "image",
-          "label": "t:sections.testimonials.blocks.testimonial.settings.image.label"
+          "type": "range",
+          "id": "rating",
+          "min": 1,
+          "max": 5,
+          "step": 1,
+          "default": 5,
+          "label": "Rating"
         },
         {
           "type": "text",
@@ -469,16 +452,6 @@
           "id": "text",
           "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
           "label": "t:sections.testimonials.blocks.testimonial.settings.text.label"
-        },
-        {
-          "type": "text",
-          "id": "link_label",
-          "label": "t:sections.testimonials.blocks.testimonial.settings.link_label.label"
-        },
-        {
-          "type": "url",
-          "id": "link",
-          "label": "t:sections.testimonials.blocks.testimonial.settings.link.label"
         }
       ]
     },
