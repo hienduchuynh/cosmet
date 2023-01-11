@@ -14,8 +14,7 @@
         "bb646369-fa26-4a54-9523-51fa8da87946": {
           "type": "title",
           "settings": {
-            "blog_show_date": true,
-            "blog_show_author": false
+            "blog_show_date": true
           }
         },
         "featured_image": {
@@ -73,6 +72,7 @@
         "alignment_title": "center",
         "show_tags": true,
         "show_share": true,
+        "blog_show_author": true,
         "show_previous_next_buttons": true,
         "show_sidebar": false,
         "show_collapse": true,
