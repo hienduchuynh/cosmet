@@ -17,6 +17,8 @@
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px;
+    border-top: {{ section.settings.border_top_thickness }}px solid rgba(0, 0, 0, {{ section.settings.border_top_opacity }});
+    border-bottom: {{ section.settings.border_bottom_thickness }}px solid rgba(0, 0, 0, {{ section.settings.border_bottom_opacity }});
   }
 
   @media screen and (min-width: 750px) {
@@ -447,6 +449,50 @@ window.addEventListener("scroll", function() {
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
+    },
+    {
+      "type": "header",
+      "content": "t:settings_schema.global.settings.header__border.content"
+    },
+    {
+      "type": "range",
+      "id": "border_top_thickness",
+      "min": 0,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "t:settings_schema.global.settings.top_thickness.label",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "border_top_opacity",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "t:settings_schema.global.settings.top_opacity.label",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "border_bottom_thickness",
+      "min": 0,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "t:settings_schema.global.settings.top_thickness.label",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "border_bottom_opacity",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "t:settings_schema.global.settings.top_opacity.label",
+      "default": 0
     }
   ],
   "presets": [

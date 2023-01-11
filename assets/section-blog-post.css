@@ -111,7 +111,8 @@ header .article-info {
 .article-template__wrap {
   display: grid;
   grid-template-areas: "art_sidebar art_content";
-  grid-template-columns: 33.33% 1fr;
+  grid-template-columns: 25% 1fr;
+  gap: 6.4rem;
   align-items: flex-start;
   margin-top: 6.4rem;
   margin-bottom: 6.4rem;
@@ -123,6 +124,25 @@ header .article-info {
 
 .article-template__wrap .article-template__sidebar {
   grid-area: art_sidebar;
+}
+
+.article-template__sidebar .article-info-author {
+  display: flex;
+  padding-bottom: 1.6rem;
+  margin-bottom: 3.2rem;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.article-template__sidebar .article-info-author h5 {
+  margin: 0 0 0 5px;
+}
+
+.article-template__sidebar .social-media li {
+  padding: 0;
+}
+
+.article-template__sidebar .social-media li + li {
+  margin-left: 1.6rem;
 }
 
 /* ========== Share Default
@@ -151,7 +171,7 @@ header .article-info {
 }
 
 /* Tag */
-.tag-article ul {
+.footer-article .tag-article ul {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
@@ -214,8 +234,8 @@ header .article-info {
 }
 
 .previous_next_buttons .btn {
-  background-color: transparent;
-  color: var(--color-base-accent-1);
+  --color-button: var(--color-base-accent-2);
+  --color-button-text: 255,255,255;
   text-decoration: none;
 }
 
