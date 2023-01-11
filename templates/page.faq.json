@@ -108,18 +108,18 @@
       "settings": {
         "class_suffix": "faqs-page",
         "caption": "",
-        "heading": "",
-        "heading_size": "h1",
+        "heading": "The basics",
+        "heading_size": "h2",
         "heading_alignment": "left",
         "content_alignment": "left",
-        "layout": "row",
+        "layout": "section",
         "color_scheme": "background-1",
         "container_color_scheme": "background-1",
-        "open_first_collapsible_row": false,
+        "open_first_collapsible_row": true,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
-        "padding_top": 24,
-        "padding_bottom": 48
+        "padding_top": 64,
+        "padding_bottom": 64
       }
     }
   },
