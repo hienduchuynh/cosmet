@@ -75,7 +75,7 @@
         {%- when 'content'-%}
         <div class="article-template__wrap">
           <div class="article-template__sidebar">
-            {%- if block.settings.blog_show_author -%}
+            {%- if section.settings.blog_show_author -%}
               <span class="" itemprop="author" itemscope itemtype="http://schema.org/Person">
                 <span itemprop="name">{{ article.author }}</span>
               </span>
@@ -407,12 +407,6 @@
           "id": "blog_show_date",
           "default": true,
           "label": "t:sections.main-article.blocks.title.settings.blog_show_date.label"
-        },
-        {
-          "type": "checkbox",
-          "id": "blog_show_author",
-          "default": false,
-          "label": "t:sections.main-article.blocks.title.settings.blog_show_author.label"
         }
       ]
     },
@@ -573,6 +567,12 @@
       "id": "show_share",
       "label": "t:sections.main-article.settings.share.content",
       "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "blog_show_author",
+      "default": false,
+      "label": "t:sections.main-article.blocks.title.settings.blog_show_author.label"
     },
     {
       "type": "checkbox",
