@@ -3,17 +3,17 @@
     "d7807ad8-0756-46d1-92f3-8c32756239a8": {
       "type": "breadcrumb",
       "settings": {
-        "alignment_breadcrumb": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "alignment_breadcrumb": "center",
+        "padding_top": 64,
+        "padding_bottom": 16
       }
     },
     "main": {
       "type": "main-shopping-guide",
       "settings": {
-        "page_title": "Shopping Guide",
-        "description": "",
-        "alignment_title": "left",
+        "page_title": "Shopping with Cosmet",
+        "description": "Please check the FAQ below for answers to commonly asked questions. Need more help? Email us at sale@cosmet.com",
+        "alignment_title": "center",
         "layout": "grid",
         "number_article": 6,
         "show_image": true,
