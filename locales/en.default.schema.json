@@ -2691,6 +2691,17 @@
         "quantity_selector": {
           "name": "Quantity selector"
         },
+        "boost_products": {
+          "name": "Boost Products",
+          "settings": {
+            "heading": {
+              "label": "Heading"
+            },
+            "sub-heading": {
+              "label": "Sub Heading"
+            }
+          }
+        },
         "variant_picker": {
           "name": "Variant picker",
           "settings": {

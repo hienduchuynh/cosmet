@@ -2124,3 +2124,22 @@ a.product__text {
 .join-vip-featured .multicolumn-card__info .rte {
 	margin: 12px 0;
 }
+
+.boost-product-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.boost-product-list li { 
+	width: 100%;
+	display: flex;
+	gap: var(--grid-desktop-horizontal-spacing);
+	padding: 24px 0;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+.boost-product-list li:last-child { 
+	border-bottom: 0;
+} 
+.boost-product-list li .multicolumn-card__info {  
+	padding: 0;
+}

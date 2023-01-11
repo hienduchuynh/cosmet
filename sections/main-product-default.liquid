@@ -343,28 +343,51 @@
               {{ block.settings.custom_liquid }}
           {%- when 'boost_products' -%}
             {% if product.metafields.boots.addon %}
-              {% assign relatedProducts = product.metafields.boots.addon.value %}
+              {% assign boostProducts = product.metafields.boots.addon.value %}
               {%- liquid 
                 assign has1product = false
-                for prod in relatedProducts
+                for prod in boostProducts
                   if prod.available == true
                     assign has1product = true
                   endif
                 endfor
               -%}
               {% if has1product %}
-                <p class="related-products-heading" style="font-size: {{block.settings.heading_font_size}}px; color: {{block.settings.heading_color}};">{{ block.settings.heading }}</p>
-                <div class="related-products" id="related-products-{{ block.id }}">
-                  {% for prod in relatedProducts %}
-                    {% if prod.available == true %}
-                      <a href="{{ prod.url }}" class="related-product" aria-label="{{prod.title}}" title="{{ prod.title }}">
-                        <img class="related-product__image" src="{{ prod.images[0] | img_url: '500x' }}" alt="{{ prod.title }}">
-                      </a>
-                      <span class="add-on-element"><strong>{{ prod.title }}</strong><span>
-                        <span class="add-on-element">+ {{ prod.price | money }}<span>
-                        <span class="add-on-element"><input class="add-on-product-checkbox" type="checkbox" name="id[]" value="{{ variant.id }}" /></span>
-                    {% endif %}
-                  {% endfor %}
+              <div class="boost-products" id="boost-products-{{ block.id }}">
+                  <h3 class="h3">{{ block.settings.heading }}</h3>
+                  <ul class="boost-product-list">
+                    {% for prod in boostProducts %}
+                      {% if prod.available == true %}
+                        <li>
+                          <a href="{{ prod.url }}" class="boost-product" aria-label="{{prod.title}}" title="{{ prod.title }}">
+                            <img class="boost-product__image" src="{{ prod.images[0] | img_url: '135x' }}" alt="{{ prod.title }}">
+                          </a>
+                          <div class="multicolumn-card__info">
+                            <span class="add-on-element">{{ prod.title }}</span>
+                            <span class="add-on-element">{{ prod.vendor }}</span>
+                            <span class="add-on-element">{{ prod.price | money }}</span>
+                          </div>
+                          {%- if show_rating and card_product.metafields.reviews.rating.value != blank -%}
+                            {% liquid
+                              assign rating_decimal = 0
+                              assign decimal = card_product.metafields.reviews.rating.value.rating | modulo: 1
+                              if decimal >= 0.3 and decimal <= 0.7
+                                assign rating_decimal = 0.5
+                                elsif decimal > 0.7
+                                assign rating_decimal = 1
+                                endif
+                              %}
+                              {% comment %} {{ card_product.metafields.reviews.rating.value }} {% endcomment %}
+                              <div class="rating-options">
+                                  <div class="rating" role="img" aria-label="{{ 'accessibility.star_reviews_info' | t: rating_value: card_product.metafields.reviews.rating.value, rating_max: card_product.metafields.reviews.rating.value.scale_max }}">
+                                    <span aria-hidden="true" class="rating-star color-icon-{{ settings.accent_icons }}" style="--rating: {{ card_product.metafields.reviews.rating.value.rating | floor }}; --rating-max: {{ card_product.metafields.reviews.rating.value.scale_max }}; --rating-decimal: {{ rating_decimal }};"></span><span class="rating-count">{{ card_product.metafields.reviews.rating_count }} reviews</span>
+                                  </div>
+                              </div>
+                          {%- endif -%}
+                        </li>
+                      {% endif %}
+                    {% endfor %}
+                  </ul>
                 </div>
               {% endif %}
             {% endif %}
@@ -636,44 +659,6 @@
               </div>
 
               <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
-          {%- when 'custom_information' -%}
-            <div class="trust-badges">
-                {% render 'product-custom-information',
-                    block: block
-                %}
-            </div>
-          {%- when 'trust_badges' -%}
-            <div class="trust-badges-block">
-                {% render 'product-trust-badges',
-                    block: block
-                %}
-            </div>
-          {%- when 'product_upsell' -%}
-            <div class="upsell_product_wrapper">
-              <h4>Upsell Product</h4>
-              <div class="upsell-item">
-              {% render 'card-product',
-                card_product: block.settings.product_upsell
-              %}
-              <form method="post" action="/cart/add" id="upsell_form" accept-charset="UTF-8" class="form" enctype="multipart/form-data" novalidate="novalidate" data-type="add-to-cart-form">
-                <input value="{{ block.settings.product_upsell.selected_or_first_available_variant.id }}" type="hidden" name="id">
-                <button class="product-form__submit button button--full-width button--secondary" type="submit">
-                  <span>
-                    {%- if block.settings.product_upsell.selected_or_first_available_variant.available -%}
-                      {{ 'products.product.add_to_cart' | t }}
-                    {%- else -%}
-                      {{ 'products.product.sold_out' | t }}
-                    {%- endif -%}
-                  </span>
-                  <div class="loading-overlay__spinner hidden">
-                    <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-                      <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-                    </svg>
-                  </div>
-                </button>
-              </form>
-            </div>
-            </div>
           {%- endcase -%}
         {%- endfor -%}
         <a href="{{ product.url }}" class="link product__view-details animate-arrow">
@@ -835,6 +820,12 @@
           "id": "heading",
           "label": "Heading",
           "default": "Boost your routine"
+        },
+        {
+          "type": "textarea",
+          "id": "sub-heading",
+          "label": "sub-heading",
+          "default": "Pair skin hydration elixir with marine collagen beauty capsules or super beauty to boost results."
         }
       ]
     },
@@ -1405,51 +1396,6 @@
         {
           "type": "paragraph",
           "content": "t:sections.main-product.blocks.rating.settings.paragraph.content"
-        }
-      ]
-    },
-    {
-      "type": "custom_information",
-      "name": "t:sections.main-product.blocks.custom_information.name",
-      "settings": [
-          {
-              "type": "textarea",
-              "id": "icon",
-              "label": "t:sections.main-product.blocks.custom_information.settings.icon.label"
-          },
-          {
-              "type": "text",
-              "id": "title",
-              "label": "t:sections.main-product.blocks.custom_information.settings.title.label"
-          },
-          {
-              "type": "textarea",
-              "id": "text_description",
-              "label": "t:sections.main-product.blocks.custom_information.settings.description.label"
-          }
-      ]
-    },
-    {
-      "type": "trust_badges",
-      "name": "t:sections.main-product.blocks.trust_badges.name",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "image_1",
-          "label": "t:sections.main-product.blocks.trust_badges.settings.image-1.label"
-        }
-      ]
-    },
-    {
-      "type": "product_upsell",
-      "name": "Upsell Product",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "product",
-          "id": "product_upsell",
-          "label": "Upsell Product"
         }
       ]
     },
