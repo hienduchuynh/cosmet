@@ -29,7 +29,7 @@
 -%}
 
 <div class="image-with-text image-with-text-grid {% if section.settings.title == blank %} no-heading{% endif %}">
-  <div class="{% if section.settings.layout == 'grid' or section.settings.layout == 'grid--gapless' %} page-width{% endif %} section-{{ section.id }}-padding isolate">
+  <div class="{% if section.settings.layout == 'grid' %} page-width{% endif %} section-{{ section.id }}-padding isolate">
     {%- unless section.settings.title == blank -%}
       <div class="title-wrapper title-wrapper--self-padded-mobile title-wrapper--no-top-margin">
         <div class="inner">

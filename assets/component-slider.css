@@ -319,8 +319,8 @@ slider-component.slider-component-full-width {
 .slider-counter__link--dots .dot {
   background-color: rgb(var(--color-foreground), 0.5);
   border: 0;
-  width: 4px;
-  height: 4px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   padding: 0;
   display: block;
@@ -331,7 +331,7 @@ slider-component.slider-component-full-width {
 }
 
 .slider-counter__link--dots.slider-counter__link {
-  --color-foreground: 255, 255, 255;
+  --color-foreground: 0, 0, 0;
   padding: 2px;
   border: 2px solid transparent;
   margin: 0 2px;
