@@ -219,6 +219,70 @@
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
+    },
+    "c53dbe95-c9a9-4311-b208-44399adcbfc1": {
+      "type": "timeline",
+      "blocks": {
+        "f71d0b09-5b8f-4a39-ac28-be4ca147d785": {
+          "type": "event_history",
+          "settings": {
+            "date": "t:sections.timeline.blocks.event_history.settings.label__2",
+            "heading": "t:sections.timeline.blocks.event_history.settings.label__3",
+            "description": "t:sections.timeline.blocks.event_history.settings.label__4",
+            "align_text": "left"
+          }
+        },
+        "f1b678be-c95f-45e1-b318-37a68c415eca": {
+          "type": "event_history",
+          "settings": {
+            "date": "t:sections.timeline.blocks.event_history.settings.label__2",
+            "heading": "t:sections.timeline.blocks.event_history.settings.label__3",
+            "description": "t:sections.timeline.blocks.event_history.settings.label__4",
+            "align_text": "left"
+          }
+        },
+        "4f84ceca-a02d-432e-be24-e3c60c6df1bf": {
+          "type": "event_history",
+          "settings": {
+            "date": "t:sections.timeline.blocks.event_history.settings.label__2",
+            "heading": "t:sections.timeline.blocks.event_history.settings.label__3",
+            "description": "t:sections.timeline.blocks.event_history.settings.label__4",
+            "align_text": "left"
+          }
+        },
+        "9ebfa1ae-b3c2-4793-9a6e-e4a679a9004a": {
+          "type": "event_history",
+          "settings": {
+            "date": "t:sections.timeline.blocks.event_history.settings.label__2",
+            "heading": "t:sections.timeline.blocks.event_history.settings.label__3",
+            "description": "t:sections.timeline.blocks.event_history.settings.label__4",
+            "align_text": "left"
+          }
+        },
+        "0dfcde22-4ad2-48d4-bc65-08a96a8661ea": {
+          "type": "event_history",
+          "settings": {
+            "date": "t:sections.timeline.blocks.event_history.settings.label__2",
+            "heading": "t:sections.timeline.blocks.event_history.settings.label__3",
+            "description": "t:sections.timeline.blocks.event_history.settings.label__4",
+            "align_text": "left"
+          }
+        }
+      },
+      "block_order": [
+        "f71d0b09-5b8f-4a39-ac28-be4ca147d785",
+        "f1b678be-c95f-45e1-b318-37a68c415eca",
+        "4f84ceca-a02d-432e-be24-e3c60c6df1bf",
+        "9ebfa1ae-b3c2-4793-9a6e-e4a679a9004a",
+        "0dfcde22-4ad2-48d4-bc65-08a96a8661ea"
+      ],
+      "settings": {
+        "page_title": "",
+        "alignment_title": "left",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "suffix-class": ""
+      }
     }
   },
   "order": [
@@ -226,6 +290,7 @@
     "b196a01e-f1bc-4e66-a068-4a8605559b96",
     "1c4f5a71-3ca3-4c74-a61c-797bfd1b3a31",
     "fe8a6d7e-ad1f-4636-b4c6-cacdbafb6697",
-    "e3fbd9e3-2530-475a-b060-3c53ed0aa0f1"
+    "e3fbd9e3-2530-475a-b060-3c53ed0aa0f1",
+    "c53dbe95-c9a9-4311-b208-44399adcbfc1"
   ]
 }
