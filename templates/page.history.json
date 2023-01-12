@@ -197,6 +197,7 @@
         "layout": "grid--gapless",
         "item_ratio": "169",
         "columns_desktop": 3,
+        "swipe_on_desktop": true,
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "padding_top": 0,
