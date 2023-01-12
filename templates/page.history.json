@@ -49,7 +49,8 @@
         "template--17550237204755__1c4f5a71-3ca3-4c74-a61c-797bfd1b3a31-16735049341b0fe9fa-0": {
           "type": "column",
           "settings": {
-            "title": "Column",
+            "image": "shopify:\/\/shop_images\/history-1.jpg",
+            "title": "",
             "link_label": "",
             "link": "",
             "link_style": "link",
@@ -61,7 +62,8 @@
         "template--17550237204755__1c4f5a71-3ca3-4c74-a61c-797bfd1b3a31-16735049341b0fe9fa-1": {
           "type": "column",
           "settings": {
-            "title": "Column",
+            "image": "shopify:\/\/shop_images\/history-2.jpg",
+            "title": "",
             "link_label": "",
             "link": "",
             "link_style": "link",
@@ -73,43 +75,8 @@
         "1792f2b0-3d29-487d-bc9f-4e5213a94d4f": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "link_label": "",
-            "link": "",
-            "link_style": "link",
-            "desktop_content_position": "middle-center",
-            "desktop_content_alignment": "center",
-            "color_scheme": "background-1"
-          }
-        },
-        "81a86c20-134a-4982-8a79-84a7cdc2a3b4": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "link_label": "",
-            "link": "",
-            "link_style": "link",
-            "desktop_content_position": "middle-center",
-            "desktop_content_alignment": "center",
-            "color_scheme": "background-1"
-          }
-        },
-        "cb0399c7-8879-4005-ad5b-dcd65f758fc3": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "link_label": "",
-            "link": "",
-            "link_style": "link",
-            "desktop_content_position": "middle-center",
-            "desktop_content_alignment": "center",
-            "color_scheme": "background-1"
-          }
-        },
-        "f42ab800-dde5-4d8a-936f-4c7a573fb11f": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
+            "image": "shopify:\/\/shop_images\/history-3.jpg",
+            "title": "",
             "link_label": "",
             "link": "",
             "link_style": "link",
@@ -122,16 +89,13 @@
       "block_order": [
         "template--17550237204755__1c4f5a71-3ca3-4c74-a61c-797bfd1b3a31-16735049341b0fe9fa-0",
         "template--17550237204755__1c4f5a71-3ca3-4c74-a61c-797bfd1b3a31-16735049341b0fe9fa-1",
-        "1792f2b0-3d29-487d-bc9f-4e5213a94d4f",
-        "81a86c20-134a-4982-8a79-84a7cdc2a3b4",
-        "cb0399c7-8879-4005-ad5b-dcd65f758fc3",
-        "f42ab800-dde5-4d8a-936f-4c7a573fb11f"
+        "1792f2b0-3d29-487d-bc9f-4e5213a94d4f"
       ],
       "settings": {
         "title": "",
         "heading_size": "hxl",
         "layout": "grid--gapless",
-        "item_ratio": "169",
+        "item_ratio": "34",
         "columns_desktop": 3,
         "swipe_on_desktop": true,
         "columns_mobile": "1",
