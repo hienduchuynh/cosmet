@@ -135,11 +135,11 @@
         {%- endfor -%}
       </ul>
 
-      {%- if show_mobile_slider -%}
-        <div class="slider-buttons no-js-hidden medium-hide">
+      {% if num_dot_desktop > 1 %}
+        <div class="slider-buttons no-js-hidden">
           <div class="slideshow__control-wrapper">
             {%- for block_ in (1..num_dot_desktop) -%}
-              <button class="slider-counter__link slider-counter__link--dots link" aria-label="{{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}" aria-controls="Slider-{{ section.id }}" name="next">
+              <button class="slider-counter__link slider-counter__link--dots link" aria-label="{{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}" aria-controls="Slider-{{ section.id }}">
                 <span class="dot"></span>
               </button>
             {%- endfor -%}
