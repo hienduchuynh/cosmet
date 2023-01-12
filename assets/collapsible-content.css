@@ -85,12 +85,10 @@
 }
 
 .collapsible-content summary:hover {
-  background: rgba(var(--color-foreground), 0.04);
 }
 
 .collapsible-content summary:hover .accordion__title {
-  text-decoration: underline;
-  text-underline-offset: 0.3rem;
+  color: rgba(var(--color-base-accent-3));
 }
 
 /* check for flexbox gap in older Safari versions */
@@ -147,16 +145,12 @@
 }
 
 .faqs-page summary:hover {
-  background-color: var(--gradient-base-accent-1);
 }
 
 .faqs-page summary:hover .accordion__title {
-  color: #fff;
-  text-decoration: none;
 }
 
 .faqs-page summary:hover svg path {
-  fill: #fff;
 }
 
 .faqs-page .collapsible-content__wrapper {
@@ -187,7 +181,6 @@
 
 @media screen and (min-width: 950px) {
   .faqs-page .collapsible-content__wrapper {
-    max-width: 66.66%;
   }
 }
 
