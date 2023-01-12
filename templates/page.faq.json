@@ -249,7 +249,7 @@
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
         "padding_top": 64,
-        "padding_bottom": 64
+        "padding_bottom": 100
       }
     }
   },
