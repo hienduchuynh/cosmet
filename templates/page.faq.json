@@ -122,40 +122,40 @@
         "padding_bottom": 64
       }
     },
-    "1636cc56-5129-4105-863b-fa1a2346cdab": {
+    "7798f4bf-39ac-4576-ab6d-81f1c6e900c1": {
       "type": "collapsible-content",
       "blocks": {
-        "template--17347501555987__1636cc56-5129-4105-863b-fa1a2346cdab-1673430893cae778a9-0": {
+        "template--17347501555987__7798f4bf-39ac-4576-ab6d-81f1c6e900c1-1673430893cae778a9-0": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "How do I add a new product?",
+            "heading": "Where do you ship?",
             "icon": "none",
             "row_content": "<p>1. From your Shopify admin, go to <strong>Products<\/strong>.<\/p><p>2. Click <strong>Add product<\/strong>.<\/p><p>3. Enter a title for your product, along with additional details.<\/p><p>4. Click <strong>Save<\/strong>.<\/p><p><a href=\"https:\/\/help.shopify.com\/en\/manual\/products\/add-update-products\" target=\"_blank\">Learn more about adding products<\/a><\/p><p><a href=\"https:\/\/www.youtube.com\/watch?v=Qks-MlwP6c4\" target=\"_blank\"><span style=\"text-decoration:underline\">Watch \"How to add a product\"<\/span><br\/><br\/><\/a><\/p>",
             "page": ""
           }
         },
-        "template--17347501555987__1636cc56-5129-4105-863b-fa1a2346cdab-1673430893cae778a9-1": {
+        "template--17347501555987__7798f4bf-39ac-4576-ab6d-81f1c6e900c1-1673430893cae778a9-1": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "How do I add a new product?",
+            "heading": "How much does shipping cost?",
             "icon": "none",
             "row_content": "<p>1. From your Shopify admin, go to <strong>Products<\/strong>.<\/p><p>2. Click <strong>Add product<\/strong>.<\/p><p>3. Enter a title for your product, along with additional details.<\/p><p>4. Click <strong>Save<\/strong>.<\/p><p><a href=\"https:\/\/help.shopify.com\/en\/manual\/products\/add-update-products\" target=\"_blank\">Learn more about adding products<\/a><\/p><p><a href=\"https:\/\/www.youtube.com\/watch?v=Qks-MlwP6c4\" target=\"_blank\"><span style=\"text-decoration:underline\">Watch \"How to add a product\"<\/span><br\/><br\/><\/a><\/p>",
             "page": ""
           }
         },
-        "template--17347501555987__1636cc56-5129-4105-863b-fa1a2346cdab-1673430893cae778a9-2": {
+        "template--17347501555987__7798f4bf-39ac-4576-ab6d-81f1c6e900c1-1673430893cae778a9-2": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "How do I add a new product?",
+            "heading": "Where can I find my order confirmation & shipping confirmation email(s)?",
             "icon": "none",
             "row_content": "<p>1. From your Shopify admin, go to <strong>Products<\/strong>.<\/p><p>2. Click <strong>Add product<\/strong>.<\/p><p>3. Enter a title for your product, along with additional details.<\/p><p>4. Click <strong>Save<\/strong>.<\/p><p><a href=\"https:\/\/help.shopify.com\/en\/manual\/products\/add-update-products\" target=\"_blank\">Learn more about adding products<\/a><\/p><p><a href=\"https:\/\/www.youtube.com\/watch?v=Qks-MlwP6c4\" target=\"_blank\"><span style=\"text-decoration:underline\">Watch \"How to add a product\"<\/span><br\/><br\/><\/a><\/p>",
             "page": ""
           }
         },
-        "template--17347501555987__1636cc56-5129-4105-863b-fa1a2346cdab-1673430893cae778a9-3": {
+        "template--17347501555987__7798f4bf-39ac-4576-ab6d-81f1c6e900c1-1673430893cae778a9-3": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "How do I add a new product?",
+            "heading": "How can I check the status of my order \/ track my shipment?",
             "icon": "none",
             "row_content": "<p>1. From your Shopify admin, go to <strong>Products<\/strong>.<\/p><p>2. Click <strong>Add product<\/strong>.<\/p><p>3. Enter a title for your product, along with additional details.<\/p><p>4. Click <strong>Save<\/strong>.<\/p><p><a href=\"https:\/\/help.shopify.com\/en\/manual\/products\/add-update-products\" target=\"_blank\">Learn more about adding products<\/a><\/p><p><a href=\"https:\/\/www.youtube.com\/watch?v=Qks-MlwP6c4\" target=\"_blank\"><span style=\"text-decoration:underline\">Watch \"How to add a product\"<\/span><br\/><br\/><\/a><\/p>",
             "page": ""
@@ -163,10 +163,10 @@
         }
       },
       "block_order": [
-        "template--17347501555987__1636cc56-5129-4105-863b-fa1a2346cdab-1673430893cae778a9-0",
-        "template--17347501555987__1636cc56-5129-4105-863b-fa1a2346cdab-1673430893cae778a9-1",
-        "template--17347501555987__1636cc56-5129-4105-863b-fa1a2346cdab-1673430893cae778a9-2",
-        "template--17347501555987__1636cc56-5129-4105-863b-fa1a2346cdab-1673430893cae778a9-3"
+        "template--17347501555987__7798f4bf-39ac-4576-ab6d-81f1c6e900c1-1673430893cae778a9-0",
+        "template--17347501555987__7798f4bf-39ac-4576-ab6d-81f1c6e900c1-1673430893cae778a9-1",
+        "template--17347501555987__7798f4bf-39ac-4576-ab6d-81f1c6e900c1-1673430893cae778a9-2",
+        "template--17347501555987__7798f4bf-39ac-4576-ab6d-81f1c6e900c1-1673430893cae778a9-3"
       ],
       "settings": {
         "class_suffix": "faqs-page",
@@ -185,40 +185,40 @@
         "padding_bottom": 64
       }
     },
-    "7798f4bf-39ac-4576-ab6d-81f1c6e900c1": {
+    "1636cc56-5129-4105-863b-fa1a2346cdab": {
       "type": "collapsible-content",
       "blocks": {
-        "template--17347501555987__7798f4bf-39ac-4576-ab6d-81f1c6e900c1-1673430893cae778a9-0": {
+        "template--17347501555987__1636cc56-5129-4105-863b-fa1a2346cdab-1673430893cae778a9-0": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "How do I add a new product?",
+            "heading": "I subscribed to your products, how often will I receive them?",
             "icon": "none",
             "row_content": "<p>1. From your Shopify admin, go to <strong>Products<\/strong>.<\/p><p>2. Click <strong>Add product<\/strong>.<\/p><p>3. Enter a title for your product, along with additional details.<\/p><p>4. Click <strong>Save<\/strong>.<\/p><p><a href=\"https:\/\/help.shopify.com\/en\/manual\/products\/add-update-products\" target=\"_blank\">Learn more about adding products<\/a><\/p><p><a href=\"https:\/\/www.youtube.com\/watch?v=Qks-MlwP6c4\" target=\"_blank\"><span style=\"text-decoration:underline\">Watch \"How to add a product\"<\/span><br\/><br\/><\/a><\/p>",
             "page": ""
           }
         },
-        "template--17347501555987__7798f4bf-39ac-4576-ab6d-81f1c6e900c1-1673430893cae778a9-1": {
+        "template--17347501555987__1636cc56-5129-4105-863b-fa1a2346cdab-1673430893cae778a9-1": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "How do I add a new product?",
+            "heading": "Will I receive a discount if I buy a kit?",
             "icon": "none",
             "row_content": "<p>1. From your Shopify admin, go to <strong>Products<\/strong>.<\/p><p>2. Click <strong>Add product<\/strong>.<\/p><p>3. Enter a title for your product, along with additional details.<\/p><p>4. Click <strong>Save<\/strong>.<\/p><p><a href=\"https:\/\/help.shopify.com\/en\/manual\/products\/add-update-products\" target=\"_blank\">Learn more about adding products<\/a><\/p><p><a href=\"https:\/\/www.youtube.com\/watch?v=Qks-MlwP6c4\" target=\"_blank\"><span style=\"text-decoration:underline\">Watch \"How to add a product\"<\/span><br\/><br\/><\/a><\/p>",
             "page": ""
           }
         },
-        "template--17347501555987__7798f4bf-39ac-4576-ab6d-81f1c6e900c1-1673430893cae778a9-2": {
+        "template--17347501555987__1636cc56-5129-4105-863b-fa1a2346cdab-1673430893cae778a9-2": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "How do I add a new product?",
+            "heading": "How do I modify my subscription?",
             "icon": "none",
             "row_content": "<p>1. From your Shopify admin, go to <strong>Products<\/strong>.<\/p><p>2. Click <strong>Add product<\/strong>.<\/p><p>3. Enter a title for your product, along with additional details.<\/p><p>4. Click <strong>Save<\/strong>.<\/p><p><a href=\"https:\/\/help.shopify.com\/en\/manual\/products\/add-update-products\" target=\"_blank\">Learn more about adding products<\/a><\/p><p><a href=\"https:\/\/www.youtube.com\/watch?v=Qks-MlwP6c4\" target=\"_blank\"><span style=\"text-decoration:underline\">Watch \"How to add a product\"<\/span><br\/><br\/><\/a><\/p>",
             "page": ""
           }
         },
-        "template--17347501555987__7798f4bf-39ac-4576-ab6d-81f1c6e900c1-1673430893cae778a9-3": {
+        "template--17347501555987__1636cc56-5129-4105-863b-fa1a2346cdab-1673430893cae778a9-3": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "How do I add a new product?",
+            "heading": "Do you offer a discount for new customers?",
             "icon": "none",
             "row_content": "<p>1. From your Shopify admin, go to <strong>Products<\/strong>.<\/p><p>2. Click <strong>Add product<\/strong>.<\/p><p>3. Enter a title for your product, along with additional details.<\/p><p>4. Click <strong>Save<\/strong>.<\/p><p><a href=\"https:\/\/help.shopify.com\/en\/manual\/products\/add-update-products\" target=\"_blank\">Learn more about adding products<\/a><\/p><p><a href=\"https:\/\/www.youtube.com\/watch?v=Qks-MlwP6c4\" target=\"_blank\"><span style=\"text-decoration:underline\">Watch \"How to add a product\"<\/span><br\/><br\/><\/a><\/p>",
             "page": ""
@@ -226,10 +226,10 @@
         }
       },
       "block_order": [
-        "template--17347501555987__7798f4bf-39ac-4576-ab6d-81f1c6e900c1-1673430893cae778a9-0",
-        "template--17347501555987__7798f4bf-39ac-4576-ab6d-81f1c6e900c1-1673430893cae778a9-1",
-        "template--17347501555987__7798f4bf-39ac-4576-ab6d-81f1c6e900c1-1673430893cae778a9-2",
-        "template--17347501555987__7798f4bf-39ac-4576-ab6d-81f1c6e900c1-1673430893cae778a9-3"
+        "template--17347501555987__1636cc56-5129-4105-863b-fa1a2346cdab-1673430893cae778a9-0",
+        "template--17347501555987__1636cc56-5129-4105-863b-fa1a2346cdab-1673430893cae778a9-1",
+        "template--17347501555987__1636cc56-5129-4105-863b-fa1a2346cdab-1673430893cae778a9-2",
+        "template--17347501555987__1636cc56-5129-4105-863b-fa1a2346cdab-1673430893cae778a9-3"
       ],
       "settings": {
         "class_suffix": "faqs-page",
@@ -253,7 +253,7 @@
     "292fd3d9-f618-4284-9370-955d059efefe",
     "b196a01e-f1bc-4e66-a068-4a8605559b96",
     "be0b4efd-08c2-4c02-9b11-ec5c9ab55e4d",
-    "1636cc56-5129-4105-863b-fa1a2346cdab",
-    "7798f4bf-39ac-4576-ab6d-81f1c6e900c1"
+    "7798f4bf-39ac-4576-ab6d-81f1c6e900c1",
+    "1636cc56-5129-4105-863b-fa1a2346cdab"
   ]
 }
