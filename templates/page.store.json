@@ -1,0 +1,271 @@
+{
+  "sections": {
+    "292fd3d9-f618-4284-9370-955d059efefe": {
+      "type": "breadcrumb",
+      "settings": {
+        "alignment_breadcrumb": "center",
+        "padding_top": 64,
+        "padding_bottom": 16
+      }
+    },
+    "b196a01e-f1bc-4e66-a068-4a8605559b96": {
+      "type": "rich-text",
+      "blocks": {
+        "template--14995343081545__b196a01e-f1bc-4e66-a068-4a8605559b96-166496376312dfa138-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>A brief history of Cosmet<\/p>",
+            "heading_size": "h1"
+          }
+        },
+        "template--14995343081545__b196a01e-f1bc-4e66-a068-4a8605559b96-166496376312dfa138-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A blog about your smile, our planet, and daily changes that add up.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--14995343081545__b196a01e-f1bc-4e66-a068-4a8605559b96-166496376312dfa138-0",
+        "template--14995343081545__b196a01e-f1bc-4e66-a068-4a8605559b96-166496376312dfa138-1"
+      ],
+      "settings": {
+        "class_suffix": "faqs-page",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 64,
+        "border_top_thickness": 0,
+        "border_top_opacity": 0,
+        "border_bottom_thickness": 1,
+        "border_bottom_opacity": 8
+      }
+    },
+    "1c4f5a71-3ca3-4c74-a61c-797bfd1b3a31": {
+      "type": "image-with-text-grid",
+      "blocks": {
+        "template--17550237204755__1c4f5a71-3ca3-4c74-a61c-797bfd1b3a31-16735049341b0fe9fa-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/history-1.jpg",
+            "title": "",
+            "link_label": "",
+            "link": "",
+            "link_style": "link",
+            "desktop_content_position": "middle-center",
+            "desktop_content_alignment": "center",
+            "color_scheme": "background-1"
+          }
+        },
+        "template--17550237204755__1c4f5a71-3ca3-4c74-a61c-797bfd1b3a31-16735049341b0fe9fa-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/history-2.jpg",
+            "title": "",
+            "link_label": "",
+            "link": "",
+            "link_style": "link",
+            "desktop_content_position": "middle-center",
+            "desktop_content_alignment": "center",
+            "color_scheme": "background-1"
+          }
+        },
+        "1792f2b0-3d29-487d-bc9f-4e5213a94d4f": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/history-3.jpg",
+            "title": "",
+            "link_label": "",
+            "link": "",
+            "link_style": "link",
+            "desktop_content_position": "middle-center",
+            "desktop_content_alignment": "center",
+            "color_scheme": "background-1"
+          }
+        }
+      },
+      "block_order": [
+        "template--17550237204755__1c4f5a71-3ca3-4c74-a61c-797bfd1b3a31-16735049341b0fe9fa-0",
+        "template--17550237204755__1c4f5a71-3ca3-4c74-a61c-797bfd1b3a31-16735049341b0fe9fa-1",
+        "1792f2b0-3d29-487d-bc9f-4e5213a94d4f"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "hxl",
+        "layout": "grid--gapless",
+        "item_ratio": "34",
+        "columns_desktop": 3,
+        "swipe_on_desktop": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "7c9a6ac4-a1fb-4eb4-8129-6f04e00562c1": {
+      "type": "ja-timeline",
+      "blocks": {
+        "facf0349-7123-42a4-a72a-6a9b6066798f": {
+          "type": "event_history",
+          "settings": {
+            "date": "1920",
+            "heading": "The early years",
+            "description": "<p>After all, you may be wondering, what exactly is clean beauty? How can I know if an ingredient in my hair care or skincare product really is clean? Are there benefits to seeking clean ingredients, or is this greenwashing all over again? we want to do better. That means asking ourselves every day, ‟How we can improve?”<\/p>",
+            "image_event": "shopify:\/\/shop_images\/history-4.png",
+            "align_text": "right"
+          }
+        },
+        "0a5de84e-b8e5-470d-a9b4-da35be7aae1c": {
+          "type": "event_history",
+          "settings": {
+            "date": "1930",
+            "heading": "The trefoil and the olympic idea",
+            "description": "<p>After all, you may be wondering, what exactly is clean beauty? How can I know if an ingredient in my hair care or skincare product really is clean? Are there benefits to seeking clean ingredients, or is this greenwashing all over again? we want to do better. That means asking ourselves every day, ‟How we can improve?”<\/p>",
+            "image_event": "shopify:\/\/shop_images\/history-5.png",
+            "align_text": "right"
+          }
+        },
+        "cd4b0c68-35e0-4d71-9bab-6935dd1b07df": {
+          "type": "event_history",
+          "settings": {
+            "date": "1940",
+            "heading": "Becoming a true multi-sports specialist",
+            "description": "<p>After all, you may be wondering, what exactly is clean beauty? How can I know if an ingredient in my hair care or skincare product really is clean? Are there benefits to seeking clean ingredients, or is this greenwashing all over again? we want to do better. That means asking ourselves every day, ‟How we can improve?”<\/p>",
+            "image_event": "shopify:\/\/shop_images\/history-6.png",
+            "align_text": "right"
+          }
+        },
+        "94fe0596-d2e9-48c0-9744-63bf4a41816e": {
+          "type": "event_history",
+          "settings": {
+            "date": "1950",
+            "heading": "Death of a shoemaker",
+            "description": "<p>After all, you may be wondering, what exactly is clean beauty? How can I know if an ingredient in my hair care or skincare product really is clean? Are there benefits to seeking clean ingredients, or is this greenwashing all over again? we want to do better. That means asking ourselves every day, ‟How we can improve?”<\/p>",
+            "image_event": "shopify:\/\/shop_images\/history-7.png",
+            "align_text": "right"
+          }
+        },
+        "352a7079-aa7f-48ce-a00e-b2f89dbba185": {
+          "type": "event_history",
+          "settings": {
+            "date": "1960",
+            "heading": "A computer for your feet",
+            "description": "<p>After all, you may be wondering, what exactly is clean beauty? How can I know if an ingredient in my hair care or skincare product really is clean? Are there benefits to seeking clean ingredients, or is this greenwashing all over again? we want to do better. That means asking ourselves every day, ‟How we can improve?”<\/p>",
+            "image_event": "shopify:\/\/shop_images\/history-8.png",
+            "align_text": "right"
+          }
+        }
+      },
+      "block_order": [
+        "facf0349-7123-42a4-a72a-6a9b6066798f",
+        "0a5de84e-b8e5-470d-a9b4-da35be7aae1c",
+        "cd4b0c68-35e0-4d71-9bab-6935dd1b07df",
+        "94fe0596-d2e9-48c0-9744-63bf4a41816e",
+        "352a7079-aa7f-48ce-a00e-b2f89dbba185"
+      ],
+      "settings": {
+        "page_title": "",
+        "alignment_title": "left",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "suffix-class": ""
+      }
+    },
+    "e3fbd9e3-2530-475a-b060-3c53ed0aa0f1": {
+      "type": "image-banner",
+      "settings": {
+        "mod_class": "page-width",
+        "image": "shopify:\/\/shop_images\/history-9.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "05d3e239-8f57-46a6-9f16-7a42499dfc86": {
+      "type": "ja-timeline",
+      "blocks": {
+        "2d3b53e9-2c87-4baa-82f7-923c3259f5b1": {
+          "type": "event_history",
+          "settings": {
+            "date": "1970",
+            "heading": "The merge of arts and sports",
+            "description": "<p>After all, you may be wondering, what exactly is clean beauty? How can I know if an ingredient in my hair care or skincare product really is clean? Are there benefits to seeking clean ingredients, or is this greenwashing all over again? we want to do better. That means asking ourselves every day, ‟How we can improve?”<\/p>",
+            "image_event": "shopify:\/\/shop_images\/history-10.png",
+            "align_text": "right"
+          }
+        },
+        "18cb1fb1-f97d-49fc-9598-8accfb907c07": {
+          "type": "event_history",
+          "settings": {
+            "date": "1980",
+            "heading": "A sleeping giant’s new master",
+            "description": "<p>After all, you may be wondering, what exactly is clean beauty? How can I know if an ingredient in my hair care or skincare product really is clean? Are there benefits to seeking clean ingredients, or is this greenwashing all over again? we want to do better. That means asking ourselves every day, ‟How we can improve?”<\/p>",
+            "image_event": "shopify:\/\/shop_images\/history-11.png",
+            "align_text": "right"
+          }
+        },
+        "d5119891-f3cd-4f7a-8e42-298cd1e7b99e": {
+          "type": "event_history",
+          "settings": {
+            "date": "1990",
+            "heading": "A new team member: Salomon joins the gang",
+            "description": "<p>After all, you may be wondering, what exactly is clean beauty? How can I know if an ingredient in my hair care or skincare product really is clean? Are there benefits to seeking clean ingredients, or is this greenwashing all over again? we want to do better. That means asking ourselves every day, ‟How we can improve?”<\/p>",
+            "image_event": "shopify:\/\/shop_images\/history-12.png",
+            "align_text": "right"
+          }
+        },
+        "e7cefc9a-ba06-495d-8d90-416812d5362a": {
+          "type": "event_history",
+          "settings": {
+            "date": "2000",
+            "heading": "New century, new divisions",
+            "description": "<p>After all, you may be wondering, what exactly is clean beauty? How can I know if an ingredient in my hair care or skincare product really is clean? Are there benefits to seeking clean ingredients, or is this greenwashing all over again? we want to do better. That means asking ourselves every day, ‟How we can improve?”<\/p>",
+            "image_event": "shopify:\/\/shop_images\/history-13.jpg",
+            "align_text": "right"
+          }
+        },
+        "79579d2f-7327-44c0-9da3-f160d9c40c79": {
+          "type": "event_history",
+          "settings": {
+            "date": "2010",
+            "heading": "Salomon leaves the team, Reedbok joined the family",
+            "description": "<p>After all, you may be wondering, what exactly is clean beauty? How can I know if an ingredient in my hair care or skincare product really is clean? Are there benefits to seeking clean ingredients, or is this greenwashing all over again? we want to do better. That means asking ourselves every day, ‟How we can improve?”<\/p>",
+            "image_event": "shopify:\/\/shop_images\/history-14.jpg",
+            "align_text": "right"
+          }
+        }
+      },
+      "block_order": [
+        "2d3b53e9-2c87-4baa-82f7-923c3259f5b1",
+        "18cb1fb1-f97d-49fc-9598-8accfb907c07",
+        "d5119891-f3cd-4f7a-8e42-298cd1e7b99e",
+        "e7cefc9a-ba06-495d-8d90-416812d5362a",
+        "79579d2f-7327-44c0-9da3-f160d9c40c79"
+      ],
+      "settings": {
+        "page_title": "",
+        "alignment_title": "left",
+        "padding_top": 0,
+        "padding_bottom": 36,
+        "suffix-class": ""
+      }
+    }
+  },
+  "order": [
+    "292fd3d9-f618-4284-9370-955d059efefe",
+    "b196a01e-f1bc-4e66-a068-4a8605559b96",
+    "1c4f5a71-3ca3-4c74-a61c-797bfd1b3a31",
+    "7c9a6ac4-a1fb-4eb4-8129-6f04e00562c1",
+    "e3fbd9e3-2530-475a-b060-3c53ed0aa0f1",
+    "05d3e239-8f57-46a6-9f16-7a42499dfc86"
+  ]
+}
