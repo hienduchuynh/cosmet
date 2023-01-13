@@ -14,14 +14,12 @@
   }
 {%- endstyle -%}
 
-<div class="page-width section-{{ section.id }}-padding {{ section.settings.suffix-class }} {{ section.settings.alignment_title }}">
-  <h1 class="main-page-title page-title h2">
-    {%- if section.settings.page_title != blank -%}
-      {{ section.settings.page_title }}
-    {%- else -%}
-      {{ page.title | escape }}
-    {%- endif -%}
-  </h1>
+<div class="section-timeline-wrap page-width section-{{ section.id }}-padding {{ section.settings.suffix-class }} {{ section.settings.alignment_title }}">
+  {%- if section.settings.page_title != blank -%}
+  <h2 class="main-page-title page-title h2">
+    {{ section.settings.page_title }}
+  </h2>
+  {%- endif -%}
   <div class="content">
     <div class="timeline">
       {% for block in section.blocks %}
@@ -30,11 +28,11 @@
             <div class="container {{ block.settings.align_text }}" {{ block.shopify_attributes }}>
               <div class="content">
                 <div class="pseudo">
-                  <div class="date">{{ block.settings.date }}</div>
+                  <div class="date h1">{{ block.settings.date }}</div>
                   <h2>{{ block.settings.heading }}</h2>
-                  <p>
+                  <div class="description">
                     {{ block.settings.description }}
-                  </p>
+                  </div>
                 </div>
               </div>
               <div class="image-event">
