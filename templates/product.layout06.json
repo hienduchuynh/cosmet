@@ -14,6 +14,7 @@
         "vendor": {
           "type": "text",
           "settings": {
+            "text_icon": "none",
             "text": "{{ product.vendor }}",
             "text_style": "uppercase"
           }
@@ -23,14 +24,20 @@
           "settings": {
           }
         },
-        "93d8acff-599a-4a3a-be22-029395575b2a": {
+        "74dfd0fe-c090-4a26-97d0-81296d88dbf0": {
           "type": "shopify:\/\/apps\/product-reviews\/blocks\/star_rating\/bae150af-8da8-48b2-9867-398188115e5f",
           "settings": {
-            "stars_fill_color": "#ffc107",
+            "stars_fill_color": "#000000",
             "star_size": 15,
-            "text_align": "flex-start",
+            "text_align": "center",
             "product": "{{product}}",
             "stars_text_empty": "No reviews"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
           }
         },
         "price": {
@@ -44,19 +51,8 @@
             "word_number": "120"
           }
         },
-        "variant_picker": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button"
-          }
-        },
         "quantity_selector": {
           "type": "quantity_selector",
-          "settings": {
-          }
-        },
-        "description": {
-          "type": "description",
           "settings": {
           }
         },
@@ -66,57 +62,31 @@
             "show_dynamic_checkout": true
           }
         },
-        "share": {
-          "type": "share",
+        "5beeccd7-d036-48a6-a38c-e127be3e6baf": {
+          "type": "custom_liquid",
           "settings": {
-            "share_label": "Share"
+            "custom_liquid": "<ul class=\"featured-list\">\n    <li class=\"item1\">Vegan & cruelty–free<\/li>\n    <li class=\"item2\">Aluminum–free formula<\/li>\n    <li class=\"item3\">Infinitely refillable<\/li>\n    <li class=\"item4\">Delivered every 4 months<\/li>\n    <li class=\"item5\">100% plastic free<\/li>\n    <li class=\"item6\">Baking soda–free<\/li>\n<\/ul>"
           }
         },
-        "collapsible-row-2": {
-          "type": "collapsible_tab",
+        "9b0965ae-4022-402f-b47a-bca98469758e": {
+          "type": "boost_products",
           "settings": {
-            "heading": "Size chart",
-            "icon": "clipboard",
-            "content": "<p><em>\"This is demonstration content, designed to showcase how pages could look with your own content\"<\/em><\/p><p><strong>How to measure yourself:<br\/><\/strong>Size Guide: S=US 4-6, M=US 8-10, L=US 12-14, XL=16.<br\/>To find the perfect fit, simply put on your favourite underwear and measure yourself directly on your body. Then use the size chart and the information found in the product description to find your fit.<\/p>",
-            "image_ratio": "43",
-            "page": ""
-          }
-        },
-        "collapsible-row-1": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Shipping & Returns",
-            "icon": "truck",
-            "content": "<p>- Ships Worldwide<br\/>- Free Shipping all orders over $50 (the contiguous US only)<br\/>- Free returns\/exchanges up to 30 days from purchase<\/p>",
-            "image_ratio": "43",
-            "page": ""
-          }
-        },
-        "collapsible-row-0": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "HELP",
-            "icon": "chat_bubble",
-            "content": "<p>Our fashion consultants are on hand & ready to support you.Get in touch via our contact form here.<\/p>",
-            "image_ratio": "43",
-            "page": ""
+            "heading": "Boost your routine",
+            "sub-heading": "Pair skin hydration elixir with marine collagen beauty capsules or super beauty to boost results."
           }
         }
       },
       "block_order": [
         "vendor",
         "title",
-        "93d8acff-599a-4a3a-be22-029395575b2a",
+        "74dfd0fe-c090-4a26-97d0-81296d88dbf0",
+        "variant_picker",
         "price",
         "23ebf0a2-bba6-4be2-8af7-6c1bacfbe482",
-        "variant_picker",
         "quantity_selector",
-        "description",
         "buy_buttons",
-        "share",
-        "collapsible-row-2",
-        "collapsible-row-1",
-        "collapsible-row-0"
+        "5beeccd7-d036-48a6-a38c-e127be3e6baf",
+        "9b0965ae-4022-402f-b47a-bca98469758e"
       ],
       "settings": {
         "media_size": "large",
@@ -184,7 +154,7 @@
       "settings": {
         "heading": "",
         "heading_size": "h1",
-        "cover_image": "shopify:\/\/shop_images\/bg-video.jpg",
+        "cover_image": "shopify:\/\/shop_images\/slide-1.jpg",
         "video_url": "https:\/\/www.youtube.com\/watch?v=P1lO5MAm9bQ",
         "description": "",
         "full_width": true,
@@ -196,14 +166,14 @@
     "16703160910adaf92f": {
       "type": "apps",
       "blocks": {
-        "20c2f2f9-fe3e-482a-a912-509d7693699a": {
+        "cbdc3f6e-2fb3-4a01-b92a-b7f9bc85c99f": {
           "type": "shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f",
           "settings": {
           }
         }
       },
       "block_order": [
-        "20c2f2f9-fe3e-482a-a912-509d7693699a"
+        "cbdc3f6e-2fb3-4a01-b92a-b7f9bc85c99f"
       ],
       "settings": {
         "include_margins": true
@@ -228,23 +198,6 @@
         "padding_top": 24,
         "padding_bottom": 48
       }
-    },
-    "093caabc-e602-48c3-bdb2-5267d2927562": {
-      "type": "ja-recent-products",
-      "settings": {
-        "title": "Recent Product",
-        "heading_size": "h3",
-        "title_style": "01",
-        "description": "",
-        "description_style": "body",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "full_width": false,
-        "color_scheme": "background-1",
-        "columns_mobile": "2",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
@@ -253,7 +206,6 @@
     "a3627e30-1415-4779-aff7-c27887c3b101",
     "697c1a1a-17f7-435b-b2a6-b4715033048e",
     "16703160910adaf92f",
-    "product-recommendations",
-    "093caabc-e602-48c3-bdb2-5267d2927562"
+    "product-recommendations"
   ]
 }
