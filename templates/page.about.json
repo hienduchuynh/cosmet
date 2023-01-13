@@ -1,67 +1,113 @@
 {
   "sections": {
-    "61f849a9-f600-4591-8f82-0e40cc947bc5": {
+    "292fd3d9-f618-4284-9370-955d059efefe": {
       "type": "breadcrumb",
-      "disabled": true,
       "settings": {
-        "alignment_breadcrumb": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "alignment_breadcrumb": "center",
+        "padding_top": 64,
+        "padding_bottom": 16
       }
     },
-    "main": {
-      "type": "main-page",
-      "disabled": true,
-      "settings": {
-        "page_title": "",
-        "alignment_title": "left",
-        "padding_top": 28,
-        "padding_bottom": 28,
-        "suffix-class": "about-us-title"
-      }
-    },
-    "d907dfba-3a8d-4c3a-a756-aca10721690e": {
+    "b196a01e-f1bc-4e66-a068-4a8605559b96": {
       "type": "rich-text",
       "blocks": {
-        "template--14995394134089__d907dfba-3a8d-4c3a-a756-aca10721690e-16650398972b716996-0": {
+        "template--14995343081545__b196a01e-f1bc-4e66-a068-4a8605559b96-166496376312dfa138-0": {
           "type": "heading",
           "settings": {
-            "heading": "<p>Our Story<\/p>",
+            "heading": "<p>Who we are?<\/p>",
             "heading_size": "h1"
           }
         },
-        "44929001-e0af-4679-92e9-15be36596752": {
-          "type": "image",
-          "settings": {
-          }
-        },
-        "4682a639-6655-4fc0-b29d-3105b6eaa917": {
+        "template--14995343081545__b196a01e-f1bc-4e66-a068-4a8605559b96-166496376312dfa138-1": {
           "type": "text",
           "settings": {
-            "text": "<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).<\/p>"
-          }
-        },
-        "400a6ab5-7b62-492c-818e-fc31d57eda3f": {
-          "type": "text",
-          "settings": {
-            "text": "<p>In 2015, we opened the ways to our leader store in Chicago, US. In this space we work crosswise over various mediums from fashion and photography to accommodation. There’s nothing we won’t do. Joint efforts are constantly invited and sustained. <\/p>"
+            "text": "<p>We are the future of natural skincare<\/p>"
           }
         }
       },
       "block_order": [
-        "template--14995394134089__d907dfba-3a8d-4c3a-a756-aca10721690e-16650398972b716996-0",
-        "44929001-e0af-4679-92e9-15be36596752",
-        "4682a639-6655-4fc0-b29d-3105b6eaa917",
-        "400a6ab5-7b62-492c-818e-fc31d57eda3f"
+        "template--14995343081545__b196a01e-f1bc-4e66-a068-4a8605559b96-166496376312dfa138-0",
+        "template--14995343081545__b196a01e-f1bc-4e66-a068-4a8605559b96-166496376312dfa138-1"
       ],
       "settings": {
-        "class_suffix": "about-us",
+        "class_suffix": "faqs-page",
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "background-1",
-        "full_width": false,
-        "padding_top": 96,
-        "padding_bottom": 48,
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 64,
+        "border_top_thickness": 0,
+        "border_top_opacity": 0,
+        "border_bottom_thickness": 1,
+        "border_bottom_opacity": 8
+      }
+    },
+    "b63b84ab-3998-4ab3-810f-665cfd5958af": {
+      "type": "rich-text",
+      "blocks": {
+        "template--17561988563219__b63b84ab-3998-4ab3-810f-665cfd5958af-16735963607c9a552d-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>As a Filipina entrepreneur, Annette values sharing her heritage and the Philippines' unique design perspective. Every piece is designed in New York (her current residence) and produced ethically in the Philippines<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--17561988563219__b63b84ab-3998-4ab3-810f-665cfd5958af-16735963607c9a552d-1"
+      ],
+      "settings": {
+        "class_suffix": "",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 64,
+        "padding_bottom": 32,
+        "border_top_thickness": 0,
+        "border_top_opacity": 0,
+        "border_bottom_thickness": 0,
+        "border_bottom_opacity": 0
+      }
+    },
+    "e3fbd9e3-2530-475a-b060-3c53ed0aa0f1": {
+      "type": "image-banner",
+      "settings": {
+        "mod_class": "page-width",
+        "image": "shopify:\/\/shop_images\/stores.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "17b9d406-9383-4237-aa65-707960d8ba5e": {
+      "type": "rich-text",
+      "blocks": {
+        "template--17561988563219__17b9d406-9383-4237-aa65-707960d8ba5e-16735963607c9a552d-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Streamlined yet welcoming, the Cosmet boutique at 207 Laurier Avenue West allows for an immersion in the brand’s universe. As the creations it showcases, the conceptual space exhibits precise and delicate lines, far from the overwhelming decor of some traditional jewelry stores. Visitors don’t hesitate to come in and look around. It is not uncommon to cross path with Cosmet’s founder and designer, Myriam Elie, whose studio is adjacent to the boutique.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--17561988563219__17b9d406-9383-4237-aa65-707960d8ba5e-16735963607c9a552d-1"
+      ],
+      "settings": {
+        "class_suffix": "",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 64,
+        "padding_bottom": 96,
         "border_top_thickness": 0,
         "border_top_opacity": 0,
         "border_bottom_thickness": 0,
@@ -70,8 +116,10 @@
     }
   },
   "order": [
-    "61f849a9-f600-4591-8f82-0e40cc947bc5",
-    "main",
-    "d907dfba-3a8d-4c3a-a756-aca10721690e"
+    "292fd3d9-f618-4284-9370-955d059efefe",
+    "b196a01e-f1bc-4e66-a068-4a8605559b96",
+    "b63b84ab-3998-4ab3-810f-665cfd5958af",
+    "e3fbd9e3-2530-475a-b060-3c53ed0aa0f1",
+    "17b9d406-9383-4237-aa65-707960d8ba5e"
   ]
 }
