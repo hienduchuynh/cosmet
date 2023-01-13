@@ -14,6 +14,7 @@
         "vendor": {
           "type": "text",
           "settings": {
+            "text_icon": "none",
             "text": "{{ product.vendor }}",
             "text_style": "uppercase"
           }
@@ -31,13 +32,6 @@
             "text_align": "flex-start",
             "product": "{{product}}",
             "stars_text_empty": "No reviews"
-          }
-        },
-        "caption": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.metafields.descriptors.subtitle.value }}",
-            "text_style": "subtitle"
           }
         },
         "price": {
@@ -78,20 +72,27 @@
           "settings": {
             "custom_liquid": "<ul class=\"featured-list\">\n    <li class=\"item1\">Vegan & cruelty–free<\/li>\n    <li class=\"item2\">Aluminum–free formula<\/li>\n    <li class=\"item3\">Infinitely refillable<\/li>\n    <li class=\"item4\">Delivered every 4 months<\/li>\n    <li class=\"item5\">100% plastic free<\/li>\n    <li class=\"item6\">Baking soda–free<\/li>\n<\/ul>"
           }
+        },
+        "a0218fcb-a5e8-47a8-b925-eab5c85dcc45": {
+          "type": "boost_products",
+          "settings": {
+            "heading": "Boost your routine",
+            "sub-heading": "Pair skin hydration elixir with marine collagen beauty capsules or super beauty to boost results."
+          }
         }
       },
       "block_order": [
         "vendor",
         "title",
         "1007d54c-53a8-4d68-8816-df4b9d925388",
-        "caption",
         "price",
         "c4170b8a-b092-47b7-9d44-44e0f62040f9",
         "description",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "cb5f8a29-86ec-446a-bf24-0794f651138e"
+        "cb5f8a29-86ec-446a-bf24-0794f651138e",
+        "a0218fcb-a5e8-47a8-b925-eab5c85dcc45"
       ],
       "settings": {
         "media_size": "medium",
