@@ -95,17 +95,10 @@
           "settings": {
             "text": "<p>Streamlined yet welcoming, the Cosmet boutique at 207 Laurier Avenue West allows for an immersion in the brand’s universe. As the creations it showcases, the conceptual space exhibits precise and delicate lines, far from the overwhelming decor of some traditional jewelry stores. Visitors don’t hesitate to come in and look around. It is not uncommon to cross path with Cosmet’s founder and designer, Myriam Elie, whose studio is adjacent to the boutique.<\/p>"
           }
-        },
-        "3d637978-f4d1-4c4e-b8ba-bb4ecc5b5a1e": {
-          "type": "text",
-          "settings": {
-            "text": "<p>{{ shop.brand.short_description }}<\/p>"
-          }
         }
       },
       "block_order": [
-        "template--17561988563219__17b9d406-9383-4237-aa65-707960d8ba5e-16735963607c9a552d-1",
-        "3d637978-f4d1-4c4e-b8ba-bb4ecc5b5a1e"
+        "template--17561988563219__17b9d406-9383-4237-aa65-707960d8ba5e-16735963607c9a552d-1"
       ],
       "settings": {
         "class_suffix": "",
