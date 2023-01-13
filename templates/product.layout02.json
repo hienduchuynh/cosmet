@@ -51,11 +51,6 @@
             "word_number": "120"
           }
         },
-        "description": {
-          "type": "description",
-          "settings": {
-          }
-        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {
@@ -88,7 +83,6 @@
         "variant_picker",
         "price",
         "2f8c8ec6-a42b-4014-8199-48dede731379",
-        "description",
         "quantity_selector",
         "buy_buttons",
         "9de75c6d-32c2-4968-a393-649bab741ddb",
