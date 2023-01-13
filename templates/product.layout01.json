@@ -150,14 +150,24 @@
       ],
       "settings": {
         "collapsible_type": "tabs",
-        "box_width": 60,
-        "collapsible_tab_header_position": "left",
+        "box_width": 50,
+        "collapsible_tab_header_position": "top",
         "padding_top": 36,
         "padding_bottom": 36
       }
     },
     "1670315962bd1f2b32": {
       "type": "apps",
+      "blocks": {
+        "1dd28d2d-09bb-4ae2-bc23-c9d774c0bd92": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "1dd28d2d-09bb-4ae2-bc23-c9d774c0bd92"
+      ],
       "settings": {
         "include_margins": true
       }
