@@ -14,6 +14,7 @@
         "vendor": {
           "type": "text",
           "settings": {
+            "text_icon": "none",
             "text": "{{ product.vendor }}",
             "text_style": "uppercase"
           }
@@ -23,21 +24,14 @@
           "settings": {
           }
         },
-        "4824f6e2-b41f-4ac5-b670-f23261309780": {
+        "37ec7524-3733-4bb5-a522-c195e1af4cc4": {
           "type": "shopify:\/\/apps\/product-reviews\/blocks\/star_rating\/bae150af-8da8-48b2-9867-398188115e5f",
           "settings": {
-            "stars_fill_color": "#ffc107",
+            "stars_fill_color": "#000000",
             "star_size": 15,
-            "text_align": "flex-start",
+            "text_align": "center",
             "product": "{{product}}",
             "stars_text_empty": "No reviews"
-          }
-        },
-        "caption": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.metafields.descriptors.subtitle.value }}",
-            "text_style": "subtitle"
           }
         },
         "price": {
@@ -49,6 +43,11 @@
           "type": "short_description",
           "settings": {
             "word_number": "120"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
           }
         },
         "variant_picker": {
@@ -68,30 +67,32 @@
             "show_dynamic_checkout": true
           }
         },
-        "description": {
-          "type": "description",
+        "9de75c6d-32c2-4968-a393-649bab741ddb": {
+          "type": "custom_liquid",
           "settings": {
+            "custom_liquid": "<ul class=\"featured-list\">\n    <li class=\"item1\">Vegan & cruelty–free<\/li>\n    <li class=\"item2\">Aluminum–free formula<\/li>\n    <li class=\"item3\">Infinitely refillable<\/li>\n    <li class=\"item4\">Delivered every 4 months<\/li>\n    <li class=\"item5\">100% plastic free<\/li>\n    <li class=\"item6\">Baking soda–free<\/li>\n<\/ul>"
           }
         },
-        "share": {
-          "type": "share",
+        "6e96d95e-df17-49a0-bdfb-215d1e8f99b5": {
+          "type": "boost_products",
           "settings": {
-            "share_label": "Share"
+            "heading": "Boost your routine",
+            "sub-heading": "Pair skin hydration elixir with marine collagen beauty capsules or super beauty to boost results."
           }
         }
       },
       "block_order": [
         "vendor",
         "title",
-        "4824f6e2-b41f-4ac5-b670-f23261309780",
-        "caption",
+        "37ec7524-3733-4bb5-a522-c195e1af4cc4",
         "price",
         "2f8c8ec6-a42b-4014-8199-48dede731379",
+        "description",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "description",
-        "share"
+        "9de75c6d-32c2-4968-a393-649bab741ddb",
+        "6e96d95e-df17-49a0-bdfb-215d1e8f99b5"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -159,16 +160,6 @@
     },
     "1670316005dc6b3730": {
       "type": "apps",
-      "blocks": {
-        "dc423ae5-d0d4-4b6f-85da-bbb69d001a3d": {
-          "type": "shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "dc423ae5-d0d4-4b6f-85da-bbb69d001a3d"
-      ],
       "settings": {
         "include_margins": true
       }
@@ -199,7 +190,6 @@
         "template--17016615436563__a33f11c8-b504-4e5a-acf2-d4ed3a501f6f-1670229074e430f71a-1": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/slide-01.jpg",
             "heading": "REAL 2022 SKATEBOARD DESKS",
             "heading_size": "h0",
             "subheading": "Fusce posuere nec ipsum a volutpat. In at dictum est, at pulvinar mauris. Sed hendrerit nisl a tincidunt placerat. Suspendisse potenti. Sed at maximus est. Mauris vel auctor ex. Morbi at fermentum urna, in cursus leo. Sed aliquam auctor ante, id pharetra augue aliquet in. Sed at rutrum odio.",
@@ -224,8 +214,6 @@
       "settings": {
         "layout": "grid--gapless",
         "slide_height": "square",
-        "slider_visual": "counter",
-        "auto_rotate": false,
         "change_slides_speed": 5,
         "show_text_below": true,
         "accessibility_info": "ja_slider about our brand",
