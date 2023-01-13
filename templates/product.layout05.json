@@ -142,7 +142,7 @@
         "8886ca12-8765-4192-83ec-3250a3489334"
       ],
       "settings": {
-        "collapsible_type": "tabs",
+        "collapsible_type": "accordion",
         "box_width": 60,
         "collapsible_tab_header_position": "top",
         "padding_top": 36,
@@ -154,6 +154,7 @@
       "settings": {
         "heading": "",
         "heading_size": "h1",
+        "cover_image": "shopify:\/\/shop_images\/slide-1.jpg",
         "video_url": "https:\/\/www.youtube.com\/watch?v=P1lO5MAm9bQ",
         "description": "",
         "full_width": true,
@@ -164,6 +165,16 @@
     },
     "16703160910adaf92f": {
       "type": "apps",
+      "blocks": {
+        "92c0630e-f553-4be5-91d4-09032843f1fe": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "92c0630e-f553-4be5-91d4-09032843f1fe"
+      ],
       "settings": {
         "include_margins": true
       }
