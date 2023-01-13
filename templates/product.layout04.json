@@ -101,6 +101,16 @@
     },
     "167031605884dba784": {
       "type": "apps",
+      "blocks": {
+        "0f755d0c-18dd-4451-be8b-90dd177aae82": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "0f755d0c-18dd-4451-be8b-90dd177aae82"
+      ],
       "settings": {
         "include_margins": true
       }
@@ -124,56 +134,12 @@
         "padding_top": 24,
         "padding_bottom": 48
       }
-    },
-    "a33f11c8-b504-4e5a-acf2-d4ed3a501f6f": {
-      "type": "ja-slider",
-      "blocks": {
-        "template--17016615436563__a33f11c8-b504-4e5a-acf2-d4ed3a501f6f-1670229074e430f71a-1": {
-          "type": "slide",
-          "settings": {
-            "heading": "Fruity S31 Skateboard Desk Collection",
-            "heading_size": "h0",
-            "subheading": "Fusce posuere nec ipsum a volutpat. In at dictum est, at pulvinar mauris. Sed hendrerit nisl a tincidunt placerat. Suspendisse potenti. Sed at maximus est. Mauris vel auctor ex. Morbi at fermentum urna, in cursus leo. Sed aliquam auctor ante, id pharetra augue aliquet in. Sed at rutrum odio.",
-            "button_label": "VIEW ALL PRODUCTS",
-            "link": "",
-            "link_style": "solid",
-            "box_align": "left",
-            "box_width": 90,
-            "button_label2": "",
-            "link2": "",
-            "link_style2": "solid",
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "accent-2",
-            "text_alignment_mobile": "center"
-          }
-        }
-      },
-      "block_order": [
-        "template--17016615436563__a33f11c8-b504-4e5a-acf2-d4ed3a501f6f-1670229074e430f71a-1"
-      ],
-      "settings": {
-        "layout": "grid--gapless",
-        "slide_height": "square",
-        "change_slides_speed": 5,
-        "show_text_below": true,
-        "accessibility_info": "ja_slider about our brand",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "border_top_thickness": 0,
-        "border_right_thickness": 0,
-        "border_bottom_thickness": 0,
-        "border_left_thickness": 0,
-        "border_opacity": 100,
-        "addition_class": ""
-      }
     }
   },
   "order": [
     "d1295717-093b-48cb-bbac-90eeafeeaa3c",
     "main",
     "167031605884dba784",
-    "product-recommendations",
-    "a33f11c8-b504-4e5a-acf2-d4ed3a501f6f"
+    "product-recommendations"
   ]
 }
