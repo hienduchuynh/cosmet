@@ -151,7 +151,7 @@
         "4d16be99-0cc5-4a35-8c00-63510ede95b5"
       ],
       "settings": {
-        "collapsible_type": "tabs",
+        "collapsible_type": "accordion",
         "box_width": 50,
         "collapsible_tab_header_position": "top",
         "padding_top": 36,
