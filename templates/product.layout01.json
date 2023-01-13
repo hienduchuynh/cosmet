@@ -23,12 +23,12 @@
           "settings": {
           }
         },
-        "35995b38-4749-4500-9236-5299d3ffed9b": {
+        "1007d54c-53a8-4d68-8816-df4b9d925388": {
           "type": "shopify:\/\/apps\/product-reviews\/blocks\/star_rating\/bae150af-8da8-48b2-9867-398188115e5f",
           "settings": {
-            "stars_fill_color": "#ffc107",
+            "stars_fill_color": "#000000",
             "star_size": 15,
-            "text_align": "flex-start",
+            "text_align": "center",
             "product": "{{product}}",
             "stars_text_empty": "No reviews"
           }
@@ -72,26 +72,19 @@
           "type": "description",
           "settings": {
           }
-        },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
         }
       },
       "block_order": [
         "vendor",
         "title",
-        "35995b38-4749-4500-9236-5299d3ffed9b",
+        "1007d54c-53a8-4d68-8816-df4b9d925388",
         "caption",
         "price",
         "c4170b8a-b092-47b7-9d44-44e0f62040f9",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "description",
-        "share"
+        "description"
       ],
       "settings": {
         "media_size": "medium",
@@ -157,16 +150,6 @@
     },
     "1670315962bd1f2b32": {
       "type": "apps",
-      "blocks": {
-        "1522b9ef-8d09-4c5c-8644-c9827aa7f68e": {
-          "type": "shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "1522b9ef-8d09-4c5c-8644-c9827aa7f68e"
-      ],
       "settings": {
         "include_margins": true
       }
@@ -197,7 +180,6 @@
         "template--17016615436563__a33f11c8-b504-4e5a-acf2-d4ed3a501f6f-1670229074e430f71a-1": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/slide-02.jpg",
             "heading": "Fruity S31 Skateboard Desk Collection",
             "heading_size": "h0",
             "subheading": "Fusce posuere nec ipsum a volutpat. In at dictum est, at pulvinar mauris. Sed hendrerit nisl a tincidunt placerat. Suspendisse potenti. Sed at maximus est. Mauris vel auctor ex. Morbi at fermentum urna, in cursus leo. Sed aliquam auctor ante, id pharetra augue aliquet in. Sed at rutrum odio.",
@@ -222,8 +204,6 @@
       "settings": {
         "layout": "grid--gapless",
         "slide_height": "square",
-        "slider_visual": "counter",
-        "auto_rotate": false,
         "change_slides_speed": 5,
         "show_text_below": true,
         "accessibility_info": "ja_slider about our brand",
