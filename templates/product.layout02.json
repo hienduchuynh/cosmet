@@ -34,17 +34,6 @@
             "stars_text_empty": "No reviews"
           }
         },
-        "2f8c8ec6-a42b-4014-8199-48dede731379": {
-          "type": "short_description",
-          "settings": {
-            "word_number": "120"
-          }
-        },
-        "description": {
-          "type": "description",
-          "settings": {
-          }
-        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -53,6 +42,17 @@
         },
         "price": {
           "type": "price",
+          "settings": {
+          }
+        },
+        "2f8c8ec6-a42b-4014-8199-48dede731379": {
+          "type": "short_description",
+          "settings": {
+            "word_number": "120"
+          }
+        },
+        "description": {
+          "type": "description",
           "settings": {
           }
         },
@@ -85,10 +85,10 @@
         "vendor",
         "title",
         "37ec7524-3733-4bb5-a522-c195e1af4cc4",
-        "2f8c8ec6-a42b-4014-8199-48dede731379",
-        "description",
         "variant_picker",
         "price",
+        "2f8c8ec6-a42b-4014-8199-48dede731379",
+        "description",
         "quantity_selector",
         "buy_buttons",
         "9de75c6d-32c2-4968-a393-649bab741ddb",
