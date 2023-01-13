@@ -5057,6 +5057,30 @@
           "label": "Marquee"
         }
       }
+    },
+    "timeline": {
+      "name": "Timeline",
+      "settings": {
+        "page_title": {
+          "label": "History Title"
+        }
+      },
+      "blocks": {
+        "event_history": {
+          "name": "Event History",
+          "settings": {
+            "label__1": "Block Event",
+            "label__2": "Date",
+            "label__3": "Heading",
+            "label__4": "Description",
+            "label__5": "Position Block",
+            "label__6": "Image"
+          }
+        }
+      },
+      "presets": {
+        "name": "Timeline"
+      }
     }
   }
 }
