@@ -14,6 +14,7 @@
         "vendor": {
           "type": "text",
           "settings": {
+            "text_icon": "none",
             "text": "{{ product.vendor }}",
             "text_style": "uppercase"
           }
@@ -23,38 +24,21 @@
           "settings": {
           }
         },
-        "8ba29b1b-d522-45c1-925a-4fc8fe0abdd9": {
-          "type": "shopify:\/\/apps\/product-reviews\/blocks\/star_rating\/bae150af-8da8-48b2-9867-398188115e5f",
-          "settings": {
-            "stars_fill_color": "#ffc107",
-            "star_size": 15,
-            "text_align": "flex-start",
-            "product": "{{product}}",
-            "stars_text_empty": "No reviews"
-          }
-        },
-        "caption": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.metafields.descriptors.subtitle.value }}",
-            "text_style": "subtitle"
-          }
-        },
         "price": {
           "type": "price",
           "settings": {
-          }
-        },
-        "e6d5ec74-8a30-42c2-903c-da7540dfa409": {
-          "type": "short_description",
-          "settings": {
-            "word_number": "120"
           }
         },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
             "picker_type": "button"
+          }
+        },
+        "e6d5ec74-8a30-42c2-903c-da7540dfa409": {
+          "type": "short_description",
+          "settings": {
+            "word_number": "120"
           }
         },
         "quantity_selector": {
@@ -68,63 +52,30 @@
             "show_dynamic_checkout": true
           }
         },
-        "description": {
-          "type": "description",
+        "bbf0375d-10c2-4fec-8803-36af4272e6c9": {
+          "type": "custom_liquid",
           "settings": {
+            "custom_liquid": "<ul class=\"featured-list\">\n    <li class=\"item1\">Vegan & cruelty–free<\/li>\n    <li class=\"item2\">Aluminum–free formula<\/li>\n    <li class=\"item3\">Infinitely refillable<\/li>\n    <li class=\"item4\">Delivered every 4 months<\/li>\n    <li class=\"item5\">100% plastic free<\/li>\n    <li class=\"item6\">Baking soda–free<\/li>\n<\/ul>"
           }
         },
-        "share": {
-          "type": "share",
+        "061286a3-2886-4742-a14f-c8d37c7e079e": {
+          "type": "boost_products",
           "settings": {
-            "share_label": "Share"
-          }
-        },
-        "collapsible-row-2": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Size chart",
-            "icon": "clipboard",
-            "content": "<p><em>\"This is demonstration content, designed to showcase how pages could look with your own content\"<\/em><\/p><p><strong>How to measure yourself:<br\/><\/strong>Size Guide: S=US 4-6, M=US 8-10, L=US 12-14, XL=16.<br\/>To find the perfect fit, simply put on your favourite underwear and measure yourself directly on your body. Then use the size chart and the information found in the product description to find your fit.<\/p>",
-            "image_ratio": "43",
-            "page": ""
-          }
-        },
-        "collapsible-row-1": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Shipping & Returns",
-            "icon": "truck",
-            "content": "<p>- Ships Worldwide<br\/>- Free Shipping all orders over $50 (the contiguous US only)<br\/>- Free returns\/exchanges up to 30 days from purchase<\/p>",
-            "image_ratio": "43",
-            "page": ""
-          }
-        },
-        "collapsible-row-0": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "HELP",
-            "icon": "chat_bubble",
-            "content": "<p>Our fashion consultants are on hand & ready to support you.Get in touch via our contact form here.<\/p>",
-            "image_ratio": "43",
-            "page": ""
+            "heading": "Boost your routine",
+            "sub-heading": "Pair skin hydration elixir with marine collagen beauty capsules or super beauty to boost results."
           }
         }
       },
       "block_order": [
         "vendor",
         "title",
-        "8ba29b1b-d522-45c1-925a-4fc8fe0abdd9",
-        "caption",
         "price",
-        "e6d5ec74-8a30-42c2-903c-da7540dfa409",
         "variant_picker",
+        "e6d5ec74-8a30-42c2-903c-da7540dfa409",
         "quantity_selector",
         "buy_buttons",
-        "description",
-        "share",
-        "collapsible-row-2",
-        "collapsible-row-1",
-        "collapsible-row-0"
+        "bbf0375d-10c2-4fec-8803-36af4272e6c9",
+        "061286a3-2886-4742-a14f-c8d37c7e079e"
       ],
       "settings": {
         "media_size": "medium",
@@ -139,16 +90,6 @@
     },
     "167031605884dba784": {
       "type": "apps",
-      "blocks": {
-        "75296fc0-1388-48bc-b8fb-24d923fed694": {
-          "type": "shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "75296fc0-1388-48bc-b8fb-24d923fed694"
-      ],
       "settings": {
         "include_margins": true
       }
@@ -179,7 +120,6 @@
         "template--17016615436563__a33f11c8-b504-4e5a-acf2-d4ed3a501f6f-1670229074e430f71a-1": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/slide-02.jpg",
             "heading": "Fruity S31 Skateboard Desk Collection",
             "heading_size": "h0",
             "subheading": "Fusce posuere nec ipsum a volutpat. In at dictum est, at pulvinar mauris. Sed hendrerit nisl a tincidunt placerat. Suspendisse potenti. Sed at maximus est. Mauris vel auctor ex. Morbi at fermentum urna, in cursus leo. Sed aliquam auctor ante, id pharetra augue aliquet in. Sed at rutrum odio.",
@@ -204,8 +144,6 @@
       "settings": {
         "layout": "grid--gapless",
         "slide_height": "square",
-        "slider_visual": "counter",
-        "auto_rotate": false,
         "change_slides_speed": 5,
         "show_text_below": true,
         "accessibility_info": "ja_slider about our brand",
