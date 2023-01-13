@@ -85,8 +85,8 @@
       </div>
     {%- endunless -%}
 
-    <slider-component class="slider-mobile-gutter slider-desktop-gutter">
-      <ul class="testimonials-list contains-content-container grid grid--{{ section.settings.columns_mobile }}-col-tablet-down grid--{{ section.settings.columns_desktop }}-col-desktop slider slider--everywhere" id="Slider-{{ section.id }}" role="list">
+    <slider-component class="slider-mobile-gutter slider-desktop-gutter" role="region" aria-roledescription="Carousel">
+      <ul class="testimonials-list contains-content-container grid grid--{{ section.settings.columns_mobile }}-col-tablet-down grid--{{ section.settings.columns_desktop }}-col-desktop slider slider--everywhere" id="Slider-{{ section.id }}" role="list" aria-live="polite" aria-atomic="true" data-autoplay="false" data-speed="5">
         {%- liquid
           assign highest_ratio = 0
           for block in section.blocks
@@ -118,7 +118,7 @@
                 {%- assign empty_column = ' testimonials-list__item--empty' -%}
               {%- endif -%}
 
-              <li id="Slide-{{ section.id }}-{{ forloop.index }}" class="testimonials-list__item grid__item{% if swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}{{ empty_column }}" {{ block.shopify_attributes }}>
+              <li id="Slide-{{ section.id }}-{{ forloop.index }}" class="testimonials-list__item grid__item{% if swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}{{ empty_column }}" {{ block.shopify_attributes }} role="group" aria-roledescription="Slide" aria-label="{{ forloop.index }} {{ 'general.slider.of' | t }} {{ testimonials_blocks.size }}" tabindex="-1">
                 <div class="testimonials-card content-container">
                   <span aria-hidden="true" class="rating-star color-icon-accent-1" style="--rating: {{ block.settings.rating }}; --rating-max: 5.0; --rating-decimal: 0; --letter-spacing: 0.2; --font-size: 3.8;"></span>
                   <div class="testimonials-card__info">
@@ -136,16 +136,18 @@
       </ul>
 
       {% if num_dot_desktop > 1 %}
-        <div class="slider-buttons no-js-hidden">
+      <div class="slider-buttons no-js-hidden">
+        <div class="slider-counter slider-counter--dots">
           <div class="slideshow__control-wrapper">
             {%- for block_ in (1..num_dot_desktop) -%}
-              <button class="slider-counter__link slider-counter__link--dots link" aria-label="{{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}" aria-controls="Slider-{{ section.id }}">
+              <button class="slider-counter__link slider-counter__link--dots link" aria-label="{{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}" aria-controls="Slide-{{ section.id }}">
                 <span class="dot"></span>
               </button>
             {%- endfor -%}
           </div>
         </div>
-      {%- endif -%}
+      </div>
+      {% endif %}
     </slider-component>
 
     <div class="clients-wrapper grid grid--6-col-desktop">

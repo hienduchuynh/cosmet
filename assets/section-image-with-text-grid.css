@@ -44,6 +44,11 @@
     border-radius: 0.8rem;
 }
 
+.image-with-text-grid .grid--gapless.grid .grid__item.content-container,
+.image-with-text-grid .grid--gapless.grid .grid__item .media {
+    border-radius: 0;
+}
+
 .image-with-text-grid .grid__item.content-container::after {
     box-shadow: none;
 }

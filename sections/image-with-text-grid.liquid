@@ -101,12 +101,14 @@
 
       {% if num_dot_desktop > 1 %}
       <div class="slider-buttons no-js-hidden">
-        <div class="slideshow__control-wrapper">
-          {%- for block_ in (1..num_dot_desktop) -%}
-            <button class="slider-counter__link slider-counter__link--dots link" aria-label="{{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}" aria-controls="Slide-{{ section.id }}">
-              <span class="dot"></span>
-            </button>
-          {%- endfor -%}
+        <div class="slider-counter slider-counter--dots">
+          <div class="slideshow__control-wrapper">
+            {%- for block_ in (1..num_dot_desktop) -%}
+              <button class="slider-counter__link slider-counter__link--dots link" aria-label="{{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}" aria-controls="Slide-{{ section.id }}">
+                <span class="dot"></span>
+              </button>
+            {%- endfor -%}
+          </div>
         </div>
       </div>
       {% endif %}
