@@ -88,3 +88,19 @@
     height: auto;
   }
 }
+
+.page-page-history .banner {
+  max-width: 66.66%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-page-history .banner .banner__media {
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 1199px) {
+  .page-page-history .banner {
+    max-width: 100%;
+  }
+}
