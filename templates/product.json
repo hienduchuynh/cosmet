@@ -27,8 +27,8 @@
         "93d8acff-599a-4a3a-be22-029395575b2a": {
           "type": "shopify:\/\/apps\/product-reviews\/blocks\/star_rating\/bae150af-8da8-48b2-9867-398188115e5f",
           "settings": {
-            "stars_fill_color": "#ffc107",
-            "star_size": 15,
+            "stars_fill_color": "#1e293b",
+            "star_size": 13,
             "text_align": "flex-start",
             "product": "{{product}}",
             "stars_text_empty": "No reviews"
@@ -45,6 +45,11 @@
             "word_number": "120"
           }
         },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -53,11 +58,6 @@
         },
         "quantity_selector": {
           "type": "quantity_selector",
-          "settings": {
-          }
-        },
-        "description": {
-          "type": "description",
           "settings": {
           }
         },
@@ -87,9 +87,9 @@
         "93d8acff-599a-4a3a-be22-029395575b2a",
         "price",
         "23ebf0a2-bba6-4be2-8af7-6c1bacfbe482",
+        "description",
         "variant_picker",
         "quantity_selector",
-        "description",
         "buy_buttons",
         "cb426e0b-8dfb-4c88-b27d-8034cd02685c",
         "2f0edd9a-c456-4888-8004-4ec9b73fdd80"
