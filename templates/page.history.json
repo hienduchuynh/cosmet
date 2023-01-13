@@ -176,7 +176,7 @@
     "e3fbd9e3-2530-475a-b060-3c53ed0aa0f1": {
       "type": "image-banner",
       "settings": {
-        "mod_class": "",
+        "mod_class": "page-width",
         "image": "shopify:\/\/shop_images\/history-9.png",
         "image_overlay_opacity": 0,
         "image_height": "medium",
