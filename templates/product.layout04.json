@@ -115,6 +115,111 @@
         "include_margins": true
       }
     },
+    "e3d3167a-cd69-4da6-978c-88c32cdfd237": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--17347500605715__e3d3167a-cd69-4da6-978c-88c32cdfd237-1673317970aaef8ef5-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Shake_well.jpg",
+            "image_position": "top",
+            "title": "Shake well",
+            "title_size": "h3",
+            "icon": "none",
+            "icon_position": "left",
+            "text": "<p>After checking the lid’s on tight, give your bottle of wellness a little shake.<\/p>",
+            "link_label": "",
+            "link": "",
+            "link_style": "outline",
+            "padding_left": 0,
+            "padding_right": 0,
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "image_spacing": 24
+          }
+        },
+        "template--17347500605715__e3d3167a-cd69-4da6-978c-88c32cdfd237-1673317970aaef8ef5-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Give_it_a_squeeze.jpg",
+            "image_position": "top",
+            "title": "Give it a squeeze",
+            "title_size": "h3",
+            "icon": "none",
+            "icon_position": "left",
+            "text": "<p>Unscrew and squeeze so the dropper fills up with the good stuff.<\/p>",
+            "link_label": "",
+            "link": "",
+            "link_style": "link",
+            "padding_left": 0,
+            "padding_right": 0,
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "image_spacing": 24
+          }
+        },
+        "template--17347500605715__e3d3167a-cd69-4da6-978c-88c32cdfd237-1673317970aaef8ef5-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Drop_under_your_tongue.jpg",
+            "image_position": "top",
+            "title": "Drop under your tongue",
+            "title_size": "h3",
+            "icon": "none",
+            "icon_position": "left",
+            "text": "<p>Place 2 or 3 drops under your tongue, hold for a minute, then swallow.<\/p>",
+            "link_label": "",
+            "link": "",
+            "link_style": "link",
+            "padding_left": 0,
+            "padding_right": 0,
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "image_spacing": 24
+          }
+        }
+      },
+      "block_order": [
+        "template--17347500605715__e3d3167a-cd69-4da6-978c-88c32cdfd237-1673317970aaef8ef5-0",
+        "template--17347500605715__e3d3167a-cd69-4da6-978c-88c32cdfd237-1673317970aaef8ef5-1",
+        "template--17347500605715__e3d3167a-cd69-4da6-978c-88c32cdfd237-1673317970aaef8ef5-2"
+      ],
+      "settings": {
+        "title": "Feel better in 3 easy steps",
+        "heading_size": "h1",
+        "title_style": "02",
+        "title_decor": "shopify:\/\/shop_images\/decor-3.png",
+        "description_style": "subtitle",
+        "description": "<p>how to use<\/p>",
+        "layout": "grid",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "row_alignment": "top",
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_tablet": "2",
+        "swipe_on_tablet": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "mod_class": "product-how-to-use"
+      }
+    },
+    "4ccb95de-3281-4f51-b638-ddbcc58b0469": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width\">\n  <slider-component>\n        <ul class=\"multicolumn-list contains-content-container grid  grid--1-col-tablet-down grid--2-col-tablet grid--2-col-desktop  align-items-top\" role=\"list\">\n          <li class=\"multicolumn-list__item grid__item\">            \n              <div class=\"multicolumn-card__info\">\n                <h3 class=\"h2\">Cosmet's subscription program<\/h3>\n                <div class=\"rte\"><p>Cosmet Membership is free to join. We also are flexible in case you want to take a break. Memberships brings you your skincare products every 2 months, and comes with other perks as well.<\/p><\/div>\n                <a class=\"button button--secondary\" role=\"link\" href=\"#\">Join the vip<\/a>\n              <\/div>\n          <\/li>\n          <li class=\"multicolumn-list__item grid__item\">\n              <ul class=\"join-vip-featured\">\n                <li class=\"item1\">\n                  <div class=\"multicolumn-card__info\">\n                      <h3 class=\"h3\">Discounts<\/h3>\n                      <div class=\"rte\">3rd Subscription Order is completely FREE.<\/div>\n                  <\/div>\n                <\/li>\n                <li class=\"item2\">\n                  <div class=\"multicolumn-card__info\">\n                      <h3 class=\"h3\">Members-only gifts and drops<\/h3>\n                      <div class=\"rte\">Early access to product drops and special gifts.<\/div>\n                  <\/div>\n                <\/li>\n                <li class=\"item3\">\n                  <div class=\"multicolumn-card__info\">\n                      <h3 class=\"h3\">Exclusive access<\/h3>\n                      <div class=\"rte\">Dedicated concierge email which all VIP Members get access to with priority support.<\/div>\n                  <\/div>\n                <\/li>\n              <\/ul>\n          <\/li>\n        <\/ul>\n  <\/slider-component>\n<\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "mod_class": "product-guide-join-vip"
+      }
+    },
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
@@ -140,6 +245,8 @@
     "d1295717-093b-48cb-bbac-90eeafeeaa3c",
     "main",
     "167031605884dba784",
+    "e3d3167a-cd69-4da6-978c-88c32cdfd237",
+    "4ccb95de-3281-4f51-b638-ddbcc58b0469",
     "product-recommendations"
   ]
 }
