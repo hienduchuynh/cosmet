@@ -79,6 +79,7 @@
 }
 
 .card--card .card__inner .card__media {
+    background: #f5f5f5;
 }
 
 .card--standard.card--text {

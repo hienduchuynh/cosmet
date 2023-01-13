@@ -295,7 +295,7 @@
             {% render block %}
           {%- when 'text' -%}
             <p class="product__text{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}" {{ block.shopify_attributes }}>
-              {{- block.settings.text -}}
+              {% render 'icon-accordion', icon: block.settings.text_icon %}{{- block.settings.text -}}
             </p>
           {%- when 'title' -%}
             <div class="product__title" {{ block.shopify_attributes }}>
@@ -337,6 +337,57 @@
             </div>
           {%- when 'custom_liquid' -%}
               {{ block.settings.custom_liquid }}
+          {%- when 'boost_products' -%}
+            {% if product.metafields.boots.addon %}
+              {% assign boostProducts = product.metafields.boots.addon.value %}
+              {%- liquid 
+                assign has1product = false
+                for prod in boostProducts
+                  if prod.available == true
+                    assign has1product = true
+                  endif
+                endfor
+              -%}
+              {% if has1product %}
+              <div class="boost-products" id="boost-products-{{ block.id }}">
+                  <h3 class="h3">{{ block.settings.heading }}</h3>
+                  <p class="tagline h5">{{ block.settings.sub-heading }}</p>
+                  <ul class="boost-product-list">
+                    {% for prod in boostProducts %}
+                      {% if prod.available == true %}
+                        <li>
+                          <a href="{{ prod.url }}" class="media--hover-effect" aria-label="{{prod.title}}" title="{{ prod.title }}">
+                            <img class="boost-product__image" src="{{ prod.images[0] | img_url: '135x' }}" alt="{{ prod.title }}" />
+                          </a>
+                          <div class="multicolumn-card__info">
+                            <h3 class="card__heading h3"><a href="{{ prod.url }}" class="full-unstyled-link" aria-label="{{prod.title}}" title="{{ prod.title }}">{{ prod.title }}</a></h3>
+                            <div class="card__vendor">{{ prod.vendor }}</div>
+                            <div class="price">{{ prod.price | money }}</div>
+                            {%- if prod.metafields.reviews.rating.value != blank -%}
+                              {% liquid
+                                assign rating_decimal = 0
+                                assign decimal = prod.metafields.reviews.rating.value.rating | modulo: 1
+                                if decimal >= 0.3 and decimal <= 0.7
+                                  assign rating_decimal = 0.5
+                                  elsif decimal > 0.7
+                                  assign rating_decimal = 1
+                                  endif
+                                %}
+                                {% comment %} {{ card_product.metafields.reviews.rating.value }} {% endcomment %}
+                                <div class="rating-options">
+                                    <div class="rating" role="img" aria-label="{{ 'accessibility.star_reviews_info' | t: rating_value: prod.metafields.reviews.rating.value, rating_max: prod.metafields.reviews.rating.value.scale_max }}">
+                                      <span aria-hidden="true" class="rating-star color-icon-{{ settings.accent_icons }}" style="--rating: {{ prod.metafields.reviews.rating.value.rating | floor }}; --rating-max: {{ prod.metafields.reviews.rating.value.scale_max }}; --rating-decimal: {{ rating_decimal }};"></span><span class="rating-count">{{ product.metafields.reviews.rating_count }} reviews</span>
+                                    </div>
+                                </div>
+                            {%- endif -%}
+                          </div>
+                        </li>
+                      {% endif %}
+                    {% endfor %}
+                  </ul>
+                </div>
+              {% endif %}
+            {% endif %}
           {%- when 'description' -%}
             {%- if section.settings.layout_description == 'accordion' or section.settings.layout_description == 'no-tabs' -%}
               {%- if product.description != blank -%}
@@ -603,46 +654,7 @@
                   </template>
                 </pickup-availability>
               </div>
-
               <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
-          {%- when 'custom_information' -%}
-            <div class="trust-badges">
-                {% render 'product-custom-information',
-                    block: block
-                %}
-            </div>
-          {%- when 'trust_badges' -%}
-            <div class="trust-badges-block">
-                {% render 'product-trust-badges',
-                    block: block
-                %}
-            </div>
-          {%- when 'product_upsell' -%}
-            <div class="upsell_product_wrapper">
-              <h4>Upsell Product</h4>
-              <div class="upsell-item">
-              {% render 'card-product',
-                card_product: block.settings.product_upsell
-              %}
-              <form method="post" action="/cart/add" id="upsell_form" accept-charset="UTF-8" class="form" enctype="multipart/form-data" novalidate="novalidate" data-type="add-to-cart-form">
-                <input value="{{ block.settings.product_upsell.selected_or_first_available_variant.id }}" type="hidden" name="id">
-                <button class="product-form__submit button button--full-width button--secondary" type="submit">
-                  <span>
-                    {%- if block.settings.product_upsell.selected_or_first_available_variant.available -%}
-                      {{ 'products.product.add_to_cart' | t }}
-                    {%- else -%}
-                      {{ 'products.product.sold_out' | t }}
-                    {%- endif -%}
-                  </span>
-                  <div class="loading-overlay__spinner hidden">
-                    <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-                      <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-                    </svg>
-                  </div>
-                </button>
-              </form>
-            </div>
-            </div>
           {%- endcase -%}
         {%- endfor -%}
         <a href="{{ product.url }}" class="link product__view-details animate-arrow">
@@ -796,9 +808,212 @@
       "type": "@app"
     },
     {
+      "type": "boost_products",
+      "name": "Boost Products",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Boost your routine"
+        },
+        {
+          "type": "textarea",
+          "id": "sub-heading",
+          "label": "sub-heading",
+          "default": "Pair skin hydration elixir with marine collagen beauty capsules or super beauty to boost results."
+        }
+      ]
+    },
+    
+    {
       "type": "text",
       "name": "t:sections.main-product.blocks.text.name",
       "settings": [
+        {
+          "type": "select",
+          "id": "text_icon",
+          "options": [
+            {
+              "value": "none",
+              "label": "t:sections.main-product.blocks.text.settings.text_icon.options__1.label"
+            },
+            {
+              "value": "apple",
+              "label": "t:sections.main-product.blocks.text.settings.text_icon.options__2.label"
+            },
+            {
+              "value": "banana",
+              "label": "t:sections.main-product.blocks.text.settings.text_icon.options__3.label"
+            },
+            {
+              "value": "bottle",
+              "label": "t:sections.main-product.blocks.text.settings.text_icon.options__4.label"
+            },
+            {
+              "value": "box",
+              "label": "t:sections.main-product.blocks.text.settings.text_icon.options__5.label"
+            },
+            {
+              "value": "carrot",
+              "label": "t:sections.main-product.blocks.text.settings.text_icon.options__6.label"
+            },
+            {
+              "value": "chat_bubble",
+              "label": "t:sections.main-product.blocks.text.settings.text_icon.options__7.label"
+            },
+            {
+              "value": "check_mark",
+              "label": "t:sections.main-product.blocks.text.settings.text_icon.options__8.label"
+            },
+            {
+              "value": "clipboard",
+              "label": "t:sections.main-product.blocks.text.settings.text_icon.options__9.label"
+            },
+            {
+              "value": "dairy",
+              "label": "t:sections.main-product.blocks.text.settings.text_icon.options__10.label"
+            },
+            {
+              "value": "dairy_free",
+              "label": "t:sections.main-product.blocks.text.settings.text_icon.options__11.label"
+            },
+            {
+              "value": "dryer",
+              "label": "t:sections.main-product.blocks.text.settings.text_icon.options__12.label"
+            },
+            {
+              "value": "eye",
+              "label": "t:sections.main-product.blocks.text.settings.text_icon.options__13.label"
+            },
+            {
+              "value": "fire",
+              "label": "t:sections.main-product.blocks.text.settings.text_icon.options__14.label"
+            },
+            {
+              "value": "gluten_free",
+              "label": "t:sections.main-product.blocks.text.settings.text_icon.options__15.label"
+            },
+            {
+              "value": "heart",
+              "label": "t:sections.main-product.blocks.text.settings.text_icon.options__16.label"
+            },
+            {
+              "value": "iron",
+              "label": "t:sections.main-product.blocks.text.settings.text_icon.options__17.label"
+            },
+            {
+              "value": "leaf",
+              "label": "t:sections.main-product.blocks.text.settings.text_icon.options__18.label"
+            },
+            {
+              "value": "leather",
+              "label": "t:sections.main-product.blocks.text.settings.text_icon.options__19.label"
+            },
+            {
+              "value": "lightning_bolt",
+              "label": "t:sections.main-product.blocks.text.settings.text_icon.options__20.label"
+            },
+            {
+              "value": "lipstick",
+              "label": "t:sections.main-product.blocks.text.settings.text_icon.options__21.label"
+            },
+            {
+              "value": "lock",
+              "label": "t:sections.main-product.blocks.text.settings.text_icon.options__22.label"
+            },
+            {
+              "value": "map_pin",
+              "label": "t:sections.main-product.blocks.text.settings.text_icon.options__23.label"
+            },
+            {
+              "value": "nut_free",
+              "label": "t:sections.main-product.blocks.text.settings.text_icon.options__24.label"
+            },
+            {
+              "value": "pants",
+              "label": "t:sections.main-product.blocks.text.settings.text_icon.options__25.label"
+            },
+            {
+              "value": "paw_print",
+              "label": "t:sections.main-product.blocks.text.settings.text_icon.options__26.label"
+            },
+            {
+              "value": "pepper",
+              "label": "t:sections.main-product.blocks.text.settings.text_icon.options__27.label"
+            },
+            {
+              "value": "perfume",
+              "label": "t:sections.main-product.blocks.text.settings.text_icon.options__28.label"
+            },
+            {
+              "value": "plane",
+              "label": "t:sections.main-product.blocks.text.settings.text_icon.options__29.label"
+            },
+            {
+              "value": "plant",
+              "label": "t:sections.main-product.blocks.text.settings.text_icon.options__30.label"
+            },
+            {
+              "value": "price_tag",
+              "label": "t:sections.main-product.blocks.text.settings.text_icon.options__31.label"
+            },
+            {
+              "value": "question_mark",
+              "label": "t:sections.main-product.blocks.text.settings.text_icon.options__32.label"
+            },
+            {
+              "value": "recycle",
+              "label": "t:sections.main-product.blocks.text.settings.text_icon.options__33.label"
+            },
+            {
+              "value": "return",
+              "label": "t:sections.main-product.blocks.text.settings.text_icon.options__34.label"
+            },
+            {
+              "value": "ruler",
+              "label": "t:sections.main-product.blocks.text.settings.text_icon.options__35.label"
+            },
+            {
+              "value": "serving_dish",
+              "label": "t:sections.main-product.blocks.text.settings.text_icon.options__36.label"
+            },
+            {
+              "value": "shirt",
+              "label": "t:sections.main-product.blocks.text.settings.text_icon.options__37.label"
+            },
+            {
+              "value": "shoe",
+              "label": "t:sections.main-product.blocks.text.settings.text_icon.options__38.label"
+            },
+            {
+              "value": "silhouette",
+              "label": "t:sections.main-product.blocks.text.settings.text_icon.options__39.label"
+            },
+            {
+              "value": "snowflake",
+              "label": "t:sections.main-product.blocks.text.settings.text_icon.options__40.label"
+            },
+            {
+              "value": "star",
+              "label": "t:sections.main-product.blocks.text.settings.text_icon.options__41.label"
+            },
+            {
+              "value": "stopwatch",
+              "label": "t:sections.main-product.blocks.text.settings.text_icon.options__42.label"
+            },
+            {
+              "value": "truck",
+              "label": "t:sections.main-product.blocks.text.settings.text_icon.options__43.label"
+            },
+            {
+              "value": "washing",
+              "label": "t:sections.main-product.blocks.text.settings.text_icon.options__44.label"
+            }
+          ],
+          "default": "check_mark",
+          "label": "t:sections.main-product.blocks.text.settings.text_icon.label"
+        },
         {
           "type": "text",
           "id": "text",
@@ -1178,51 +1393,6 @@
         {
           "type": "paragraph",
           "content": "t:sections.main-product.blocks.rating.settings.paragraph.content"
-        }
-      ]
-    },
-    {
-      "type": "custom_information",
-      "name": "t:sections.main-product.blocks.custom_information.name",
-      "settings": [
-          {
-              "type": "textarea",
-              "id": "icon",
-              "label": "t:sections.main-product.blocks.custom_information.settings.icon.label"
-          },
-          {
-              "type": "text",
-              "id": "title",
-              "label": "t:sections.main-product.blocks.custom_information.settings.title.label"
-          },
-          {
-              "type": "textarea",
-              "id": "text_description",
-              "label": "t:sections.main-product.blocks.custom_information.settings.description.label"
-          }
-      ]
-    },
-    {
-      "type": "trust_badges",
-      "name": "t:sections.main-product.blocks.trust_badges.name",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "image_1",
-          "label": "t:sections.main-product.blocks.trust_badges.settings.image-1.label"
-        }
-      ]
-    },
-    {
-      "type": "product_upsell",
-      "name": "Upsell Product",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "product",
-          "id": "product_upsell",
-          "label": "Upsell Product"
         }
       ]
     },
