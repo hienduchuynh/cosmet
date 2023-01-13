@@ -51,6 +51,11 @@
             "word_number": "120"
           }
         },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -68,15 +73,10 @@
             "show_dynamic_checkout": true
           }
         },
-        "description": {
-          "type": "description",
-          "settings": {
-          }
-        },
         "cb5f8a29-86ec-446a-bf24-0794f651138e": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": ""
+            "custom_liquid": "<ul class=\"featured-list\">\n    <li class=\"item1\">Vegan & cruelty–free<\/li>\n    <li class=\"item2\">Aluminum–free formula<\/li>\n    <li class=\"item3\">Infinitely refillable<\/li>\n    <li class=\"item4\">Delivered every 4 months<\/li>\n    <li class=\"item5\">100% plastic free<\/li>\n    <li class=\"item6\">Baking soda–free<\/li>\n<\/ul>"
           }
         }
       },
@@ -87,10 +87,10 @@
         "caption",
         "price",
         "c4170b8a-b092-47b7-9d44-44e0f62040f9",
+        "description",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "description",
         "cb5f8a29-86ec-446a-bf24-0794f651138e"
       ],
       "settings": {
