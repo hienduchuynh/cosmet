@@ -157,7 +157,7 @@
         "28fbd3ed-fc14-428a-9d5b-3938eef7ec6a": {
           "type": "feature-intro",
           "settings": {
-            "heading": "<p>Talk about your <\/p>",
+            "heading": "",
             "heading_size": "h1",
             "image": "shopify:\/\/shop_images\/aboutus-3.jpg",
             "text": ""
