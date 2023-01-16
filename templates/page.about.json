@@ -139,10 +139,28 @@
         "9d7443ca-3c35-4705-8b1a-cb6ca216ef1c": {
           "type": "feature-intro",
           "settings": {
-            "heading": "<p>Talk about your brand<\/p>",
+            "heading": "",
             "heading_size": "h1",
             "image": "shopify:\/\/shop_images\/aboutus-1.jpg",
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": ""
+          }
+        },
+        "70e40be0-7e53-4e8a-a2ce-9956e0159929": {
+          "type": "feature-intro",
+          "settings": {
+            "heading": "<p>Talk about your bran<\/p>",
+            "heading_size": "h1",
+            "image": "shopify:\/\/shop_images\/aboutus-2.jpg",
+            "text": ""
+          }
+        },
+        "28fbd3ed-fc14-428a-9d5b-3938eef7ec6a": {
+          "type": "feature-intro",
+          "settings": {
+            "heading": "<p>Talk about your <\/p>",
+            "heading_size": "h1",
+            "image": "shopify:\/\/shop_images\/aboutus-3.jpg",
+            "text": ""
           }
         }
       },
@@ -150,7 +168,9 @@
         "template--17347501687059__983b6f1a-b725-482a-9167-87cb24e76802-1673833424e7fbb548-0",
         "template--17347501687059__983b6f1a-b725-482a-9167-87cb24e76802-1673833424e7fbb548-1",
         "e830b99f-88d6-499d-abab-76f57288c240",
-        "9d7443ca-3c35-4705-8b1a-cb6ca216ef1c"
+        "9d7443ca-3c35-4705-8b1a-cb6ca216ef1c",
+        "70e40be0-7e53-4e8a-a2ce-9956e0159929",
+        "28fbd3ed-fc14-428a-9d5b-3938eef7ec6a"
       ],
       "settings": {
         "class_suffix": "",
