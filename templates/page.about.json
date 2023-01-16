@@ -185,6 +185,41 @@
         "border_bottom_thickness": 0,
         "border_bottom_opacity": 0
       }
+    },
+    "3493bd94-a1eb-4857-b5de-ec38602f8fd4": {
+      "type": "ja-features-intro",
+      "blocks": {
+        "template--17347501687059__3493bd94-a1eb-4857-b5de-ec38602f8fd4-1673838195dc7c9c57-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>It’s in our nature<\/p>",
+            "heading_size": "h1"
+          }
+        },
+        "template--17347501687059__3493bd94-a1eb-4857-b5de-ec38602f8fd4-1673838195dc7c9c57-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>After all, you may be wondering, what exactly is clean beauty? How can I know if an ingredient in my hair care or skincare product really is clean? Are there benefits to seeking clean ingredients, or is this greenwashing all over again? we want to do better. That means asking ourselves every day, ‟How we can improve?” Whether it’s mindlessly tossing out an empty toothpaste tube or glossing over the ingredients list, small daily actions can shape the future of our planet. When we are better to ourselves and the earth, we are one step closer to a healthier and plastic-free world.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--17347501687059__3493bd94-a1eb-4857-b5de-ec38602f8fd4-1673838195dc7c9c57-0",
+        "template--17347501687059__3493bd94-a1eb-4857-b5de-ec38602f8fd4-1673838195dc7c9c57-1"
+      ],
+      "settings": {
+        "class_suffix": "",
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 52,
+        "border_top_thickness": 0,
+        "border_top_opacity": 0,
+        "border_bottom_thickness": 0,
+        "border_bottom_opacity": 0
+      }
     }
   },
   "order": [
@@ -193,6 +228,7 @@
     "b63b84ab-3998-4ab3-810f-665cfd5958af",
     "e3fbd9e3-2530-475a-b060-3c53ed0aa0f1",
     "17b9d406-9383-4237-aa65-707960d8ba5e",
-    "983b6f1a-b725-482a-9167-87cb24e76802"
+    "983b6f1a-b725-482a-9167-87cb24e76802",
+    "3493bd94-a1eb-4857-b5de-ec38602f8fd4"
   ]
 }
