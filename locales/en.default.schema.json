@@ -5161,11 +5161,11 @@
             }
           }
         },
-        "image": {
-          "name": "Image",
+        "feature-intro": {
+          "name": "Feature Intro",
           "settings": {
             "text": {
-              "label": "Image"
+              "label": "Feature Intro"
             }
           }
         }
