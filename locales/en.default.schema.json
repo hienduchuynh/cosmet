@@ -5176,6 +5176,14 @@
               "label": "Image"
             }
           }
+        },
+        "show_text_box": {
+          "name": "image",
+          "settings": {
+            "text": {
+              "label": "Show text box"
+            }
+          }
         }
       },
       "presets": {
