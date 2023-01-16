@@ -179,11 +179,11 @@
         "color_scheme": "background-1",
         "full_width": false,
         "padding_top": 0,
-        "padding_bottom": 80,
+        "padding_bottom": 64,
         "border_top_thickness": 0,
         "border_top_opacity": 0,
-        "border_bottom_thickness": 0,
-        "border_bottom_opacity": 0
+        "border_bottom_thickness": 1,
+        "border_bottom_opacity": 8
       }
     },
     "3493bd94-a1eb-4857-b5de-ec38602f8fd4": {
