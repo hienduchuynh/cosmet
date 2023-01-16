@@ -148,7 +148,7 @@
         "70e40be0-7e53-4e8a-a2ce-9956e0159929": {
           "type": "feature-intro",
           "settings": {
-            "heading": "<p>Talk about your bran<\/p>",
+            "heading": "",
             "heading_size": "h1",
             "image": "shopify:\/\/shop_images\/aboutus-2.jpg",
             "text": ""
