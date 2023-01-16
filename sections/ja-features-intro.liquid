@@ -54,6 +54,7 @@
         {%- for block in section.blocks -%}
           {%- case block.type -%}
             {%- when 'feature-intro' -%}
+            {% if block.settings.image != blank %}
               <img 
                 src="{{ block.settings.image | image_url: width: 1300 }}" 
                 loading="lazy"
@@ -62,14 +63,19 @@
                 alt="Team photo"
                 class="img-second"
               >
+            {% endif %}
 
+            {% if block.settings.heading != blank %}
               <h3 class="features-intro__heading rte {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
                 {{ block.settings.heading | replace: 'p>', 'span>' }}
               </h3>
+            {% endif %}
 
+            {% if block.settings.text != blank %}
               <div class="features-intro__text rte" {{ block.shopify_attributes }}>
                 {{ block.settings.text }}
               </div>
+            {% endif %}
           {%- endcase -%}
         {%- endfor -%}
       </div>
