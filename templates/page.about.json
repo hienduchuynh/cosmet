@@ -332,7 +332,7 @@
         "description_style": "body",
         "description": "",
         "layout": "grid",
-        "image_width": "full",
+        "image_width": "third",
         "image_ratio": "adapt",
         "columns_desktop": 3,
         "row_alignment": "top",
