@@ -124,10 +124,12 @@
             "heading_size": "h1"
           }
         },
-        "template--17347501687059__983b6f1a-b725-482a-9167-87cb24e76802-1673833424e7fbb548-1": {
-          "type": "text",
+        "8f52dcba-1b0f-440e-8fe0-a2c4b7e2afaa": {
+          "type": "caption",
           "settings": {
-            "text": "<p>As a Filipina entrepreneur, Annette values sharing her heritage and the Philippines' unique design perspective. Every piece is designed in New York (her current residence) and produced ethically in the Philippines<\/p>"
+            "caption": "As a Filipina entrepreneur, Annette values sharing her heritage and the Philippines' unique design perspective. Every piece is designed in New York (her current residence) and produced ethically in the Philippines",
+            "text_style": "subtitle",
+            "text_size": "medium"
           }
         },
         "e830b99f-88d6-499d-abab-76f57288c240": {
@@ -166,7 +168,7 @@
       },
       "block_order": [
         "template--17347501687059__983b6f1a-b725-482a-9167-87cb24e76802-1673833424e7fbb548-0",
-        "template--17347501687059__983b6f1a-b725-482a-9167-87cb24e76802-1673833424e7fbb548-1",
+        "8f52dcba-1b0f-440e-8fe0-a2c4b7e2afaa",
         "e830b99f-88d6-499d-abab-76f57288c240",
         "9d7443ca-3c35-4705-8b1a-cb6ca216ef1c",
         "70e40be0-7e53-4e8a-a2ce-9956e0159929",
