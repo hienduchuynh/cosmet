@@ -262,12 +262,13 @@
         "template--17347501687059__220e8516-0741-4292-93f5-e4d7ac0a494c-16738555825b9c4f4b-0": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Gift.png",
             "image_position": "top",
-            "title": "Column",
+            "title": "Free samples on every order",
             "title_size": "h4",
             "icon": "none",
             "icon_position": "left",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Vegan and Leaping Bunny certified cruelty-free<br\/><\/p>",
             "link_label": "",
             "link": "",
             "link_style": "link",
