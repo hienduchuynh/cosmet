@@ -201,11 +201,38 @@
           "settings": {
             "text": "<p>After all, you may be wondering, what exactly is clean beauty? How can I know if an ingredient in my hair care or skincare product really is clean? Are there benefits to seeking clean ingredients, or is this greenwashing all over again? we want to do better. That means asking ourselves every day, ‟How we can improve?” Whether it’s mindlessly tossing out an empty toothpaste tube or glossing over the ingredients list, small daily actions can shape the future of our planet. When we are better to ourselves and the earth, we are one step closer to a healthier and plastic-free world.<\/p>"
           }
+        },
+        "33ad0c46-8a29-468a-a6b5-41e7c3a1bd8b": {
+          "type": "feature-intro",
+          "settings": {
+            "heading": "<p>1 billion<\/p>",
+            "heading_size": "h1",
+            "text": "<p>More than 1 billion plastic toothpaste tubes are thrown out each year, with harsh chemical residues<\/p>"
+          }
+        },
+        "b46f743a-1545-4bac-840e-180f2d6d6510": {
+          "type": "feature-intro",
+          "settings": {
+            "heading": "<p>100 million<\/p>",
+            "heading_size": "h1",
+            "text": "<p>More than 100 million animals suffer andå die in the U.S. every year in cruel chemical, drug, food, and cosmetics tests. Every year, more than 50 Empire State Buildings worth of toothpaste tubes end up in landfills or oceans.<\/p>"
+          }
+        },
+        "031a977c-74cb-4c3e-91dc-ff69c628370d": {
+          "type": "feature-intro",
+          "settings": {
+            "heading": "<p>50<\/p>",
+            "heading_size": "h1",
+            "text": "<p>Every year, more than 50 Empire State Buildings worth of toothpaste tubes end up in landfills or oceans.<\/p>"
+          }
         }
       },
       "block_order": [
         "template--17347501687059__3493bd94-a1eb-4857-b5de-ec38602f8fd4-1673838195dc7c9c57-0",
-        "template--17347501687059__3493bd94-a1eb-4857-b5de-ec38602f8fd4-1673838195dc7c9c57-1"
+        "template--17347501687059__3493bd94-a1eb-4857-b5de-ec38602f8fd4-1673838195dc7c9c57-1",
+        "33ad0c46-8a29-468a-a6b5-41e7c3a1bd8b",
+        "b46f743a-1545-4bac-840e-180f2d6d6510",
+        "031a977c-74cb-4c3e-91dc-ff69c628370d"
       ],
       "settings": {
         "class_suffix": "",
