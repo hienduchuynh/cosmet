@@ -54,29 +54,29 @@
         {%- for block in section.blocks -%}
           {%- case block.type -%}
             {%- when 'feature-intro' -%}
-            <div class="feature-intro">
-            {% if block.settings.image != blank %}
-              <img 
-                src="{{ block.settings.image | image_url: width: 1300 }}" 
-                loading="lazy"
-                width="auto"
-                height="auto"
-                alt="feature image"
-                class="feature-image"
-              >
-            {% endif %}
+            <div class="feature-intro {% if block.settings.show_text_box == true %} feature-intro-box{% endif %}">
+              {% if block.settings.image != blank %}
+                <img 
+                  src="{{ block.settings.image | image_url: width: 1300 }}" 
+                  loading="lazy"
+                  width="auto"
+                  height="auto"
+                  alt="feature image"
+                  class="feature-image"
+                >
+              {% endif %}
 
-            {% if block.settings.heading != blank %}
-              <h3 class="features-intro__heading rte {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
-                {{ block.settings.heading | replace: 'p>', 'span>' }}
-              </h3>
-            {% endif %}
+              {% if block.settings.heading != blank %}
+                <h3 class="features-intro__heading rte {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
+                  {{ block.settings.heading | replace: 'p>', 'span>' }}
+                </h3>
+              {% endif %}
 
-            {% if block.settings.text != blank %}
-              <div class="features-intro__text rte" {{ block.shopify_attributes }}>
-                {{ block.settings.text }}
-              </div>
-            {% endif %}
+              {% if block.settings.text != blank %}
+                <div class="features-intro__text rte" {{ block.shopify_attributes }}>
+                  {{ block.settings.text }}
+                </div>
+              {% endif %}
             </div>
           {%- endcase -%}
         {%- endfor -%}
