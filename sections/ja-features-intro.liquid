@@ -21,28 +21,9 @@
 {%- endstyle -%}
 
 <div class="isolate{% unless section.settings.full_width %} page-width{% endunless %}{% if section.settings.class_suffix != blank %} {{ section.settings.class_suffix }}{% endif %}">
-  {%- if section.settings.image != blank -%}
-    {%-liquid
-      assign image_height = section.settings.image.width | divided_by: section.settings.image.aspect_ratio
-      assign image_class = ""
-      assign sizes = "100%"
-    -%}
-    <div class="banner__media media{% if section.settings.image == blank %} placeholder{% endif %}" {% if section.settings.image != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%"{% endif %}>
-      {{ section.settings.image | image_url: width: 1500 | image_tag:
-        loading: 'lazy',
-        width: section.settings.image.width,
-        height: image_height,
-        class: image_class,
-        sizes: sizes,
-        widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
-        alt: section.settings.image.alt | escape
-      }}
-    </div>
-  {%- endif -%}
-  
   <div class="ja-features-intro content-container color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} features-intro--full-width content-container--full-width{% endif %} section-{{ section.id }}-padding">
-    <div class="features-intro__wrapper features-intro__wrapper--{{ section.settings.desktop_content_position }}{% if section.settings.full_width %} page-width{% endif %}">
-      <div class="features-intro__blocks {{ section.settings.content_alignment }}">
+    <div class="features-intro__wrapper grid grid--1-col-tablet-down grid--2-col-desktop features-intro__wrapper--{{ section.settings.desktop_content_position }}{% if section.settings.full_width %} page-width{% endif %}">
+      <div class="features-intro__blocks grid__item {{ section.settings.content_alignment }}">
         {%- for block in section.blocks -%}
           {%- case block.type -%}
             {%- when 'heading' -%}
@@ -53,15 +34,6 @@
               <p class="features-intro__caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }}" {{ block.shopify_attributes }}>
                 {{ block.settings.caption | escape }}
               </p>
-            {%- when 'image' -%}
-            <img 
-              src="{{ block.settings.image | image_url: width: 1300 }}" 
-              loading="lazy"
-              width="auto"
-              height="auto"
-              alt="Team photo"
-              class="img-second"
-            >
             {%- when 'text' -%}
               <div class="features-intro__text rte" {{ block.shopify_attributes }}>
                 {{ block.settings.text }}
@@ -75,6 +47,16 @@
                   <a{% if block.settings.button_link_2 == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link_2 }}"{% endif %} class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_2 | escape }}</a>
                 {%- endif -%}
               </div>
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
+      <div class="features-intro__blocks grid__item {{ section.settings.content_alignment }}">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'feature-intro' -%}
+              <h3 class="features-intro__heading rte {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
+                {{ block.settings.heading | replace: 'p>', 'span>' }}
+              </h3>
           {%- endcase -%}
         {%- endfor -%}
       </div>
@@ -161,11 +143,6 @@
       ],
       "default": "background-1",
       "label": "t:sections.all.colors.label"
-    },
-    {
-      "type": "image_picker",
-      "id": "image",
-      "label": "t:sections.image-banner.settings.image.label"
     },
     {
       "type": "checkbox",
@@ -385,14 +362,50 @@
       ]
     },
     {
-      "type": "image",
+      "type": "feature-intro",
       "name": "t:sections.features-intro.blocks.image.name",
       "limit": 1,
       "settings": [
         {
+          "type": "richtext",
+          "id": "heading",
+          "default": "<p>Talk about your brand</p>",
+          "label": "t:sections.features-intro.blocks.heading.settings.heading.label"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "options": [
+            {
+              "value": "h2",
+              "label": "t:sections.all.heading_size.options__1.label"
+            },
+            {
+              "value": "h1",
+              "label": "t:sections.all.heading_size.options__2.label"
+            },
+            {
+              "value": "h0",
+              "label": "t:sections.all.heading_size.options__3.label"
+            },
+            {
+              "value": "hxl",
+              "label": "t:sections.all.heading_size.options__4.label"
+            }
+          ],
+          "default": "h1",
+          "label": "t:sections.all.heading_size.label"
+        },
+        {
           "type": "image_picker",
           "id": "image",
           "label": "t:sections.features-intro.blocks.image.settings.text.label"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "default": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
+          "label": "t:sections.features-intro.blocks.text.settings.text.label"
         }
       ]
     }
