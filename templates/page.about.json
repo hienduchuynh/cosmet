@@ -135,12 +135,19 @@
           "settings": {
             "text": "<p>After all, you may be wondering, what exactly is clean beauty? How can I know if an ingredient in my hair care or skincare product really is clean? Are there benefits to seeking clean ingredients, or is this greenwashing all over again? we want to do better. That means asking ourselves every day, ‟How we can improve?” Whether it’s mindlessly tossing out an empty toothpaste tube or glossing over the ingredients list, small daily actions can shape the future of our planet. When we are better to ourselves and the earth, we are one step closer to a healthier and plastic-free world.<\/p>"
           }
+        },
+        "5deda1d7-912e-411c-bd34-cd26fe6e039e": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/aboutus-1.jpg"
+          }
         }
       },
       "block_order": [
         "template--17347501687059__983b6f1a-b725-482a-9167-87cb24e76802-1673833424e7fbb548-0",
         "template--17347501687059__983b6f1a-b725-482a-9167-87cb24e76802-1673833424e7fbb548-1",
-        "e830b99f-88d6-499d-abab-76f57288c240"
+        "e830b99f-88d6-499d-abab-76f57288c240",
+        "5deda1d7-912e-411c-bd34-cd26fe6e039e"
       ],
       "settings": {
         "class_suffix": "",
