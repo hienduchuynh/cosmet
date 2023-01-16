@@ -110,11 +110,25 @@
   margin-bottom: 2rem;
 }
 
+.feature-intro .features-intro__heading {
+  color: rgba(var(--color-base-accent-2));
+}
+
+.feature-intro .features-intro__heading span {
+  border-bottom: 1px solid rgba(var(--color-base-accent-2));
+}
+
 .features-intro__caption {
   font-weight: 600;
   font-size: 1.8rem;
   line-height: 1.6;
   letter-spacing: normal;
+}
+
+.feature-intro-box {
+  padding: 3.2rem;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
 }
 
 @media screen and (max-width: 750px) {
