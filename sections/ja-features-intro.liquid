@@ -54,9 +54,22 @@
         {%- for block in section.blocks -%}
           {%- case block.type -%}
             {%- when 'feature-intro' -%}
+              <img 
+                src="{{ block.settings.image | image_url: width: 1300 }}" 
+                loading="lazy"
+                width="auto"
+                height="auto"
+                alt="Team photo"
+                class="img-second"
+              >
+
               <h3 class="features-intro__heading rte {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
                 {{ block.settings.heading | replace: 'p>', 'span>' }}
               </h3>
+
+              <div class="features-intro__text rte" {{ block.shopify_attributes }}>
+                {{ block.settings.text }}
+              </div>
           {%- endcase -%}
         {%- endfor -%}
       </div>
@@ -364,7 +377,7 @@
     {
       "type": "feature-intro",
       "name": "t:sections.features-intro.blocks.feature-intro.name",
-      "limit": 1,
+      "limit": 3,
       "settings": [
         {
           "type": "richtext",
