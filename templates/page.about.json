@@ -144,7 +144,8 @@
             "heading": "",
             "heading_size": "h1",
             "image": "shopify:\/\/shop_images\/aboutus-1.jpg",
-            "text": ""
+            "text": "",
+            "show_text_box": false
           }
         },
         "70e40be0-7e53-4e8a-a2ce-9956e0159929": {
@@ -153,7 +154,8 @@
             "heading": "",
             "heading_size": "h1",
             "image": "shopify:\/\/shop_images\/aboutus-2.jpg",
-            "text": ""
+            "text": "",
+            "show_text_box": false
           }
         },
         "28fbd3ed-fc14-428a-9d5b-3938eef7ec6a": {
@@ -162,7 +164,8 @@
             "heading": "",
             "heading_size": "h1",
             "image": "shopify:\/\/shop_images\/aboutus-3.jpg",
-            "text": ""
+            "text": "",
+            "show_text_box": false
           }
         }
       },
@@ -209,7 +212,8 @@
           "settings": {
             "heading": "<p>1 billion<\/p>",
             "heading_size": "h1",
-            "text": "<p>More than 1 billion plastic toothpaste tubes are thrown out each year, with harsh chemical residues<\/p>"
+            "text": "<p>More than 1 billion plastic toothpaste tubes are thrown out each year, with harsh chemical residues<\/p>",
+            "show_text_box": true
           }
         },
         "b46f743a-1545-4bac-840e-180f2d6d6510": {
@@ -217,7 +221,8 @@
           "settings": {
             "heading": "<p>100 million<\/p>",
             "heading_size": "h1",
-            "text": "<p>More than 100 million animals suffer andå die in the U.S. every year in cruel chemical, drug, food, and cosmetics tests. Every year, more than 50 Empire State Buildings worth of toothpaste tubes end up in landfills or oceans.<\/p>"
+            "text": "<p>More than 100 million animals suffer andå die in the U.S. every year in cruel chemical, drug, food, and cosmetics tests. Every year, more than 50 Empire State Buildings worth of toothpaste tubes end up in landfills or oceans.<\/p>",
+            "show_text_box": true
           }
         },
         "031a977c-74cb-4c3e-91dc-ff69c628370d": {
@@ -225,7 +230,8 @@
           "settings": {
             "heading": "<p>50<\/p>",
             "heading_size": "h1",
-            "text": "<p>Every year, more than 50 Empire State Buildings worth of toothpaste tubes end up in landfills or oceans.<\/p>"
+            "text": "<p>Every year, more than 50 Empire State Buildings worth of toothpaste tubes end up in landfills or oceans.<\/p>",
+            "show_text_box": true
           }
         }
       },
