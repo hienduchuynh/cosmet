@@ -3223,6 +3223,15 @@
           },
           "options__3": {
             "label": "Full width of column"
+          },
+          "options__4": {
+            "label": "One-four width of column"
+          },
+          "options__5": {
+            "label": "One-five width of column"
+          },
+          "options__6": {
+            "label": "One-six width of column"
           }
         },
         "image_ratio": {

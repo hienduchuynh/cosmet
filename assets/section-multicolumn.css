@@ -29,6 +29,18 @@
   }
 }
 
+.multicolumn-card__image-wrapper--six-width {
+  width: 16.66%;
+}
+
+.multicolumn-card__image-wrapper--five-width {
+  width: 20%;
+}
+
+.multicolumn-card__image-wrapper--four-width {
+  width: 25%;
+}
+
 .multicolumn-card__image-wrapper--third-width {
   width: 33%;
 }
