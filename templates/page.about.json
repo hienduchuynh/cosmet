@@ -255,6 +255,97 @@
         "border_bottom_thickness": 0,
         "border_bottom_opacity": 0
       }
+    },
+    "220e8516-0741-4292-93f5-e4d7ac0a494c": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--17347501687059__220e8516-0741-4292-93f5-e4d7ac0a494c-16738555825b9c4f4b-0": {
+          "type": "column",
+          "settings": {
+            "image_position": "top",
+            "title": "Column",
+            "title_size": "h4",
+            "icon": "none",
+            "icon_position": "left",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": "",
+            "link_style": "link",
+            "padding_left": 32,
+            "padding_right": 32,
+            "padding_top": 48,
+            "padding_bottom": 48,
+            "image_spacing": 25
+          }
+        },
+        "template--17347501687059__220e8516-0741-4292-93f5-e4d7ac0a494c-16738555825b9c4f4b-1": {
+          "type": "column",
+          "settings": {
+            "image_position": "top",
+            "title": "Column",
+            "title_size": "h4",
+            "icon": "none",
+            "icon_position": "left",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": "",
+            "link_style": "link",
+            "padding_left": 32,
+            "padding_right": 32,
+            "padding_top": 48,
+            "padding_bottom": 48,
+            "image_spacing": 25
+          }
+        },
+        "template--17347501687059__220e8516-0741-4292-93f5-e4d7ac0a494c-16738555825b9c4f4b-2": {
+          "type": "column",
+          "settings": {
+            "image_position": "top",
+            "title": "Column",
+            "title_size": "h4",
+            "icon": "none",
+            "icon_position": "left",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": "",
+            "link_style": "link",
+            "padding_left": 32,
+            "padding_right": 32,
+            "padding_top": 48,
+            "padding_bottom": 48,
+            "image_spacing": 25
+          }
+        }
+      },
+      "block_order": [
+        "template--17347501687059__220e8516-0741-4292-93f5-e4d7ac0a494c-16738555825b9c4f4b-0",
+        "template--17347501687059__220e8516-0741-4292-93f5-e4d7ac0a494c-16738555825b9c4f4b-1",
+        "template--17347501687059__220e8516-0741-4292-93f5-e4d7ac0a494c-16738555825b9c4f4b-2"
+      ],
+      "settings": {
+        "title": "Made of high quality materials and byhighest possible standards",
+        "heading_size": "h2",
+        "title_style": "02",
+        "description_style": "body",
+        "description": "",
+        "layout": "grid",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "row_alignment": "top",
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_tablet": "2",
+        "swipe_on_tablet": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "mod_class": ""
+      }
     }
   },
   "order": [
@@ -264,6 +355,7 @@
     "e3fbd9e3-2530-475a-b060-3c53ed0aa0f1",
     "17b9d406-9383-4237-aa65-707960d8ba5e",
     "983b6f1a-b725-482a-9167-87cb24e76802",
-    "3493bd94-a1eb-4857-b5de-ec38602f8fd4"
+    "3493bd94-a1eb-4857-b5de-ec38602f8fd4",
+    "220e8516-0741-4292-93f5-e4d7ac0a494c"
   ]
 }
