@@ -5168,6 +5168,14 @@
               "label": "Feature Intro"
             }
           }
+        },
+        "image": {
+          "name": "image",
+          "settings": {
+            "text": {
+              "label": "Image"
+            }
+          }
         }
       },
       "presets": {
