@@ -31,7 +31,7 @@
                 {{ block.settings.heading | replace: 'p>', 'span>' }}
               </h2>
             {%- when 'caption' -%}
-              <p class="features-intro__caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }}" {{ block.shopify_attributes }}>
+              <p class="features-intro__caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }}" {{ block.shopify_attributes }} style="font-family: {{ block.settings.caption_font_family }};">
                 {{ block.settings.caption | escape }}
               </p>
             {%- when 'text' -%}
@@ -324,6 +324,13 @@
           ],
           "default": "medium",
           "label": "t:sections.features-intro.blocks.caption.settings.caption_size.label"
+        },
+        {
+          "type": "font_picker",
+          "id": "caption_font_family",
+          "default": "assistant_n4",
+          "label": "t:settings_schema.typography.settings.caption_font_family.label",
+          "info": "t:settings_schema.typography.settings.caption_font_family.info"
         }
       ]
     },

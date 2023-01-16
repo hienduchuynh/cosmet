@@ -110,6 +110,13 @@
   margin-bottom: 2rem;
 }
 
+.features-intro__caption {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.6;
+  font-family: 'Manrope';
+}
+
 @media screen and (max-width: 750px) {
   .features-intro__heading {
     font-size: calc(var(--font-body-scale) * 2.4rem);
