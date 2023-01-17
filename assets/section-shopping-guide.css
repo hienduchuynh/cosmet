@@ -30,6 +30,10 @@
   border-radius: 8px;
 }
 
+.main-shopping-guide .card--card .card__inner .card__media {
+  background: none;
+}
+
 /* Pop Up  */
 .article-overlay {
   background-color: transparent;
