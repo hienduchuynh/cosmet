@@ -39,8 +39,8 @@
         "padding_bottom": 64,
         "border_top_thickness": 0,
         "border_top_opacity": 0,
-        "border_bottom_thickness": 1,
-        "border_bottom_opacity": 8
+        "border_bottom_thickness": 0,
+        "border_bottom_opacity": 0
       }
     },
     "e3fbd9e3-2530-475a-b060-3c53ed0aa0f1": {
