@@ -102,6 +102,7 @@
         "template--17561988563219__771ee098-b6cf-4605-a893-0df3fe24ca7f-1673928076067eaccf-0": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/stores-1.jpg",
             "image_position": "top",
             "title": "Column",
             "title_size": "h4",
@@ -121,6 +122,7 @@
         "template--17561988563219__771ee098-b6cf-4605-a893-0df3fe24ca7f-1673928076067eaccf-1": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/stores-2.jpg",
             "image_position": "top",
             "title": "Column",
             "title_size": "h4",
