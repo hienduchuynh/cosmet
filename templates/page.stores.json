@@ -103,8 +103,8 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/stores-1.jpg",
-            "image_position": "top",
-            "title": "Column",
+            "image_position": "bottom",
+            "title": "Business Hours",
             "title_size": "h4",
             "icon": "none",
             "icon_position": "left",
@@ -123,8 +123,8 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/stores-2.jpg",
-            "image_position": "top",
-            "title": "Column",
+            "image_position": "bottom",
+            "title": "Flagship store",
             "title_size": "h4",
             "icon": "none",
             "icon_position": "left",
