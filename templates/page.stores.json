@@ -14,14 +14,14 @@
         "template--14995343081545__b196a01e-f1bc-4e66-a068-4a8605559b96-166496376312dfa138-0": {
           "type": "heading",
           "settings": {
-            "heading": "<p>Who we are?<\/p>",
+            "heading": "<p>The store<\/p>",
             "heading_size": "h1"
           }
         },
         "template--14995343081545__b196a01e-f1bc-4e66-a068-4a8605559b96-166496376312dfa138-1": {
           "type": "text",
           "settings": {
-            "text": "<p>We are the future of natural skincare<\/p>"
+            "text": "<p>A blog about your smile, our planet, and daily changes that add up.<\/p>"
           }
         }
       },
@@ -90,6 +90,14 @@
     "17b9d406-9383-4237-aa65-707960d8ba5e": {
       "type": "rich-text",
       "blocks": {
+        "465025b8-11c3-47b6-a1ea-b01ec10e5d11": {
+          "type": "caption",
+          "settings": {
+            "caption": "“ Cosmet was founded on the belief that a brighter smile doesn’t need to come at the expense of our bodies or the environment. Our daily habits matter, and the small changes we make together can add up to something big. ”",
+            "text_style": "subtitle",
+            "text_size": "medium"
+          }
+        },
         "template--17561988563219__17b9d406-9383-4237-aa65-707960d8ba5e-16735963607c9a552d-1": {
           "type": "text",
           "settings": {
@@ -98,6 +106,7 @@
         }
       },
       "block_order": [
+        "465025b8-11c3-47b6-a1ea-b01ec10e5d11",
         "template--17561988563219__17b9d406-9383-4237-aa65-707960d8ba5e-16735963607c9a552d-1"
       ],
       "settings": {
