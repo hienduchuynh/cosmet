@@ -89,7 +89,7 @@
         "color_scheme": "background-1",
         "full_width": true,
         "padding_top": 64,
-        "padding_bottom": 96,
+        "padding_bottom": 32,
         "border_top_thickness": 0,
         "border_top_opacity": 0,
         "border_bottom_thickness": 0,
