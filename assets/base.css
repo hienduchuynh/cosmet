@@ -1219,12 +1219,17 @@ summary::-webkit-details-marker {
 
 .subtitle--small {
 	font-size: 1.4rem;
-	letter-spacing: 0.1rem;
+	font-weight: 600;
 }
 
 .subtitle--medium {
 	font-size: 1.6rem;
-	letter-spacing: 0.08rem;
+	font-weight: 600;
+}
+
+.subtitle--large {
+	font-size: 1.8rem;
+	font-weight: 600;
 }
 
 /* Title Style 02 */
