@@ -43,33 +43,6 @@
         "border_bottom_opacity": 8
       }
     },
-    "b63b84ab-3998-4ab3-810f-665cfd5958af": {
-      "type": "rich-text",
-      "blocks": {
-        "template--17561988563219__b63b84ab-3998-4ab3-810f-665cfd5958af-16735963607c9a552d-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>As a Filipina entrepreneur, Annette values sharing her heritage and the Philippines' unique design perspective. Every piece is designed in New York (her current residence) and produced ethically in the Philippines<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--17561988563219__b63b84ab-3998-4ab3-810f-665cfd5958af-16735963607c9a552d-1"
-      ],
-      "settings": {
-        "class_suffix": "",
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 64,
-        "padding_bottom": 32,
-        "border_top_thickness": 0,
-        "border_top_opacity": 0,
-        "border_bottom_thickness": 0,
-        "border_bottom_opacity": 0
-      }
-    },
     "e3fbd9e3-2530-475a-b060-3c53ed0aa0f1": {
       "type": "image-banner",
       "settings": {
@@ -90,6 +63,12 @@
     "17b9d406-9383-4237-aa65-707960d8ba5e": {
       "type": "rich-text",
       "blocks": {
+        "3e9391f7-6154-4f93-b4c8-b3d1c577f20f": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/history-9.png"
+          }
+        },
         "465025b8-11c3-47b6-a1ea-b01ec10e5d11": {
           "type": "caption",
           "settings": {
@@ -106,13 +85,14 @@
         }
       },
       "block_order": [
+        "3e9391f7-6154-4f93-b4c8-b3d1c577f20f",
         "465025b8-11c3-47b6-a1ea-b01ec10e5d11",
         "template--17561988563219__17b9d406-9383-4237-aa65-707960d8ba5e-16735963607c9a552d-1"
       ],
       "settings": {
         "class_suffix": "",
         "desktop_content_position": "center",
-        "content_alignment": "center",
+        "content_alignment": "left",
         "color_scheme": "background-1",
         "full_width": true,
         "padding_top": 64,
@@ -127,7 +107,6 @@
   "order": [
     "292fd3d9-f618-4284-9370-955d059efefe",
     "b196a01e-f1bc-4e66-a068-4a8605559b96",
-    "b63b84ab-3998-4ab3-810f-665cfd5958af",
     "e3fbd9e3-2530-475a-b060-3c53ed0aa0f1",
     "17b9d406-9383-4237-aa65-707960d8ba5e"
   ]
