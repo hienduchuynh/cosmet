@@ -108,14 +108,14 @@
             "title_size": "h4",
             "icon": "none",
             "icon_position": "left",
-            "text": "<p>Monday - By appointment<\/p><p>Tuesday to Friday - 11am - 6pm<\/p><p>Saturday to Sunday -11am - 5pm<\/p>",
+            "text": "<p><strong>Monday<\/strong> - By appointment<\/p><p><strong>Tuesday to Friday<\/strong> - 11am - 6pm<\/p><p><strong>Saturday to Sunday<\/strong> -11am - 5pm<\/p>",
             "link_label": "",
             "link": "",
             "link_style": "link",
-            "padding_left": 32,
-            "padding_right": 32,
-            "padding_top": 48,
-            "padding_bottom": 48,
+            "padding_left": 0,
+            "padding_right": 0,
+            "padding_top": 0,
+            "padding_bottom": 0,
             "image_spacing": 25
           }
         },
@@ -132,10 +132,10 @@
             "link_label": "",
             "link": "",
             "link_style": "link",
-            "padding_left": 32,
-            "padding_right": 32,
-            "padding_top": 48,
-            "padding_bottom": 48,
+            "padding_left": 0,
+            "padding_right": 0,
+            "padding_top": 0,
+            "padding_bottom": 0,
             "image_spacing": 25
           }
         }
