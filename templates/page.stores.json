@@ -154,7 +154,7 @@
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 2,
-        "row_alignment": "top",
+        "row_alignment": "none",
         "column_alignment": "left",
         "background_style": "primary",
         "button_label": "",
