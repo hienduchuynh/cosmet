@@ -63,12 +63,6 @@
     "17b9d406-9383-4237-aa65-707960d8ba5e": {
       "type": "rich-text",
       "blocks": {
-        "3e9391f7-6154-4f93-b4c8-b3d1c577f20f": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/history-9.png"
-          }
-        },
         "465025b8-11c3-47b6-a1ea-b01ec10e5d11": {
           "type": "caption",
           "settings": {
@@ -85,7 +79,6 @@
         }
       },
       "block_order": [
-        "3e9391f7-6154-4f93-b4c8-b3d1c577f20f",
         "465025b8-11c3-47b6-a1ea-b01ec10e5d11",
         "template--17561988563219__17b9d406-9383-4237-aa65-707960d8ba5e-16735963607c9a552d-1"
       ],
