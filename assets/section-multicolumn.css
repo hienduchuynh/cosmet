@@ -155,7 +155,6 @@
 }
 
 .multicolumn-card__info {
-  padding: 2.5rem;
 }
 
 .background-none .multicolumn-card__info {
@@ -249,16 +248,8 @@
   border-right-width: 0;
 }
 
-.multicolumn-card
-  > .multicolumn-card__image-wrapper--full-width:not(.multicolumn-card-spacing) {
-  border-top-left-radius: calc(
-    var(--text-boxes-radius) - var(--text-boxes-border-width)
-  );
-  border-top-right-radius: calc(
-    var(--text-boxes-radius) - var(--text-boxes-border-width)
-  );
+.multicolumn-card > .multicolumn-card__image-wrapper--full-width:not(.multicolumn-card-spacing) {
   overflow: hidden;
-  box-shadow: 0 7px 30px 0 rgba(0, 0, 0, 0.1);
 }
 
 .multicolumn.background-none .multicolumn-card {
