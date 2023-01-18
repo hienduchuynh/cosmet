@@ -103,40 +103,6 @@
         "padding_bottom": 0
       }
     },
-    "7afcf70d-4f53-4da2-9322-a5c118360a18": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "New arrivals",
-        "heading_size": "h1",
-        "title_style": "02",
-        "title_decor": "shopify:\/\/shop_images\/decor-3.png",
-        "description_style": "subtitle",
-        "description": "<p>Hand-Picked by Us<\/p>",
-        "show_description": false,
-        "collection": "latest-products",
-        "show_card_collection": false,
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "outline",
-        "enable_desktop_slider": false,
-        "slider_visual": "nav",
-        "color_scheme": "background-1",
-        "desktop_layout": "left",
-        "image_ratio": "square",
-        "show_secondary_image": false,
-        "show_vendor": true,
-        "show_rating": false,
-        "show_product_description": false,
-        "enable_quick_add": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "padding_top": 128,
-        "padding_bottom": 128,
-        "mod_class": "new-arrivals-collection"
-      }
-    },
     "c7c1f97a-abda-467a-b5df-4072dd1bbf79": {
       "type": "multicolumn",
       "blocks": {
@@ -269,30 +235,64 @@
         "title_style": "02",
         "description_style": "body",
         "description": "",
-        "layout": "grid--gapless",
+        "layout": "grid",
         "image_width": "full",
-        "image_ratio": "adapt",
+        "image_ratio": "square",
         "columns_desktop": 3,
         "row_alignment": "top",
         "column_alignment": "left",
         "background_style": "primary",
-        "button_label": "Button label",
+        "button_label": "",
         "button_link": "",
         "color_scheme": "background-1",
         "columns_tablet": "2",
         "swipe_on_tablet": false,
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36,
+        "padding_top": 128,
+        "padding_bottom": 128,
         "mod_class": ""
+      }
+    },
+    "7afcf70d-4f53-4da2-9322-a5c118360a18": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "New arrivals",
+        "heading_size": "h1",
+        "title_style": "02",
+        "title_decor": "shopify:\/\/shop_images\/decor-3.png",
+        "description_style": "subtitle",
+        "description": "<p>Hand-Picked by Us<\/p>",
+        "show_description": false,
+        "collection": "latest-products",
+        "show_card_collection": false,
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "outline",
+        "enable_desktop_slider": false,
+        "slider_visual": "nav",
+        "color_scheme": "background-1",
+        "desktop_layout": "left",
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "show_vendor": true,
+        "show_rating": false,
+        "show_product_description": false,
+        "enable_quick_add": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 128,
+        "padding_bottom": 128,
+        "mod_class": "new-arrivals-collection"
       }
     }
   },
   "order": [
     "74ef7de1-0419-46ce-aad7-bdd5bd61498a",
     "0a6e7da8-1c0c-44bf-9844-025741405a9e",
-    "7afcf70d-4f53-4da2-9322-a5c118360a18",
-    "c7c1f97a-abda-467a-b5df-4072dd1bbf79"
+    "c7c1f97a-abda-467a-b5df-4072dd1bbf79",
+    "7afcf70d-4f53-4da2-9322-a5c118360a18"
   ]
 }
