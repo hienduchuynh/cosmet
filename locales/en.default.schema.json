@@ -3441,6 +3441,9 @@
         "columns_desktop": {
           "label": "Number of columns on desktop"
         },
+        "swipe_on_desktop": {
+          "label": "Swipe on Desktop"
+        },
         "column_alignment": {
           "label": "Column alignment",
           "options__1": {
