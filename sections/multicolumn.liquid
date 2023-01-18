@@ -158,6 +158,11 @@
                   {% render 'icon-accordion', icon: block.settings.icon %}
                   <div class="multicolumn-card-title-content-wrap">
                 {%- endif -%}
+
+                  {%- if block.settings.meta != blank -%}
+                    <div class="article-card__info meta">{{ block.settings.meta | escape }}</div>
+                  {%- endif -%}
+
                   {%- if block.settings.title != blank -%}
                     <h3 class="{{ block.settings.title_size }}">{{ block.settings.title | escape }}</h3>
                   {%- endif -%}
@@ -306,6 +311,11 @@
       "type": "richtext",
       "id": "description",
       "label": "t:sections.featured-collection.settings.description.label"
+    },
+    {
+      "type": "text",
+      "id": "meta",
+      "label": "t:sections.multicolumn.settings.meta.label"
     },
     {
       "type": "select",

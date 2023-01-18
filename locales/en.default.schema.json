@@ -3201,6 +3201,9 @@
         "sub-title": {
           "label": "Sub Heading"
         },
+        "meta": {
+          "label": "Metadata"
+        },
         "layout": {
           "label": "Layout",
           "options__1": {

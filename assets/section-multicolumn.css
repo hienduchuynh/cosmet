@@ -600,3 +600,10 @@
     width: 66.66%;
   }
 }
+
+/* Sale */
+.multicolumn-card__info .article-card__info {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: rgba(var(--color-base-accent-2));
+}
