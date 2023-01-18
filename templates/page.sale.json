@@ -163,7 +163,7 @@
             "padding_right": 0,
             "padding_top": 0,
             "padding_bottom": 0,
-            "image_spacing": 0
+            "image_spacing": 24
           }
         },
         "b32f60dd-7ff3-42c7-8f14-6431c4af76e4": {
@@ -183,7 +183,7 @@
             "padding_right": 0,
             "padding_top": 0,
             "padding_bottom": 0,
-            "image_spacing": 0
+            "image_spacing": 24
           }
         },
         "754c1a49-f58f-4f4b-b639-c0e38107a65b": {
@@ -203,7 +203,7 @@
             "padding_right": 0,
             "padding_top": 0,
             "padding_bottom": 0,
-            "image_spacing": 0
+            "image_spacing": 24
           }
         },
         "93e1020e-faa5-4134-ac2a-abe0b06a6e4c": {
@@ -223,7 +223,7 @@
             "padding_right": 0,
             "padding_top": 0,
             "padding_bottom": 0,
-            "image_spacing": 0
+            "image_spacing": 24
           }
         }
       },
