@@ -136,11 +136,163 @@
         "padding_bottom": 128,
         "mod_class": "new-arrivals-collection"
       }
+    },
+    "c7c1f97a-abda-467a-b5df-4072dd1bbf79": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--17614535983379__c7c1f97a-abda-467a-b5df-4072dd1bbf79-167402261182a00570-0": {
+          "type": "column",
+          "settings": {
+            "image_position": "top",
+            "title": "Favortie pieces",
+            "title_size": "h3",
+            "icon": "none",
+            "icon_position": "left",
+            "text": "<p>Our best-sellers which have already won hearts.<\/p>",
+            "link_label": "",
+            "link": "",
+            "link_style": "link",
+            "padding_left": 0,
+            "padding_right": 0,
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "image_spacing": 0
+          }
+        },
+        "template--17614535983379__c7c1f97a-abda-467a-b5df-4072dd1bbf79-167402261182a00570-1": {
+          "type": "column",
+          "settings": {
+            "image_position": "top",
+            "title": "Under $250",
+            "title_size": "h3",
+            "icon": "none",
+            "icon_position": "left",
+            "text": "<p>Quality and affordable creations for a delicate attention.<\/p>",
+            "link_label": "",
+            "link": "",
+            "link_style": "link",
+            "padding_left": 0,
+            "padding_right": 0,
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "image_spacing": 0
+          }
+        },
+        "template--17614535983379__c7c1f97a-abda-467a-b5df-4072dd1bbf79-167402261182a00570-2": {
+          "type": "column",
+          "settings": {
+            "image_position": "top",
+            "title": "Classics & essentials",
+            "title_size": "h3",
+            "icon": "none",
+            "icon_position": "left",
+            "text": "<p>Our best-sellers which have already won hearts.<\/p>",
+            "link_label": "",
+            "link": "",
+            "link_style": "link",
+            "padding_left": 0,
+            "padding_right": 0,
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "image_spacing": 0
+          }
+        },
+        "b32f60dd-7ff3-42c7-8f14-6431c4af76e4": {
+          "type": "column",
+          "settings": {
+            "image_position": "top",
+            "title": "Column",
+            "title_size": "h3",
+            "icon": "none",
+            "icon_position": "left",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": "",
+            "link_style": "link",
+            "padding_left": 0,
+            "padding_right": 0,
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "image_spacing": 0
+          }
+        },
+        "754c1a49-f58f-4f4b-b639-c0e38107a65b": {
+          "type": "column",
+          "settings": {
+            "image_position": "top",
+            "title": "Column",
+            "title_size": "h3",
+            "icon": "none",
+            "icon_position": "left",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": "",
+            "link_style": "link",
+            "padding_left": 0,
+            "padding_right": 0,
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "image_spacing": 0
+          }
+        },
+        "93e1020e-faa5-4134-ac2a-abe0b06a6e4c": {
+          "type": "column",
+          "settings": {
+            "image_position": "top",
+            "title": "Column",
+            "title_size": "h3",
+            "icon": "none",
+            "icon_position": "left",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": "",
+            "link_style": "link",
+            "padding_left": 0,
+            "padding_right": 0,
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "image_spacing": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--17614535983379__c7c1f97a-abda-467a-b5df-4072dd1bbf79-167402261182a00570-0",
+        "template--17614535983379__c7c1f97a-abda-467a-b5df-4072dd1bbf79-167402261182a00570-1",
+        "template--17614535983379__c7c1f97a-abda-467a-b5df-4072dd1bbf79-167402261182a00570-2",
+        "b32f60dd-7ff3-42c7-8f14-6431c4af76e4",
+        "754c1a49-f58f-4f4b-b639-c0e38107a65b",
+        "93e1020e-faa5-4134-ac2a-abe0b06a6e4c"
+      ],
+      "settings": {
+        "title": "The holiday market is open!",
+        "heading_size": "h1",
+        "title_style": "02",
+        "description_style": "body",
+        "description": "",
+        "layout": "grid--gapless",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "row_alignment": "top",
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_tablet": "2",
+        "swipe_on_tablet": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "mod_class": ""
+      }
     }
   },
   "order": [
     "74ef7de1-0419-46ce-aad7-bdd5bd61498a",
     "0a6e7da8-1c0c-44bf-9844-025741405a9e",
-    "7afcf70d-4f53-4da2-9322-a5c118360a18"
+    "7afcf70d-4f53-4da2-9322-a5c118360a18",
+    "c7c1f97a-abda-467a-b5df-4072dd1bbf79"
   ]
 }
