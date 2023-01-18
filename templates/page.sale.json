@@ -49,11 +49,11 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/banner-1.jpg",
-            "title": "Column",
+            "title": "Grand Opening",
             "link_label": "",
             "link": "",
             "link_style": "link",
-            "desktop_content_position": "middle-center",
+            "desktop_content_position": "top-center",
             "desktop_content_alignment": "center",
             "color_scheme": "background-1"
           }
@@ -62,11 +62,11 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/banner-2.jpg",
-            "title": "Column",
+            "title": "30% off",
             "link_label": "",
             "link": "",
             "link_style": "link",
-            "desktop_content_position": "middle-center",
+            "desktop_content_position": "bottom-center",
             "desktop_content_alignment": "center",
             "color_scheme": "background-1"
           }
@@ -75,13 +75,13 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/banner-3.jpg",
-            "title": "Column",
+            "title": "Sale 30% OFF",
             "link_label": "",
             "link": "",
             "link_style": "link",
-            "desktop_content_position": "middle-center",
+            "desktop_content_position": "top-center",
             "desktop_content_alignment": "center",
-            "color_scheme": "background-1"
+            "color_scheme": "inverse"
           }
         }
       },
