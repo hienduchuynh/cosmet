@@ -167,11 +167,11 @@
           "type": "column",
           "settings": {
             "image_position": "top",
-            "title": "Column",
+            "title": "Modern treasures",
             "title_size": "h3",
             "icon": "none",
             "icon_position": "left",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Our best-sellers which have already won hearts.<\/p>",
             "link_label": "",
             "link": "",
             "link_style": "link",
