@@ -42,6 +42,64 @@
         "addition_class": ""
       }
     },
+    "0a6e7da8-1c0c-44bf-9844-025741405a9e": {
+      "type": "image-with-text-grid",
+      "blocks": {
+        "template--17614535983379__0a6e7da8-1c0c-44bf-9844-025741405a9e-1674014103f3a1b562-0": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "link_label": "",
+            "link": "",
+            "link_style": "link",
+            "desktop_content_position": "middle-center",
+            "desktop_content_alignment": "center",
+            "color_scheme": "background-1"
+          }
+        },
+        "template--17614535983379__0a6e7da8-1c0c-44bf-9844-025741405a9e-1674014103f3a1b562-1": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "link_label": "",
+            "link": "",
+            "link_style": "link",
+            "desktop_content_position": "middle-center",
+            "desktop_content_alignment": "center",
+            "color_scheme": "background-1"
+          }
+        },
+        "16e600de-edd8-40e2-9e17-d245f40f8a49": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "link_label": "",
+            "link": "",
+            "link_style": "link",
+            "desktop_content_position": "middle-center",
+            "desktop_content_alignment": "center",
+            "color_scheme": "background-1"
+          }
+        }
+      },
+      "block_order": [
+        "template--17614535983379__0a6e7da8-1c0c-44bf-9844-025741405a9e-1674014103f3a1b562-0",
+        "template--17614535983379__0a6e7da8-1c0c-44bf-9844-025741405a9e-1674014103f3a1b562-1",
+        "16e600de-edd8-40e2-9e17-d245f40f8a49"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "hxl",
+        "layout": "grid--gapless",
+        "item_ratio": "169",
+        "columns_desktop": 3,
+        "swipe_on_desktop": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "7afcf70d-4f53-4da2-9322-a5c118360a18": {
       "type": "featured-collection",
       "settings": {
@@ -79,6 +137,7 @@
   },
   "order": [
     "74ef7de1-0419-46ce-aad7-bdd5bd61498a",
+    "0a6e7da8-1c0c-44bf-9844-025741405a9e",
     "7afcf70d-4f53-4da2-9322-a5c118360a18"
   ]
 }
