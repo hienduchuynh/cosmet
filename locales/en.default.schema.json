@@ -3198,12 +3198,6 @@
         "title": {
           "label": "Heading"
         },
-        "sub-title": {
-          "label": "Sub Heading"
-        },
-        "meta": {
-          "label": "Metadata"
-        },
         "layout": {
           "label": "Layout",
           "options__1": {
@@ -3346,6 +3340,9 @@
             },
             "text": {
               "label": "Description"
+            },
+            "meta": {
+              "label": "Metadata"
             },
             "link_label": {
               "label": "Link label"
