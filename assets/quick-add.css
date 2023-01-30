@@ -42,6 +42,7 @@
 	width: calc(100% - 3rem);
 }
 
+.quick-add-modal__content .product__info-wrapper .featured-list,
 .quick-add-modal__content .product__page__accordions {
 	display: none;
 }
