@@ -303,6 +303,13 @@
                 </a>
                 <div product-id="{{ product.id }}" class="alr-display-review-badge"></div>
               </div>
+            {%- when 'short_description' -%}
+              {%- if product.description != blank -%}
+                <div id="short_description" {{ block.shopify_attributes }}>
+                  {% comment %} {{ product.metafields.content.shortdescription | truncatewords: block.settings.word_number | strip_html }} {% endcomment %}
+                  {{ product.description | strip_html | truncate: block.settings.word_number }}
+                </div>
+              {%- endif -%}
             {%- when 'price' -%}
               <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                 {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}

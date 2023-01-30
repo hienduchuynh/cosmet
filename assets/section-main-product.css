@@ -76,7 +76,7 @@
 
 	.gallery_full_width .product__media-wrapper-inner {
 		max-width: var(--page-width);
-		padding: 48px 5rem;
+		padding: 0 5rem;
 		margin: auto;
 		align-items: center;
 	}
@@ -118,6 +118,12 @@
 	}
 	.p-info-full-slider.product__info-wrapper .product-form__input {
 		margin-top: 0;
+	}
+	.p-info-full-slider.product__info-wrapper #short_description {
+		padding: 1.5rem 0;
+	}
+	.p-info-full-slider.product__info-wrapper:not(.scrolling) .product-form__input.product-form__quantity{
+		margin-top: var(--grid-desktop-vertical-spacing);
 	}
 	.p-info-full-slider.product__info-wrapper .product-form__input input[type='radio'] + label { 
 		margin-bottom: 0;
@@ -274,6 +280,9 @@
 	.ja-summary-scroll.scrolling .product-form__quantity,
 	.ja-summary-scroll.scrolling .btn-buys {
 		display: block;
+	}
+	.ja-summary-scroll.scrolling .product-form__quantity .form__label {
+		display: none;
 	}
 	.product__info-wrapper {
 		padding-left: calc(var(--grid-desktop-vertical-spacing) * 5);
@@ -567,6 +576,10 @@ button.shopify-payment-button__button--unbranded {
 .button--secondary {
 	--color-base-outline-button-labels: 255, 255, 255;
 	--color-button: var(--color-base-background-2);
+}
+.button--secondary:hover {
+		--color-button: var(--color-base-accent-1);
+		opacity: 1;
 }
 .product__info-wrapper .product-form__buttons .button,
 .product__info-wrapper .product-form__buttons .shopify-payment-button {
@@ -1783,7 +1796,7 @@ a.product__text {
 	.gallery-position-right .thumbnail-list {
 		height: 100%;
 		flex-direction: column;
-		gap: 2.4rem;
+		gap: 1.6rem;
 	}
 
 	.gallery-position-right .thumbnail-list {
@@ -2096,6 +2109,9 @@ a.product__text {
 .product-guide-join-vip .multicolumn-card__info .button--secondary {
 	--color-button: var(--color-base-accent-1);
 }
+.product-guide-join-vip .multicolumn-card__info .button--secondary:hover {
+	--color-button: var(--color-base-accent-2);
+}
 
 .join-vip-featured {
 	list-style: none;
@@ -2158,4 +2174,5 @@ a.product__text {
 }
 .boost-product-list li .multicolumn-card__info {
 	padding: 0;
+	position: relative;
 }
