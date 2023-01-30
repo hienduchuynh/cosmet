@@ -297,6 +297,10 @@
 	z-index: 1;
 }
 
+.facets__form-horizontal .facets__header {
+	padding: 1.5rem 2rem;
+}
+
 .facets__list {
 	padding: 0.5rem 2rem;
 }

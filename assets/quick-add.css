@@ -210,7 +210,8 @@ quick-add-modal .product-form__buttons {
 	color: #fff;
 }
 .quick-add__submit:hover {
-	opacity: 0.5;
+	background: rgba(var(--color-foreground));
+	opacity: 1;
 }
 .quick-add__submit.loading > .loading-overlay__spinner .path {
 	stroke: rgb(0, 0, 0, 1);
