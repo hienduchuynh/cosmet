@@ -104,7 +104,11 @@
 }
 
 .multicolumn-card__info > :nth-child(2) {
-  margin-top: 1rem;
+  margin-top: 0.8rem;
+}
+
+.multicolumn-card__info h3 + .rte {
+  margin-top: 1.6rem;
 }
 
 .multicolumn-list__item.center .media--adapt,
