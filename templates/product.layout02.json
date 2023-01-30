@@ -98,8 +98,8 @@
         "hide_variants": true,
         "enable_video_looping": false,
         "layout_description": "tabs",
-        "padding_top": 48,
-        "padding_bottom": 48
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "538ed27d-666d-4169-9ba0-d844989d9d9b": {
@@ -178,6 +178,7 @@
             "image_position": "top",
             "title": "Shake well",
             "title_size": "h3",
+            "meta": "",
             "icon": "none",
             "icon_position": "left",
             "text": "<p>After checking the lid’s on tight, give your bottle of wellness a little shake.<\/p>",
@@ -198,6 +199,7 @@
             "image_position": "top",
             "title": "Give it a squeeze",
             "title_size": "h3",
+            "meta": "",
             "icon": "none",
             "icon_position": "left",
             "text": "<p>Unscrew and squeeze so the dropper fills up with the good stuff.<\/p>",
@@ -218,6 +220,7 @@
             "image_position": "top",
             "title": "Drop under your tongue",
             "title_size": "h3",
+            "meta": "",
             "icon": "none",
             "icon_position": "left",
             "text": "<p>Place 2 or 3 drops under your tongue, hold for a minute, then swallow.<\/p>",
@@ -260,6 +263,10 @@
         "swipe_on_mobile": false,
         "padding_top": 100,
         "padding_bottom": 100,
+        "border_top_thickness": 0,
+        "border_top_opacity": 0,
+        "border_bottom_thickness": 0,
+        "border_bottom_opacity": 0,
         "mod_class": "product-how-to-use"
       }
     },
