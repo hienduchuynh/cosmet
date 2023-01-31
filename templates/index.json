@@ -365,7 +365,7 @@
         "13c2fcb5-dd97-4f0f-af14-8f3732e54e79": {
           "type": "product",
           "settings": {
-            "product": "firming-whey",
+            "product": "camo-color-corrector-1",
             "second_image": false
           }
         },
@@ -379,7 +379,7 @@
         "28c6cf08-fc88-420e-9625-acbf99928130": {
           "type": "product",
           "settings": {
-            "product": "hair-shampoo",
+            "product": "16hr-camo-concealer",
             "second_image": false
           }
         }
@@ -661,8 +661,6 @@
         "columns_desktop": 2,
         "column_alignment": "center",
         "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
         "color_scheme": "background-2",
         "columns_mobile": "1",
         "padding_top": 128,
@@ -709,6 +707,7 @@
         "layout": "grid",
         "item_ratio": "34",
         "columns_desktop": 2,
+        "swipe_on_desktop": false,
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 64,
