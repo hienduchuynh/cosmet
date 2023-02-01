@@ -23,6 +23,34 @@
   margin-top: calc(var(--grid-desktop-vertical-spacing) * 2);
 }
 
+.contact-information-wrap {
+  display: flex;
+}
+
+.contact-information-wrap + .contact-information-wrap {
+  margin-top: 4.8rem;
+}
+
+.contact-information-wrap .contact-img {
+  margin-right: 4rem;
+}
+
+.contact-information-wrap .contact-img {
+  color: rgba(var(--color-base-accent-2));
+  fill: rgba(var(--color-base-accent-2));
+  width: 4.8rem;
+  height: 4.8rem;
+}
+
+.contact-information-wrap h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.contact-information-wrap h3 + .contact-description {
+  margin-top: 1.6rem;
+}
+
 /* Image */
 .contact img {
   max-width: 100%;
