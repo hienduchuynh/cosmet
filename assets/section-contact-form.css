@@ -17,17 +17,10 @@
 
 /* Layout */
 .contact-form {
-  width: 100%;
 }
 
 .contact-information + .contact-form {
   margin-top: calc(var(--grid-desktop-vertical-spacing) * 2);
-}
-
-@media screen and (min-width: 990px) {
-  .contact-container {
-    width: 96rem;
-  }
 }
 
 /* Image */
