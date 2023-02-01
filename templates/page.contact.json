@@ -49,7 +49,7 @@
         "59dea0b6-a68d-4ee7-8b72-e6ebf879f73e": {
           "type": "misc",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Storefront.png",
+            "image": "shopify:\/\/shop_images\/Clock.png",
             "label": "Business Hours",
             "description": "<p><strong>Monday<\/strong> - By appointment<\/p><p><strong>Tuesday to Friday<\/strong> - 11am - 6pm<\/p><p><strong>Saturday to Sunday<\/strong> -11am - 5pm<\/p>"
           }
