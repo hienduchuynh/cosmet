@@ -27,16 +27,7 @@
                 <div class="contact-information">
                   {%- if block.settings.image != blank -%}
                     <img
-                      srcset="{%- if block.settings.image.width >= 550 -%}{{ block.settings.image | image_url: width: 550 }} 550w,{%- endif -%}
-                        {%- if block.settings.image.width >= 720 -%}{{ block.settings.image | image_url: width: 720 }} 720w,{%- endif -%}
-                        {%- if block.settings.image.width >= 990 -%}{{ block.settings.image | image_url: width: 990 }} 990w,{%- endif -%}
-                        {%- if block.settings.image.width >= 1100 -%}{{ block.settings.image | image_url: width: 1100 }} 1100w,{%- endif -%}
-                        {%- if block.settings.image.width >= 1500 -%}{{ block.settings.image | image_url: width: 1500 }} 1500w,{%- endif -%}
-                        {%- if block.settings.image.width >= 2200 -%}{{ block.settings.image | image_url: width: 2200 }} 2200w,{%- endif -%}
-                        {%- if block.settings.image.width >= 3000 -%}{{ block.settings.image | image_url: width: 3000 }} 3000w,{%- endif -%}
-                        {{ block.settings.image | image_url }} {{ block.settings.image.width }}w"
-                      src="{{ block.settings.image | image_url: width: 1500 }}"
-                      sizes="(min-width: {{ settings.page_width }}px) {% if section.blocks.size == 1 %}calc({{ settings.page_width }}px - 100px){% else %}{{ settings.page_width | minus: 100 | times: 0.67 | round }}px{% endif %}, (min-width: 750px){% if section.blocks.size == 1 %} calc(100vw - 100px){% else %} 500px{% endif %}, calc(100vw - 30px)"
+                      src="{{ block.settings.image | image_url: width: 64 }}"
                       alt="{{ block.settings.image.alt | escape }}"
                       loading="lazy"
                       width="{{ block.settings.image.width }}"
@@ -45,24 +36,12 @@
                     >
                   {%- endif -%}
 
+                  {%- if block.settings.label -%}
+                    <label class="contact-label">{{ block.settings.label | escape }}</label>
+                  {%- endif -%}
+
                   {%- if block.settings.description -%}
-                    <p class="contact-description">{{ block.settings.description | escape }}</p>
-                  {%- endif -%}
-
-                  {%- if block.settings.address -%}
-                    <p class="contact-more"><span>{% render 'icon-address' %}</span>{{ block.settings.address | escape }}</p>
-                  {%- endif -%}
-
-                  {%- if block.settings.phone-1 -%}
-                    <p class="contact-more"><span>{% render 'icon-phone' %}</span>{{ block.settings.phone-1 | escape }}</p>
-                  {%- endif -%}
-
-                  {%- if block.settings.phone-2 -%}
-                    <p class="contact-more"><span>{% render 'icon-mobile' %}</span>{{ block.settings.phone-2 | escape }}</p>
-                  {%- endif -%}
-
-                  {%- if block.settings.web-address -%}
-                    <p class="contact-more"><span>{% render 'icon-global' %}</span><a href="{{ block.settings.web-address | escape }}" class="link-web">{{ block.settings.web-address | escape }}</a></p>
+                    <div class="contact-description">{{ block.settings.description | escape }}</div>
                   {%- endif -%}
                 </div>
 
@@ -260,32 +239,17 @@
         {
           "type": "image_picker",
           "id": "image",
-          "label": "Image"
+          "label": "Icon"
         },
         {
           "type": "text",
+          "id": "label",
+          "label": "Label"
+        },
+        {
+          "type": "richtext",
           "id": "description",
           "label": "Description"
-        },
-        {
-          "type": "text",
-          "id": "address",
-          "label": "Address"
-        },
-        {
-          "type": "text",
-          "id": "phone-1",
-          "label": "Phone Number"
-        },
-        {
-          "type": "text",
-          "id": "phone-2",
-          "label": "Mobile Number"
-        },
-        {
-          "type": "url",
-          "id": "web-address",
-          "label": "Website Address"
         }
       ]
     }
