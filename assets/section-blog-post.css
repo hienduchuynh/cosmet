@@ -176,6 +176,7 @@ header .article-info {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
+  list-style: none;
 }
 
 .tag-article li {
