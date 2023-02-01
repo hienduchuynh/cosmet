@@ -139,7 +139,7 @@
 .color-inverse .header__menu-item:hover,
 .color-inverse .header__menu-item:hover .header__active-menu-item,
 .color-inverse .header__menu-item:hover span {
-	color: #5e8c5e;
+	color: rgba(var(--color-base-accent-2));
 }
 
 .color-inverse .header__menu-item > span::before {
@@ -3197,7 +3197,7 @@ details[open] > .header__menu-item .icon-caret {
 
 .header__menu-item:hover .header__active-menu-item {
 	transition: text-decoration-thickness var(--duration-short) ease;
-	color: #5e8c5e;
+	color: rgba(var(--color-base-accent-2));
 }
 
 .header__submenu {
@@ -3236,7 +3236,7 @@ details[open] > .header__menu-item .icon-caret {
 
 .header__submenu .header__menu-item:hover {
 	background-color: var(--gradient-base-background-2);
-	color: #5e8c5e;
+	color: rgba(var(--color-base-accent-2));
 }
 
 .header__submenu .header__submenu .header__menu-item {
