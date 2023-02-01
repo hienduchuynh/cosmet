@@ -552,24 +552,19 @@
 
 .footer-block__details-content .list-menu__item--active {
 	transition: text-decoration-thickness var(--duration-short) ease;
-	color: rgb(var(--color-foreground));
-	text-decoration: underline;
-	text-underline-offset: 0.3rem;
+	color: rgba(var(--color-base-accent-2));
+	text-decoration: none;
 }
 
 .footer-block__details-content .list-menu__item--link:hover {
-	text-decoration: underline;
-	text-underline-offset: 0.3rem;
+	text-decoration: none;
+	color: rgba(var(--color-base-accent-2));
 }
 
 @media screen and (min-width: 750px) {
 	.footer-block__details-content .list-menu__item--link:hover,
 	.copyright__content a:hover {
-		color: rgb(var(--color-foreground));
-	}
-
-	.footer-block__details-content .list-menu__item--active:hover {
-		text-underline-offset: 0.3rem;
+		color: rgba(var(--color-base-accent-2));
 	}
 }
 
