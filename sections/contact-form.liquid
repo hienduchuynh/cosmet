@@ -24,7 +24,7 @@
             {%- case block.type -%}
               {% when 'misc' %}
 
-                <div class="contact-information">
+                <div class="contact-information-wrap">
                   {%- if block.settings.image != blank -%}
                     <img
                       src="{{ block.settings.image | image_url: width: 64 }}"
@@ -36,13 +36,15 @@
                     >
                   {%- endif -%}
 
-                  {%- if block.settings.label -%}
-                    <label class="contact-label">{{ block.settings.label | escape }}</label>
-                  {%- endif -%}
+                  <div class="contact-information">
+                    {%- if block.settings.label -%}
+                      <label class="contact-label">{{ block.settings.label | escape }}</label>
+                    {%- endif -%}
 
-                  {%- if block.settings.description -%}
-                    <div class="contact-description">{{ block.settings.description | escape }}</div>
-                  {%- endif -%}
+                    {%- if block.settings.description -%}
+                      <div class="contact-description">{{ block.settings.description }}</div>
+                    {%- endif -%}
+                  </div>
                 </div>
 
             {%- endcase -%}
