@@ -76,6 +76,10 @@
           <h2 class="visually-hidden">{{ 'templates.contact.form.title' | t }}</h2>
         {%- endif -%}
 
+        {%- if section.settings.description -%}
+          <div class="contact-form-description">{{ section.settings.description }}</div>
+        {%- endif -%}
+
         {%- form 'contact', id: 'ContactForm', class: 'isolate' -%}
           {%- if form.posted_successfully? -%}
             <h2 class="form-status form-status-list form__message" tabindex="-1" autofocus>{% render 'icon-success' %} {{ 'templates.contact.form.post_success' | t }}</h2>
@@ -189,6 +193,11 @@
       ],
       "default": "h1",
       "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
     },
     {
       "type": "select",
