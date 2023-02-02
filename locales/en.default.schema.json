@@ -4963,6 +4963,9 @@
             "text": {
               "label": "Description"
             },
+            "author": {
+              "label": "Author"
+            },
             "link_label": {
               "label": "Link label"
             },
