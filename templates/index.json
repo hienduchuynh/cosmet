@@ -158,20 +158,13 @@
           "settings": {
             "collection": "fragrance"
           }
-        },
-        "351ffc6f-8151-47a5-8617-d2d19f9bd1bc": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "erectule-dysfunction"
-          }
         }
       },
       "block_order": [
         "template--17347501523219__44a202b8-e952-4c31-b97a-232026256692-16721320724a41753a-0",
         "template--17347501523219__44a202b8-e952-4c31-b97a-232026256692-16721320724a41753a-1",
         "template--17347501523219__44a202b8-e952-4c31-b97a-232026256692-16721320724a41753a-2",
-        "8a6b7aeb-df5b-4456-9d26-d193dd0a2b62",
-        "351ffc6f-8151-47a5-8617-d2d19f9bd1bc"
+        "8a6b7aeb-df5b-4456-9d26-d193dd0a2b62"
       ],
       "settings": {
         "title": "Our picks for you",
