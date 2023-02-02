@@ -1,30 +1,3 @@
-.main-list-collections {
-	border: 2px solid rgba(0, 0, 0, 100);
-	border-top: 0;
-}
-
-.section-collection-list {
-	overflow: hidden;
-	max-width: 100%;
-}
-
-.collection-hero__title {
-	margin: 0;
-	text-transform: uppercase;
-	padding-top: 64px;
-	padding-bottom: 64px;
-}
-
-.collection-hero__title span {
-	background: #000;
-	color: #fff;
-	padding: 0 10px;
-}
-
-.main-list-collections > .section {
-	margin-top: 0;
-}
-
 .collection-list {
 	margin-top: 0;
 	margin-bottom: 0;
@@ -91,14 +64,6 @@
 }
 
 /*Style for page > collections*/
-
-.collection-list.grid {
-	margin-bottom: var(--grid-desktop-vertical-spacing);
-}
-
-.collection-list-title {
-}
-
 @media screen and (max-width: 749px) {
 	.collection-list:not(.slider) {
 		padding-left: 0;

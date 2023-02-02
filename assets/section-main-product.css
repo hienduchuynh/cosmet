@@ -2110,9 +2110,6 @@ a.product__text {
 .product-guide-join-vip .multicolumn-card__info .button--secondary {
 	--color-button: var(--color-base-accent-1);
 }
-.product-guide-join-vip .multicolumn-card__info .button--secondary:hover {
-	--color-button: #000;
-}
 
 .join-vip-featured {
 	list-style: none;
