@@ -85,70 +85,58 @@
       </div>
     {%- endunless -%}
 
-    <slider-component class="slider-mobile-gutter slider-desktop-gutter" role="region" aria-roledescription="Carousel">
-      <ul class="testimonials-list contains-content-container grid grid--{{ section.settings.columns_mobile }}-col-tablet-down grid--{{ section.settings.columns_desktop }}-col-desktop slider slider--everywhere" id="Slider-{{ section.id }}" role="list" aria-live="polite" aria-atomic="true" data-autoplay="false" data-speed="5">
-        {%- liquid
-          assign highest_ratio = 0
-          for block in section.blocks
-            if block.settings.image.aspect_ratio > highest_ratio
-              assign highest_ratio = block.settings.image.aspect_ratio
-            endif
-          endfor
-        -%}
-
-        {%-liquid
-          assign columns_desktop = section.settings.columns_desktop
-          assign testimonials_blocks = section.blocks | where: "type", "testimonial" 
-          if testimonials_blocks.size <= section.settings.columns_desktop
-            assign num_dot_desktop = 1
-          else
-            assign num_dot_desktop = testimonials_blocks.size | minus: section.settings.columns_desktop
+    <ul class="testimonials-list contains-content-container grid grid--{{ section.settings.columns_mobile }}-col-tablet-down grid--{{ section.settings.columns_desktop }}-col-desktop">
+      {%- liquid
+        assign highest_ratio = 0
+        for block in section.blocks
+          if block.settings.image.aspect_ratio > highest_ratio
+            assign highest_ratio = block.settings.image.aspect_ratio
           endif
+        endfor
+      -%}
 
-          assign columns_mobile = section.settings.columns_mobile
-        -%}
+      {%-liquid
+        assign columns_desktop = section.settings.columns_desktop
+        assign testimonials_blocks = section.blocks | where: "type", "testimonial" 
+        if testimonials_blocks.size <= section.settings.columns_desktop
+          assign num_dot_desktop = 1
+        else
+          assign num_dot_desktop = testimonials_blocks.size | minus: section.settings.columns_desktop
+        endif
 
-        {%- for block in section.blocks -%}
-          {%- case block.type -%}
-            {%- when 'testimonial' -%}
-              {%- liquid
-                assign empty_column = '' 
-              -%}
-              {%- if block.settings.image == blank and block.settings.title == blank and block.settings.text == blank and block.settings.link_label == blank -%}
-                {%- assign empty_column = ' testimonials-list__item--empty' -%}
-              {%- endif -%}
+        assign columns_mobile = section.settings.columns_mobile
+      -%}
 
-              <li id="Slide-{{ section.id }}-{{ forloop.index }}" class="testimonials-list__item grid__item{% if swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}{{ empty_column }}" {{ block.shopify_attributes }} role="group" aria-roledescription="Slide" aria-label="{{ forloop.index }} {{ 'general.slider.of' | t }} {{ testimonials_blocks.size }}" tabindex="-1">
-                <div class="testimonials-card content-container">
-                  <span aria-hidden="true" class="rating-star color-icon-accent-1" style="--rating: {{ block.settings.rating }}; --rating-max: 5.0; --rating-decimal: 0; --letter-spacing: 0.2; --font-size: 3.8;"></span>
-                  <div class="testimonials-card__info">
-                    {%- if block.settings.title != blank -%}
-                      <h3>{{ block.settings.title | escape }}</h3>
-                    {%- endif -%}
-                    {%- if block.settings.text != blank -%}
-                      <div class="rte">{{ block.settings.text }}</div>
-                    {%- endif -%}
-                  </div>
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'testimonial' -%}
+            {%- liquid
+              assign empty_column = '' 
+            -%}
+            {%- if block.settings.image == blank and block.settings.title == blank and block.settings.text == blank and block.settings.link_label == blank -%}
+              {%- assign empty_column = ' testimonials-list__item--empty' -%}
+            {%- endif -%}
+
+            <li id="Slide-{{ section.id }}-{{ forloop.index }}" class="testimonials-list__item grid__item{% if swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}{{ empty_column }}" {{ block.shopify_attributes }} role="group" aria-roledescription="Slide" aria-label="{{ forloop.index }} {{ 'general.slider.of' | t }} {{ testimonials_blocks.size }}" tabindex="-1">
+              <div class="testimonials-card content-container">
+                <span aria-hidden="true" class="rating-star color-icon-accent-1" style="--rating: {{ block.settings.rating }}; --rating-max: 5.0; --rating-decimal: 0; --letter-spacing: 0.2; --font-size: 3.8;"></span>
+                <div class="testimonials-card__info">
+                  {%- if block.settings.title != blank -%}
+                    <h3>{{ block.settings.title | escape }}</h3>
+                  {%- endif -%}
+                  {%- if block.settings.text != blank -%}
+                    <div class="rte">{{ block.settings.text }}</div>
+                  {%- endif -%}
+
+                  {%- if block.settings.author != blank -%}
+                    <figcaption class="h5">{{ block.settings.author }}</figcaption>
+                  {%- endif -%}
                 </div>
-              </li>
-          {%- endcase -%}
-        {%- endfor -%}
-      </ul>
-
-      {% if num_dot_desktop > 1 %}
-      <div class="slider-buttons no-js-hidden">
-        <div class="slider-counter slider-counter--dots">
-          <div class="slideshow__control-wrapper">
-            {%- for block_ in (1..num_dot_desktop) -%}
-              <button class="slider-counter__link slider-counter__link--dots link" aria-label="{{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}" aria-controls="Slide-{{ section.id }}">
-                <span class="dot"></span>
-              </button>
-            {%- endfor -%}
-          </div>
-        </div>
-      </div>
-      {% endif %}
-    </slider-component>
+              </div>
+            </li>
+        {%- endcase -%}
+      {%- endfor -%}
+    </ul>
 
     <div class="clients-wrapper grid grid--6-col-desktop">
       {%- for block in section.blocks -%}
@@ -439,6 +427,12 @@
           "id": "text",
           "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
           "label": "t:sections.testimonials.blocks.testimonial.settings.text.label"
+        },
+        {
+          "type": "text",
+          "id": "author",
+          "default": "User Name",
+          "label": "t:sections.testimonials.blocks.testimonial.settings.author.label"
         }
       ]
     },

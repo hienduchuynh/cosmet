@@ -23,6 +23,10 @@
   display: none;
 }
 
+.testimonials > .page-width .title-wrapper-02 {
+  width: 66.66%;
+}
+
 .testimonials .title-wrapper-with-link {
   margin-top: 0;
 }
@@ -40,6 +44,10 @@
   .testimonials .page-width {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .testimonials > .page-width .title-wrapper-02 {
+    width: 100%;
   }
 }
 

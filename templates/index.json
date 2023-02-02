@@ -158,27 +158,13 @@
           "settings": {
             "collection": "fragrance"
           }
-        },
-        "351ffc6f-8151-47a5-8617-d2d19f9bd1bc": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "erectule-dysfunction"
-          }
-        },
-        "6c9b0126-e660-4837-b475-b984be9c115a": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "accessories"
-          }
         }
       },
       "block_order": [
         "template--17347501523219__44a202b8-e952-4c31-b97a-232026256692-16721320724a41753a-0",
         "template--17347501523219__44a202b8-e952-4c31-b97a-232026256692-16721320724a41753a-1",
         "template--17347501523219__44a202b8-e952-4c31-b97a-232026256692-16721320724a41753a-2",
-        "8a6b7aeb-df5b-4456-9d26-d193dd0a2b62",
-        "351ffc6f-8151-47a5-8617-d2d19f9bd1bc",
-        "6c9b0126-e660-4837-b475-b984be9c115a"
+        "8a6b7aeb-df5b-4456-9d26-d193dd0a2b62"
       ],
       "settings": {
         "title": "Our picks for you",
@@ -189,11 +175,11 @@
         "description": "<p>Our categories<\/p>",
         "image_ratio": "portrait",
         "item_width": 25,
-        "columns_desktop": 6,
+        "columns_desktop": 4,
         "color_scheme": "background-1",
         "show_view_all": false,
         "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "padding_top": 128,
         "padding_bottom": 0
       }
@@ -555,7 +541,8 @@
           "settings": {
             "rating": 4,
             "title": "Repairing eye stick",
-            "text": "<p>“ I was surprised at how sturdy the bed frame actually is. I’m a larger guy so I’m always worried about weight capacity but I don’t have any issue at all. It doesn’t make a single sound all night! \"<\/p>"
+            "text": "<p>“ I was surprised at how sturdy the bed frame actually is. I’m a larger guy so I’m always worried about weight capacity but I don’t have any issue at all. It doesn’t make a single sound all night! \"<\/p>",
+            "author": "Jerome Bell"
           }
         },
         "ad2004c6-ad21-488f-94c0-de4e498e6111": {
@@ -563,23 +550,8 @@
           "settings": {
             "rating": 5,
             "title": "Charcoal face cleanser stick",
-            "text": "<p>“ I can’t recommend this bed enough! It’s very high quality and extremely easy to put together— no screws, you just need to fit the frame, legs, and the slats together. \"<\/p>"
-          }
-        },
-        "0abe2484-50ce-4c57-97cf-fcf0a707cb99": {
-          "type": "testimonial",
-          "settings": {
-            "rating": 5,
-            "title": "Testimonial",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
-          }
-        },
-        "0c944998-6a14-44b1-bf4c-d5fda7dbebdf": {
-          "type": "testimonial",
-          "settings": {
-            "rating": 5,
-            "title": "Testimonial",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "text": "<p>“ I can’t recommend this bed enough! It’s very high quality and extremely easy to put together— no screws, you just need to fit the frame, legs, and the slats together. \"<\/p>",
+            "author": "Darrell Steward"
           }
         },
         "273a922f-6d47-4b36-a5f4-132f6e1bb07d": {
@@ -640,8 +612,6 @@
       "block_order": [
         "418f3dfe-b6ca-42b4-97a1-797d9e542b2b",
         "ad2004c6-ad21-488f-94c0-de4e498e6111",
-        "0abe2484-50ce-4c57-97cf-fcf0a707cb99",
-        "0c944998-6a14-44b1-bf4c-d5fda7dbebdf",
         "273a922f-6d47-4b36-a5f4-132f6e1bb07d",
         "8cc66974-01cc-443a-a473-3bf5de13a2de",
         "c3a93765-96d9-489e-a2af-5e3e9489ab37",

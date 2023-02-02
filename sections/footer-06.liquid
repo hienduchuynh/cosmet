@@ -177,7 +177,7 @@
                             {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
                           {%- endif -%}
                           {% if block.settings.show_heading %}
-                            <h2 class="h4">{{ block.settings.heading }}</h2>
+                            <h2 class="h3">{{ block.settings.heading }}</h2>
                           {% endif %}
                           {% if block.settings.show_subtext %}
                             <div>{{ block.settings.subtext }}</div>
@@ -202,7 +202,7 @@
                         {%- endif -%}
 
                         {% if block.settings.heading != blank %}
-                          <h2 class="h4">{{ block.settings.heading }}</h2>
+                          <h2 class="h3">{{ block.settings.heading }}</h2>
                         {% endif %}
 
                         {% if block.settings.subtext != blank %}

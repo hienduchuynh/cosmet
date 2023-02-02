@@ -123,7 +123,7 @@
 
 .header__menu-item > .header__active-menu-item,
 .header__menu-item:hover span {
-    color: #5e8c5e;
+    color: rgba(var(--color-base-accent-2));
 }
 
 .header-04 .menu-drawer__utility-links {
