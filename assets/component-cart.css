@@ -19,10 +19,13 @@
 
 /* Continue Shopping */
 cart-items .continue-shopping {
-  color: var(--color-base-accent-3);
-  font-weight: 700;
+  color: var(--color-link);
+  font-weight: 300;
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: none;
+}
+cart-items .continue-shopping span { 
+  padding-left: 10px;
 }
 
 .cart__empty-text,

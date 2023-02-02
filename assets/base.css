@@ -942,10 +942,10 @@ details > * {
 	transition: text-decoration-thickness ease 100ms;
 }
 
-.underlined-link:hover,
-.customer a:hover {
+.underlined-link:hover {
 	color: rgb(var(--color-link));
-	text-decoration-thickness: 0.2rem;
+	/* text-decoration-thickness: 0.2rem; */
+	text-decoration: none;
 }
 
 .icon-arrow {
@@ -1732,8 +1732,7 @@ button.shopify-payment-button__button--unbranded {
 }
 
 .button,
-.shopify-challenge__button,
-.customer button {
+.shopify-challenge__button {
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
@@ -2297,8 +2296,7 @@ details[open] > .share-button__fallback {
 	display: none;
 }
 
-.field__input::placeholder,
-.customer .field input::placeholder {
+.field__input::placeholder{
 	opacity: 0;
 }
 

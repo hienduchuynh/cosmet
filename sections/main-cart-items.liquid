@@ -25,8 +25,8 @@
 
 <cart-items class="page-width{% if cart == empty %} is-empty{% else %} section-{{ section.id }}-padding{% endif %}">
   <div class="title-wrapper-with-link cart-title">
-    <h1 class="title h2">{{ 'sections.cart.title' | t }}</h1>
-    <a href="{{ routes.all_products_collection_url }}" class="underlined-link continue-shopping">{{ 'general.continue_shopping' | t }}</a>
+    <h1 class="title">{{ 'sections.cart.title' | t }}</h1>
+    <a href="{{ routes.all_products_collection_url }}" class="underlined-link continue-shopping">{{ 'general.continue_shopping' | t }}<span>{% render 'icon-arrow' %}</span></a>
   </div>
 
   <div class="cart__warnings">

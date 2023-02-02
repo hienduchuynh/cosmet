@@ -326,7 +326,8 @@
 
 .shopify-payment-button__button--unbranded:hover,
 .shopify-payment-button__button--unbranded:hover:not([disabled]) {
-	background-color: rgba(var(--color-button), var(--alpha-button-background));
+	background-color: #000;
+	opacity: 1;
 }
 
 .shopify-payment-button__more-options {
@@ -578,7 +579,7 @@ button.shopify-payment-button__button--unbranded {
 	--color-button: var(--color-base-background-2);
 }
 .button--secondary:hover {
-		--color-button: var(--color-base-accent-1);
+		--color-button: 0,0,0;
 		opacity: 1;
 }
 .product__info-wrapper .product-form__buttons .button,
@@ -2110,7 +2111,7 @@ a.product__text {
 	--color-button: var(--color-base-accent-1);
 }
 .product-guide-join-vip .multicolumn-card__info .button--secondary:hover {
-	--color-button: var(--color-base-accent-2);
+	--color-button: #000;
 }
 
 .join-vip-featured {
