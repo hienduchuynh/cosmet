@@ -2,35 +2,14 @@
   color: rgba(var(--color-foreground),1);
   padding: 3.2rem 1.5rem;
 }
+.customer .title {
+  margin: 0;
+}
 
 @media screen and (min-width: 750px) {
   .customer {
-    padding: 4.8rem 4.8rem;
+    padding: calc(var(--grid-desktop-vertical-spacing)*2)  0;
   }
-}
-
-/* Title */
-.customer h1,
-.customer h2 {
-  --color-background: 0, 0, 0;
-  --color-foreground: 255, 255, 255;
-  background: rgba(var(--color-background));
-  -webkit-box-shadow: -2.4rem 0 0 rgba(var(--color-background)),2.4rem 0 0 rgba(var(--color-background));
-  box-shadow: -2.4rem 0 0 rgba(var(--color-background)),2.4rem 0 0 rgba(var(--color-background));
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
-  color: rgba(var(--color-foreground));
-  display: inline;
-  margin-top: 0;
-  margin-bottom: 2.4rem;
-  margin-left: 2.4rem;
-  padding: 0;
-  text-transform: uppercase;
-  line-height: 1.6;
-}
-
-.customer h2 {
-  font-size: 2.4rem;
 }
 
 /* Breadcrumb */
@@ -87,10 +66,6 @@
 .customer strong {
   font-weight: normal;
   color: rgb(var(--color-foreground));
-}
-
-.customer button {
-  margin-top: 2.4rem;
 }
 
 .customer .form__message {
@@ -379,20 +354,8 @@
 
 /* ===== Login
 ========================= */
-
-.login a {
-  display: block;
-  margin: 0 auto;
-  width: fit-content;
-}
-
-.login a[href='#recover'] {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.login .field + a {
-  margin-top: 1rem;
+.customer .field input:placeholder {
+  opacity: 1;
 }
 
 .field-wrap {
@@ -402,9 +365,14 @@
   margin-bottom: 1.5rem;
 }
 
-.field-wrap label {
-  margin-bottom: 1rem;
+.customer  .field-wrap label {
+  display: none;
 }
+.customer  .link-forgot-password { 
+  width: 100%;
+  text-align: left;
+}
+
 
 .login p {
   margin: 1.6rem 0;
@@ -421,65 +389,41 @@
   margin-top: 0;
 }
 
-.login .action {
-  margin-top: 2.4rem;
+.customer .action {
+  margin-top: var(--grid-desktop-vertical-spacing);
   display: flex;
-  gap: 2.4rem;
+  gap: var(--grid-desktop-horizontal-spacing);
+  align-items: baseline;
+}
+.customer .link-register span { 
+  padding-left: 10px;
 }
 
 @media screen and (max-width: 749px) {
-  .login .action {
+  .customer .action {
     flex-direction: column;
   }
 
-  .login .action > * {
+  .customer .action > * {
     width: 100%;
     max-width: 100%;
   }
 }
 
-.btn-signin {
-  width: 50%;
-  max-width: 50%;
-  margin: 0 !important;
-}
-
-#forgot_password {
-  text-decoration: none;
-  margin: 2.4rem 0 0;
-}
-
-#forgot_password:hover {
-  text-decoration: underline;
-}
-
-#create_account {
-  text-decoration: none;
-  transition: all .35s;
-  opacity: 1;
-  width:  unset;
-  text-transform: uppercase;
-  flex: 1;
-}
-
-#create_account:hover {
-  background-color: var(--gradient-base-accent-1);
-  color: var(--gradient-base-background-1);
-}
-
-
 /* ===== Reset Password
 ========================= */
-
+#recover:target, .form__message:focus-visible {
+  box-shadow: none;
+  border: 0;
+  outline: 0;
+}
 #recover,
 #recover + div {
   display: none;
 }
 
-#recover:target, .form__message:focus-visible {
-  box-shadow: none;
-  border: 0;
-  outline: 0;
+#recover:target {
+  display: block;
 }
 
 #recover:target + div {

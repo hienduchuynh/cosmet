@@ -211,7 +211,8 @@ quick-add-modal .product-form__buttons {
 	color: #fff;
 }
 .quick-add__submit:hover {
-	background: rgba(var(--color-foreground));
+	background: #000;
+	color: #fff;
 	opacity: 1;
 }
 .quick-add__submit.loading > .loading-overlay__spinner .path {

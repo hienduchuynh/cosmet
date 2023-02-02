@@ -1,7 +1,7 @@
 {{ 'customer.css' | asset_url | stylesheet_tag }}
 
 <div class="customer login">
-  <h1 id="recover" tabindex="-1" class="h1">
+  <h1 id="recover" tabindex="-1" class="h1 title">
     {{ 'customer.recover_password.title' | t }}
   </h1>
 
@@ -44,18 +44,18 @@
           {{ form.errors.messages['form'] }}
         </small>
       {%- endif -%}
-
-      <button>
-        {{ 'customer.login_page.submit' | t }}
-      </button>
-
-      <a href="#login">
-        {{ 'customer.login_page.cancel' | t }}
-      </a>
+      <div class="action">
+        <button class="button">
+          {{ 'customer.login_page.submit' | t }}
+        </button>
+        <a href="#login"  class="underlined-link">
+          {{ 'customer.login_page.cancel' | t }}
+        </a>
+      </div>
     {%- endform -%}
   </div>
 
-  <h1 id="login" tabindex="-1" class="h1">
+  <h1 id="login" tabindex="-1" class="h1 title">
     {{ 'customer.login_page.title' | t }}
   </h1>
 
@@ -126,17 +126,17 @@
         </div>
       {%- endif -%}
 
-      <a href="#recover" id="forgot_password">
+      <a href="#recover" id="forgot_password" class="underlined-link link-forgot-password">
         {{ 'customer.login_page.forgot_password' | t }}
       </a>
 
       <div class="action">
-        <button class="btn-signin">
+        <button class="button">
           {{ 'customer.login_page.sign_in' | t }}
         </button>
-
-        <a href="{{ routes.account_register_url }}" id="create_account" class="button">
-          {{ 'customer.login_page.create_account' | t }}
+        <span class="hr">OR</span>
+        <a href="{{ routes.account_register_url }}" id="create_account" class="underlined-link link-register">
+          {{ 'customer.login_page.create_account' | t }} <span>{% render 'icon-arrow' %}</span>
         </a>
       </div>
     {%- endform -%}
