@@ -552,22 +552,6 @@
             "text": "<p>“ I can’t recommend this bed enough! It’s very high quality and extremely easy to put together— no screws, you just need to fit the frame, legs, and the slats together. \"<\/p>"
           }
         },
-        "0abe2484-50ce-4c57-97cf-fcf0a707cb99": {
-          "type": "testimonial",
-          "settings": {
-            "rating": 5,
-            "title": "Testimonial",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
-          }
-        },
-        "0c944998-6a14-44b1-bf4c-d5fda7dbebdf": {
-          "type": "testimonial",
-          "settings": {
-            "rating": 5,
-            "title": "Testimonial",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
-          }
-        },
         "273a922f-6d47-4b36-a5f4-132f6e1bb07d": {
           "type": "client",
           "settings": {
@@ -626,8 +610,6 @@
       "block_order": [
         "418f3dfe-b6ca-42b4-97a1-797d9e542b2b",
         "ad2004c6-ad21-488f-94c0-de4e498e6111",
-        "0abe2484-50ce-4c57-97cf-fcf0a707cb99",
-        "0c944998-6a14-44b1-bf4c-d5fda7dbebdf",
         "273a922f-6d47-4b36-a5f4-132f6e1bb07d",
         "8cc66974-01cc-443a-a473-3bf5de13a2de",
         "c3a93765-96d9-489e-a2af-5e3e9489ab37",
