@@ -207,7 +207,19 @@
   margin-left: auto;
 }
 
+@media screen and (max-width: 989px) {
+  .title-wrapper-02 {
+    width: 80%;
+    margin-bottom: 4.8rem;
+  }
+}
+
 @media screen and (max-width: 749px) {
+  .title-wrapper-02 {
+    width: 90%;
+    margin-bottom: 2.4rem;
+  }
+
   .title-wrapper-02 .blogs__description {
     width: 90%;
   }
