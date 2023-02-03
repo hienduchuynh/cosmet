@@ -160,10 +160,17 @@ slideshow-component .slideshow.banner {
 }
 
 .slideshow__text-wrapper.banner__content {
-  padding: calc(var(--grid-mobile-horizontal-spacing) * 5) calc(var(--grid-mobile-vertical-spacing) * 2);
+    padding: calc(var(--grid-mobile-horizontal-spacing) * 3) 2.4rem;
 }
 
 @media screen and (min-width: 750px) {
+  .slideshow__text-wrapper.banner__content {
+    height: 100%;
+    padding: calc(var(--grid-mobile-horizontal-spacing) * 3) 2.4rem;
+  }
+}
+
+@media screen and (min-width: 990px) {
   .slideshow__text-wrapper.banner__content {
     height: 100%;
     padding: calc(var(--grid-desktop-horizontal-spacing) * 5) calc(var(--grid-desktop-vertical-spacing) * 2);
@@ -305,11 +312,21 @@ slideshow-component .slider-buttons .slider-button {
 }
 
 slideshow-component .slider-buttons .slider-button--prev {
-  left: 6.4rem;
+  left: 2.4rem;
 }
 
 slideshow-component .slider-buttons .slider-button--next {
-  right: 6.4rem;
+  right: 2.4rem;
+}
+
+@media screen and (min-width: 990px) {
+  slideshow-component .slider-buttons .slider-button--prev {
+    left: 6.4rem;
+  }
+
+  slideshow-component .slider-buttons .slider-button--next {
+    right: 6.4rem;
+  }
 }
 
 slideshow-component .slider-counter {
@@ -317,21 +334,3 @@ slideshow-component .slider-counter {
   bottom: 0;
   z-index: 3;
 }
-
-/*Slideshow for fashion*/
-@media screen and (min-width: 750px) {
-  .fashion-slideshow .slideshow__text-wrapper.banner__content {
-    padding-left: 20px;
-    justify-content: left;
-  }
-  .fashion-slideshow .slideshow__text-wrapper.banner__content .banner__text {
-    margin-bottom: 3.2rem;
-  }
-}
-
-/* Landing Page */
-/* @media screen and (max-width: 749px) {
-  .landing-page {
-    padding: 0 !important;
-  }
-} */

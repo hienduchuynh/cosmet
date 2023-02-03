@@ -84,23 +84,19 @@
   }
 
   .banner--large.banner--mobile-bottom:not(.banner--adapt) .banner__media,
-  .banner--large.banner--stacked:not(.banner--mobile-bottom):not(.banner--adapt)
-    > .banner__media {
+  .banner--large.banner--stacked:not(.banner--mobile-bottom):not(.banner--adapt) > .banner__media {
     height: 39rem;
   }
 
-  .banner--small:not(.banner--mobile-bottom):not(.banner--adapt)
-    .banner__content {
+  .banner--small:not(.banner--mobile-bottom):not(.banner--adapt) .banner__content {
     min-height: 28rem;
   }
 
-  .banner--medium:not(.banner--mobile-bottom):not(.banner--adapt)
-    .banner__content {
+  .banner--medium:not(.banner--mobile-bottom):not(.banner--adapt) .banner__content {
     min-height: 34rem;
   }
 
-  .banner--large:not(.banner--mobile-bottom):not(.banner--adapt)
-    .banner__content {
+  .banner--large:not(.banner--mobile-bottom):not(.banner--adapt) .banner__content {
     min-height: 39rem;
   }
 }
@@ -119,7 +115,7 @@
   }
 
   .banner--large:not(.banner--adapt) {
-    min-height: 72rem;
+    min-height: unset;
   }
 
   .banner__content.banner__content--top-left {
@@ -305,7 +301,7 @@
 }
 
 .banner__content {
-  padding: calc(var(--grid-mobile-horizontal-spacing) * 4) calc(var(--grid-mobile-vertical-spacing) * 2);
+  padding: calc(var(--grid-mobile-horizontal-spacing) * 2) calc(var(--grid-mobile-vertical-spacing) * 2);
   display: flex;
   position: relative;
   width: 100%;
@@ -361,6 +357,12 @@
   }
 }
 
+@media screen and (min-width: 990px) {
+  .banner__content {
+    padding: calc(var(--grid-mobile-horizontal-spacing) * 4) calc(var(--grid-mobile-vertical-spacing) * 2);
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .banner__content {
     padding: calc(var(--grid-desktop-horizontal-spacing) * 4) calc(var(--grid-desktop-vertical-spacing) * 2);
@@ -404,9 +406,6 @@
   }
 
   .banner--desktop-transparent .button--secondary {
-    --color-button: 255, 255, 255;
-    --color-button-text: 255, 255, 255;
-    --alpha-button-background: 0;
   }
 
   .banner--desktop-transparent .content-container:after {

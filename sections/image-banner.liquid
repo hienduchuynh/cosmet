@@ -86,7 +86,7 @@
         }}
       </div>
     {%- endif -%}
-    <div class="banner__content banner__content--{{ section.settings.desktop_content_position }} page-width">
+    <div class="banner__content banner__content--{{ section.settings.desktop_content_position }} {% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %} page-width">
       <div class="banner__box content-container content-container--full-width-mobile">
         {%- for block in section.blocks -%}
           {%- case block.type -%}
