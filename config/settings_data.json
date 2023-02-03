@@ -519,8 +519,8 @@
           "enable_sticky_header": true,
           "padding_top": 24,
           "padding_bottom": 24,
-          "border_thickness": 0,
-          "border_opacity": 0
+          "border_thickness": 1,
+          "border_opacity": 10
         }
       },
       "footer-05": {
