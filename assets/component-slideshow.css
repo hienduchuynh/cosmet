@@ -30,6 +30,10 @@ slideshow-component .slideshow.banner {
 .slideshow__text.banner__box {
 }
 
+.slideshow__media {
+  border-radius: 0;
+}
+
 @media screen and (max-width: 919px) {
   .slideshow__text.banner__box {
     max-width: 100% !important;
