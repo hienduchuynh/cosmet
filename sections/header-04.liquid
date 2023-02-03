@@ -98,7 +98,7 @@
   }
 
   #shopify-section-header-04 {
-    border-bottom: {{ section.settings.border_thickness }}px solid rgba(0, 0, 0, {{ section.settings.border_opacity }});
+    border-bottom: {{ section.settings.border_thickness }}px solid rgba(0, 0, 0, {{ section.settings.border_opacity | divided_by: 100.0 }});
   }
 
   .mega-menu__content {
