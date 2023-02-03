@@ -181,6 +181,10 @@
   flex-direction: row;
 }
 
+.blog-articles--collage .article .card .card__heading a:after {
+  display: none;
+}
+
 @media screen and (max-width: 750px) {
   .blog-articles--collage .article .card {
     flex-direction: column;
