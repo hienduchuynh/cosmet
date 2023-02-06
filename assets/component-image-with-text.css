@@ -385,7 +385,7 @@
 
 .image-with-text__heading {
   word-break: break-word;
-  margin-bottom: 6.4rem;
+  margin-bottom: 4rem;
 }
 
 @media (max-width: 749px) {
