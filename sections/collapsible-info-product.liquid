@@ -11,7 +11,7 @@
     }    
   }
   @media screen and (min-width: 1200px) {
-    .section-{{ section.id }}{
+    .section-{{ section.id }} .section-collapsible{
       width: {{ section.settings.box_width }}%;
       max-width: {{ section.settings.box_width }}%;
       margin: auto;
@@ -19,196 +19,198 @@
   }
 {%- endstyle -%}
 <section class="page-width section-{{ section.id }} section-{{ section.id }}-padding">
-  {%- if section.settings.collapsible_type == "tabs" -%}
-    {{ 'component-tabs.css' | asset_url | stylesheet_tag }}
-    <div class="product___tabs product_tabs_positions_{{ section.settings.collapsible_tab_header_position }} tab quick-add-hidden" id="TabDetails-{{ section.id }}" {{ block.shopify_attributes }}>
-      <div id="tabsheader" class="tab-header">
-        <ul class="nav nav-tabs">
+  <div class="section-collapsible">
+    {%- if section.settings.collapsible_type == "tabs" -%}
+      {{ 'component-tabs.css' | asset_url | stylesheet_tag }}
+      <div class="product___tabs product_tabs_positions_{{ section.settings.collapsible_tab_header_position }} tab quick-add-hidden" id="TabDetails-{{ section.id }}" {{ block.shopify_attributes }}>
+        <div id="tabsheader" class="tab-header">
+          <ul class="nav nav-tabs">
+            {%- for block in section.blocks -%}
+              {%- case block.type -%}
+                {%- when '@app' -%}
+                  {% render block %}
+                {%- when 'collapsible_tab' -%}
+                  {%- if block.settings.content != blank or block.settings.page.content != blank or block.settings.description == true -%}
+                    <li id="tabHeader-{{ forloop.index }}">
+                      <div class="summary__title">
+                        {% render 'icon-accordion', icon: block.settings.icon %}
+                        <h2 class="h5 tab__title">
+                          {{ block.settings.heading | default: block.settings.page.title }}
+                        </h2>
+                      </div>
+                    </li>
+                  {%- endif -%}
+              {%- endcase -%}
+            {%- endfor -%}
+          </ul>
+        </div>
+        <div id="tabscontent" class="tab-content">
           {%- for block in section.blocks -%}
             {%- case block.type -%}
               {%- when '@app' -%}
                 {% render block %}
               {%- when 'collapsible_tab' -%}
                 {%- if block.settings.content != blank or block.settings.page.content != blank or block.settings.description == true -%}
-                  <li id="tabHeader-{{ forloop.index }}">
-                    <div class="summary__title">
-                      {% render 'icon-accordion', icon: block.settings.icon %}
-                      <h2 class="h5 tab__title">
-                        {{ block.settings.heading | default: block.settings.page.title }}
-                      </h2>
-                    </div>
-                  </li>
+                  <div id="TabContent-{{ forloop.index }}" class="tab__content fade rte" {% if forloop.first == true %}style="display:block;"{%- endif -%}>
+                    {% if block.settings.description == true %}
+                      {{ product.description }}
+                    {% else %}
+                      {{ block.settings.content }}
+                    {%- endif -%}
+                    {%- if block.settings.image != blank -%}
+                      <div class="media media--{{ block.settings.image_ratio }} media--transparent {% if block.settings.image == blank %} placeholder{% endif %}">
+                        {%-liquid
+                            assign image_height = block.settings.image.width | divided_by: block.settings.image.aspect_ratio
+                            assign image_class = ""
+                            assign sizes = "100%"
+                          -%}
+                        {{ block.settings.image | image_url: width: 1500 | image_tag:
+                        loading: 'lazy'
+                        , width: block.settings.image.width
+                        , height: image_height
+                        , class: image_class
+                        , sizes: sizes
+                        , widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+                        , alt: block.settings.image.alt | escape
+                        }}
+                      </div>
+                    {%- endif -%}
+                    {{ block.settings.page.content }}
+                  </div>
                 {%- endif -%}
             {%- endcase -%}
           {%- endfor -%}
-        </ul>
+        </div>
       </div>
-      <div id="tabscontent" class="tab-content">
-        {%- for block in section.blocks -%}
-          {%- case block.type -%}
-            {%- when '@app' -%}
-              {% render block %}
-            {%- when 'collapsible_tab' -%}
-              {%- if block.settings.content != blank or block.settings.page.content != blank or block.settings.description == true -%}
-                <div id="TabContent-{{ forloop.index }}" class="tab__content fade rte" {% if forloop.first == true %}style="display:block;"{%- endif -%}>
-                  {% if block.settings.description == true %}
-                    {{ product.description }}
-                  {% else %}
-                    {{ block.settings.content }}
-                  {%- endif -%}
-                  {%- if block.settings.image != blank -%}
-                    <div class="media media--{{ block.settings.image_ratio }} media--transparent {% if block.settings.image == blank %} placeholder{% endif %}">
-                      {%-liquid
-                          assign image_height = block.settings.image.width | divided_by: block.settings.image.aspect_ratio
-                          assign image_class = ""
-                          assign sizes = "100%"
-                        -%}
-                      {{ block.settings.image | image_url: width: 1500 | image_tag:
-                       loading: 'lazy'
-                       , width: block.settings.image.width
-                       , height: image_height
-                       , class: image_class
-                       , sizes: sizes
-                       , widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
-                       , alt: block.settings.image.alt | escape
-                       }}
+      <script>
+        window.addEventListener("load", function() {
+          var container = document.getElementById("TabDetails-{{ section.id }}");
+          var tabcon = document.getElementById("tabscontent");
+          var navitem = document.getElementById("tabHeader-1");
+          var ident = navitem.id.split("-")[1];
+          navitem.parentNode.setAttribute("data-current", ident);
+          navitem.setAttribute("class", "active");
+          var pages = tabcon.getElementsByTagName("div");
+          for (var i = 1; i < pages.length; i++) {
+            pages.item(i).style.display = "none";
+          };
+          var tabs = container.getElementsByTagName("li");
+          for (var i = 0; i < tabs.length; i++) {
+            tabs[i].onclick = displayPage;
+          }
+          function displayPage() {
+            var current = this.parentNode.getAttribute("data-current");
+            document.getElementById("tabHeader-" + current).removeAttribute("class");
+            document.getElementById("TabContent-" + current).style.display = "none";
+            var ident = this.id.split("-")[1];
+            this.setAttribute("class", "active");
+            document.getElementById("TabContent-" + ident).style.display = "block";
+            this.parentNode.setAttribute("data-current", ident);
+          }
+        });
+      </script>
+    {%- else if section.settings.collapsible_type == "accordion" -%}
+      {{ 'component-accordion.css' | asset_url | stylesheet_tag }}
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when '@app' -%}
+            {% render block %}
+          {%- when 'collapsible_tab' -%}
+            {%- if block.settings.content != blank or block.settings.page.content != blank  or block.settings.description == true -%}
+              <div class="product___accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
+                <details id="Details-{{ block.id }}-{{ section.id }}" {% if forloop.first == true %}open{%- endif -%}>
+                  <summary>
+                    <div class="summary__title">
+                      {% render 'icon-accordion', icon: block.settings.icon %}
+                      <h2 class="h5 accordion__title">
+                        {{ block.settings.heading | default: block.settings.page.title }}
+                      </h2>
                     </div>
-                  {%- endif -%}
-                  {{ block.settings.page.content }}
-                </div>
-              {%- endif -%}
-          {%- endcase -%}
-        {%- endfor -%}
-      </div>
+                    {% render 'icon-caret' %}
+                  </summary>
+                  <div class="accordion__content rte" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
+                    {% if block.settings.description == true %}
+                      {{ product.description }}
+                    {% else %}
+                      {{ block.settings.content }}
+                    {%- endif -%}
+                    {%- if block.settings.image != blank -%}
+                      <div class="media media--{{ block.settings.image_ratio }} media--transparent {% if block.settings.image == blank %} placeholder{% endif %}">
+                        {%-liquid
+                            assign image_height = block.settings.image.width | divided_by: block.settings.image.aspect_ratio
+                            assign image_class = ""
+                            assign sizes = "100%"
+                          -%}
+                        {{ block.settings.image | image_url: width: 1500 | image_tag:
+                        loading: 'lazy'
+                        , width: block.settings.image.width
+                        , height: image_height
+                        , class: image_class
+                        , sizes: sizes
+                        , widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+                        , alt: block.settings.image.alt | escape
+                        }}
+                      </div>
+                    {%- endif -%}
+                    {{ block.settings.page.content }}
+                  </div>
+                </details>
+              </div>
+            {%- endif -%}
+        {%- endcase -%}
+      {%- endfor -%}
+    {%- else -%}
+      {{ 'component-colabsible-list.css' | asset_url | stylesheet_tag }}
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when '@app' -%}
+            {% render block %}
+          {%- when 'collapsible_tab' -%}
+            {%- if block.settings.content != blank or block.settings.page.content != blank  or block.settings.description -%}
+              <div class="product___colabsible-list colabsible-list quick-add-hidden" {{ block.shopify_attributes }}>
+                <details id="Details-{{ block.id }}-{{ section.id }}">
+                  <summary>
+                    <div class="summary__title">
+                      {% render 'icon-accordion', icon: block.settings.icon %}
+                      <h2 class="h5 accordion__title">
+                        {{ block.settings.heading | default: block.settings.page.title }}
+                      </h2>
+                    </div>
+                    {% render 'icon-caret' %}
+                  </summary>
+                  <div class="colabsible-list__content rte" id="ProductColabsibleList-{{ block.id }}-{{ section.id }}">
+                    {% if block.settings.description == true %}
+                      {{ product.description }}
+                    {% else %}
+                      {{ block.settings.content }}
+                    {%- endif -%}
+                    {%- if block.settings.image != blank -%}
+                      <div class="media media--{{ block.settings.image_ratio }} media--transparent {% if block.settings.image == blank %} placeholder{% endif %}">
+                        {%-liquid
+                            assign image_height = block.settings.image.width | divided_by: block.settings.image.aspect_ratio
+                            assign image_class = ""
+                            assign sizes = "100%"
+                          -%}
+                        {{ block.settings.image | image_url: width: 1500 | image_tag:
+                        loading: 'lazy'
+                        , width: block.settings.image.width
+                        , height: image_height
+                        , class: image_class
+                        , sizes: sizes
+                        , widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+                        , alt: block.settings.image.alt | escape
+                        }}
+                      </div>
+                    {%- endif -%}
+                    {{ block.settings.page.content }}
+                  </div>
+                </details>
+              </div>
+            {%- endif -%}
+        {%- endcase -%}
+      {%- endfor -%}
+    {%- endif -%}
     </div>
-    <script>
-      window.addEventListener("load", function() {
-        var container = document.getElementById("TabDetails-{{ section.id }}");
-        var tabcon = document.getElementById("tabscontent");
-        var navitem = document.getElementById("tabHeader-1");
-        var ident = navitem.id.split("-")[1];
-        navitem.parentNode.setAttribute("data-current", ident);
-        navitem.setAttribute("class", "active");
-        var pages = tabcon.getElementsByTagName("div");
-        for (var i = 1; i < pages.length; i++) {
-          pages.item(i).style.display = "none";
-        };
-        var tabs = container.getElementsByTagName("li");
-        for (var i = 0; i < tabs.length; i++) {
-          tabs[i].onclick = displayPage;
-        }
-        function displayPage() {
-          var current = this.parentNode.getAttribute("data-current");
-          document.getElementById("tabHeader-" + current).removeAttribute("class");
-          document.getElementById("TabContent-" + current).style.display = "none";
-          var ident = this.id.split("-")[1];
-          this.setAttribute("class", "active");
-          document.getElementById("TabContent-" + ident).style.display = "block";
-          this.parentNode.setAttribute("data-current", ident);
-        }
-      });
-    </script>
-  {%- else if section.settings.collapsible_type == "accordion" -%}
-    {{ 'component-accordion.css' | asset_url | stylesheet_tag }}
-    {%- for block in section.blocks -%}
-      {%- case block.type -%}
-        {%- when '@app' -%}
-          {% render block %}
-        {%- when 'collapsible_tab' -%}
-          {%- if block.settings.content != blank or block.settings.page.content != blank  or block.settings.description == true -%}
-            <div class="product___accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
-              <details id="Details-{{ block.id }}-{{ section.id }}" {% if forloop.first == true %}open{%- endif -%}>
-                <summary>
-                  <div class="summary__title">
-                    {% render 'icon-accordion', icon: block.settings.icon %}
-                    <h2 class="h5 accordion__title">
-                      {{ block.settings.heading | default: block.settings.page.title }}
-                    </h2>
-                  </div>
-                  {% render 'icon-caret' %}
-                </summary>
-                <div class="accordion__content rte" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
-                  {% if block.settings.description == true %}
-                    {{ product.description }}
-                  {% else %}
-                    {{ block.settings.content }}
-                  {%- endif -%}
-                  {%- if block.settings.image != blank -%}
-                    <div class="media media--{{ block.settings.image_ratio }} media--transparent {% if block.settings.image == blank %} placeholder{% endif %}">
-                      {%-liquid
-                          assign image_height = block.settings.image.width | divided_by: block.settings.image.aspect_ratio
-                          assign image_class = ""
-                          assign sizes = "100%"
-                        -%}
-                      {{ block.settings.image | image_url: width: 1500 | image_tag:
-                       loading: 'lazy'
-                       , width: block.settings.image.width
-                       , height: image_height
-                       , class: image_class
-                       , sizes: sizes
-                       , widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
-                       , alt: block.settings.image.alt | escape
-                       }}
-                    </div>
-                  {%- endif -%}
-                  {{ block.settings.page.content }}
-                </div>
-              </details>
-            </div>
-          {%- endif -%}
-      {%- endcase -%}
-    {%- endfor -%}
-  {%- else -%}
-    {{ 'component-colabsible-list.css' | asset_url | stylesheet_tag }}
-    {%- for block in section.blocks -%}
-      {%- case block.type -%}
-        {%- when '@app' -%}
-          {% render block %}
-        {%- when 'collapsible_tab' -%}
-          {%- if block.settings.content != blank or block.settings.page.content != blank  or block.settings.description -%}
-            <div class="product___colabsible-list colabsible-list quick-add-hidden" {{ block.shopify_attributes }}>
-              <details id="Details-{{ block.id }}-{{ section.id }}">
-                <summary>
-                  <div class="summary__title">
-                    {% render 'icon-accordion', icon: block.settings.icon %}
-                    <h2 class="h5 accordion__title">
-                      {{ block.settings.heading | default: block.settings.page.title }}
-                    </h2>
-                  </div>
-                  {% render 'icon-caret' %}
-                </summary>
-                <div class="colabsible-list__content rte" id="ProductColabsibleList-{{ block.id }}-{{ section.id }}">
-                  {% if block.settings.description == true %}
-                    {{ product.description }}
-                  {% else %}
-                    {{ block.settings.content }}
-                  {%- endif -%}
-                  {%- if block.settings.image != blank -%}
-                    <div class="media media--{{ block.settings.image_ratio }} media--transparent {% if block.settings.image == blank %} placeholder{% endif %}">
-                      {%-liquid
-                          assign image_height = block.settings.image.width | divided_by: block.settings.image.aspect_ratio
-                          assign image_class = ""
-                          assign sizes = "100%"
-                        -%}
-                      {{ block.settings.image | image_url: width: 1500 | image_tag:
-                       loading: 'lazy'
-                       , width: block.settings.image.width
-                       , height: image_height
-                       , class: image_class
-                       , sizes: sizes
-                       , widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
-                       , alt: block.settings.image.alt | escape
-                       }}
-                    </div>
-                  {%- endif -%}
-                  {{ block.settings.page.content }}
-                </div>
-              </details>
-            </div>
-          {%- endif -%}
-      {%- endcase -%}
-    {%- endfor -%}
-  {%- endif -%}
 </section>
 {% schema %}
   {
