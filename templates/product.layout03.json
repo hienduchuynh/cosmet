@@ -99,6 +99,56 @@
         "padding_bottom": 48
       }
     },
+    "538ed27d-666d-4169-9ba0-d844989d9d9b": {
+      "type": "collapsible-info-product",
+      "blocks": {
+        "4451808a-c984-4bd8-8ba8-a69df0d051fc": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Overview",
+            "icon": "none",
+            "content": "",
+            "description": true,
+            "image_ratio": "43",
+            "page": ""
+          }
+        },
+        "60ec516c-2d9f-48d1-abba-a3b3f44a543c": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Brand",
+            "icon": "none",
+            "content": "<p><em>\"This is demonstration content, designed to showcase how pages could look with your own content\"<\/em><\/p><p><strong>How to measure yourself:<br\/><\/strong>Size Guide: S=US 4-6, M=US 8-10, L=US 12-14, XL=16.<br\/>To find the perfect fit, simply put on your favourite underwear and measure yourself directly on your body. Then use the size chart and the information found in the product description to find your fit.<\/p>",
+            "description": false,
+            "image_ratio": "43",
+            "page": ""
+          }
+        },
+        "4d16be99-0cc5-4a35-8c00-63510ede95b5": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Help",
+            "icon": "none",
+            "content": "<p>Our fashion consultants are on hand & ready to support you.Get in touch via our contact form here.<\/p>",
+            "description": false,
+            "image_ratio": "43",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "4451808a-c984-4bd8-8ba8-a69df0d051fc",
+        "60ec516c-2d9f-48d1-abba-a3b3f44a543c",
+        "4d16be99-0cc5-4a35-8c00-63510ede95b5"
+      ],
+      "settings": {
+        "collapsible_type": "tabs",
+        "box_width": 50,
+        "collapsible_tab_header_position": "top",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "167031602923d3a59d": {
       "type": "apps",
       "blocks": {
@@ -251,6 +301,8 @@
   "order": [
     "a4de4750-e826-456a-bb7a-4040745684b6",
     "main",
+    "538ed27d-666d-4169-9ba0-d844989d9d9b",
+    "ac098f9f-7ddb-4a91-90df-791466b8317e",
     "167031602923d3a59d",
     "e3d3167a-cd69-4da6-978c-88c32cdfd237",
     "4ccb95de-3281-4f51-b638-ddbcc58b0469",
