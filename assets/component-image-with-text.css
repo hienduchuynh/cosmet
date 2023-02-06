@@ -130,40 +130,54 @@
   overflow: visible;
 }
 
-.image-with-text .image-with-text__media-item .media--second-image:before {
-  content: "";
-  position: absolute;
-  width: 238px;
-  height: 266px;
-  bottom: -50px;
-  left: -128px;
-  background: url(decor-1.png);
+@media screen and (max-width: 749px) {
+  .image-with-text .grid__item.has-second-image {
+    padding: 0;
+  }
+
+  .image-with-text .image-with-text__media-item .media--second-image {
+    display: none;
+  }
 }
 
-.image-with-text .image-with-text__media-item .media--second-image:after {
-  content: "";
-  position: absolute;
-  width: 251px;
-  height: 185px;
-  top: -128px;
-  z-index: -1;
-  background: url(decor-2.png);
+@media screen and (min-width: 750px) {
+  .image-with-text .image-with-text__media-item .media--second-image:before {
+    content: "";
+    position: absolute;
+    width: 238px;
+    height: 266px;
+    bottom: -50px;
+    left: -128px;
+    background: url(decor-1.png);
+  }
+
+  .image-with-text .image-with-text__media-item .media--second-image:after {
+    content: "";
+    position: absolute;
+    width: 251px;
+    height: 185px;
+    top: -128px;
+    z-index: -1;
+    background: url(decor-2.png);
+  }
 }
 
 .image-with-text .image-with-text__media-item .media--second-image .second_image {
   border-radius: 0.8rem;
 }
 
-.image-with-text .grid__item.has-second-image:before {
-  content: "";
-  position: absolute;
-  right: 5rem;
-  bottom: 0;
-  width: 51.2rem;
-  height: 51.2rem;
-  z-index: 0;
-  background: #E7FAE7;
-  filter: blur(5rem);
+@media screen and (min-width: 750px) {
+  .image-with-text .grid__item.has-second-image:before {
+    content: "";
+    position: absolute;
+    right: 5rem;
+    bottom: 0;
+    width: 51.2rem;
+    height: 51.2rem;
+    z-index: 0;
+    background: #E7FAE7;
+    filter: blur(5rem);
+  }
 }
 
 .image-with-text .global-media-settings {
@@ -372,6 +386,12 @@
 .image-with-text__heading {
   word-break: break-word;
   margin-bottom: 6.4rem;
+}
+
+@media (max-width: 749px) {
+  .image-with-text__heading {
+    margin-bottom: 0;
+  }
 }
 
 .image-with-text__text p {
