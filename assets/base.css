@@ -2558,6 +2558,7 @@ input[type='checkbox'] {
 	height: 4.4rem;
 	width: 4.4rem;
 	background-color: transparent;
+	color: var(--color-foreground);
 }
 
 .modal__close-button .icon {
