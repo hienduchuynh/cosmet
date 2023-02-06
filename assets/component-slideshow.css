@@ -106,6 +106,10 @@ slideshow-component .slideshow.banner {
 }
 
 @media screen and (max-width: 749px) {
+  .slideshow__text.banner__box .banner__heading {
+    font-size: 3.6rem;
+  }
+
   slideshow-component.page-width .slideshow__text {
     border-right: var(--text-boxes-border-width) solid
       rgba(var(--color-foreground), var(--text-boxes-border-opacity));

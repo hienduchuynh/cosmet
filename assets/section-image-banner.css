@@ -12,6 +12,17 @@
   color: #fff;
 }
 
+@media only screen and (max-width: 749px) {
+  .banner--mobile-bottom .color-inverse.color-inverse .banner__heading {
+    color: rgb(var(--color-base-accent-1));
+  }
+
+  .banner--mobile-bottom .banner__box {
+    --color-base-text: 43, 43, 43;
+    --color-foreground: 43, 43, 43;
+  }
+}
+
 .banner__box {
   text-align: center;
 }
@@ -174,8 +185,10 @@
     height: auto;
   }
 
-  .banner--stacked .banner__media {
+  .banner--stacked .banner__media,
+  .banner--mobile-bottom .banner__media {
     flex-direction: column;
+    border-radius: 0;
   }
 }
 
@@ -186,6 +199,12 @@
   top: 0;
   width: 100%;
   border-radius: var(--media-radius);
+}
+
+@media screen and (max-width: 749px) {
+  .banner__media {
+    border-radius: 0;
+  }
 }
 
 .banner__media-half {
@@ -251,10 +270,6 @@
   .banner:not(.banner--mobile-bottom):not(.email-signup-banner) .banner__box {
     background: transparent;
     font-size: 1.4rem;
-    --color-foreground: 255, 255, 255;
-    --color-button: 255, 255, 255;
-    --color-button-text: 0, 0, 0;
-    --color-base-accent-1: 255, 255, 255;
   }
 
   .banner:not(.banner--mobile-bottom) .banner__box {
@@ -264,20 +279,13 @@
   }
 
   .banner:not(.banner--mobile-bottom) .button--secondary {
-    --color-button: 255, 255, 255;
-    --color-button-text: 255, 255, 255;
-    --alpha-button-background: 0;
   }
 
   .banner:not(.banner--mobile-bottom) .button--primary {
-    --color-button: #c1ab7c;
-    --color-button-text: 255, 255, 255;
-    --alpha-button-background: 0;
   }
 
-  .banner--stacked:not(.banner--mobile-bottom):not(.banner--adapt)
-    .banner__content {
-    position: absolute;
+  .banner--stacked:not(.banner--mobile-bottom):not(.banner--adapt) .banner__content {
+    position: static;
     height: auto;
   }
 
@@ -297,6 +305,10 @@
 
   .banner--stacked .banner__media-image-half {
     width: 100%;
+  }
+
+  .banner__media-half {
+    display: none;
   }
 }
 
