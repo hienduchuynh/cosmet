@@ -304,6 +304,9 @@
 .facets__list {
 	padding: 0.5rem 2rem;
 }
+.facets-wrap-vertical .facets__list {
+	padding: 0.5rem 0;
+}
 
 .facets__item {
 	display: flex;
