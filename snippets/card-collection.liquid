@@ -29,11 +29,11 @@ Usage:
  -%}
 <div class="card-wrapper animate-arrow">
   <div class="card
-              card--{{ settings.card_style }}
-              {% if card_collection.featured_image %} card--media{% else %} card--text{% endif %}
-              {% if settings.card_style == 'card' %} color-{{ settings.card_color_scheme }} gradient{% endif %}
-              {% if extend_height %} card--extend-height{% endif %}
-              {% if card_collection.featured_image == nil and settings.card_style == 'card' %} ratio{% endif %}"style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
+                                card--{{ settings.card_style }}
+                                {% if card_collection.featured_image %} card--media{% else %} card--text{% endif %}
+                                {% if settings.card_style == 'card' %} color-{{ settings.card_color_scheme }} gradient{% endif %}
+                                {% if extend_height %} card--extend-height{% endif %}
+                                {% if card_collection.featured_image == nil and settings.card_style == 'card' %} ratio{% endif %}"style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
     <div class="card__inner {% if settings.card_style == 'standard' %}color-{{ settings.card_color_scheme }} gradient{% endif %}{% if card_collection.featured_image or settings.card_style == 'standard' %} ratio{% endif %}" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
       {%- if card_collection.featured_image -%}
         <div class="card__media">
@@ -56,9 +56,9 @@ Usage:
             {{ card_collection.featured_image | image_url }} {{ card_collection.featured_image.width }}w"
             src="{{ card_collection.featured_image | image_url: width: 1500 }}"
             sizes="
-                  (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: columns }}px,
-                  (min-width: 750px) {% if columns > 1 %}calc((100vw - 10rem) / 2){% else %}calc(100vw - 10rem){% endif %},
-                  calc(100vw - 3rem)"
+                                                            (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: columns }}px,
+                                                            (min-width: 750px) {% if columns > 1 %}calc((100vw - 10rem) / 2){% else %}calc(100vw - 10rem){% endif %},
+                                                            calc(100vw - 3rem)"
             alt=""
             height="{{ card_collection.featured_image.height }}"
             width="{{ card_collection.featured_image.width }}"
@@ -67,33 +67,26 @@ Usage:
           </div>
         </div>
       {%- endif -%}
-      <div class="card__content">
-        <div class="card__information">
-          <div class="card__information-inner">
-            <h3 class="card__heading h3">
-              <a {% if card_collection == blank %}role="link"aria-disabled="true"{% else %}href="{{ card_collection.url }}"{% endif %} class="full-unstyled-link">
-                {%- if card_collection.title != blank -%}
-                  {{- card_collection.title | escape -}}
-                {%- else -%}
-                  {{ 'onboarding.collection_title' | t }}
-                {%- endif -%}
-              </a>
-            </h3>
-            <span class="count">
-              {{ card_collection.all_products_count }} Product's
-            </span>
-            {%- if card_collection.description != blank and show_description == true -%}
-              <p class="card__description">
-                {{- card_collection.description | strip_html | truncatewords: 12 -}}
-              </p>
+    </div>
+    <div class="card__content">
+      <div class="card__information">
+        <h3 class="card__heading h3">
+          <a {% if card_collection == blank %}role="link"aria-disabled="true"{% else %}href="{{ card_collection.url }}"{% endif %} class="full-unstyled-link">
+            {%- if card_collection.title != blank -%}
+              {{- card_collection.title | escape -}}
+            {%- else -%}
+              {{ 'onboarding.collection_title' | t }}
             {%- endif -%}
-          </div>
-          <div class="card__buttons">
-            <a {% if card_collection == blank %}role="link"aria-disabled="true"{% else %}href="{{ card_collection.url }}"{% endif %} class="full-unstyled-link button button--secondary">
-              <span class="icon-wrap">{% render 'icon-arrow' %}</span>
-            </a>
-          </div>
-        </div>
+          </a>
+        </h3>
+        <span class="count">
+          {{ card_collection.all_products_count }} Product's
+        </span>
+        {%- if card_collection.description != blank and show_description == true -%}
+          <p class="card__description">
+            {{- card_collection.description | strip_html | truncatewords: 12 -}}
+          </p>
+        {%- endif -%}
       </div>
     </div>
   </div>
