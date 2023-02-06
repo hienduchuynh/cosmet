@@ -118,7 +118,7 @@
           "settings": {
             "heading": "Brand",
             "icon": "none",
-            "content": "<p>Content Here<\/p>",
+            "content": "<p>The Bioderma, a trusted and innovative skincare brand that has been delivering results for over 30 years. With a focus on sensitive skin, Bioderma offers a range of products designed to effectively cleanse, hydrate, and protect the skin, while being gentle and non-irritating. From their best-selling Sensibio H2O Micelle Solution to their Hydrabio line, Bioderma has something for every skin type. Experience the difference for yourself and see why Bioderma has become a favorite among skincare enthusiasts and dermatologists alike.<\/p>",
             "description": false,
             "image_ratio": "43",
             "page": ""
@@ -129,7 +129,7 @@
           "settings": {
             "heading": "Help",
             "icon": "none",
-            "content": "<p>Help content<\/p>",
+            "content": "<p>Cosmet Help Service is your one-stop solution for all your support needs. Our highly trained and friendly experts are here to assist you with any issues you may encounter while using our products and services. Whether you have a question or concern or need some guidance, we are here to help. With our 24\/7 availability, you can reach us at any time, day or night, via phone, email, or live chat. Trust us to provide you with prompt and efficient support, so you can get the most out of your experience with Cosmet.<\/p>",
             "description": false,
             "image_ratio": "43",
             "page": ""
@@ -189,6 +189,7 @@
             "image_position": "top",
             "title": "Shake well",
             "title_size": "h3",
+            "meta": "",
             "icon": "none",
             "icon_position": "left",
             "text": "<p>After checking the lid’s on tight, give your bottle of wellness a little shake.<\/p>",
@@ -209,6 +210,7 @@
             "image_position": "top",
             "title": "Give it a squeeze",
             "title_size": "h3",
+            "meta": "",
             "icon": "none",
             "icon_position": "left",
             "text": "<p>Unscrew and squeeze so the dropper fills up with the good stuff.<\/p>",
@@ -229,6 +231,7 @@
             "image_position": "top",
             "title": "Drop under your tongue",
             "title_size": "h3",
+            "meta": "",
             "icon": "none",
             "icon_position": "left",
             "text": "<p>Place 2 or 3 drops under your tongue, hold for a minute, then swallow.<\/p>",
@@ -271,6 +274,10 @@
         "swipe_on_mobile": false,
         "padding_top": 100,
         "padding_bottom": 100,
+        "border_top_thickness": 0,
+        "border_top_opacity": 0,
+        "border_bottom_thickness": 0,
+        "border_bottom_opacity": 0,
         "mod_class": "product-how-to-use"
       }
     },
