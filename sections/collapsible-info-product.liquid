@@ -117,7 +117,7 @@
         {%- when 'collapsible_tab' -%}
           {%- if block.settings.content != blank or block.settings.page.content != blank  or block.settings.description == true -%}
             <div class="product___accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
-              <details id="Details-{{ block.id }}-{{ section.id }}">
+              <details id="Details-{{ block.id }}-{{ section.id }}" {% if forloop.first == true %}open{%- endif -%}>
                 <summary>
                   <div class="summary__title">
                     {% render 'icon-accordion', icon: block.settings.icon %}
