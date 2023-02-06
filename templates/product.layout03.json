@@ -99,6 +99,32 @@
         "padding_bottom": 48
       }
     },
+    "ac098f9f-7ddb-4a91-90df-791466b8317e": {
+      "type": "collapsible-info-product",
+      "blocks": {
+        "be1c17fa-98f5-483d-bc9b-a75cd33ca027": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Overview",
+            "icon": "none",
+            "content": "",
+            "description": true,
+            "image_ratio": "43",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "be1c17fa-98f5-483d-bc9b-a75cd33ca027"
+      ],
+      "settings": {
+        "collapsible_type": "tabs",
+        "box_width": 50,
+        "collapsible_tab_header_position": "top",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "167031602923d3a59d": {
       "type": "apps",
       "blocks": {
@@ -251,6 +277,7 @@
   "order": [
     "a4de4750-e826-456a-bb7a-4040745684b6",
     "main",
+    "ac098f9f-7ddb-4a91-90df-791466b8317e",
     "167031602923d3a59d",
     "e3d3167a-cd69-4da6-978c-88c32cdfd237",
     "4ccb95de-3281-4f51-b638-ddbcc58b0469",
