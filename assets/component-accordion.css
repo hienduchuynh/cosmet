@@ -53,7 +53,7 @@
     margin-bottom: 1.5rem;
     word-break: break-word;
     overflow-x: auto;
-    padding: 0 0.6rem;
+    padding: 0;
 }
 .product___accordion.description .summary__title svg:empty{ 
     display: none;
