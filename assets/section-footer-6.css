@@ -49,6 +49,7 @@
 .footer-06 .footer__list-social,
 .footer-06 .footer-block__details-content .button {
 	margin-top: 4rem;
+	justify-content: flex-start;
 }
 
 .footer-06 .list-social__link {
