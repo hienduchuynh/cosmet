@@ -118,7 +118,7 @@
           "settings": {
             "heading": "Brand",
             "icon": "none",
-            "content": "<p>The Bioderma, a trusted and innovative skincare brand that has been delivering results for over 30 years. With a focus on sensitive skin, Bioderma offers a range of products designed to effectively cleanse, hydrate, and protect the skin, while being gentle and non-irritating. From their best-selling Sensibio H2O Micelle Solution to their Hydrabio line, Bioderma has something for every skin type. Experience the difference for yourself and see why Bioderma has become a favorite among skincare enthusiasts and dermatologists alike.<\/p>",
+            "content": "<p>{{ product.metafields.custom.product_brand | metafield_tag }}<\/p>",
             "description": false,
             "image_ratio": "43",
             "page": ""
@@ -129,7 +129,7 @@
           "settings": {
             "heading": "Help",
             "icon": "none",
-            "content": "<p>Cosmet Help Service is your one-stop solution for all your support needs. Our highly trained and friendly experts are here to assist you with any issues you may encounter while using our products and services. Whether you have a question or concern or need some guidance, we are here to help. With our 24\/7 availability, you can reach us at any time, day or night, via phone, email, or live chat. Trust us to provide you with prompt and efficient support, so you can get the most out of your experience with Cosmet.<\/p>",
+            "content": "<p>{{ product.metafields.custom.product_help_info | metafield_tag }}<\/p>",
             "description": false,
             "image_ratio": "43",
             "page": ""
