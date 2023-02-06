@@ -51,6 +51,10 @@
   margin-top: 1.6rem;
 }
 
+.contact-description a {
+  color: inherit;
+}
+
 /* Image */
 .contact img {
   max-width: 100%;
