@@ -417,8 +417,15 @@
   column-gap: var(--grid-mobile-horizontal-spacing);
   row-gap: calc(var(--grid-mobile-vertical-spacing) * 2);
   display: flex;
+  align-items: center;
 }
 
 .features-intro .feature-item h5 {
   margin: 0;
+}
+
+@media screen and (max-width: 749px) {
+  .image-with-text__content > .button {
+    margin-top: 2.4rem;
+  }
 }
