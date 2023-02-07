@@ -677,7 +677,7 @@
         "layout": "grid",
         "item_ratio": "34",
         "columns_desktop": 2,
-        "swipe_on_desktop": false,
+        "swipe_on_desktop": true,
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "padding_top": 64,
