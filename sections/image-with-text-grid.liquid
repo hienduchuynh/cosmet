@@ -21,12 +21,6 @@
   if section.settings.swipe_on_mobile and section.blocks.size > columns_mobile_int
     assign show_mobile_slider = true
   endif
-
-  assign columns_desktop_int = section.settings.columns_desktop | plus: 0
-  assign show_desktop_slider = false
-  if section.settings.swipe_on_desktop and section.blocks.size > columns_desktop_int
-    assign show_desktop_slider = true
-  endif
 -%}
 
 <div class="image-with-text image-with-text-grid {% if section.settings.title == blank %} no-heading{% endif %}">
@@ -46,16 +40,15 @@
     <slider-component>
       <div class="grid {% if section.settings.layout == 'grid--gapless' %} grid--gapless{% endif %} grid--1-col grid--{{ section.settings.columns_mobile }}-col-tablet-down grid--{{ section.settings.columns_desktop }}-col-desktop slider slider--everywhere" id="Slider-{{ section.id }}" role="list">
         {%-liquid
-          assign columns_desktop = section.settings.columns_desktop
-
-          if section.blocks.size <= section.settings.columns_desktop
-            assign num_dot_desktop = 1
-          else
-            assign num_dot_desktop = section.blocks.size | minus: section.settings.columns_desktop
-          endif
-
           assign columns_mobile = section.settings.columns_mobile
+
+          if section.blocks.size <= section.settings.columns_mobile
+            assign num_dot_mobile = 1
+          else
+            assign num_dot_mobile = section.blocks.size | minus: section.settings.columns_mobile
+          endif
         -%}
+
         {%- for block in section.blocks -%}
           <div id="Slide-{{ section.id }}-{{ forloop.index }}" class="grid__item content-container color-{{ block.settings.color_scheme }} gradient slider__slide">
             <div class="media media--{{ section.settings.item_ratio }} {% if block.settings.image == blank %} placeholder{% endif %}">
@@ -98,12 +91,11 @@
           </div>
         {%- endfor -%}
       </div>
-
-      {% if num_dot_desktop > 1 %}
+      {% if num_dot_mobile > 1 %} 
       <div class="slider-buttons no-js-hidden">
         <div class="slider-counter slider-counter--dots">
           <div class="slideshow__control-wrapper">
-            {%- for block_ in (1..num_dot_desktop) -%}
+            {%- for block_ in (1..num_dot_mobile) -%}
               <button class="slider-counter__link slider-counter__link--dots link" aria-label="{{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}" aria-controls="Slide-{{ section.id }}">
                 <span class="dot"></span>
               </button>
@@ -212,12 +204,6 @@
       "step": 1,
       "default": 3,
       "label": "t:sections.image-banner-text-grid.settings.columns_desktop.label"
-    },
-    {
-      "type": "checkbox",
-      "id": "swipe_on_desktop",
-      "default": false,
-      "label": "t:sections.image-banner-text-grid.settings.swipe_on_desktop.label"
     },
     {
       "type": "header",
