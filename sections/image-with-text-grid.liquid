@@ -23,7 +23,7 @@
   endif
 -%}
 
-<div class="image-with-text image-with-text-grid {% if section.settings.title == blank %} no-heading{% endif %}">
+<div class="image-with-text image-with-text-grid {% if section.settings.title == blank %} no-heading{% endif %} {% if section.settings.class_suffix != blank %} {{ section.settings.class_suffix }}{% endif %}">
   <div class="{% if section.settings.layout == 'grid' %} page-width{% endif %} section-{{ section.id }}-padding isolate">
     {%- unless section.settings.title == blank -%}
       <div class="title-wrapper title-wrapper--self-padded-mobile title-wrapper--no-top-margin">
@@ -89,6 +89,11 @@
   "class": "section",
   "tag": "section",
   "settings": [
+    {
+      "type": "text",
+      "id": "class_suffix",
+      "label": "t:sections.image-with-text.settings.class_suffix.label"
+    },
     {
       "type": "text",
       "id": "title",
