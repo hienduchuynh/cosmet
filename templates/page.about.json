@@ -83,8 +83,8 @@
         "desktop_content_alignment": "center",
         "color_scheme": "background-1",
         "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
+        "stack_images_on_mobile": false,
+        "show_text_below": false
       }
     },
     "17b9d406-9383-4237-aa65-707960d8ba5e": {
@@ -266,6 +266,7 @@
             "image_position": "top",
             "title": "Free samples on every order",
             "title_size": "h4",
+            "meta": "",
             "icon": "none",
             "icon_position": "left",
             "text": "<p>Vegan and Leaping Bunny certified cruelty-free<br\/><\/p>",
@@ -286,6 +287,7 @@
             "image_position": "top",
             "title": "Free shipping over 100€",
             "title_size": "h4",
+            "meta": "",
             "icon": "none",
             "icon_position": "left",
             "text": "<p>Organic, plant-based, soy-free, gluten-free, paraben-free, non-toxic, and non-GMO<\/p>",
@@ -306,6 +308,7 @@
             "image_position": "top",
             "title": "Free beauty bag over 150€",
             "title_size": "h4",
+            "meta": "",
             "icon": "none",
             "icon_position": "left",
             "text": "<p>Based in Los Angeles, California where we make, pour, label, package, and ship everything<\/p>",
@@ -347,6 +350,10 @@
         "swipe_on_mobile": false,
         "padding_top": 64,
         "padding_bottom": 128,
+        "border_top_thickness": 0,
+        "border_top_opacity": 0,
+        "border_bottom_thickness": 0,
+        "border_bottom_opacity": 0,
         "mod_class": ""
       }
     }
