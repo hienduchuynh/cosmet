@@ -299,3 +299,9 @@
     align-items: flex-end;
     justify-content: flex-end;
 }
+
+
+/*Addon*/
+.ja-page-banner-sale {
+    overflow: hidden;
+}
