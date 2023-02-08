@@ -139,9 +139,20 @@
         "4d16be99-0cc5-4a35-8c00-63510ede95b5": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "More",
+            "heading": "Usage",
             "icon": "none",
-            "content": "<p>Our cosmet consultants are on hand & ready to support you.Get in touch via our contact form here.<\/p>",
+            "content": "<p>Follow these steps:<\/p><ul><li>Wet your hair thoroughly.<\/li><li>Apply a small amount of shampoo to your palms and rub them together.<\/li><li>Massage the shampoo into your scalp, creating a lather.<\/li><li>Gently work the lather through the length of your hair, making sure to cover every strand.<\/li><li>Rinse the shampoo out of your hair with warm water.<\/li><li>Repeat the process if desired, or follow up with a conditioner for added moisture.<\/li><li>Rinse your hair with cool water to close the cuticles and help lock in shine.<\/li><\/ul><p>Note: The amount of shampoo needed may vary depending on the length and thickness of your hair. Always follow the instructions on the product label for best results.<\/p>",
+            "description": false,
+            "image_ratio": "43",
+            "page": ""
+          }
+        },
+        "20695e2d-460d-4b0f-84ea-71232778e93f": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Warning",
+            "icon": "none",
+            "content": "<p>For external use only. Avoid contact with eyes. If contact occurs, rinse thoroughly with water. If skin irritation occurs, discontinue use and consult a doctor if necessary. Keep out of reach of children. Store in a cool, dry place. Sunburn Alert: This product contains an alpha hydroxy acid (AHA) that may increase your skin's sensitivity to the sun and particularly the possibility of sunburn. Use a sunscreen, wear protective clothing, and limit sun exposure while using this product and for a week afterwards.<\/p>",
             "description": false,
             "image_ratio": "43",
             "page": ""
@@ -152,7 +163,8 @@
         "9d69b8fa-2168-4960-8c44-1db10c4cf754",
         "d12a6838-f7f5-4693-a9b4-e19b80592a10",
         "60ec516c-2d9f-48d1-abba-a3b3f44a543c",
-        "4d16be99-0cc5-4a35-8c00-63510ede95b5"
+        "4d16be99-0cc5-4a35-8c00-63510ede95b5",
+        "20695e2d-460d-4b0f-84ea-71232778e93f"
       ],
       "settings": {
         "collapsible_type": "accordion",

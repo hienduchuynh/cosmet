@@ -83,6 +83,12 @@
   margin-top: 6.4rem;
 }
 
+@media screen and (max-width: 749px) {
+  .article-card__footer:last-child {
+    margin-top: 2.4rem;
+  }
+}
+
 .article-card__excerpt {
   width: 100%;
   margin-top: 1.2rem;

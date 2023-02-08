@@ -99,10 +99,10 @@
         "padding_bottom": 48
       }
     },
-    "538ed27d-666d-4169-9ba0-d844989d9d9b": {
+    "ac098f9f-7ddb-4a91-90df-791466b8317e": {
       "type": "collapsible-info-product",
       "blocks": {
-        "4451808a-c984-4bd8-8ba8-a69df0d051fc": {
+        "be1c17fa-98f5-483d-bc9b-a75cd33ca027": {
           "type": "collapsible_tab",
           "settings": {
             "heading": "Overview",
@@ -113,23 +113,23 @@
             "page": ""
           }
         },
-        "60ec516c-2d9f-48d1-abba-a3b3f44a543c": {
+        "22bd2046-c411-4ab8-8dd5-f578a4561b28": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Brand",
+            "heading": "Usage",
             "icon": "none",
-            "content": "<p><em>\"This is demonstration content, designed to showcase how pages could look with your own content\"<\/em><\/p><p><strong>How to measure yourself:<br\/><\/strong>Size Guide: S=US 4-6, M=US 8-10, L=US 12-14, XL=16.<br\/>To find the perfect fit, simply put on your favourite underwear and measure yourself directly on your body. Then use the size chart and the information found in the product description to find your fit.<\/p>",
+            "content": "<p>Introducing our Bonding Hair Oil, a nourishing blend of natural oils specifically designed to strengthen and protect your hair. Infused with vitamins and antioxidants, this lightweight formula helps to revitalize damaged, weakened hair, restoring its natural shine and softness.<\/p><p>To use our Bonding Hair Oil:<\/p><ul><li>Shampoo and condition your hair as normal.<\/li><li>Towel dry your hair to remove excess water.<\/li><li>Pour a small amount of bonding hair oil into your palms, about the size of a quarter.<\/li><li>Rub your hands together to warm up the oil.<\/li><li>Starting from the ends of your hair, work the oil through the length of your hair, being careful to avoid the roots.<\/li><li>Use a wide-tooth comb or your fingers to distribute the oil evenly throughout your hair.<\/li><li>Leave the oil in for at least 10 minutes, or for as long as desired.<\/li><li>Rinse the oil out with warm water.<\/li><li>Style your hair as usual.<\/li><\/ul><p>Note: The amount of bonding hair oil needed may vary depending on the length and thickness of your hair. Always follow the instructions on the product label for best results.<\/p><p>Our Bonding Hair Oil is free from parabens, sulfates, and harsh chemicals, making it suitable for all hair types. Use regularly for best results and to help keep your hair healthy and strong.<\/p>",
             "description": false,
             "image_ratio": "43",
             "page": ""
           }
         },
-        "4d16be99-0cc5-4a35-8c00-63510ede95b5": {
+        "b219c013-c2fd-40a3-b646-1652f4c0626b": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Help",
-            "icon": "none",
-            "content": "<p>Our fashion consultants are on hand & ready to support you.Get in touch via our contact form here.<\/p>",
+            "heading": "Warning",
+            "icon": "check_mark",
+            "content": "<p>For external use only. Avoid contact with eyes. If contact occurs, rinse thoroughly with water. If skin irritation occurs, discontinue use and consult a doctor if necessary. Keep out of reach of children. Store in a cool, dry place. Sunburn Alert: This product contains an alpha hydroxy acid (AHA) that may increase your skin's sensitivity to the sun and particularly the possibility of sunburn. Use a sunscreen, wear protective clothing, and limit sun exposure while using this product and for a week afterwards.<\/p>",
             "description": false,
             "image_ratio": "43",
             "page": ""
@@ -137,9 +137,9 @@
         }
       },
       "block_order": [
-        "4451808a-c984-4bd8-8ba8-a69df0d051fc",
-        "60ec516c-2d9f-48d1-abba-a3b3f44a543c",
-        "4d16be99-0cc5-4a35-8c00-63510ede95b5"
+        "be1c17fa-98f5-483d-bc9b-a75cd33ca027",
+        "22bd2046-c411-4ab8-8dd5-f578a4561b28",
+        "b219c013-c2fd-40a3-b646-1652f4c0626b"
       ],
       "settings": {
         "collapsible_type": "tabs",
@@ -301,7 +301,6 @@
   "order": [
     "a4de4750-e826-456a-bb7a-4040745684b6",
     "main",
-    "538ed27d-666d-4169-9ba0-d844989d9d9b",
     "ac098f9f-7ddb-4a91-90df-791466b8317e",
     "167031602923d3a59d",
     "e3d3167a-cd69-4da6-978c-88c32cdfd237",

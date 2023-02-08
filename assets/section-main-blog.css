@@ -64,6 +64,12 @@
   }
 }
 
+@media screen and (max-width: 749px) {
+  .blog-articles {
+    margin-bottom: 2.4rem;
+  }
+}
+
 .main-blog-block .main-blog {
   padding-top: calc(var(--grid-mobile-vertical-spacing) * 2);
   padding-bottom: calc(var(--grid-mobile-vertical-spacing) * 2);
