@@ -139,9 +139,20 @@
         "4d16be99-0cc5-4a35-8c00-63510ede95b5": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "More",
+            "heading": "Usage",
             "icon": "none",
             "content": "<p>Our cosmet consultants are on hand & ready to support you.Get in touch via our contact form here.<\/p>",
+            "description": false,
+            "image_ratio": "43",
+            "page": ""
+          }
+        },
+        "20695e2d-460d-4b0f-84ea-71232778e93f": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Warning",
+            "icon": "none",
+            "content": "",
             "description": false,
             "image_ratio": "43",
             "page": ""
@@ -152,7 +163,8 @@
         "9d69b8fa-2168-4960-8c44-1db10c4cf754",
         "d12a6838-f7f5-4693-a9b4-e19b80592a10",
         "60ec516c-2d9f-48d1-abba-a3b3f44a543c",
-        "4d16be99-0cc5-4a35-8c00-63510ede95b5"
+        "4d16be99-0cc5-4a35-8c00-63510ede95b5",
+        "20695e2d-460d-4b0f-84ea-71232778e93f"
       ],
       "settings": {
         "collapsible_type": "accordion",
