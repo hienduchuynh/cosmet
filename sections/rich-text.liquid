@@ -6,8 +6,8 @@
 
 {%- style -%}
   .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    padding-top: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px;
     border-top: {{ section.settings.border_top_thickness }}px solid rgba(0, 0, 0, {{ section.settings.border_top_opacity }}%);
     border-bottom: {{ section.settings.border_bottom_thickness }}px solid rgba(0, 0, 0, {{ section.settings.border_bottom_opacity }}%);
   }
