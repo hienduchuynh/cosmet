@@ -116,9 +116,9 @@
         "79dcad13-559a-4436-b2f5-8fc9979a463c": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Brand",
+            "heading": "Usage",
             "icon": "none",
-            "content": "<p>Content Here<\/p>",
+            "content": "<p>Introducing our Bonding Hair Oil, the ultimate solution for revitalizing weak and damaged hair. Infused with a blend of nourishing natural oils and enriched with vitamins and antioxidants, this hair oil helps to strengthen and protect your locks from further damage.<\/p><p>With its lightweight, non-greasy formula, our Bonding Hair Oil is perfect for everyday use. Here's how to use it:<\/p><ul><li>Start by washing your hair with shampoo and conditioner as usual.<\/li><li>Gently towel-dry your hair to remove excess moisture.<\/li><li>Pour a small amount of oil into the palm of your hand, about the size of a quarter.<\/li><li>Rub your hands together to warm the oil.<\/li><li>Starting from the ends of your hair, work the oil through the length, being careful to avoid the roots.<\/li><li>Use a wide-tooth comb or your fingers to distribute the oil evenly throughout your hair.<\/li><li>Leave the oil in for at least 10 minutes, or for as long as desired.<\/li><li>Rinse the oil out with warm water.<\/li><li>Style your hair as usual.<\/li><\/ul><p>Note: The amount of oil needed may vary based on the length and thickness of your hair. Always follow the instructions on the product label for best results.<\/p><p>Our Bonding Hair Oil is free from harsh chemicals such as parabens and sulfates, making it suitable for all hair types. Use it regularly to help restore the natural shine and softness of your hair, leaving it looking and feeling revitalized.<\/p>",
             "description": false,
             "image_ratio": "43",
             "page": ""
@@ -127,9 +127,9 @@
         "8886ca12-8765-4192-83ec-3250a3489334": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Help",
+            "heading": "warning",
             "icon": "none",
-            "content": "<p>Help content<\/p>",
+            "content": "<p>For external use only. Avoid contact with eyes. If contact occurs, rinse thoroughly with water. If skin irritation occurs, discontinue use and consult a doctor if necessary. Keep out of reach of children. Store in a cool, dry place. Sunburn Alert: This product contains an alpha hydroxy acid (AHA) that may increase your skin's sensitivity to the sun and particularly the possibility of sunburn. Use a sunscreen, wear protective clothing, and limit sun exposure while using this product and for a week afterwards.<\/p>",
             "description": false,
             "image_ratio": "43",
             "page": ""
@@ -189,6 +189,7 @@
             "image_position": "top",
             "title": "Shake well",
             "title_size": "h3",
+            "meta": "",
             "icon": "none",
             "icon_position": "left",
             "text": "<p>After checking the lid’s on tight, give your bottle of wellness a little shake.<\/p>",
@@ -209,6 +210,7 @@
             "image_position": "top",
             "title": "Give it a squeeze",
             "title_size": "h3",
+            "meta": "",
             "icon": "none",
             "icon_position": "left",
             "text": "<p>Unscrew and squeeze so the dropper fills up with the good stuff.<\/p>",
@@ -229,6 +231,7 @@
             "image_position": "top",
             "title": "Drop under your tongue",
             "title_size": "h3",
+            "meta": "",
             "icon": "none",
             "icon_position": "left",
             "text": "<p>Place 2 or 3 drops under your tongue, hold for a minute, then swallow.<\/p>",
@@ -271,6 +274,10 @@
         "swipe_on_mobile": false,
         "padding_top": 100,
         "padding_bottom": 100,
+        "border_top_thickness": 0,
+        "border_top_opacity": 0,
+        "border_bottom_thickness": 0,
+        "border_bottom_opacity": 0,
         "mod_class": "product-how-to-use"
       }
     },
