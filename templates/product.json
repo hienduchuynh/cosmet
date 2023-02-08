@@ -141,7 +141,7 @@
           "settings": {
             "heading": "Usage",
             "icon": "none",
-            "content": "<p>Our cosmet consultants are on hand & ready to support you.Get in touch via our contact form here.<\/p>",
+            "content": "<p>Follow these steps:<\/p><ul><li>Wet your hair thoroughly.<\/li><li>Apply a small amount of shampoo to your palms and rub them together.<\/li><li>Massage the shampoo into your scalp, creating a lather.<\/li><li>Gently work the lather through the length of your hair, making sure to cover every strand.<\/li><li>Rinse the shampoo out of your hair with warm water.<\/li><li>Repeat the process if desired, or follow up with a conditioner for added moisture.<\/li><li>Rinse your hair with cool water to close the cuticles and help lock in shine.<\/li><\/ul><p>Note: The amount of shampoo needed may vary depending on the length and thickness of your hair. Always follow the instructions on the product label for best results.<\/p>",
             "description": false,
             "image_ratio": "43",
             "page": ""
@@ -152,7 +152,7 @@
           "settings": {
             "heading": "Warning",
             "icon": "none",
-            "content": "",
+            "content": "<p>For external use only. Avoid contact with eyes. If contact occurs, rinse thoroughly with water. If skin irritation occurs, discontinue use and consult a doctor if necessary. Keep out of reach of children. Store in a cool, dry place. Sunburn Alert: This product contains an alpha hydroxy acid (AHA) that may increase your skin's sensitivity to the sun and particularly the possibility of sunburn. Use a sunscreen, wear protective clothing, and limit sun exposure while using this product and for a week afterwards.<\/p>",
             "description": false,
             "image_ratio": "43",
             "page": ""
