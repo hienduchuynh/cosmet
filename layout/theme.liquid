@@ -306,15 +306,12 @@
 
     <div class="ja-wrapper">
       <div class="ja-container ja-page-{{ template | handleize }}">
-        {% render 'wrapper-header' %}
+        {% section 'header-04' %}
         <div class="mainContent-footer-wrapper">
           <main id="MainContent" class="content-for-layout focus-none main-{{ template | handleize }} {% if template == "product" or template == "product.layout01" or template == "product.layout02"  or template == "product.layout03" or template == "product.layout04" or template == "product.layout05" or template == "product.layout06" %} product-page{% endif %} {% if template == "collection" or template == "collection.collection01" or template == "collection.collection02" or template == "collection.collection03" %} collection-page{% endif %}" role="main" tabindex="-1">
             {{ content_for_layout }}
           </main>
-
-          {% if settings.header_layout != '05' %}
-            {% render 'wrapper-footer' %}
-          {% endif %}
+          {% section 'footer-06' %}
         </div>
       </div>
     </div>

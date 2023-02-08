@@ -147,6 +147,7 @@
     color: var(--color-foreground);
     margin-top: 0;
     margin-bottom: 0;
+    font-weight: 300;
 }
 
 .image-with-text-grid .grid__item .content h3 + .button {

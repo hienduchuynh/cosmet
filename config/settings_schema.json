@@ -1,96 +1,11 @@
 [
   {
     "name": "theme_info",
-    "theme_name": "Peakshop",
+    "theme_name": "Cosmet",
     "theme_version": "1.0.0",
     "theme_author": "Joomlart",
-    "theme_documentation_url": "https:\/\/joomlart.gitbook.io\/peakshop-documentation\/",
+    "theme_documentation_url": "https:\/\/joomlart.gitbook.io\/cosmet-documentation\/",
     "theme_support_url": "https:\/\/joomlart.com\/"
-  },
-  {
-    "name": "t:settings_schema.multilayout.name",
-    "settings": [
-      {
-        "type": "select",
-        "id": "header_layout",
-        "label": "t:settings_schema.multilayout.settings.header_layout.label",
-        "options": [
-          {
-            "value": "01",
-            "label": "t:settings_schema.multilayout.settings.header_layout.label__1"
-          },
-          {
-            "value": "02",
-            "label": "t:settings_schema.multilayout.settings.header_layout.label__2"
-          },
-          {
-            "value": "03",
-            "label": "t:settings_schema.multilayout.settings.header_layout.label__3"
-          },
-          {
-            "value": "04",
-            "label": "t:settings_schema.multilayout.settings.header_layout.label__4"
-          },
-          {
-            "value": "05",
-            "label": "t:settings_schema.multilayout.settings.header_layout.label__5"
-          }
-        ],
-        "default": "03"
-      },
-      {
-        "type": "select",
-        "id": "footer_layout",
-        "label": "t:settings_schema.multilayout.settings.footer_layout.label",
-        "options": [
-          {
-            "value": "01",
-            "label": "t:settings_schema.multilayout.settings.footer_layout.label__1"
-          },
-          {
-            "value": "02",
-            "label": "t:settings_schema.multilayout.settings.footer_layout.label__2"
-          },
-          {
-            "value": "03",
-            "label": "t:settings_schema.multilayout.settings.footer_layout.label__3"
-          },
-          {
-            "value": "04",
-            "label": "t:settings_schema.multilayout.settings.footer_layout.label__4"
-          },
-          {
-            "value": "05",
-            "label": "t:settings_schema.multilayout.settings.footer_layout.label__5"
-          },
-          {
-            "value": "06",
-            "label": "t:settings_schema.multilayout.settings.footer_layout.label__6"
-          }
-        ],
-        "default": "05"
-      },
-      {
-        "type": "select",
-        "id": "blog_layout",
-        "label": "t:settings_schema.multilayout.settings.blog_layout.label",
-        "options": [
-          {
-            "value": "01",
-            "label": "t:settings_schema.multilayout.settings.blog_layout.label__1"
-          },
-          {
-            "value": "02",
-            "label": "t:settings_schema.multilayout.settings.blog_layout.label__2"
-          },
-          {
-            "value": "03",
-            "label": "t:settings_schema.multilayout.settings.blog_layout.label__3"
-          }
-        ],
-        "default": "01"
-      }
-    ]
   },
   {
     "name": "t:settings_schema.colors.name",
