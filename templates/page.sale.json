@@ -91,14 +91,13 @@
         "16e600de-edd8-40e2-9e17-d245f40f8a49"
       ],
       "settings": {
+        "class_suffix": "ja-page-sale",
         "title": "",
         "heading_size": "hxl",
         "layout": "grid--gapless",
         "item_ratio": "34",
         "columns_desktop": 3,
-        "swipe_on_desktop": false,
         "columns_mobile": "1",
-        "swipe_on_mobile": false,
         "padding_top": 0,
         "padding_bottom": 0
       }
