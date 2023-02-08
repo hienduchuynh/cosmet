@@ -56,7 +56,7 @@
         "desktop_content_alignment": "center",
         "color_scheme": "background-1",
         "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
+        "stack_images_on_mobile": false,
         "show_text_below": true
       }
     },
@@ -106,6 +106,7 @@
             "image_position": "bottom",
             "title": "Business Hours",
             "title_size": "h3",
+            "meta": "",
             "icon": "stopwatch",
             "icon_position": "left",
             "text": "<p><strong>Monday<\/strong> - By appointment<\/p><p><strong>Tuesday to Friday<\/strong> - 11am - 6pm<\/p><p><strong>Saturday to Sunday<\/strong> -11am - 5pm<\/p>",
@@ -126,6 +127,7 @@
             "image_position": "bottom",
             "title": "Flagship store",
             "title_size": "h3",
+            "meta": "",
             "icon": "bottle",
             "icon_position": "left",
             "text": "<p><strong>Cosmet store<\/strong><\/p><p>2118 Thornridge Cir. Syracuse, <\/p><p>Connecticut 35624<\/p><p><\/p>",
@@ -166,6 +168,10 @@
         "swipe_on_mobile": false,
         "padding_top": 0,
         "padding_bottom": 128,
+        "border_top_thickness": 0,
+        "border_top_opacity": 0,
+        "border_bottom_thickness": 0,
+        "border_bottom_opacity": 0,
         "mod_class": ""
       }
     }

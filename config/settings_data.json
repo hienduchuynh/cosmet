@@ -1,8 +1,5 @@
 {
   "current": {
-    "header_layout": "04",
-    "footer_layout": "06",
-    "blog_layout": "01",
     "colors_solid_button_labels": "#ffffff",
     "colors_accent_1": "#1e293b",
     "gradient_accent_1": "",
@@ -121,6 +118,9 @@
     "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
     "checkout_accent_color": "#212121",
     "checkout_button_color": "#212121",
+    "header_layout": "04",
+    "footer_layout": "06",
+    "blog_layout": "01",
     "countdown-title": "Special Offer End In The",
     "countdown-timer": "Dec 22, 2022",
     "sections": {
