@@ -17,6 +17,23 @@
 	min-width: 0;
 }
 
+@media screen and (min-width: 990px) {
+	.footer-06 .footer__content__box .grid {
+		row-gap: 6.4rem;
+		column-gap: 6.4rem;
+	}
+	
+	.footer-06 .footer__content__box .footer-block {
+		border-right: 1px solid rgba(0,0,0,0.1);
+		width: calc(33.33% - 6.4rem * 2 / 3);
+		max-width: calc(33.33% - 6.4rem * 2 / 3);
+	}
+
+	.footer-06 .footer__content__box .footer-block:last-child {
+		border-right: 0;
+	}
+}
+
 .footer-06 .footer-block h2 {
 }
 
