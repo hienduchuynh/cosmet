@@ -76,7 +76,7 @@
 
 	.gallery_full_width .product__media-wrapper-inner {
 		max-width: var(--page-width);
-		padding: 0 5rem;
+		padding: 0 2.4rem;
 		margin: auto;
 		align-items: center;
 	}
@@ -112,6 +112,7 @@
 
 	.p-info-full-slider.product__info-wrapper {
 		padding-left: 0;
+		width: 100%;
 	}
 	.p-info-full-slider.product__info-wrapper [data-block-handle='star_rating'] {
 		margin-bottom: 12px;
@@ -121,9 +122,6 @@
 	}
 	.p-info-full-slider.product__info-wrapper #short_description {
 		padding: 1.5rem 0;
-	}
-	.p-info-full-slider.product__info-wrapper:not(.scrolling) .product-form__input.product-form__quantity{
-		margin-top: var(--grid-desktop-vertical-spacing);
 	}
 	.p-info-full-slider.product__info-wrapper .product-form__input input[type='radio'] + label { 
 		margin-bottom: 0;
@@ -176,6 +174,7 @@
 		max-width: 100%;
 		padding: 0;
 	}
+	
 	.gallery_full_width .product--thumbnail_slider .product__media-wrapper {
 		width: 100%;
 		max-width: 100%;
@@ -287,6 +286,9 @@
 	.product__info-wrapper {
 		padding-left: calc(var(--grid-desktop-vertical-spacing) * 5);
 	}
+	.gallery_full_width .product__media-wrapper-inner {
+		padding: 0 5rem;
+	}
 }
 
 /* Dynamic checkout */
@@ -376,10 +378,13 @@
 }
 
 .product-form__input.product-form__quantity {
-	margin-top: var(--grid-desktop-vertical-spacing);
+	margin: 0 0 3.2rem;
+	padding: 0;
+	display: inline-block;
 }
 .product-form__input .quantity {
 	width: 100%;
+	max-width: 140px;
 }
 
 .product-form__input .quantity__input {
@@ -558,16 +563,24 @@ fieldset.product-form__input .form__label {
 }
 
 .product__info-wrapper .btn-buys {
-	margin-top: 0;
+	margin: 0;
+	display: inline-block;
 }
 .product__info-wrapper .product-form {
-	margin: 0 0 2.5rem 0;
+	margin: 0 0 3.2rem 0;
 }
 
 .product__info-wrapper .product-form__buttons {
 	display: flex;
 	gap: 16px;
 }
+
+@media screen and (min-width: 768px)  and (max-width: 980px) {
+	.product__info-wrapper .product-form__buttons {
+		flex-direction: column;
+	}
+}
+
 .button,
 .shopify-challenge__button,
 .customer button,
@@ -585,6 +598,14 @@ button.shopify-payment-button__button--unbranded {
 .product__info-wrapper .product-form__buttons .button,
 .product__info-wrapper .product-form__buttons .shopify-payment-button {
 	width: 50%;
+	min-width: 184px;
+}
+
+@media screen and (max-width: 639px)  {
+	.product__info-wrapper .product-form__buttons .button,
+	.product__info-wrapper .product-form__buttons .shopify-payment-button {
+		min-width: 165px;
+	}
 }
 
 .product__info-wrapper .price--on-sale .badge {
@@ -600,6 +621,8 @@ button.shopify-payment-button__button--unbranded {
 	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
+	border: 0.1rem solid rgba(var(--color-foreground), 0.08);
+	border-radius: var(--buttons-radius);
 }
 .product__info-wrapper .featured-list li {
 	width: 100%;
@@ -788,9 +811,10 @@ a.product__text {
 }
 
 .product-form__quantity .form__label {
-	margin-bottom: 24px;
-	font-size: 2.4rem;
-	line-height: 30px;
+	margin: 16px 0 24px 0;
+	font-size: 1.4rem;
+	line-height: 1;
+	text-transform: uppercase;
 }
 
 .product-form__quantity-top .form__label {

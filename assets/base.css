@@ -1593,7 +1593,7 @@ summary::-webkit-details-marker {
 	}
 	.grid--2-col-tablet .grid__item {
 		width: calc(50% - var(--grid-desktop-horizontal-spacing) / 2);
-		max-width: calc(50% - var(--grid-desktop-horizontal-spacing) / 2);
+		/* max-width: calc(50% - var(--grid-desktop-horizontal-spacing) / 2); */
 	}
 	.grid--3-col-tablet .grid__item {
 		width: calc(33.33% - var(--grid-desktop-horizontal-spacing) * 2 / 3);
@@ -2455,7 +2455,7 @@ input[type='checkbox'] {
 }
 
 .quantity__button {
-	width: calc(4.5rem / var(--font-body-scale));
+	width: calc(3.5rem / var(--font-body-scale));
 	flex-shrink: 0;
 	font-size: 1.8rem;
 	border: 0;
@@ -2466,6 +2466,12 @@ input[type='checkbox'] {
 	justify-content: center;
 	color: rgb(var(--color-foreground));
 	padding: 0;
+}
+.quantity__button:hover { 
+	color: rgb(var(--color-foreground));
+	transform: scale(1.1);
+	transition: all linear .4s;
+
 }
 
 .quantity__button:first-child {
