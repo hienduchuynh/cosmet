@@ -1,6 +1,6 @@
 /*Main Collection style*/
 .product-grid-wrapper {
-	border-top: var(--text-boxes-border-width) solid rgba(var(--color-foreground), var(--text-boxes-border-opacity));
+	border-top: 1px solid rgba(0, 0, 0, 0.08);
 	width: 100%;
 }
 
