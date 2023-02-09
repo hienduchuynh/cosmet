@@ -2162,6 +2162,10 @@ a.product__text {
 	margin: 12px 0;
 }
 
+.boost-products > h3 {
+	font-size: 1.4rem;
+	text-transform: uppercase;
+}
 .boost-products .tagline{
 	color: rgba(43, 43, 43, 0.75);
 	margin-top: calc(var(--grid-desktop-vertical-spacing) / 2);
