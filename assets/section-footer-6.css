@@ -55,7 +55,7 @@
 
 .footer-06.color-accent-2 .newsletter-form__field-wrapper .field__input {
 	background-color: #fff;
-	border: var(--inputs-border-width) solid #1E293B;
+	border: var(--inputs-border-width) solid rgba(0,0,0,0.08);
 }
 
 .footer-06 .footer__list-social,
