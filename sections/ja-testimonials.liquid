@@ -119,7 +119,7 @@
 
             <li id="Slide-{{ section.id }}-{{ forloop.index }}" class="testimonials-list__item grid__item{% if swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}{{ empty_column }}" {{ block.shopify_attributes }} role="group" aria-roledescription="Slide" aria-label="{{ forloop.index }} {{ 'general.slider.of' | t }} {{ testimonials_blocks.size }}" tabindex="-1">
               <div class="testimonials-card content-container">
-                <span aria-hidden="true" class="rating-star color-icon-accent-1" style="--rating: {{ block.settings.rating }}; --rating-max: 5.0; --rating-decimal: 0; --letter-spacing: 0.2; --font-size: 3.8;"></span>
+                <span aria-hidden="true" class="rating-star color-icon-accent-1" style="--rating: {{ block.settings.rating }}; --rating-max: 5.0; --rating-decimal: 0; --letter-spacing: 0.2; --font-size: 2.8;"></span>
                 <div class="testimonials-card__info">
                   {%- if block.settings.title != blank -%}
                     <h3>{{ block.settings.title | escape }}</h3>
