@@ -37,13 +37,12 @@
           </div>
         {%- when 'title'-%}
           <header class="article-title {% if alignment_title == "center" %} center {% endif %} {% if alignment_title == "right" %} right {% endif %}" {{ block.shopify_attributes }}>
+            <h1 class="article-template__title h1" itemprop="headline">{{ article.title | escape }}</h1>
             <div class="article-info">
               {%- if block.settings.blog_show_date -%}
                 <span class="circle-divider" itemprop="dateCreated pubdate datePublished">{{ article.published_at | time_tag: format: 'date' }}</span>
               {%- endif -%}
             </div>
-
-            <h1 class="article-template__title h1" itemprop="headline">{{ article.title | escape }}</h1>
           </header>
         <div class="wrap-content{% if show_sidebar %} sidebar-article {% if sidebar_position == "right" %}sidebar-right{% endif %} {% if sidebar_position == "left" %}sidebar-left{% endif %}{% endif %}">
         <div class="article-content">
