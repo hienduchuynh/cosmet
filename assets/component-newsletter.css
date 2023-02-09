@@ -68,6 +68,9 @@
 
 .newsletter-form__button:not(:focus-visible):not(.focused) {
 	box-shadow: inherit;
+	height: 5.8rem;
+	position: static;
+	margin-left: 1.2rem;
 }
 
 .newsletter-form__button .icon {
