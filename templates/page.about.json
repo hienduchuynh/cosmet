@@ -160,6 +160,7 @@
         },
         "28fbd3ed-fc14-428a-9d5b-3938eef7ec6a": {
           "type": "feature-intro",
+          "disabled": true,
           "settings": {
             "heading": "",
             "heading_size": "h1",
