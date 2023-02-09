@@ -620,7 +620,7 @@
         "fc0a76bb-efdd-4a88-8a7b-8ff9a2edc785"
       ],
       "settings": {
-        "title": "287,422+ clients love Omaie",
+        "title": "287,422+ clients love Cosmet",
         "heading_size": "h1",
         "title_style": "02",
         "title_decor": "shopify:\/\/shop_images\/decor-3.png",
@@ -672,14 +672,13 @@
         "template--17347501523219__b0963866-3da4-4117-baf6-c6d8cadd1abf-1672900711eddce6bf-1"
       ],
       "settings": {
+        "class_suffix": "",
         "title": "",
         "heading_size": "h1",
         "layout": "grid",
         "item_ratio": "34",
         "columns_desktop": 2,
-        "swipe_on_desktop": true,
         "columns_mobile": "1",
-        "swipe_on_mobile": true,
         "padding_top": 64,
         "padding_bottom": 64
       }
