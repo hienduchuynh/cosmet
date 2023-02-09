@@ -43,8 +43,8 @@
 
 .collection-list__item .card__information .count {
 	display: block;
-	color: rgba(var(--color-base-text));
-	font-size: 1.6rem;
+	color: rgb(var(--color-base-text),.75);
+	font-size: 1.4rem;
 	line-height: 1.6;
 }
 
