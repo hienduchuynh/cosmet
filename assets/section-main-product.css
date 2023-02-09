@@ -445,7 +445,7 @@ fieldset.product-form__input .form__label {
 	color: rgba(var(--color-foreground));
 	display: inline-block;
 	margin: 0.7rem 0.5rem 0.2rem 0;
-	padding: 1rem 2rem;
+	padding: 1rem;
 	font-size: 1.4rem;
 	letter-spacing: 0.1rem;
 	line-height: 1;
@@ -453,6 +453,7 @@ fieldset.product-form__input .form__label {
 	transition: border var(--duration-short) ease;
 	cursor: pointer;
 	position: relative;
+	border-radius: var(--buttons-radius);
 }
 
 .product-form__input input[type='radio'] + label:before {
