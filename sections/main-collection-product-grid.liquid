@@ -27,11 +27,11 @@
 
 {%- endstyle -%}
 <div class="section-{{ section.id }}-padding main-collection-products">
-  <div class="{% if section.settings.filter_type == 'vertical' or section.settings.filter_type == 'offcanvas' %}page-width{% endif %}">
+  <div class="page-width">
     <div class="product-grid-wrapper {% if section.settings.filter_type == 'vertical' or section.settings.filter_type == 'offcanvas' %} facets-vertical{% endif %} {% if section.settings.filter_type == 'offcanvas' %}facets-off-canvas{% endif %}" id="{% if section.settings.filter_type == 'offcanvas' %}facets-off-canvas{% endif %}">
       {{ 'component-facets.css' | asset_url | stylesheet_tag }}
       <script src="{{ 'facets.js' | asset_url }}" defer="defer"></script>
-      <aside aria-labelledby="verticalTitle" class="facets-wrapper{% unless section.settings.enable_filtering %} facets-wrapper--no-filters{% endunless %}{% if section.settings.filter_type == 'horizontal' or section.settings.filter_type == 'drawer' %} page-width{% endif %}" id="main-collection-filters" data-id="{{ section.id }}">
+      <aside aria-labelledby="verticalTitle" class="facets-wrapper{% unless section.settings.enable_filtering %} facets-wrapper--no-filters{% endunless %}" id="main-collection-filters" data-id="{{ section.id }}">
           {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
             {% render 'facets', results: collection, enable_filtering: section.settings.enable_filtering, enable_sorting: section.settings.enable_sorting, filter_type: section.settings.filter_type %}
           {%- endif -%}
@@ -92,7 +92,7 @@
               </div>
             </div>
           {%- else -%}
-            <div class="collection{% if section.settings.filter_type == 'horizontal' or section.settings.filter_type == 'drawer' %} page-width{% endif %}">
+            <div class="collection">
               <div class="loading-overlay gradient"></div>
       
               <ul id="product-grid" data-id="{{ section.id }}" class="

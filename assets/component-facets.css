@@ -592,7 +592,7 @@ a.active-facets__button.focused .active-facets__button-inner,
 
 .mobile-facets__disclosure {
 	display: flex;
-	z-index: 6;
+	z-index: 8;
 }
 
 .mobile-facets__wrapper {
