@@ -88,11 +88,12 @@
 
 /* Title */
 .article-template__title {
-  margin: 0;
+  margin: 16px 0 0 0;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 750px) {
   .article-template__title {
+    margin: 32px 0 0 0;
   }
 }
 
