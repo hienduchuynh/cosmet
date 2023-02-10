@@ -298,7 +298,7 @@ header .article-info {
   margin-bottom: 0;
 }
 
-.article-template__comments-comment + .article-template__comments-comment {
+.article-template__comments-comment {
   margin-top: 2.4rem;
   padding-top: 2.4rem;
   border-top: 1px solid rgba(0,0,0,0.08);
@@ -314,6 +314,13 @@ header .article-info {
 .article-template__comments-comment p {
   margin: 0;
   font-size: 1.3rem;
+}
+
+.article-template__comments-comment .circle-divider::after {
+  content: "on";
+  font-weight: normal;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
 }
 
 /* Post Comment */
@@ -357,11 +364,10 @@ header .article-info {
 }
 
 .cmt-title {
-  border-top: 0.1rem solid rgba(var(--color-foreground), 0.08);
-  padding-top: calc(2 * var(--grid-desktop-vertical-spacing));
-  font-size: 2.4rem;
-  text-transform: uppercase;
+  text-align: center;
   font-weight: 700;
+  text-transform: uppercase;
+  font-size: calc(var(--font-heading-scale) * 2.4rem);
 }
 
 .article-template__comments-comment > div span {
