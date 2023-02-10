@@ -611,3 +611,23 @@
   line-height: 1.6;
   color: rgba(var(--color-base-accent-2));
 }
+
+/* About Us */
+@media screen and (min-width: 990px) {
+  .multicolumn.about-us .grid {
+    row-gap: 6.4rem;
+    column-gap: 3.2rem;
+  }
+  
+  .multicolumn.about-us .multicolumn-list__item {
+    border-right: 1px solid rgba(0,0,0,0.1);
+    padding-right: 6.4rem;
+    padding-left: 3.2rem;
+    width: calc(33.33% - 6.4rem * 2 / 3);
+    max-width: calc(33.33% - 6.4rem * 2 / 3);
+  }
+
+  .multicolumn.about-us .multicolumn-list__item:last-child {
+    border-right: 0;
+  }
+}
