@@ -531,8 +531,8 @@
         "desktop_layout": "left-bottom",
         "mobile_layout": "collage",
         "color_scheme": "background-1",
-        "button_label": "Button label",
-        "button_link": "",
+        "button_label": "View all products",
+        "button_link": "shopify:\/\/collections\/all",
         "padding_top": 128,
         "padding_bottom": 128
       }
