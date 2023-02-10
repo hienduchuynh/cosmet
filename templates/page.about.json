@@ -339,7 +339,7 @@
         "image_width": "six",
         "image_ratio": "adapt",
         "columns_desktop": 3,
-        "row_alignment": "top",
+        "row_alignment": "none",
         "column_alignment": "center",
         "background_style": "primary",
         "button_label": "",
