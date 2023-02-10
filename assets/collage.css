@@ -250,7 +250,15 @@
   }
 }
 
+.collage__buttons a:not(.link) {
+  margin-top: 3.2rem;
+}
+
 @media (max-width:  749px) {
+  .collage__buttons a:not(.link) {
+    margin-top: 2.4rem;
+  }
+
   .collage__item--slideshow .banner--mobile-bottom:not(.banner--stacked) .banner__content {
     padding: 2rem 2rem 5rem;
   }

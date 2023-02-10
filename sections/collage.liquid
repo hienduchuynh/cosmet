@@ -228,7 +228,9 @@
     </div>
 
     {%- if section.settings.button_label != blank -%}
-      <a{% if section.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ section.settings.button_link }}"{% endif %} class="button button--secondary">{{ section.settings.button_label | escape }}</a>
+    <div class="center collage__buttons">
+      <a{% if section.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ section.settings.button_link }}"{% endif %} class="button button--primary">{{ section.settings.button_label | escape }}</a>
+    </div>
     {%- endif -%}
   </div>
 </div>
