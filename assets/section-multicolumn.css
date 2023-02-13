@@ -602,7 +602,7 @@
   margin-top: 0;
 }
 
-@media (min-width: 750px) {
+@media (min-width: 990px) {
   .page-page-stores .multicolumn slider-component {
     width: 66.66%;
   }
