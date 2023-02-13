@@ -151,7 +151,15 @@
     font-weight: 600;
     font-size: 1.8rem;
     line-height: 1.6;
-    text-align: right;
+    margin-top: 1.6rem;
+    color: rgb(var(--color-base-accent-1));
+}
+
+@media screen and (min-width: 990px) {
+    .card__information .price {
+        text-align: right;
+        margin-top: 0;
+    }
 }
 
 .card:not(.ratio)>.card__content {
@@ -165,10 +173,12 @@
     }
 }
 
-.card .card__information .card_heading_price {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+@media screen and (min-width: 990px) {
+    .card .card__information .card_heading_price {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
 }
 
 .card__badge {
