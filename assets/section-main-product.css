@@ -158,6 +158,13 @@
 	}
 }
 
+@media screen and (min-width: 750px) and (max-width: 989px) { 
+
+	.grid--2-col-tablet .product__info-wrapper.grid__item {
+		max-width: inherit;
+	}
+}
+
 @media screen and (min-width: 990px) {
 	.product__info-wrapper {
 		padding-left: calc(var(--grid-desktop-vertical-spacing) * 2);
