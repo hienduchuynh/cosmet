@@ -54,7 +54,7 @@
 	display: block;
 	color: var(--color-foreground-85);
 	font-size: 1.4rem;
-	margin: 0 2rem 0 0;
+	margin: 0 .8rem 0 0;
 }
 
 .facet-filters__summary {
@@ -115,6 +115,7 @@
 	min-width: 14rem !important;
 	padding-left: 0;
 	padding-right: 1.75rem;
+	font-weight: 700;
 }
 
 .facet-filters__sort option {
