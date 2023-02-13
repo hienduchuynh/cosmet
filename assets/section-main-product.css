@@ -602,6 +602,10 @@ button.shopify-payment-button__button--unbranded {
 	min-width: 184px;
 }
 
+.product__info-wrapper .product-form__buttons .button.loading > .loading-overlay__spinner svg {
+	min-width: 22px;
+}
+
 @media screen and (max-width: 639px)  {
 	.product__info-wrapper .product-form__buttons .button,
 	.product__info-wrapper .product-form__buttons .shopify-payment-button {
