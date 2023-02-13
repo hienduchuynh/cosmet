@@ -27,6 +27,18 @@
   width: 66.66%;
 }
 
+@media screen and (max-width: 989px) {
+  .testimonials > .page-width .title-wrapper-02 {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .testimonials > .page-width .title-wrapper-02 {
+    width: 100%;
+  }
+}
+
 .testimonials .title-wrapper-with-link {
   margin-top: 0;
 }
