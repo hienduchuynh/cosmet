@@ -626,8 +626,8 @@
     border-right: 1px solid rgba(0,0,0,0.1);
     padding-right: 6.4rem;
     padding-left: 3.2rem;
-    width: calc(33.33% - 6.4rem * 2 / 3);
-    max-width: calc(33.33% - 6.4rem * 2 / 3);
+    width: calc(33.33% - 3.2rem * 2 / 3);
+    max-width: calc(33.33% - 3.2rem * 2 / 3);
   }
 
   .multicolumn.about-us .multicolumn-list__item:last-child {
