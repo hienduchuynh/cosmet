@@ -3,9 +3,9 @@
     "1663821762badf5565": {
       "type": "breadcrumb",
       "settings": {
-        "alignment_breadcrumb": "left",
+        "alignment_breadcrumb": "center",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 0
       }
     },
     "main": {
@@ -31,8 +31,8 @@
       ],
       "settings": {
         "class_suffix": "",
-        "desktop_content_position": "left",
-        "content_alignment": "left",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
         "color_scheme": "background-1",
         "full_width": true,
         "padding_top": 0,
