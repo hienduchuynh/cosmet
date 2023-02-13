@@ -34,6 +34,13 @@
 }
 
 @media screen and (min-width: 990px) {
+	.footer-06 .footer__content__box .footer-block {
+		border-bottom: 0;
+		padding-bottom: 0;
+	}
+}
+
+@media screen and (min-width: 1200px) {
 	.footer-06 .footer__content__box .grid {
 		row-gap: 6.4rem;
 		column-gap: 3.2rem;
