@@ -564,6 +564,9 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.page-page-stores .multicolumn slider-component .multicolumn-list__item {
   padding-top: 3.2rem;
   border-top: 1px solid rgba(0,0,0,0.08);
 }
