@@ -23,6 +23,9 @@
     left: 0;
     top: 100%;
   }
+  .predictive-search--search-template {
+    z-index: 9;
+  }
 }
 
 @media screen and (max-width: 989px) {
