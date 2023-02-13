@@ -39,8 +39,8 @@
         "padding_bottom": 48,
         "border_top_thickness": 0,
         "border_top_opacity": 0,
-        "border_bottom_thickness": 0,
-        "border_bottom_opacity": 0
+        "border_bottom_thickness": 1,
+        "border_bottom_opacity": 8
       }
     },
     "form": {
