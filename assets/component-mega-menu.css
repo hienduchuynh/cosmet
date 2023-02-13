@@ -167,6 +167,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  border-radius: 0.8rem;
   border: var(--card-border-width) solid rgba(var(--color-foreground), var(--card-border-opacity));
 }
 
