@@ -1436,6 +1436,12 @@ summary::-webkit-details-marker {
 	--grid-mobile-vertical-spacing: 0px;
 }
 
+@media screen and (max-width: 989px) {
+	.grid--gapless.grid {
+		padding-right: 1px;
+	}
+}
+
 @media screen and (max-width: 749px) {
 	.grid__item.slider__slide--full-width {
 		width: 100%;
