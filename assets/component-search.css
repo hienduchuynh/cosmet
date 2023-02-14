@@ -6,6 +6,10 @@
   line-height: calc(1 + 0.3/var(--font-body-scale));
 }
 
+.template-search__header .facets-vertical-form {
+  justify-content: space-between;
+}
+
 .template-search h3.card__heading {
   font-size: 1.5rem;
   line-height: calc(1 + 0.3 / max(1, var(--font-heading-scale)));
@@ -46,4 +50,21 @@
 /* Remove extra spacing for search inputs in Safari */
 input::-webkit-search-decoration {
   -webkit-appearance: none;
+}
+
+@media screen and (min-width: 750px) {
+  .template-search  .facets-vertical-form {
+    display: flex;
+    justify-content: space-between;
+    padding: 0
+  }
+  .template-search  .facets-vertical-form .facet-filters{
+    padding-left: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .template-search  .facets-vertical-form {
+    padding: 0 5rem;
+  }
 }
