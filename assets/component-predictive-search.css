@@ -14,17 +14,14 @@
 }
 
 .predictive-search--search-template {
-  z-index: 2
+  z-index: 9
 }
 
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 1199px) {
   .predictive-search--header {
     right: 0;
     left: 0;
     top: 100%;
-  }
-  .predictive-search--search-template {
-    z-index: 9;
   }
 }
 
