@@ -155,6 +155,9 @@ header .article-info {
     gap: 3.2rem;
     margin-top: 3.2rem;
   }
+  .article-template__wrap .article-template__sidebar {
+    width: 100%;
+  }
   .article-template__sidebar .article-info-author {
     margin-bottom: 1.6rem;
   }
