@@ -436,12 +436,14 @@ slider-component.slider-component-full-width {
   .thumbnail-slider.slider-tablet-gutter
   .slider-button.slider-button--prev {
   left: 0;
+  display: none;
 }
 
 .product__media-wrapper
   .thumbnail-slider.slider-tablet-gutter
   .slider-button.slider-button--next {
   right: 0;
+  display: none;
 }
 
 .product__media-wrapper
