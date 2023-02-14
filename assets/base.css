@@ -3172,6 +3172,13 @@ details[open] > .header__submenu {
 	}
 }
 
+@media (max-width: 1209px) and (min-width: 990px) {
+	.header__menu-item {
+		padding-left: 0.4rem;
+		padding-right: 0.4rem;
+	}
+}
+
 .header__menu-item:hover {
 	color: rgb(var(--color-base-text));
 }
