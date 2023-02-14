@@ -360,7 +360,7 @@
                             <img class="boost-product__image" src="{{ prod.images[0] | img_url: '135x' }}" alt="{{ prod.title }}" />
                           </a>
                           <div class="multicolumn-card__info">
-                            <h3 class="card__heading h3"><a href="{{ prod.url }}" class="full-unstyled-link" aria-label="{{prod.title}}" title="{{ prod.title }}">{{ prod.title }}</a></h3>
+                            <h3 class="card__heading h5"><a href="{{ prod.url }}" class="full-unstyled-link" aria-label="{{prod.title}}" title="{{ prod.title }}">{{ prod.title }}</a></h3>
                             <div class="card__vendor">{{ prod.vendor }}</div>
                             <div class="price">{{ prod.price | money }}</div>
                             {%- if prod.metafields.reviews.rating.value != blank -%}
