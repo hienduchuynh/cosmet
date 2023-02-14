@@ -1524,6 +1524,12 @@ a.product__text {
 	grid-gap: 1.6rem;
 }
 
+@media screen and (min-width: 750px) and (max-width: 989px) { 
+	.thumbnail-list {
+		grid-gap: 1.2rem;
+	}
+}
+
 .thumbnail-list-thumbnail_slider .flickity-viewport {
 	width: 100%;
 }
@@ -1608,6 +1614,9 @@ a.product__text {
 		height: auto;
 	}
 	.product__media-wrapper .slider-mobile-gutter .slider-button {
+		display: none;
+	}
+	.product__media-wrapper .slider-mobile-gutter .slider-counter {
 		display: none;
 	}
 	.product__media-wrapper .slider-tablet-gutter .slider-button {
