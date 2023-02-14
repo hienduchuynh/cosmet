@@ -19,7 +19,6 @@
 }
 
 .newsletter-form__field-wrapper .field__input {
-	padding-right: 5rem;
 }
 
 .newsletter-form__field-wrapper .field {
@@ -69,12 +68,32 @@
 .newsletter-form__button:not(:focus-visible):not(.focused) {
 	box-shadow: inherit;
 	height: 5.8rem;
-	position: static;
+	position: relative;
 	margin-left: 1.2rem;
 }
 
 .newsletter-form__button .icon {
 	width: 1.5rem;
+}
+
+@media screen and (max-width: 749px) {
+	.newsletter-form__field-wrapper .field {
+		display: block;
+	}
+
+	.newsletter-form__field-wrapper .field .field__label {
+		top: calc(3rem + var(--inputs-border-width));
+	}
+
+	.newsletter-form__button:not(:focus-visible):not(.focused) {
+		margin-left: 0;
+		margin-top: 1.2rem;
+	}
+
+	.newsletter-form__field-wrapper .field .field__input:focus + .field__label,
+	.newsletter-form__field-wrapper .field .field__input:not(:placeholder-shown) + .field__label {
+	  transform: translateY(-20px);
+	}
 }
 
 /* Popup */
