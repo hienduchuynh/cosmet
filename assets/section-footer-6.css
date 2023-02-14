@@ -76,7 +76,7 @@
 	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-@media screen and (max-width: 749px) { 
+@media screen and (max-width: 989px) { 
 	.footer-06 .footer-block__newsletter {
 		padding-bottom: 2.4rem;
 	}
@@ -118,7 +118,7 @@
 	margin-left: 1.8rem;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 990px) {
   .footer-06 .footer-block__newsletter {
     align-items: baseline;
 		display: flex;
