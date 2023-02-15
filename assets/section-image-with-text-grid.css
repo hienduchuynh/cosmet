@@ -305,3 +305,16 @@
 .ja-page-banner-sale {
     overflow: hidden;
 }
+@media screen and (max-width: 767px) {
+    div.ja-page-page-history .grid__item.slider__slide,
+    div.ja-page-banner-sale .grid__item.slider__slide {
+        padding: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 979px) {
+    .ja-page-page-history .grid__item.slider__slide,
+    .ja-page-banner-sale .grid__item.slider__slide {
+        padding: 2.4rem;
+    }
+}
