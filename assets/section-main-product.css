@@ -137,7 +137,7 @@
 		display: none !important;
 	}
 	.gallery_full_width .thumbnail-slider .thumbnail-list.slider--tablet-up {
-		justify-content: center;
+		/* justify-content: center; */
 	}
 	.gallery_full_width .product--thumbnail_slider .product__tax {
 		margin-top: 0;

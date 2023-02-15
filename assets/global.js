@@ -617,6 +617,11 @@ class SliderComponent extends HTMLElement {
     return (element.offsetLeft + element.clientWidth) <= lastVisibleSlide && element.offsetLeft >= this.slider.scrollLeft;
   }
 
+  isSlideVisibleTop(element, offset = 0) {
+    const lastVisibleSlide = this.slider.clientHeight + this.slider.scrollTop - offset;
+    return (element.offsetTop + element.clientHeight) <= lastVisibleSlide && element.offsetTop >= this.slider.scrollTop;
+  }
+
   onButtonClick(event) {
     event.preventDefault();
     const step = event.currentTarget.dataset.step || 1;
