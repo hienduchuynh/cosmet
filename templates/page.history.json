@@ -92,14 +92,13 @@
         "1792f2b0-3d29-487d-bc9f-4e5213a94d4f"
       ],
       "settings": {
+        "class_suffix": "ja-page-banner-history",
         "title": "",
         "heading_size": "hxl",
         "layout": "grid--gapless",
         "item_ratio": "34",
         "columns_desktop": 3,
-        "swipe_on_desktop": true,
         "columns_mobile": "1",
-        "swipe_on_mobile": true,
         "padding_top": 0,
         "padding_bottom": 0
       }
