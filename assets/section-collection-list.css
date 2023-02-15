@@ -1,6 +1,16 @@
+.collection-hero__title {
+	text-align: center;
+}
+.collection-hero__title + .collection-hero__description {
+	margin: 0 0  3.2rem 0;
+	line-height: calc(1 + 0.5 / var(--font-body-scale));
+	color: rgba(var(--color-foreground), 0.75);
+	text-align: center;
+}
 .collection-list {
-	margin-top: 0;
-	margin-bottom: 0;
+	padding-top: 3.2rem;
+	padding-bottom: 3.2rem;
+	border-top: var(--text-boxes-border-width) solid rgba(var(--color-foreground), var(--text-boxes-border-opacity));
 }
 .collection-list.grid { 
 	row-gap: calc(var(--grid-desktop-vertical-spacing));

@@ -3,13 +3,17 @@
 
 {%- style -%}
   .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}
+    px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}
+    px;
   }
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
+      padding-top: {{ section.settings.padding_top }}
+      px;
+      padding-bottom: {{ section.settings.padding_bottom }}
+      px;
     }
   }
   .section-{{ section.id }}-padding .title {
@@ -21,6 +25,7 @@
   <h2 class="collection-hero__title h1">
     <span>{{ section.settings.title | escape }}</span>
   </h2>
+  <div class="collection-hero__description rte">A blog about your smile, our planet, and daily changes that add up.</div>
   {%- liquid 
  case section.settings.sort 
  when 'products_high' or 'products_low' 
