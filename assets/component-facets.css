@@ -27,9 +27,13 @@
 	.product-grid-wrapper.facets-vertical .active-facets__button-remove {
 		padding: 0;
 	}
+	.product-grid-wrapper.facets-vertical .active-facets facet-remove:not(.active-facets__button-wrapper) {
+		margin: 0 10px 10px 0;
+	}
 	.product-grid-wrapper.facets-vertical .facets-container facet-remove.active-facets__button-wrapper {
 		margin-left: 1.2rem;
 		padding-top: 0;
+		margin-top: -10px;
 	}
 }
 @media screen and (max-width: 989px) {
