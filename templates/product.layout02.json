@@ -91,7 +91,7 @@
       "settings": {
         "enable_sticky_info": true,
         "media_size": "small",
-        "gallery_layout": "thumbnail",
+        "gallery_layout": "thumbnail_slider",
         "gallery_position": "right",
         "thumbnail_ratio": "11",
         "mobile_thumbnails": "hide",

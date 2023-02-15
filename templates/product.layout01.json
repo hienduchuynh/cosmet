@@ -90,7 +90,7 @@
       ],
       "settings": {
         "media_size": "medium",
-        "gallery_layout": "thumbnail",
+        "gallery_layout": "thumbnail_slider",
         "gallery_position": "left",
         "thumbnail_ratio": "11",
         "mobile_thumbnails": "hide",
