@@ -90,7 +90,7 @@
       ],
       "settings": {
         "media_size": "medium",
-        "gallery_layout": "thumbnail",
+        "gallery_layout": "thumbnail_slider",
         "gallery_position": "left",
         "thumbnail_ratio": "11",
         "mobile_thumbnails": "hide",
@@ -293,7 +293,7 @@
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
-        "columns_mobile": "2",
+        "columns_mobile": "1",
         "padding_top": 96,
         "padding_bottom": 96
       }

@@ -306,7 +306,7 @@
         "show_secondary_image": true,
         "show_vendor": true,
         "show_rating": true,
-        "columns_mobile": "2",
+        "columns_mobile": "1",
         "padding_top": 24,
         "padding_bottom": 48
       }

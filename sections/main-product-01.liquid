@@ -255,14 +255,14 @@
                       <img
                         id="Thumbnail-{{ section.id }}-{{ forloop.index }}"
                         srcset="
-                          {% if media.preview_image.width >= 59 %}{{ media.preview_image | image_url: width: 59 }} 59w,{% endif %}
-                          {% if media.preview_image.width >= 118 %}{{ media.preview_image | image_url: width: 118 }} 118w,{% endif %}
-                          {% if media.preview_image.width >= 84 %}{{ media.preview_image | image_url: width: 84 }} 84w,{% endif %}
-                          {% if media.preview_image.width >= 168 %}{{ media.preview_image | image_url: width: 168 }} 168w,{% endif %}
-                          {% if media.preview_image.width >= 130 %}{{ media.preview_image | image_url: width: 130 }} 130w,{% endif %}
-                          {% if media.preview_image.width >= 260 %}{{ media.preview_image | image_url: width: 260 }} 260w{% endif %}
+                          {% if media.preview_image.width >= 150 %}{{ media.preview_image | image_url: width: 150 }} 150w,{% endif %}
+                          {% if media.preview_image.width >= 170 %}{{ media.preview_image | image_url: width: 170 }} 170w,{% endif %}
+                          {% if media.preview_image.width >= 190 %}{{ media.preview_image | image_url: width: 190 }} 190w,{% endif %}
+                          {% if media.preview_image.width >= 210 %}{{ media.preview_image | image_url: width: 210 }} 210w,{% endif %}
+                          {% if media.preview_image.width >= 230 %}{{ media.preview_image | image_url: width: 230 }} 230w,{% endif %}
+                          {% if media.preview_image.width >= 250 %}{{ media.preview_image | image_url: width: 250 }} 250w{% endif %}
                         "
-                        src="{{ media | image_url: width: 84, height: 84 }}"
+                        src="{{ media | image_url: width: 190, height: 190 }}"
                         sizes="(min-width: 1200px) calc((1200px - 19.5rem) / 12), (min-width: 750px) calc((100vw - 16.5rem) / 8), calc((100vw - 8rem) / 5)"
                         alt="{{ media.alt | escape }}"
                         height="200"
@@ -716,7 +716,7 @@
 
   {%- if product.media.size > 0 -%}
     <script src="{{ 'product-modal.js' | asset_url }}" defer="defer"></script>
-    <script src="{{ 'media-gallery.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'media-gallery-vertical.js' | asset_url }}" defer="defer"></script>
   {%- endif -%}
 
   {%- if first_3d_model -%}

@@ -23,13 +23,14 @@
 }
 
 @media screen and (max-width: 767px) {
-	.product-grid-wrapper.facets-vertical .active-facets__button, 
-	.product-grid-wrapper.facets-vertical .active-facets__button-remove {
+	.facets-container .active-facets__button, 
+	.facets-container .active-facets__button-remove {
 		padding: 0;
 	}
-	.product-grid-wrapper.facets-vertical .facets-container facet-remove.active-facets__button-wrapper {
+	.facets-container .facets-container facet-remove.active-facets__button-wrapper {
 		margin-left: 1.2rem;
 		padding-top: 0;
+		margin-top: -10px;
 	}
 }
 @media screen and (max-width: 989px) {
@@ -37,18 +38,22 @@
 		grid-template-columns: auto minmax(0, max-content);
 		column-gap: 2rem;
 	}
-	.product-grid-wrapper.facets-vertical facet-remove.active-facets__button-wrapper {
-		padding-top: 10px;
-		margin-left: 0;
-	}
 }
 
 @media screen and (max-width: 1199px) {
-	.product-grid-wrapper.facets-vertical .active-facets {
+	.facets-container .active-facets {
 		margin: 0 -1.2rem 2.6rem 0;
 	}
-	.product-grid-wrapper.facets-vertical .active-facets__button-wrapper {
-		padding-top: 0;
+	.facets-container .active-facets .active-facets__button-wrapper { 
+		padding: 0;
+		margin: 0 0 0 1.2rem;
+	}
+	.facets-container .active-facets .active-facets__button-wrapper .active-facets__button-remove{ 
+		padding: 0;
+	}
+	.facets-container .active-facets .active-facets__button {
+		margin: 1.5rem 0;
+    padding: 0 0.2rem;
 	}
 }
 
@@ -135,7 +140,7 @@
 	height: auto;
 	line-height: calc(1 + 0.5 / var(--font-body-scale));
 	margin: 0;
-	min-width: 14rem !important;
+	min-width: 15rem !important;
 	padding-left: 0;
 	padding-right: 1.75rem;
 	font-weight: 700;
