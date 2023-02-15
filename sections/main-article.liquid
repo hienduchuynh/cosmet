@@ -87,22 +87,22 @@
             <div class="social-media">
             {%- if settings.social_facebook_link != blank -%}
               <li>
-                <a class="social-icons__link" href="{{ settings.social_facebook_link | escape }}" aria-describedby="a11y-external-message">
+                <a class="social-icons__link" href="https://www.facebook.com/sharer.php?u={{ article.url }}" aria-describedby="a11y-external-message">
                   <span class="icon-svg">{%- render 'icon-facebook' -%}</span>
                 </a>
               </li>
             {%- endif -%}
             {%- if settings.social_twitter_link != blank -%}
               <li>
-                <a class="social-icons__link" href="{{ settings.social_twitter_link | escape }}" aria-describedby="a11y-external-message">
+                <a class="social-icons__link" href="https://twitter.com/share?url={{ article.url }}" aria-describedby="a11y-external-message">
                   <span class="icon-svg">{%- render 'icon-twitter' -%}</span>
                 </a>
               </li>
             {%- endif -%}
-            {%- if settings.social_instagram_link != blank -%}
+            {%- if settings.social_pinterest_link != blank -%}
               <li>
-                <a class="social-icons__link" href="{{ settings.social_instagram_link | escape }}" aria-describedby="a11y-external-message">
-                  <span class="icon-svg">{%- render 'icon-instagram' -%}</span>
+                <a class="social-icons__link" href="https://pinterest.com/pin/create/button/?url={{ article.url }}" aria-describedby="a11y-external-message">
+                  <span class="icon-svg">{%- render 'icon-pinterest' -%}</span>
                 </a>
               </li>
             {%- endif -%}
