@@ -41,7 +41,11 @@ if (!customElements.get('media-gallery')) {
       this.preventStickyHeader();
       window.setTimeout(() => {
         if (this.elements.thumbnails) {
-          activeMedia.parentElement.scrollTo({ left: activeMedia.offsetLeft });
+          if (window.innerWidth > 1200) {
+            activeMedia.parentElement.scrollTo({ top: activeMedia.offsetTop });
+          } else {
+            activeMedia.parentElement.scrollTo({ left: activeMedia.offsetLeft });
+          }
         }
         if (!this.elements.thumbnails || this.dataset.desktopLayout === 'stacked') {
           activeMedia.scrollIntoView({behavior: 'smooth'});
