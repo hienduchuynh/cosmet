@@ -188,3 +188,17 @@
         padding-left: 0;
     }
 }
+
+.header-04 .mega-menu__list {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.header-04 .mega-menu__list > .grid__item > .list-unstyled {
+    min-width: 250px;
+}
+
+.header-04 .mega-menu[open] .mega-menu__content {
+    left: auto;
+    right: auto;
+}
