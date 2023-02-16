@@ -112,7 +112,7 @@
     "background_color": "#ffffff",
     "show_background_image": true,
     "checkout_header_image": "shopify:\/\/shop_images\/pexels-jeshootscom-442585.jpg",
-    "checkout_logo_image": "shopify:\/\/shop_images\/atoms-logo_ab356fac-ace1-43d8-8c8a-369c6f83533b.png",
+    "checkout_logo_image": "shopify:\/\/shop_images\/cmLogo.png",
     "checkout_body_background_color": "#ffffff",
     "checkout_sidebar_background_color": "#fafafa",
     "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
