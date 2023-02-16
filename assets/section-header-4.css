@@ -30,7 +30,23 @@
 
 .header-04.header-layout-logo-menu-icons {
     grid-template-areas: "heading navigation icons";
-    grid-template-columns: auto auto 1fr;
+    grid-template-columns: auto 1fr auto;
+}
+
+.header-04.header-layout-logo-menu-icons .header__inline-menu {
+    text-align: center;
+}
+
+.header-04.header-layout-logo-menu-icons .mega-menu__list > .grid__item > .list-unstyled {
+    min-width: 150px;
+}
+
+.header-04.header-layout-logo-menu-icons .mega-menu__link {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    width: 100%;
 }
 
 .header-04.header-layout-menu-logo-icons {
