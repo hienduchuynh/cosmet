@@ -1,8 +1,0 @@
-<ul class="featured-list">
-    <li class="item1">Vegan & cruelty–free</li>
-    <li class="item2">Aluminum–free formula</li>
-    <li class="item3">Infinitely refillable</li>
-    <li class="item4">Delivered every 4 months</li>
-    <li class="item5">100% plastic free</li>
-    <li class="item6">Baking soda–free</li>
-</ul>
