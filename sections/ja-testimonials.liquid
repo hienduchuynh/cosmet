@@ -25,7 +25,7 @@
   endif
 -%}
 
-<div class="testimonials page-width {% if section.settings.title == blank %} no-heading{% endif %}">
+<div class="testimonials {% if section.settings.layout == "full_bleed" %} full-width {% else %} page-width {% endif %} {% if section.settings.title == blank %} no-heading{% endif %}">
   <div class="page-width section-{{ section.id }}-padding isolate color-{{ section.settings.color_scheme }} gradient{% unless section.settings.background_style == 'none' and settings.text_boxes_border_thickness > 0 or settings.text_boxes_shadow_opacity > 0 %} background-{{ section.settings.background_style }}{% endunless %}">
     {%- unless section.settings.title == blank -%}
       <div class="title-wrapper title-wrapper--no-top-margin title-wrapper-{{ section.settings.title_style }} {% if section.settings.full_width == false and section.settings.title_style != "03" %} page-width{% endif %}{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
@@ -287,6 +287,26 @@
       ],
       "default": "adapt",
       "label": "t:sections.testimonials.settings.image_ratio.label"
+    },
+    {
+      "type": "select",
+      "id": "layout",
+      "options": [
+        {
+          "value": "full_bleed",
+          "label": "t:sections.testimonials.settings.layout.options__1.label"
+        },
+        {
+          "value": "grid",
+          "label": "t:sections.testimonials.settings.layout.options__2.label"
+        },
+        {
+          "value": "grid--gapless",
+          "label": "t:sections.testimonials.settings.layout.options__3.label"
+        }
+      ],
+      "default": "grid--gapless",
+      "label": "t:sections.testimonials.settings.layout.label"
     },
     {
       "type": "range",

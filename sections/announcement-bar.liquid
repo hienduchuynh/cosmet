@@ -1,6 +1,8 @@
+{{ 'announcement-bar.css' | asset_url | stylesheet_tag }}
 {% style %}
 #shopify-section-announcement-bar {
   margin-bottom: var(--spacing-sections-mobile);
+
 }
 
 @media screen and (min-width: 750px) {
@@ -9,7 +11,7 @@
   }
 }
 
-.announcement-bar {
+.announcement-bar.section-{{ section.id }} {
   --color-foreground: {{ section.settings.text_colors.red }}, {{ section.settings.text_colors.green }}, {{ section.settings.text_colors.blue }};
   --color-background: {{ section.settings.bg_colors.red }}, {{ section.settings.bg_colors.green }}, {{ section.settings.bg_colors.blue }};
   --gradient-background:  {{ section.settings.bg_colors.red }}, {{ section.settings.bg_colors.green }}, {{ section.settings.bg_colors.blue }};
@@ -48,7 +50,7 @@
   border-bottom: 2px solid rgba(var(--color-base-outline-button-labels)) ;
 }
 {% endstyle %}
-<div class="announcement-bar gradient {% if section.settings.container %}announcement--container container{% endif %} {{ section.settings.mod_class }}" role="region" aria-label="{{ 'sections.header.announcement' | t }}">
+<div class="announcement-bar section-{{ section.id }} gradient {% if section.settings.container %}announcement--container container{% endif %} {{ section.settings.mod_class }}" role="region" aria-label="{{ 'sections.header.announcement' | t }}">
   <div class="{% if section.settings.full_width %}announcement--full-width{%- else -%}page-width{% endif %}">
     <div class="announcement-bar-inner">
     {%- for block in section.blocks -%}
@@ -78,7 +80,7 @@
 {% schema %}
 {
   "name": "t:sections.announcement-bar.name",
-  "max_blocks": 2,
+  "max_blocks": 3,
   "settings": [
     {
       "type": "color",
@@ -116,7 +118,7 @@
       "name": "t:sections.announcement-bar.blocks.announcement.name",
       "settings": [
         {
-          "type": "richtext",
+          "type": "textarea",
           "id": "text",
           "default": "<p>Welcome to our store</p>",
           "label": "t:sections.announcement-bar.blocks.announcement.settings.text.label"

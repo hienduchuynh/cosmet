@@ -461,3 +461,21 @@
 .testimonials-card .rating-star::before { 
   font-size: calc(var(--font-size) * 1rem);
 }
+
+/*FullWidth*/
+.testimonials.full-width {
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}  
+
+.testimonials.full-width .clients-wrapper { 
+  border-top: 0;
+  margin-top: 0;
+  padding: 7.2rem 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .testimonials.full-width > .page-width {
+    padding: 0 4.8rem;
+  }
+
+}
