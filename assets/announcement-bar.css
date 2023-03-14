@@ -1,0 +1,40 @@
+#shopify-section-announcement-bar .announcement-bar {
+	--color-foreground: 43, 43, 59;
+	--color-background: 255, 255, 255;
+	--gradient-background: 255, 255, 255;
+	background: rgb(var(--color-background));
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+#shopify-section-announcement-bar .announcement-bar__message {
+	color: rgb(var(--color-foreground), 0.75);
+	text-transform: none;
+	font-size: calc(var(--font-heading-scale) * 1.6rem);
+}
+
+/*Home 2*/
+.social-followers {
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	display: flex;
+	gap: 32px;
+}
+.social-followers li {
+  padding-left: 25px;
+  background-repeat: no-repeat;
+  background-position: left 50%;
+}
+.social-followers li:nth-child(1) { 
+  background-image: url('https://cdn.shopify.com/s/files/1/0696/9812/6099/files/ico-instagram.svg?v=1678421253');
+}
+.social-followers li:nth-child(2) {  
+  background-image: url('https://cdn.shopify.com/s/files/1/0696/9812/6099/files/ico-facebook.svg?v=1678421253');
+}
+.find-a-store span{
+  padding-left: 25px;
+  background-repeat: no-repeat;
+  background-position: left 50%;
+  background-image: url('https://cdn.shopify.com/s/files/1/0696/9812/6099/files/ico-mappin.svg?v=1678421253');
+}
+
+
