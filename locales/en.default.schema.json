@@ -2669,6 +2669,9 @@
               },
               "options__44": {
                 "label": "Washing"
+              },
+              "options__45": {
+                "label": "Leaf 02"
               }
             },
             "text": {
@@ -2924,6 +2927,9 @@
               },
               "options__44": {
                 "label": "Washing"
+              },
+              "options__45": {
+                "label": "Leaf 02"
               }
             }
           }
@@ -4287,6 +4293,9 @@
               },
               "options__44": {
                 "label": "Washing"
+              },
+              "options__45": {
+                "label": "Leaf 02"
               }
             }
           }
@@ -4559,6 +4568,9 @@
               },
               "options__44": {
                 "label": "Washing"
+              },
+              "options__45": {
+                "label": "Leaf 02"
               }
             }
           }
