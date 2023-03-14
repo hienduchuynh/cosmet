@@ -346,6 +346,10 @@ slideshow-component .slider-counter {
 .home2-slideshow {
 
 }
+
+.home2-slideshow .banner__media{ 
+  --media-radius: 0px;
+}
 .home2-slideshow .slideshow__text.banner__box > * + .banner__buttons .button {
   display: inline-block;
 }
