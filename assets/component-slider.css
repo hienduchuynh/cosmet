@@ -589,3 +589,13 @@ slider-component:hover .slider-button {
 .slider-navigation .slider-button--next {
   right: 6.4rem;
 }
+
+/*Featured Collection Slider*/
+.new-trending-collection {
+
+}
+@media screen and (min-width: 750px) { 
+    .new-trending-collection .slider-counter--dots {
+      margin: 0;
+    } 
+}

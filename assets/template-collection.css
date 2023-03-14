@@ -455,3 +455,33 @@
     right: 6.4rem;
   }
 }
+
+
+/*Featured Collection Slider*/
+.new-trending-collection {
+
+}
+
+.new-trending-collection  .slider-buttons.slider-dots .slider-counter__link--dots .dot { 
+	display: none;
+}
+
+.new-trending-collection .slider-buttons.slider-dots .slider-counter__link--dots.slider-counter__link {
+	--color-foreground: 0, 0, 0;
+	padding: 0;
+	border: 0;
+	margin: 0 4px;
+	width: 8px;
+	height: 8px;
+	background-color: rgb(var(--color-foreground), 0.1);
+	border-radius: 50%;
+}
+
+.new-trending-collection .slider-buttons.slider-dots .slider-counter__link--dots.slider-counter__link:hover,
+.new-trending-collection .slider-buttons.slider-dots .slider-counter__link--dots.slider-counter__link.slider-counter__link--active {
+	background-color: rgba(var(--color-base-background-2));
+}
+
+.new-trending-collection  slider-component .slider-buttons { 
+	margin-top: 64px;
+}
