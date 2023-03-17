@@ -504,6 +504,27 @@
           "label": "XX-Large"
         }
       },
+      "heading_weight": {
+        "label": "Heading weight",
+        "options__0": {
+          "label": "Light"
+        },
+        "options__1": {
+          "label": "Regular"
+        },
+        "options__2": {
+          "label": "Medium"
+        },
+        "options__3": {
+          "label": "Semi Bold"
+        },
+        "options__4": {
+          "label": "Bold"
+        },
+        "options__5": {
+          "label": "Extra Bold"
+        }
+      },
       "heading_style": {
         "label": "Heading style",
         "options__1": {
@@ -1724,7 +1745,7 @@
         }
       },
       "presets": {
-        "name": "Image banner"
+        "name": "Countdown"
       }
     },
     "image-with-text": {

@@ -296,7 +296,8 @@
   white-space: nowrap;
 }
 
-.multicolumn-card__info .icon {
+.multicolumn-card__info .icon ,
+.multicolumn-card__info .multicolumn-card-title-wrap .icon {
   color: rgba(var(--color-base-accent-2));
   fill: rgba(var(--color-base-accent-2));
   width: 4.8rem;
@@ -715,4 +716,34 @@
 }
 .commit-from-us .multicolumn-card-title-wrap.left .icon {
 	margin-right: 2.8rem;
+}
+
+/* Home 3 */
+.multicolumn-list-home3 .multicolumn-card__info .multicolumn-card-title-wrap.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.multicolumn-list-home3 .multicolumn-card__info .multicolumn-card-title-wrap.center .icon-wrap {
+	background-color: #5E8C5E;
+	color: rgba(255,255,255);
+	width: 12rem;
+	height: 12rem;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 120px;
+	margin-bottom: 3.2rem;
+	margin-left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.multicolumn-list-home3 .multicolumn-card__info .multicolumn-card-title-wrap.center .icon-wrap .icon{
+	margin-bottom: 0;
+  color: rgba(255,255,255);
+	fill: rgba(255,255,255);
 }

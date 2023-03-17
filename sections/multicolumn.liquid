@@ -160,7 +160,9 @@
               >
                 {%- if block.settings.icon != 'none' -%}
                 <div class="multicolumn-card-title-wrap {{ block.settings.icon_position }}">
-                  {% render 'icon-accordion', icon: block.settings.icon %}
+                  <div class="icon-wrap">
+                    {% render 'icon-accordion', icon: block.settings.icon %}
+                  </div>
                   <div class="multicolumn-card-title-content-wrap">
                 {%- endif -%}
 
@@ -169,7 +171,7 @@
                   {%- endif -%}
 
                   {%- if block.settings.title != blank -%}
-                    <h3 class="{{ block.settings.title_size }}">{%- if block.settings.link != blank -%}<a class="link hightlight-link link--text" href="{{ block.settings.link }}">{%- endif -%}{{ block.settings.title | escape }}{%- if block.settings.link != blank -%}</a>{%- endif -%}</h3>
+                    <h3 class="{{ block.settings.title_size }}" {%- if block.settings.heading_weight != blank -%}style="font-weight: {{ block.settings.heading_weight }}"{%- endif -%}>{%- if block.settings.link != blank -%}<a class="link hightlight-link link--text" href="{{ block.settings.link }}">{%- endif -%}{{ block.settings.title | escape }}{%- if block.settings.link != blank -%}</a>{%- endif -%}</h3>
                   {%- endif -%}
                   
                   {%- if block.settings.text != blank -%}
@@ -695,6 +697,34 @@
           ],
           "default": "h3",
           "label": "t:sections.all.heading_size.label"
+        },
+        {
+          "type": "select",
+          "id": "heading_weight",
+          "options": [
+            {
+              "value": "300",
+              "label": "t:sections.all.heading_weight.options__0.label"
+            },
+            {
+              "value": "400",
+              "label": "t:sections.all.heading_weight.options__1.label"
+            }, {
+              "value": "500",
+              "label": "t:sections.all.heading_weight.options__2.label"
+            }, {
+              "value": "600",
+              "label": "t:sections.all.heading_weight.options__3.label"
+            }, {
+              "value": "700",
+              "label": "t:sections.all.heading_weight.options__4.label"
+            }, {
+              "value": "800",
+              "label": "t:sections.all.heading_weight.options__5.label"
+            }
+          ],
+          "default": "700",
+          "label": "t:sections.all.heading_weight.label"
         },
         {
           "type": "text",

@@ -91,7 +91,7 @@
         {%- for block in section.blocks -%}
           {% case block.type %}
             {%- when 'features' -%}
-            <li class="grid__item feature-item">
+              <li class="grid__item feature-item {{ block.settings.class_suffix | escape }}">
               <img
                 srcset="{{ block.settings.image | image_url }}"
                 src="{{ block.settings.image | image_url: width: 80 }}"
@@ -490,6 +490,11 @@
           "id": "image",
           "type": "image_picker",
           "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "class_suffix",
+          "label": "Class Suffix"
         }
       ]
     }
