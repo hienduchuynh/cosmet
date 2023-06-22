@@ -127,7 +127,6 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "settings": {
-          "enable": false,
           "bg_colors": "#5e8c5e",
           "text_colors": "#ffffff",
           "full_width": false,
